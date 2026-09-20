@@ -1,49 +1,23 @@
 #!/usr/bin/env bash
-# Fetch origin for every Project Template repository (root + components). Adapted
-# from reference PHP workspace's scripts/fetch-all-repos.sh, without the parallel JOBS
-# worker pool — Project Template has a handful of repos, not dozens of package
-# submodules, so sequential fetch is fast enough and keeps output ordered.
-# Does not checkout or merge.
-#
-# Usage:
-#   ./scripts/fetch-all-repos.sh
-#   make fetch-all
-
 set -euo pipefail
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/workspace-lib.sh"
 
-UNIVERSITY_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-ROOT="$(cd "$UNIVERSITY_ROOT/.." && pwd)"
-
-echo "⬇️  git fetch origin (all repositories)"
+echo "⬇️  git fetch origin (workspace repositories)"
 echo ""
-
-ok=0
-failed=0
-skipped=0
-
-fetch_one() {
-    local repo_display="$1" repo_path="$2"
-
-    if [ ! -d "$repo_path/.git" ] && [ ! -f "$repo_path/.git" ]; then
-        skipped=$((skipped + 1))
-        return 0
-    fi
-
-    if (cd "$repo_path" && git fetch origin --prune --tags 2>&1); then
-        ok=$((ok + 1))
-    else
-        echo "❌ $repo_display"
-        failed=$((failed + 1))
-    fi
-}
-
-fetch_one "(root)" "$ROOT"
-while IFS= read -r path; do
-    [ -d "$path/.git" ] || [ -f "$path/.git" ] || continue
-    fetch_one "$(basename "$path")" "$path"
+ok=0; failed=0; skipped=0
+while IFS= read -r repo; do
+  name="$(basename "$repo")"
+  if ! git -C "$repo" remote get-url origin >/dev/null 2>&1; then
+    echo "⚠️  $name has no origin; skipped"
+    skipped=$((skipped + 1)); continue
+  fi
+  if git -C "$repo" fetch origin --prune --tags; then
+    echo "✓ fetched $name"; ok=$((ok + 1))
+  else
+    echo "❌ $name" >&2; failed=$((failed + 1))
+  fi
 done < <(workspace_repo_paths)
-
 echo ""
-echo "✅ fetch done: ok=${ok} skipped=${skipped} failed=${failed}"
-[ "$failed" -eq 0 ] || exit 1
-exit 0
+echo "fetch done: ok=$ok skipped=$skipped failed=$failed"
+[ "$failed" -eq 0 ]

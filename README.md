@@ -1,44 +1,39 @@
 # Agentic University
 
-A public, provider-neutral foundation for a personal agentic university.
+Public, provider-neutral source of the Agentic University.
 
-## Canonical source
+## Ownership
 
-- `university/` — professions, workers, faculties, courses, skills, policies, workflows, protocols and public templates.
-- `agent-runtime/` — thin runtime adapters for Claude, Codex and Cursor.
-- `AGENTS.md` — canonical runtime entry point.
-- `CLAUDE.md`, `CODEX.md`, `CURSOR.md` — provider entry adapters.
+- `university/` — professions, workers, faculties, courses, skills, policies, workflows, protocols, templates, and all reusable/public accumulated knowledge.
+- `agent-runtime/` — runtime adapters for Claude, Codex, and Cursor.
+- private Student data lives only in the sibling `students/` repository created/preserved by workspace initialization.
 
-The private Student repository is separate and is never stored here.
-
-## Initialize
+## Start
 
 ```bash
 make init
 ```
 
-This creates project-scoped runtime links under `.agents/`, `.claude/`, `.codex/` and `.cursor/` and installs root Git hooks when this directory is a Git repository. Existing unrelated runtime assets are not overwritten.
+Run it from this `university/` repository. It composes the parent workspace, creates the private `students/` repository when absent, exposes University-owned AI/runtime files in the workspace root via symlinks, validates the runtime, and installs University Git hooks.
 
-Validate with:
+After connecting `students/` to its private `origin`:
 
 ```bash
-make runtime-check
+make workspace-check
 ```
 
-Generated runtime directories are ignored by Git and are not part of the distributable source.
+## Repository operations
 
-## Source rule
+```bash
+make status
+make fetch-all
+make pull-all
+make commit-all
+make push-ready
+```
 
-Every tracked file must have a current Agentic University responsibility. Legacy application infrastructure, backend templates, multi-repository automation and generated runtime state do not belong in this repository.
+These commands operate only on the sibling `university/` and `students/` Git repositories. `commit-all` commits but never pushes; pushing is explicit via `push-ready`.
 
-## v0.13 — Module Contracts
+## Boundary
 
-Modules now have a formal pre-content design layer: Dean-owned Entry and Exit competency contracts. A Module can be navigated, diagnosed, skipped, bridged, and prepared before Themes/Lessons/materials exist. Prior Module completion is evidence, not the universal prerequisite.
-
-## Workspace deployment model
-
-The University is deployed as a sibling of one private Students repository inside a non-repository workspace root. Run `make init` from this `university/` repository to create/validate the private repository and expose University-owned AI/runtime files at the workspace root via symlinks.
-
-Repository management is intentionally retained from the monorepo template and adapted to the two sibling repositories. Use `make status`, `make fetch-all`, `make pull-all`, `make commit-all`, and `make push-ready`.
-
-The Students repository contains only private learning-process state. All reusable/non-private accumulated knowledge belongs to this public University repository.
+University owns behavior and reusable knowledge. Students owns only private educational state. The parent workspace only composes them at runtime.

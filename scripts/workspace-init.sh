@@ -42,7 +42,13 @@ It does not own AI agents, professions, skills, policies, workflows, public cour
 TXT
   cp "$UNI/university/templates/students-workspace/REGISTRY.template.md" "$STUDENTS/registry/REGISTRY.md"
   touch "$STUDENTS/students/.gitkeep"
-  git -C "$STUDENTS" init -q
+  git -C "$STUDENTS" init -q -b main
+  # Reuse the effective Git identity from University when available so the
+  # freshly created private repository can be committed immediately.
+  git_name="$(git -C "$UNI" config user.name 2>/dev/null || true)"
+  git_email="$(git -C "$UNI" config user.email 2>/dev/null || true)"
+  [ -z "$git_name" ] || git -C "$STUDENTS" config user.name "$git_name"
+  [ -z "$git_email" ] || git -C "$STUDENTS" config user.email "$git_email"
   info "created private Students Git repository at $STUDENTS"
 else
   [ -d "$STUDENTS" ] || fail "$STUDENTS exists and is not a directory"

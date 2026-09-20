@@ -18,11 +18,6 @@ while IFS= read -r repo; do
     git -C "$repo" commit -m "$(message_for "$name")"
     echo "✅ committed $name"
   fi
-  ahead="$(git -C "$repo" rev-list --count '@{u}..HEAD' 2>/dev/null || echo 0)"
-  if [ "$ahead" -gt 0 ]; then
-    git -C "$repo" push
-    echo "🚀 pushed $name"
-  fi
 done < <(workspace_repo_paths)
 
-[ -f "$MSG_FILE" ] && rm -f "$MSG_FILE"
+if [ -f "$MSG_FILE" ]; then rm -f "$MSG_FILE"; fi

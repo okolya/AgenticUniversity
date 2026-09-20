@@ -18,7 +18,7 @@ VERBOSE="${VERBOSE:-0}"
 [[ "${1:-}" == "--verbose" ]] && VERBOSE=1
 
 # repo_status_for: prints "status|issues|branch|last_commit" for one repo.
-# status is one of: CLEAN, UNCOMMITTED, UNCOMMITTED+AHEAD, AHEAD, BEHIND, NOT_GIT.
+# status is one of: CLEAN, NEW, UNCOMMITTED, UNCOMMITTED+AHEAD, AHEAD, BEHIND, AHEAD+BEHIND, NOT_GIT.
 repo_status_for() {
     local repo_path="$1"
     local status issues branch last_commit
@@ -33,7 +33,7 @@ repo_status_for() {
     if git -C "$repo_path" rev-parse --verify HEAD >/dev/null 2>&1; then
         last_commit="$(git -C "$repo_path" log -1 --format='%h %s' --no-merges 2>/dev/null || echo 'no commits')"
     else
-        printf 'NOT_GIT|No commits yet|%s|new repository (no commits)\n' "$branch"
+        printf 'NEW|Initial commit required|%s|new repository (no commits)\n' "$branch"
         return 0
     fi
 
@@ -120,6 +120,12 @@ report_repo() {
                 printf "    Branch: %s\n" "$branch"
                 printf "    Last commit: %s\n" "$last_commit"
             }
+            ;;
+        NEW)
+            dirty_repos=$((dirty_repos + 1))
+            printf "  %-25s ⚠️  %s" "${repo_display}:" "$status"
+            [ -n "$issues" ] && printf " (%s)" "$issues"
+            printf "\n"
             ;;
         NOT_GIT)
             failed_repos=$((failed_repos + 1))

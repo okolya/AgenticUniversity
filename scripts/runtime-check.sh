@@ -9,7 +9,7 @@ for role in "${roles[@]}"; do
   test -e ".cursor/agents/university-$role.md"
 done
 for worker in petro bob luke; do test -f "university/workers/$worker/WORKER.md"; done
-for f in .codex/agents/university-*.toml; do python - "$f" <<'PY'
+for f in .codex/agents/university-*.toml; do python3 - "$f" <<'PY'
 import sys, tomllib
 with open(sys.argv[1], 'rb') as h:
     d=tomllib.load(h)
