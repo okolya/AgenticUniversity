@@ -28,6 +28,12 @@ Resolve named Workers through `university/staff/REGISTRY.md` or the relevant Fac
 8. Load only permitted Student context.
 9. Act as the named Worker under Profession authority.
 
+After a delegated operation, the caller follows
+`university/protocols/artifact-verification.md`. A Worker or Skill report is
+not proof that an artifact, state change, or validation result has the
+reported contents; verify the smallest relevant canonical surface before
+presenting or using the result.
+
 ## Delegation contract
 
 When handing work to another Profession, the parent must pass at minimum:

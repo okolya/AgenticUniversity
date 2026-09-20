@@ -7,3 +7,5 @@ University-wide discovery index. Worker files are the canonical appointment reco
 | Petro | Rector | Rector of the University | entire University | active | `university/workers/petro/WORKER.md` |
 | Bob | Dean | Dean of Language Faculty | Language Faculty | active | `university/workers/bob/WORKER.md` |
 | Luke | Dean | Dean of Engineering Faculty | Engineering Faculty | active | `university/workers/luke/WORKER.md` |
+| Adam | Lecturer | Lecturer, Engineering Faculty | Engineering Faculty | active | `university/workers/adam/WORKER.md` |
+| Tim | Learning Analyst | Learning Analyst, Engineering Faculty | Engineering Faculty | active | `university/workers/tim/WORKER.md` |
