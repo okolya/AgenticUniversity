@@ -1,0 +1,18 @@
+# Generated runtime integration. Canonical sources live in agent-runtime/ and university/.
+/.agents/
+/.claude/
+/.codex/
+/.cursor/
+
+# Local artifacts
+.state/
+.logs/
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

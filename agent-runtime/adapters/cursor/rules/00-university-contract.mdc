@@ -1,0 +1,5 @@
+---
+description: Agentic University canonical runtime boundary and Profession/Worker activation contract
+alwaysApply: true
+---
+Treat `AGENTS.md` and `university/` as canonical. Runtime agents represent Professions, not named Workers. Activate Workers through `university/protocols/worker-activation.md`. Use Skills as reusable tools/capabilities, not as subagents. When delegating, pass the target Worker and sufficient context because subagents have isolated context. Keep Student mastery state private and never invent missing University or Student state.
