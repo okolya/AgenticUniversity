@@ -6,4 +6,8 @@ A learning interaction may be published when it is intentionally retained as reu
 
 ## Workspace repository boundary
 
-The deployed workspace uses two sibling Git repositories: public `university/` and private `students/`. The workspace root composes them and contains University-managed runtime symlinks. The private Students repository contains no AI/runtime definitions and no reusable University knowledge.
+The deployed workspace uses one public root Git repository and one nested
+private Git repository: public University source lives under `university/`,
+while private Student state lives under `students/`. The root composes both and
+contains University-managed runtime adapters. The private Students repository
+contains no AI/runtime definitions and no reusable University knowledge.

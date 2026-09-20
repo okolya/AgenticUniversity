@@ -33,7 +33,7 @@ if [ ! -e "$STUDENTS" ]; then
 
 This repository stores only private educational state for real students.
 
-It does not own AI agents, professions, skills, policies, workflows, public course/module definitions, teaching materials, or reusable knowledge. Those belong to the sibling public `university/` repository.
+It does not own AI agents, professions, skills, policies, workflows, public course/module definitions, teaching materials, or reusable knowledge. Those belong to the public University source under `university/`.
 
 - `registry/REGISTRY.md` is the private operational index of registered students.
 - `students/<student-id>/` contains only that student's private learning-process state.
@@ -56,10 +56,9 @@ else
   info "existing private Students repository preserved"
 fi
 
-# Root entry files are direct University links.
-link_safe "$UNI/WORKSPACE.md" "$WS/README.md"
+# Root entry files are direct links to the canonical University contract.
 for f in AGENTS.md CLAUDE.md CODEX.md CURSOR.md; do
-  link_safe "$UNI/$f" "$WS/$f"
+  link_safe "$UNI/university/$f" "$WS/$f"
 done
 
 # Runtime roots must be real workspace directories. Codex sandboxes may reject

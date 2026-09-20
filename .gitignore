@@ -3,6 +3,8 @@
 /.claude/
 /.codex/
 /.cursor/
+/students/
+/docs/
 
 # Local artifacts
 .state/

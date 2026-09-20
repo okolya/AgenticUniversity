@@ -3,12 +3,15 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 UNIVERSITY_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
-WORKSPACE_ROOT="$(cd "$UNIVERSITY_ROOT/.." && pwd)"
+WORKSPACE_ROOT="$UNIVERSITY_ROOT"
 SOURCE_FILE="$UNIVERSITY_ROOT/agent-runtime/adapters/codex/config.toml"
 CODEX_CONFIG_ROOT="${CODEX_HOME:-${HOME}/.codex}"
 TARGET_FILE="$CODEX_CONFIG_ROOT/config.toml"
 BEGIN_MARKER="# BEGIN Agentic University project overlay: $UNIVERSITY_ROOT"
 END_MARKER="# END Agentic University project overlay: $UNIVERSITY_ROOT"
+LEGACY_ROOT="$UNIVERSITY_ROOT/university"
+LEGACY_BEGIN_MARKER="# BEGIN Agentic University project overlay: $LEGACY_ROOT"
+LEGACY_END_MARKER="# END Agentic University project overlay: $LEGACY_ROOT"
 
 [ -f "$SOURCE_FILE" ] || { echo "✗ missing source file: $SOURCE_FILE" >&2; exit 1; }
 mkdir -p "$CODEX_CONFIG_ROOT"
@@ -22,25 +25,25 @@ if [ -e "$TARGET_FILE" ] && [ ! -f "$TARGET_FILE" ]; then
 fi
 touch "$TARGET_FILE"
 
-python3 - "$TARGET_FILE" "$SOURCE_FILE" "$WORKSPACE_ROOT" "$UNIVERSITY_ROOT" "$BEGIN_MARKER" "$END_MARKER" <<'PY'
+python3 - "$TARGET_FILE" "$SOURCE_FILE" "$WORKSPACE_ROOT" "$BEGIN_MARKER" "$END_MARKER" "$LEGACY_BEGIN_MARKER" "$LEGACY_END_MARKER" <<'PY'
 import sys
 from pathlib import Path
 
-target_path, source_path, workspace_root, university_root = map(Path, sys.argv[1:5])
-begin_marker, end_marker = sys.argv[5:7]
+target_path, source_path, project_root = map(Path, sys.argv[1:4])
+markers = [(sys.argv[4], sys.argv[5]), (sys.argv[6], sys.argv[7])]
+begin_marker, end_marker = markers[0]
 
 def substitute(text: str) -> str:
-    return (text.replace("{{WORKSPACE_ROOT}}", str(workspace_root))
-                .replace("{{UNIVERSITY_ROOT}}", str(university_root)))
+    return text.replace("{{PROJECT_ROOT}}", str(project_root))
 
 def strip_overlay(lines: list[str]) -> list[str]:
     result = []
     inside = False
     for line in lines:
-        if line == begin_marker:
+        if any(line == begin for begin, _ in markers):
             inside = True
             continue
-        if line == end_marker:
+        if inside and any(line == end for _, end in markers):
             inside = False
             continue
         if not inside:

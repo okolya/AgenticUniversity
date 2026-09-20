@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 UNIVERSITY_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-ROOT="$(cd "$UNIVERSITY_ROOT/.." && pwd)"
+ROOT="$UNIVERSITY_ROOT"
 cd "$ROOT"
 roles=(rector dean lecturer teacher laboratory-specialist learning-analyst examiner)
 

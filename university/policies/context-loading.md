@@ -1,8 +1,9 @@
 # Workspace and repository context
 
-The agent starts in the project workspace root. The workspace root is the
-directory containing `AGENTS.md`, `university/`, and `students/`; it composes
-the repositories and runtime links but is not itself a Git repository.
+The agent starts in the AgenticUniversity root. The root contains `AGENTS.md`,
+the public academic source under `university/`, and the nested private
+`students/` repository; it is itself the public Git repository and runtime
+composition root.
 
 ## Bootstrap
 
@@ -13,9 +14,10 @@ the repositories and runtime links but is not itself a Git repository.
    - `university/` for public University knowledge, policies, workflows,
      Skills, professions, workers, and runtime adapters;
    - `students/` for private Student state.
-5. Change into the selected repository and verify it with
-   `git rev-parse --show-toplevel`.
-6. Use paths relative to the workspace root or selected repository. Never put
+5. Keep the root repository as the execution and Git composition root. Verify
+   it with `git rev-parse --show-toplevel`; treat `university/` as its public
+   academic source tree and `students/` as the nested private Git boundary.
+6. Use paths relative to the root repository or selected ownership boundary. Never put
    a machine-specific absolute path in a Skill, policy, workflow, or adapter.
 
 The workspace-root `.agents`, `.claude`, `.codex`, and `.cursor` entries are

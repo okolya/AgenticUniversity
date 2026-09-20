@@ -10,7 +10,7 @@
 set -euo pipefail
 
 UNIVERSITY_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-ROOT="$(cd "$UNIVERSITY_ROOT/.." && pwd)"
+ROOT="$UNIVERSITY_ROOT"
 source "$UNIVERSITY_ROOT/scripts/workspace-lib.sh"
 
 VERBOSE="${VERBOSE:-0}"

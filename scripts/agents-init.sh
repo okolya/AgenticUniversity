@@ -3,7 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 UNIVERSITY_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
-PROJECT_ROOT="$(cd "$UNIVERSITY_ROOT/.." && pwd)"
+PROJECT_ROOT="$UNIVERSITY_ROOT"
 RUNTIME_ROOT="$UNIVERSITY_ROOT/agent-runtime/adapters"
 UNIVERSITY_SKILLS="$UNIVERSITY_ROOT/university/skills"
 NAMESPACE="university"

@@ -1,6 +1,8 @@
 # Private Students Repository Template
 
-This template defines the minimal private state repository used by the University. The real repository lives as the `students/` sibling of `university/` in the workspace root.
+This template defines the minimal private state repository used by the
+University. The real repository lives at `students/` inside the public
+AgenticUniversity root.
 
 The private repository MUST NOT contain agents, professions, skills, policies, workflows, course definitions, module definitions, teaching materials, reusable knowledge, or runtime adapters. Those belong to the public University.
 

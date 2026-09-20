@@ -13,11 +13,14 @@ in the workspace root and confirmed the repository boundary.
 - `test -f AGENTS.md`
 - `test -d university`
 - `test -d students`
-- `git -C university rev-parse --show-toplevel`
+- `git rev-parse --show-toplevel`
 
 ## University read-only context
 
-At the workspace root, the generated Codex Skill path is `.codex/skills/university-rector-startup`; after routing into the University repository, the canonical source is `university/skills/rector-startup`. Never use `university/.codex/...` as a workspace-root path.
+At the workspace root, the generated Codex Skill path is
+`.codex/skills/university-rector-startup`; the canonical source is
+`university/skills/rector-startup`. Never use `university/.codex/...` as a
+workspace-root path.
 After routing to the `university/` repository, the runtime may read the
 canonical contract, constitution, activation protocol, active Profession and
 Worker records, startup Skill, and public Faculty/Staff files required by it.
