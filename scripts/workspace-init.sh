@@ -62,14 +62,32 @@ for f in AGENTS.md CLAUDE.md CODEX.md CURSOR.md; do
   link_safe "$UNI/$f" "$WS/$f"
 done
 
-# Runtime directories are links to the University checkout. The University repo
-# owns all generated runtime content; Students owns none of it.
-for d in .agents .claude .codex .cursor; do
-  if [ ! -e "$UNI/$d" ] && [ ! -L "$UNI/$d" ]; then
-    mkdir -p "$UNI/$d"
+# Runtime roots must be real workspace directories. Codex sandboxes may reject
+# a writable root that is itself a symlink. Only University-owned legacy aliases
+# are detached; foreign symlinks and files are refused.
+prepare_runtime_dir() {
+  local name="$1" target legacy resolved
+  target="$WS/$name"
+  legacy="$UNI/$name"
+
+  if [ -L "$target" ]; then
+    resolved="$(readlink -f "$target" 2>/dev/null || true)"
+    [ "$resolved" = "$legacy" ] || fail "refusing to replace foreign runtime symlink: $target"
+    rm -f "$target"
+  elif [ -e "$target" ] && [ ! -d "$target" ]; then
+    fail "runtime path exists but is not a directory: $target"
   fi
-  link_safe "$UNI/$d" "$WS/$d"
+
+  mkdir -p "$target"
+}
+
+for d in .agents .claude .codex .cursor; do
+  prepare_runtime_dir "$d"
 done
+
+# Remove only generated University runtime state left in the old repository
+# runtime roots. The cleanup script refuses foreign files before removing.
+"$SCRIPT_DIR/clean-agent-runtime.sh"
 
 if "$SCRIPT_DIR/check-students-origin.sh"; then
   :

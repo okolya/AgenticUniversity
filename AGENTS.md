@@ -2,6 +2,23 @@
 
 This repository is the public source of one personal Agentic University. Claude Code, Codex, and Cursor are equal first-class runtimes. The academic model is provider-neutral.
 
+The project workspace root is the directory from which the agent is launched.
+It is the composition root, not a Git repository. Before reading, editing,
+testing, or running Git commands, confirm `pwd`, verify `AGENTS.md` and the
+`university/` and `students/` directories, then enter the concrete repository
+that owns the work:
+
+- `university/` — public University source and its Git repository;
+- `students/` — private Student repositories, each with its own ownership and
+  Git boundary.
+
+Never treat the workspace root as a Git repository and never apply a change to
+`university/` or `students/` without first routing the task to that concrete
+repository. Use paths relative to the workspace root or selected repository;
+do not encode a machine-specific absolute path in rules, Skills, workflows, or
+runtime adapters. Runtime links at the workspace root are infrastructure
+aliases and are not editing targets.
+
 Before acting, preserve the ontology in `university/constitution/ONTOLOGY.md` and authority matrix in `university/constitution/RESPONSIBILITY-MATRIX.md`.
 
 ## Canonical model
@@ -17,6 +34,11 @@ Before acting, preserve the ontology in `university/constitution/ONTOLOGY.md` an
 
 ## Runtime behavior
 
+When a new University session starts without an already assigned academic
+workflow, begin with the Rector Profession and resolve its active Worker through
+the Worker Activation Protocol. Run the Profession's `rector-startup` Skill before
+routing the Student to a Faculty or learning path.
+
 1. Determine the active workflow and responsible Profession/Worker.
 2. A runtime agent represents a Profession, never a named Worker.
 3. Activate a Worker using `university/protocols/worker-activation.md`.
@@ -27,6 +49,11 @@ Before acting, preserve the ontology in `university/constitution/ONTOLOGY.md` an
 8. Load only the minimum permitted Student context.
 9. Keep public University learning experience separate from private Student mastery state.
 10. Do not invent missing workers, faculties, curricula, knowledge, evidence, or Student state.
+11. Follow `university/policies/interaction-format.md`: Student-facing navigation and decision questions use explicit choices; learning evidence uses an explicit structured response frame. Follow `university/policies/dialogue-language.md` for session language selection.
+12. When a task changes public University knowledge or runtime behavior, work
+    from `university/`; when it changes private Student state, work from
+    `students/` and load only the selected Student context. Verify the selected
+    repository with `git rev-parse --show-toplevel` before edits or commands.
 
 Prefer agentic/declarative execution. Deterministic scripts are infrastructure/tools only when they provide a concrete repeatable benefit.
 

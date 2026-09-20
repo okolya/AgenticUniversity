@@ -4,11 +4,12 @@ MAKEFLAGS += --no-print-directory
 include make/agents.mk
 include make/repos.mk
 
-.PHONY: help init git-hooks check-hooks clean-runtime
+.PHONY: help init agents-init git-hooks check-hooks clean-runtime
 
 help:
 	@echo "Agentic University workspace commands"
 	@echo "  make init                  - compose workspace, initialize runtime adapters and hooks"
+	@echo "  make agents-init           - install project and host-level University agent resources"
 	@echo "  make runtime-check         - validate Claude/Codex/Cursor runtime"
 	@echo "  make workspace-check       - validate runtime + students private origin"
 	@echo "  make git-hooks             - install University Git hooks"
@@ -26,6 +27,9 @@ init:
 	@bash ./scripts/runtime-check.sh
 	@bash ./scripts/setup-git-hooks.sh
 	@echo "✅ Agentic University workspace initialization complete"
+
+agents-init:
+	@bash ./scripts/agents-init.sh
 
 git-hooks:
 	@bash ./scripts/setup-git-hooks.sh

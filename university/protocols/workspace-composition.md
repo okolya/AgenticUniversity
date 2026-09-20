@@ -16,7 +16,13 @@ workspace/
 └── .cursor/      # University-managed runtime links
 ```
 
-The workspace root is a composition directory, not the authoritative Git repository. Runtime agents execute from the workspace root so they can read public University knowledge and the explicitly selected private Student state.
+The workspace root is the agent's starting directory and a composition
+directory, not an authoritative Git repository. Runtime agents execute from
+the workspace root, then route each task into `university/` or `students/` and
+use paths relative to that repository. The workspace runtime roots (`.agents`,
+`.claude`, `.codex`, `.cursor`) are real directories populated with
+namespace-scoped University links; they are not symlinks to whole repository
+directories, because sandboxed runtimes may reject that boundary.
 
 The Students repository has no AI/runtime files of its own. All runtime behavior is supplied by University templates/adapters through workspace-root links.
 

@@ -1,0 +1,11 @@
+# Agentic University Codex project overlay.
+#
+# This file is canonical project-owned configuration. The installer appends it
+# to the user's Codex config with absolute paths substituted at install time.
+# Keep it block-safe: do not copy user-wide defaults here.
+
+[projects."{{WORKSPACE_ROOT}}"]
+trust_level = "trusted"
+
+[projects."{{UNIVERSITY_ROOT}}"]
+trust_level = "trusted"

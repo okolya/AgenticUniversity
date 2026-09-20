@@ -1,5 +1,6 @@
 # Rector baseline skills
 
+- `rector-startup`
 - `appoint-worker`
 - `inspect-student-state`
 - `research-materials` only when institution-level research is required

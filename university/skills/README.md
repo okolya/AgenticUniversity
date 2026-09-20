@@ -8,6 +8,9 @@ Rules:
 - Workflow defines when and why a Skill is used.
 - Policy constrains every invocation.
 - Skills return results to the active Worker; they do not inherit the Worker's authority.
+- Student-facing questions follow `university/policies/interaction-format.md`:
+  bounded decisions use explicit choices, while evidence requests use an
+  explicit structured response frame.
 - Technical/internal Skills such as `register-worker` may support another Skill without becoming a Profession capability.
 - Do not create a new Skill when an existing Skill already expresses the same bounded operation in another context.
 

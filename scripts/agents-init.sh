@@ -110,4 +110,15 @@ for runtime in .claude .codex .cursor; do
 done
 info "linked policies and workflows under runtime-specific University namespaces"
 
+# Install public University resources into each provider home with a namespace.
+for entry in "Agents:${AGENTS_HOME:-$HOME/.agents}" "Codex:${CODEX_HOME:-$HOME/.codex}" "Claude Code:${CLAUDE_HOME:-$HOME/.claude}" "Cursor:${CURSOR_HOME:-$HOME/.cursor}"; do
+  agent_name="${entry%%:*}"
+  target_dir="${entry#*:}"
+  "$SCRIPT_DIR/install-university-agent-home-resources.sh" "$agent_name" "$target_dir"
+done
+info "installed namespaced University Skills, policies, and workflows into provider homes"
+
+"$SCRIPT_DIR/install-codex-config-toml.sh"
+info "installed the University Codex project overlay"
+
 printf '✅ Agent runtime initialization complete; existing project agent assets were preserved\n'
