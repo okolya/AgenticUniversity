@@ -31,6 +31,11 @@ Worker additions are additive. They may narrow scope or add capabilities, but ma
 
 A Course is a Faculty-owned public academic structure. The appointed Dean owns and approves its stable architecture. Subject specialists may contribute proposals and evidence, but contribution does not transfer ownership. Detailed Module content is adaptive and created/refined just in time. See `university/policies/curriculum-authority.md`.
 
+The academic content hierarchy is `Course → Module → Theme → Lesson`.
+The Dean owns Course and Module frames and approves the finite Theme frame;
+the Lecturer owns Theme teaching design and Lesson preparation inside that
+frame. A child object cannot create, widen, or redefine its parent object.
+
 ## Module competency contract
 
 A Module competency contract is a Dean-owned public boundary consisting of purpose, Entry Contract, Exit Contract, broad competency areas, and hard dependencies. It makes a Module navigable and assessable before Themes, Lessons, exercises, labs, or materials exist. Module relationships are defined by competency requirements, not mandatory prior content consumption.

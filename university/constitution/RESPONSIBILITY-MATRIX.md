@@ -8,7 +8,7 @@
 | Module purpose/Entry Contract/Exit Contract/competency areas | Dean | Lecturer, Lab Specialist, Learning Analyst, Examiner | Does not pre-author Themes/Lessons/materials |
 | Student-specific Theme framework near Module entry | Dean | Lecturer, Student, verified evidence | Must serve the fixed Module contract; not a hidden full syllabus |
 | Module placement/skip/bridge | Dean | Learning Analyst supplies evidence | Analyst does not choose trajectory |
-| Student Module coverage plan | Dean + Student | specialists contribute estimates/needs | Not a pre-generated full Lesson archive |
+| Student Module coverage plan and bounded teaching sequence | Dean + Student | specialists contribute estimates/needs | Not a pre-generated full Lesson archive; Lecturer cannot extend it independently |
 | Theme academic design | Lecturer | Teacher, Lab Specialist | Lecturer does not change Module outcomes silently |
 | Lesson introducing new material | Lecturer | Teacher/Lab may contribute | Not independent assessment |
 | Reinforcement/remediation session | Teacher | Lecturer supplies outcome/gap | Teacher does not expand curriculum authority |
@@ -20,8 +20,11 @@
 | Certification readiness/preparation plan | Dean owns placement; suitable appointed specialists execute/advise | Learning Analyst may measure readiness | Do not teach unrelated certification breadth unless certification is adopted |
 | Student Module Enrollment completion | Dean | Examiner verdict + activity evidence | Completes only private Student enrollment; never closes public Module |
 | Learning materials | Owner of the learning activity authors/curates; Lecturer owns core Theme/Lesson material | Teacher creates support material; Lab creates lab material | Material creation does not grant curriculum authority |
+| Learner-facing diagnostic/assessment artifact | Authorized Learning Analyst or Examiner within assigned scope | Instructional Assistant reviews pedagogical clarity; Dean owns placement/Module scope | Assistant does not validate criteria, edit, publish, or issue a verdict |
 | Course route adaptation | Dean | Student + verified evidence | No lower role silently changes Course/Module outcomes |
 | Lesson-level adaptation | Lecturer | Teacher/Lab observations | Does not override Module frame |
+| Student response: knowledge evidence | Lecturer | Student response; Learning Analyst when independent measurement is required | Does not automatically establish mastery or change curriculum |
+| Student response: material criticism and clarity signals | Instructional Assistant reviews; Lecturer decides | Student provides observations/criticism | Student and Assistant do not edit, approve, or redefine learning material |
 
 ## Canonical handoff
 

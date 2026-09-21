@@ -6,6 +6,12 @@ Current appointments:
 - Petro — Rector
 - Bob — Dean, Language Faculty
 - Luke — Dean, Engineering Faculty
+- Adam — Lecturer, Engineering Faculty
+- Vlad — Teacher, Engineering Faculty
+- Sara — Laboratory Specialist, Engineering Faculty
+- Tim — Learning Analyst, Engineering Faculty
+- Ollie — Examiner, Engineering Faculty
+- Livia — Instructional Assistant, University-wide material review
 
 Activation is defined in `university/protocols/worker-activation.md`.
 

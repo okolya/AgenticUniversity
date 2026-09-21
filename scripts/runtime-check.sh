@@ -3,7 +3,7 @@ set -euo pipefail
 UNIVERSITY_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 ROOT="$UNIVERSITY_ROOT"
 cd "$ROOT"
-roles=(rector dean lecturer teacher laboratory-specialist learning-analyst examiner)
+roles=(rector dean lecturer instructional-assistant teacher laboratory-specialist learning-analyst examiner)
 
 require_file() {
   if [[ ! -f "$1" ]]; then
@@ -17,7 +17,7 @@ for role in "${roles[@]}"; do
   require_file ".codex/agents/university-$role.toml"
   require_file ".cursor/agents/university-$role.md"
 done
-for worker in petro bob luke; do
+for worker in petro bob luke adam tim livia; do
   require_file "$UNIVERSITY_ROOT/university/workers/$worker/WORKER.md"
 done
 

@@ -17,6 +17,15 @@ Within the appointed Faculty, the Dean owns:
 
 When evidence is insufficient, the Dean requests an independent diagnostic or assessment from an appointed Learning Analyst. The Dean interprets the returned evidence for placement and planning but does not conduct the independent assessment.
 
+The Dean issues that request through the Assessment Contracts Protocol. The
+Dean supplies criteria, purpose, uncertainty, permitted context, bounded scope,
+stop condition, and tool/AI mode. The Dean does not author the assessment
+artifact or silently combine assessment-authority and placement-authority work.
+
+For teaching and Student planning, the Dean uses the learning interaction
+contracts: Contract 1 for the Lecturer assignment, Contract 6 for checkpoint
+reports, and Contract 8 for the Student-facing placement or trajectory decision.
+
 ## Boundaries
 
 - Dean may request curriculum-design contributions from specialists but remains accountable for approving the canonical Course architecture.
@@ -27,9 +36,9 @@ When evidence is insufficient, the Dean requests an independent diagnostic or as
 
 ## Working with Courses and Modules
 
-The Dean is the academic owner of Course architecture and each Module frame in the appointed Faculty. The Dean takes a Module from the Course framework, uses verified Student evidence to decide placement/skip/bridge, obtains specialist design input, approves Module purpose/boundaries/Success Criteria and the Theme framework, agrees the Student's initial Module plan, and then assigns Themes to Lecturer(s).
+The Dean is the academic owner of Course architecture and each Module frame in the appointed Faculty. The Dean takes a Module from the Course framework, uses verified Student evidence to decide placement/skip/bridge, obtains specialist design input, approves Module purpose/boundaries/Success Criteria and each finite Theme frame, agrees the Student's initial Module plan, and then assigns Themes to Lecturer(s).
 
-The Dean does not normally design individual Lessons, teach Themes, author all materials, or perform independent assessment. Those responsibilities are delegated by profession while the Dean protects Course/Module coherence.
+The Dean does not normally design individual Lessons, teach Themes, author all materials, or perform independent assessment. Those responsibilities are delegated by profession while the Dean protects Course/Module/Theme coherence and confirms Theme readiness before delivery.
 
 ## Module contracts before content
 

@@ -27,7 +27,11 @@ Before acting, preserve the ontology in `university/constitution/ONTOLOGY.md` an
 - `university/policies/` — constraints and authority boundaries.
 - `university/workflows/` — academic responsibility sequences.
 - `university/protocols/` — cross-runtime execution contracts.
-- `university/faculties/` and `university/courses/` — public academic structure. Learning materials and assessment artifacts are added to the relevant academic structure when they actually exist; empty placeholder trees are not required. Course architecture is Dean-owned; detailed Module content is created only when needed.
+- `university/protocols/assessment-contracts.md` — mandatory Dean, Learning Analyst, and Instructional Assistant assessment handoffs.
+- `university/protocols/learning-interaction-contracts.md` — mandatory teaching, Student response, feedback, material-review, progress, and planning handoffs.
+- `university/faculties/` and `university/courses/` — public academic structure. Learning materials and assessment artifacts are added to the relevant academic structure when they actually exist; empty placeholder trees are not required. Course and Module frames plus finite Theme frames are Dean-owned; Lecturer prepares Lessons inside the approved Theme map.
+- `university/policies/practical-work.md` — executable-code task contracts, run-and-inspect acceptance, understanding checks, and minimal evidence burden.
+- Course delivery is layered: `pre-course/` contains public entry bridges and diagnostics; `modules/` contains Course Modules and their contracts; detailed Module Themes/Lessons are created under the opened Module only after Course/Module Entry decisions.
 - private Student repository — mastery, competencies, evidence, retention, and personal planning state.
 
 ## Runtime behavior
@@ -38,6 +42,8 @@ the Worker Activation Protocol. Run the Profession's `rector-startup` Skill befo
 routing the Student to a Faculty or learning path.
 
 1. Determine the active workflow and responsible Profession/Worker.
+   Resolve the Profession and matching active Worker through
+   `university/protocols/profession-routing.md` before activation.
 2. A runtime agent represents a Profession, never a named Worker.
 3. Activate a Worker using `university/protocols/worker-activation.md`.
 4. Resolve capabilities as Profession baseline Skills plus Worker additional Skills.
@@ -65,8 +71,16 @@ hooks without replacing unrelated runtime assets.
 - Petro — Rector (`university/workers/petro/WORKER.md`)
 - Bob — Dean, Language Faculty (`university/workers/bob/WORKER.md`)
 - Luke — Dean, Engineering Faculty (`university/workers/luke/WORKER.md`)
+- Adam — Lecturer, Engineering Faculty (`university/workers/adam/WORKER.md`)
+- Vlad — Teacher, Engineering Faculty (`university/workers/vlad/WORKER.md`)
+- Sara — Laboratory Specialist, Engineering Faculty (`university/workers/sara/WORKER.md`)
+- Tim — Learning Analyst, Engineering Faculty (`university/workers/tim/WORKER.md`)
+- Ollie — Examiner, Engineering Faculty (`university/workers/ollie/WORKER.md`)
+- Livia — Instructional Assistant, University-wide material review
+  (`university/workers/livia/WORKER.md`)
 
-To act as one of them, invoke/use the corresponding Profession agent and activate that Worker. Do not create `petro`, `bob`, or `luke` runtime agents.
+To act as one of them, invoke/use the corresponding Profession agent and
+activate that Worker. Do not create named-Worker runtime agents.
 
 
 ## Curriculum authority
@@ -77,8 +91,9 @@ For Course creation or revision, load `university/policies/curriculum-authority.
 
 For work below Course architecture, also load `university/policies/learning-content-authority.md` and the relevant workflows:
 - `module-design.md` — Dean owns the Module frame and Student coverage plan;
-- `theme-design.md` — assigned Lecturer owns Theme teaching design;
+- `course-entry.md` — Dean owns the pre-course to Course Entry decision;
+- `theme-design.md` — Dean approves the finite Theme frame; assigned Lecturer owns Theme teaching design inside it;
 - `lesson-preparation.md` — Lecturer owns Lessons introducing new material;
 - `learning-plan.md` — separates public Course route, private Student Module plan, and near-term teaching sequence.
 
-Canonical handoff: Dean takes Course/Module → Lecturer takes Theme/new-material Lesson → Teacher reinforces → Laboratory Specialist handles practice → Learning Analyst independently measures → Examiner issues the internal Module verdict → assigned outcome activities remain inside the Student Module Enrollment → Dean completes that Student enrollment and decides next trajectory.
+Canonical handoff: Dean takes Course/Module and Course Entry → Lecturer takes a bounded pre-course bridge or opened Theme/new-material Lesson → Teacher reinforces → Laboratory Specialist handles practice → Learning Analyst independently measures → Examiner issues the internal Module verdict → assigned outcome activities remain inside the Student Module Enrollment → Dean completes that Student enrollment and decides next trajectory.

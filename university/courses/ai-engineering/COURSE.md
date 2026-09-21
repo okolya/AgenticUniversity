@@ -2,7 +2,7 @@
 
 - faculty: Engineering Faculty
 - owner: appointed Dean of Engineering Faculty
-- status: active framework
+- status: public architecture approved; Student delivery begins only after Course Entry
 - direction: production-oriented AI/ML systems engineering
 - primary implementation language: Python
 - estimated learning volume: approximately 500 ± 100 hours
@@ -47,6 +47,22 @@ Value: operate AI workloads as production infrastructure and connect model/appli
 ### 7. MLOps & Model Lifecycle
 
 Value: manage the complete lifecycle of models and AI systems: experiments, artifacts, registries, pipelines, deployment, monitoring, evaluation, change, and reproducibility.
+
+## Delivery layers
+
+The public Course architecture and a Student's current delivery state are
+separate:
+
+1. `pre-course/` contains orientation, bounded bridges, and independent entry
+   diagnostics before Course/Module delivery starts.
+2. `modules/` contains the stable Module contracts. A Module may have no
+   detailed Themes until the Dean opens it for a Student or cohort.
+3. `modules/<module>/themes/` contains detailed Theme and Lesson material only
+   after the relevant Module handoff.
+
+The existence of a Module contract does not mean that the Student has started
+that Module. Course Entry and Module Entry are explicit Dean decisions based on
+accumulated evidence.
 
 ## Framework rules
 

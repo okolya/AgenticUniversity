@@ -1,25 +1,26 @@
-# Theme 01 — Python Engineering Foundations
+# Pre-course Bridge — Python Engineering Foundations
 
 ## Identity
 
 - **Course:** AI Engineering
-- **Module:** Module 1 — Python AI Engineering
-- **Theme position:** First near-term Theme in the foundational bridge
-- **Status:** Approved public Theme frame
+- **Target:** Module 1 — Python AI Engineering Entry Contract
+- **Layer:** Pre-course bounded bridge
+- **Status:** Approved public bridge frame
 - **Assigned Lecturer:** Adam, Engineering Faculty
 
 ## Purpose
 
-Establish a usable Python engineering foundation for the Student's Module 1
-bridge. The Theme connects general programming and development-environment
+Establish a usable Python engineering foundation before Module 1 starts. The
+bridge connects general programming and development-environment
 capabilities to readable, executable Python components without assuming that a
 particular external course is a complete curriculum. The supplied Udemy
 Python course is treated as a partial supplementary source only; it does not
 define the Theme boundary or replace coverage of the Module contract.
 
-## Relation to the Entry Contract bridge
+## Relation to the Module Entry Contract
 
-This Theme is intended to begin coverage of all five Entry Contract targets:
+This bridge is intended to prepare evidence for the relevant Entry Contract
+targets:
 
 1. **General-purpose programming:** read and modify small Python programs,
    identify inputs, outputs, control flow, data values, and named-function
@@ -37,7 +38,7 @@ The bridge is competency-based: this frame does not require re-teaching
 verified capability and does not imply that the Student must consume every
 available source.
 
-## Intended outcome
+## Intended bridge outcome
 
 The Student can explain and implement a small, readable Python component from
 stated requirements, run it from a development environment, inspect its
@@ -45,9 +46,9 @@ behavior and failures, and describe the boundaries between code, structured
 data, files/commands, dependencies, configuration, secrets, and a Git
 revision.
 
-## Broad Theme Success Criteria
+## Broad Bridge Success Criteria
 
-By the end of this Theme, the Student should be able to:
+By the end of this bridge, the Student should be able to:
 
 - trace and modify a small Python program using functions, core control flow,
   and explicit inputs and outputs;
@@ -64,12 +65,12 @@ By the end of this Theme, the Student should be able to:
 - explain the role of a Python component as one maintainable part of a larger
   AI engineering system.
 
-These are broad Theme criteria for Lecturer planning and formative evidence,
-not a detailed lesson sequence or final Module verdict.
+These are broad bridge criteria for Lecturer planning and formative evidence,
+not a Course Entry decision, Module verdict, or permanent Theme sequence.
 
 ## Boundaries and non-goals
 
-This Theme remains bounded to:
+This bridge remains bounded to:
 
 - Python execution and readability;
 - decomposition, functions, interfaces, and basic maintainable structure;
@@ -80,7 +81,7 @@ This Theme remains bounded to:
 
 It does not, by itself, prescribe or complete:
 
-- the Module 1 Exit Contract;
+- the Module 1 Exit Contract or full Module delivery;
 - advanced Python internals, broad standard-library coverage, or another
   programming-language learning track;
 - machine learning, model engineering, APIs, retrieval, agents, deployment,
@@ -90,28 +91,40 @@ It does not, by itself, prescribe or complete:
 - a mandatory product, framework, external service, certification, or Udemy
   course completion target.
 
-Any need to change Module outcomes or expand these boundaries returns to the
-Dean for approval.
+Any need to change Module outcomes, start Module delivery, or expand these
+boundaries returns to the Dean for approval.
 
 ## Optional product context
 
 Teaching or examples may use a small, bounded application context from
 SonikaAI or MarkHere when it clarifies transfer to AI engineering. Either
 context is optional, and neither is a required deliverable or prerequisite.
-The Lecturer must keep the same Theme criteria assessable without access to
+The Lecturer must keep the same bridge criteria assessable without access to
 either product and must not let product implementation expand the Module
 scope.
 
-## Handoff to Adam
+## Handoff to the assigned Lecturer
 
-Adam owns the detailed Theme teaching design within this approved frame. He
-should use the permitted Student evidence and current Module bridge plan to
-choose what needs introduction, what may be compressed or skipped, and which
-near-term Lessons and materials are justified. He may use the supplied Udemy
-course selectively as supplementary material after the reported review; its
-partial fit must remain explicit.
+The active Lecturer Worker assigned to this bridge owns the detailed bridge
+teaching design within this approved frame. The runtime resolves that Worker
+through Profession Routing and Worker Activation; callers invoke the Lecturer
+Profession rather than a named Worker.
+The assigned Lecturer should use the permitted Student evidence and current
+pre-course bridge plan to choose what needs introduction, what may be compressed
+or skipped, and which near-term Lessons and materials are justified. The Lecturer
+may use the supplied Udemy course selectively as supplementary material after
+the reported review; its partial fit must remain explicit.
 
-Adam should return any proposed scope or outcome change to Luke before
-proceeding. Teacher reinforcement, laboratory practice, and independent
+The assigned Lecturer should return any proposed scope or outcome change to the
+Engineering Faculty Dean before proceeding. Teacher reinforcement, laboratory
+practice, and independent
 measurement remain separate downstream responsibilities and should be
 requested only against these criteria.
+
+## Available bounded assessment
+
+- `assessment-python-entry-diagnostic.md` — independent Python diagnostic for
+  the pre-course evidence handoff; conducted by the Learning Analyst when the
+  Dean requests it.
+- `assessment-course-entry-git-and-boundaries.md` — bounded diagnostic for the
+  remaining Git and source/configuration/secrets Entry Contract criteria.

@@ -5,7 +5,7 @@
 - status: active
 - appointment: Learning Analyst, Engineering Faculty
 - faculty: Engineering Faculty
-- scope: Engineering Faculty, with assignment currently available for AI Engineering Module 1 entry diagnostics
+- scope: Engineering Faculty, with assignment currently available for AI Engineering Course/Module Entry diagnostics
 - specialization: none initially
 
 ## Additional responsibilities

@@ -45,8 +45,8 @@ Do not pre-generate detailed content merely to make the Course look complete.
 ## Content-level delegation
 
 Course ownership does not mean the Dean authors every Theme or Lesson. Detailed authority is defined in `learning-content-authority.md`:
-- Dean owns Course and Module frames;
-- Lecturer owns assigned Theme and new-material Lesson design inside the Module frame;
+- Dean owns Course and Module frames and approves the finite Theme frame;
+- Lecturer owns assigned Theme teaching design and new-material Lesson design inside the approved Theme frame;
 - Teacher owns reinforcement/remediation sessions;
 - Laboratory Specialist owns labs/practical sessions;
 - Learning Analyst owns independent measurement against supplied criteria;

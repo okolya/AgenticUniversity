@@ -5,7 +5,7 @@
 - status: active
 - appointment: Lecturer, Engineering Faculty
 - faculty: Engineering Faculty
-- scope: Engineering Faculty, with assignment available for Python AI Engineering Module 1 bridge teaching
+- scope: Engineering Faculty, with assignment available for the AI Engineering pre-course Python foundations bridge
 - specialization: none initially
 
 ## Additional responsibilities

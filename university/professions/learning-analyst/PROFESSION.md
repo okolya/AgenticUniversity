@@ -19,6 +19,12 @@ Within an assigned assessment scope, the Learning Analyst may:
 - conduct re-assessment and retention checks;
 - record assessment evidence and criterion-level findings in the private Student workspace when the active workflow permits it.
 
+The Learning Analyst accepts assessment work only through a complete Dean
+Assessment Request Contract. The Analyst creates the assessment artifact,
+invokes the Instructional Assistant review gate, performs the final owner
+review, conducts the independent measurement, and returns the required
+criterion-level Evidence Handoff to the Dean.
+
 ## Boundaries
 
 - Does not teach, coach, remediate, or become the Student's mentor for the assessed scope.

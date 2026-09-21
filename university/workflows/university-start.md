@@ -3,7 +3,8 @@
 Purpose: start a personal University without inventing academic content.
 
 1. Human creates the private Student repository from the public Student template/instructions.
-2. Rector is activated through the Rector Profession agent with a named Rector Worker context.
+2. Rector is activated through the Rector Profession agent; the routing layer
+   resolves and attaches the active Rector Worker context.
 3. Rector verifies only the minimum Student structure needed to begin.
 4. Rector presents a focused, numbered choice of verified learning routes. If
    an unlisted goal must be accepted, expose it as an explicit `Other / not
