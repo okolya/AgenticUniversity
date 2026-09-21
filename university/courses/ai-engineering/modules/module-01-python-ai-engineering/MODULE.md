@@ -131,8 +131,9 @@ next Theme is expanded.
 
 1. The Dean assigns the current Theme and a bounded Lesson sequence to an
    appointed Lecturer through Learning Interaction Contract 1.
-2. Adam is the currently appointed Engineering Faculty Lecturer and receives
-   the first Theme assignment. No other Lecturer is invented by this frame.
+2. The assigned Engineering Faculty Lecturer Profession receives the first
+   Theme assignment. Routing resolves the active Lecturer Worker; no other
+   Lecturer is invented by this frame.
 3. The Lecturer proposes a short teaching-intent plan, prepares only the next
    useful Lesson(s), and invokes the Instructional Assistant for pedagogical
    review before delivery.

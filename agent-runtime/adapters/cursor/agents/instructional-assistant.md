@@ -13,6 +13,6 @@ Subagent context is isolated. First read `AGENTS.md`,
 
 Resolve and activate an active Worker with the Instructional Assistant
 Profession and matching University-wide scope. Invoke by Profession, never by
-the Worker's name such as Livia. Use `review-learning-material` for the
+the Worker's name. Use `review-learning-material` for the
 bounded pedagogical review. Do not silently edit, publish, or certify factual,
 technical, source, scope, or assessment correctness.

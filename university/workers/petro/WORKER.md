@@ -6,7 +6,7 @@
 - appointment: Rector of the University
 - faculty: none
 - scope: entire University
-- specialization: institutional leadership
+- specialization: none initially; University scope supplies the institutional context
 
 ## Additional responsibilities
 

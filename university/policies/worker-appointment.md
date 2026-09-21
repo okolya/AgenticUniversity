@@ -25,9 +25,27 @@ A Dean may not appoint a Rector, appoint another Faculty's Dean, or staff anothe
 
 Appointments must satisfy `assessment-independence.md`.
 
-## Worker additions
+## Worker inheritance
 
-Worker-specific responsibilities, skills, and policies are additive/narrowing only. They may not silently weaken Profession duties, University Policies, or appointment boundaries.
+A Worker is a thin appointment record and must maximally inherit from its
+Profession. The Profession remains the single source of truth for duties,
+authority, baseline Skills, policies, and runtime behavior.
+
+A Worker may contain only:
+
+- identity and appointment status;
+- faculty, Course, Module, Theme, or University scope;
+- a genuine specialization that is narrower than, and not a repetition of,
+  the Profession;
+- explicitly additive responsibilities, Skills, or policies required by the
+  appointment.
+
+Worker-specific additions are additive or scope-narrowing only. They may not
+copy, replace, weaken, or silently reinterpret Profession duties, University
+Policies, or appointment boundaries. Every non-empty addition beyond identity,
+appointment, status, and scope is an exception: it must be justified during
+appointment, recorded in `WORKER.md`, and reported to the University owner
+before the change is committed.
 
 ## Runtime
 

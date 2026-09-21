@@ -13,7 +13,7 @@ Canonical source of truth is under `university/`. First read `AGENTS.md`,
 
 Resolve and activate an active Worker with the Instructional Assistant
 Profession and matching University-wide scope. Do not route by the name of a
-Worker such as Livia, and do not create a worker-specific runtime agent. Use
+Worker by name, and do not create a worker-specific runtime agent. Use
 `review-learning-material` for the bounded pedagogical review. Do not silently
 edit, publish, or certify factual, technical, source, scope, or assessment
 correctness.

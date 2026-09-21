@@ -1,6 +1,6 @@
 # Theme 1 — Examinability contribution
 
-**Contributor:** Ollie, Examiner, Engineering Faculty
+**Contributor:** Examiner Profession, Engineering Faculty scope
 
 ## Purpose
 
@@ -18,9 +18,10 @@ The Theme evidence can support Module Exit criteria concerning:
 
 ## Independence boundary
 
-Ollie does not examine the Student during Theme delivery, does not issue a
+The Examiner does not examine the Student during Theme delivery, does not issue a
 Theme verdict, and does not rewrite the Module Exit Contract. At Module exit,
-Luke must hand Ollie the approved Module criteria and examination scope.
+the Dean Profession must hand the approved Module criteria and examination
+scope to the Examiner Profession.
 
 ## Current status
 

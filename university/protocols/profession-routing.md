@@ -61,5 +61,5 @@ named Profession or create a worker-specific runtime agent.
 Adapters and parent Workers must name the target Profession in a delegation
 and provide the relevant scope so the routing layer can attach the resolved
 Worker path to the activation context. They must not create provider agents
-named after Workers such as `luke`, `adam`, or `livia`.
+named after Workers.
 Registry names are appointment data, not callable runtime identities.

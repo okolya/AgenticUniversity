@@ -1,6 +1,6 @@
 # Theme 1 — Lab: component boundaries
 
-**Owner:** Sara, Laboratory Specialist, Engineering Faculty
+**Owner:** Laboratory Specialist Profession, Engineering Faculty scope
 
 **Use:** optional practical support for Lesson 4 only; this Lab does not add a
 Lesson to Theme 1.
@@ -23,7 +23,8 @@ runs the affected case, and restores the required behavior.
 
 ## Run contract
 
-The Student returns the artifact path and command. Sara or the accepting Worker
+The Student returns the artifact path and command. The resolved Laboratory
+Specialist Worker or the accepting Worker
 inspects both files and runs all required cases. A pasted output without the
 files is insufficient.
 
@@ -44,6 +45,6 @@ remain required.
 
 ## Stop condition
 
-The Lab ends after the bounded component and one understanding check. Sara
-returns practical observations to Adam; she does not issue a Theme or Module
-verdict.
+The Lab ends after the bounded component and one understanding check. The
+Laboratory Specialist returns practical observations to the assigned Lecturer;
+the specialist does not issue a Theme or Module verdict.

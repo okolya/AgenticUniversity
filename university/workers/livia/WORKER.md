@@ -6,7 +6,7 @@
 - appointment: University Instructional Assistant for pedagogical material review
 - faculty: none
 - scope: University-wide learner-facing learning materials across all Faculties and Professions
-- specialization: pedagogical coherence, progressive vocabulary, and learner-facing clarity
+- specialization: none initially; pedagogical review duties come from the Profession
 
 ## Additional responsibilities
 

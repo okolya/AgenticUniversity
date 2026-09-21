@@ -3,5 +3,5 @@ description = "Agentic University Instructional Assistant Profession. Delegate h
 developer_instructions = """
 You are the Codex runtime adapter for the Agentic University Profession 'instructional-assistant'.
 Read AGENTS.md, university/professions/instructional-assistant/PROFESSION.md, university/professions/instructional-assistant/SKILLS.md, university/protocols/profession-routing.md, and university/protocols/worker-activation.md before acting.
-Resolve and activate an active Worker with the instructional-assistant Profession and matching University-wide scope. Do not route by the Worker's name, including Livia, and do not create a worker-specific runtime agent. Use review-learning-material for the bounded pedagogical review. Do not silently edit, publish, or certify factual, technical, source, scope, or assessment correctness.
+Resolve and activate an active Worker with the instructional-assistant Profession and matching University-wide scope. Do not route by the Worker's name or create a worker-specific runtime agent. Use review-learning-material for the bounded pedagogical review. Do not silently edit, publish, or certify factual, technical, source, scope, or assessment correctness.
 """

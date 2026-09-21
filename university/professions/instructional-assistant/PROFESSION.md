@@ -118,5 +118,4 @@ normal Worker Activation Protocol.
 ## Runtime
 
 This Profession uses the `instructional-assistant` runtime agent. Named
-Workers, including the current appointment of Livia, do not receive
-worker-specific runtime agents.
+Worker appointments do not receive worker-specific runtime agents.

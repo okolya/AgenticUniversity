@@ -72,47 +72,48 @@ decision rather than an automatically generated Lesson.
 
 | Stage | Worker / Profession | Interaction with Student | Required input/output | Boundary |
 |---|---|---|---|---|
-| Before delivery | Adam / Lecturer | Presents one Lesson and its bounded task | Outcome, prerequisites, artifact, command, required cases, minimum evidence | May not add a Lesson or change Theme criteria |
-| Before delivery | Livia / Instructional Assistant Profession | Does not teach Student; reviews the complete material with Adam | Pedagogical review of language, vocabulary, task clarity, and evidence burden | Does not assess code or issue a verdict |
-| Lesson submission | Adam / Lecturer | Receives Student artifact, observations, explanation, and criticism | Contract 3 response; Adam inspects and runs executable work | Owns Lesson feedback, not independent mastery verdict |
-| Remediation need | Vlad / Teacher | Works with Student on one identified understanding gap | Adam's bounded gap handoff and one focused correction | Cannot add Theme scope or issue independent verdict |
-| Practical gap | Sara / Laboratory Specialist | Supervises the optional Lesson 4 Lab | Practical outcome, run contract, artifact, minimal evidence | Cannot add a Lesson or issue mastery verdict |
-| Independent evidence need | Tim / Learning Analyst | Works with Student only after Dean's Assessment Request | Exact criteria, bounded assessment, permitted context, evidence handoff | Does not teach or choose trajectory |
-| Module examination | Ollie / Examiner | Does not work with Student during Theme delivery | Dean's approved Module Exit criteria and examination request | No Theme verdict or remediation |
-| Theme checkpoint | Adam → Luke / Lecturer → Dean | Student receives the bounded result/next action from the responsible Worker | Contract 6 evidence: completed Lessons, observations, gaps, recommendation | Luke decides next Theme, correction, or measurement |
+| Before delivery | Lecturer Profession / Engineering Faculty scope | Presents one Lesson and its bounded task | Outcome, prerequisites, artifact, command, required cases, minimum evidence | May not add a Lesson or change Theme criteria |
+| Before delivery | Instructional Assistant Profession / University-wide scope | Does not teach Student; reviews the complete material with the Lecturer | Pedagogical review of language, vocabulary, task clarity, and evidence burden | Does not assess code or issue a verdict |
+| Lesson submission | Lecturer Profession / assigned Theme scope | Receives Student artifact, observations, explanation, and criticism | Contract 3 response; resolved Lecturer Worker inspects and runs executable work | Owns Lesson feedback, not independent mastery verdict |
+| Remediation need | Teacher Profession / assigned Theme scope | Works with Student on one identified understanding gap | Lecturer's bounded gap handoff and one focused correction | Cannot add Theme scope or issue independent verdict |
+| Practical gap | Laboratory Specialist Profession / Engineering Faculty scope | Supervises the optional Lesson 4 Lab | Practical outcome, run contract, artifact, minimal evidence | Cannot add a Lesson or issue mastery verdict |
+| Independent evidence need | Learning Analyst Profession / assigned assessment scope | Works with Student only after Dean's Assessment Request | Exact criteria, bounded assessment, permitted context, evidence handoff | Does not teach or choose trajectory |
+| Module examination | Examiner Profession / approved Module scope | Does not work with Student during Theme delivery | Dean's approved Module Exit criteria and examination request | No Theme verdict or remediation |
+| Theme checkpoint | Lecturer Profession → Dean Profession | Student receives the bounded result/next action from the responsible Worker | Contract 6 evidence: completed Lessons, observations, gaps, recommendation | Dean decides next Theme, correction, or measurement |
 
-The normal path is Adam ↔ Student for Lessons. Other Workers enter only at the
+The normal path is the assigned Lecturer Profession ↔ Student for Lessons. Other Workers enter only at the
 listed trigger; their mere appointment does not create an automatic handoff.
 
 ## Lecturer handoff
 
-Adam, the assigned Engineering Faculty Lecturer, owns preparation and delivery
-of these four Lessons. Before each Lesson is delivered, he invokes the
+The assigned Engineering Faculty Lecturer Profession owns preparation and delivery
+of these four Lessons. Before each Lesson is delivered, it invokes the
 Instructional Assistant Profession for a complete pedagogical review. After
 Lesson 4 he returns the accumulated Theme evidence to the Dean; he may not
 extend the sequence or declare the next Theme.
 
 ## Profession handoff status
 
-- **Dean / Luke:** approved the Theme boundary, finite sequence, criteria, and
+- **Dean Profession:** approved the Theme boundary, finite sequence, criteria, and
   stop condition.
-- **Lecturer / Adam:** prepared the four Lessons and owns their delivery and
+- **Lecturer Profession:** prepared the four Lessons and owns their delivery and
   Lesson-level learning feedback.
-- **Instructional Assistant Profession / Livia appointment:** completed the
+- **Instructional Assistant Profession / resolved University-wide appointment:** completed the
   pedagogical review; the reported clarity and vocabulary findings were
-  applied before delivery.
-- **Learning Analyst / Tim:** not invoked for Lesson delivery. No independent
+  applied by the Lecturer before delivery.
+- **Learning Analyst Profession:** not invoked for Lesson delivery. No independent
   measurement is required before the formative Theme sequence; Dean may issue
   a separate bounded request if the final evidence is insufficient for a
   placement or assessment decision.
-- **Teacher / Vlad:** prepared a bounded reinforcement plan; no reinforcement
+- **Teacher Profession:** prepared a bounded reinforcement plan; no reinforcement
   handoff is currently required.
-- **Laboratory Specialist / Sara:** prepared the optional Lesson 4 Lab; it is
-  not an additional Lesson and is used only if Adam requests it for a concrete
+- **Laboratory Specialist Profession:** prepared the optional Lesson 4 Lab; it is
+  not an additional Lesson and is used only if the Lecturer requests it for a concrete
   practical need.
-- **Examiner / Ollie:** completed the examinability contribution; no Module-exit
+- **Examiner Profession:** completed the examinability contribution; no Module-exit
   examination is due at this Theme checkpoint and no verdict was issued.
 
-The next real handoff is Student response to Adam under Contract 3. After
-Lesson 4, Adam returns Contract 6 evidence to Luke. Worker appointments are
+The next real handoff is Student response to the assigned Lecturer under
+Contract 3. After Lesson 4, the Lecturer returns Contract 6 evidence to the
+Dean. Worker appointments are
 explicit staffing boundaries, not implicit authority.

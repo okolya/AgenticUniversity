@@ -13,7 +13,7 @@ diagnostic, quiz, assessment brief, or explanation is published or delivered:
    stage.
 2. The responsible Worker invokes the `Instructional Assistant` Profession for
    a complete pedagogical integrity review of the entire material. The request
-   is made by Profession, never by calling the named Worker `Livia`.
+   is made by Profession, never by calling a named Worker.
 3. The Instructional Assistant returns a complete feedback report. It does not
    create, edit, remove, approve, publish, or certify the material.
 4. For a learning artifact, the responsible Lecturer separately evaluates the

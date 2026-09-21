@@ -1,6 +1,6 @@
 # Theme 1 — Instructional Assistant material review
 
-**Reviewer:** Instructional Assistant Profession, resolved Worker Livia
+**Reviewer:** Instructional Assistant Profession, resolved University-wide Worker context
 
 **Materials reviewed:** `THEME.md` and the four learner-facing Lessons in this
 directory, plus the optional Teacher/Lab evidence instructions.

@@ -6,7 +6,8 @@
 - **Target:** Module 1 — Python AI Engineering Entry Contract
 - **Layer:** Pre-course bounded bridge
 - **Status:** Approved public bridge frame
-- **Assigned Lecturer:** Adam, Engineering Faculty
+- **Assigned Profession:** Lecturer, Engineering Faculty scope; the active
+  Lecturer Worker is resolved through Profession Routing
 
 ## Purpose
 

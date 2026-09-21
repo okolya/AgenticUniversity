@@ -24,10 +24,16 @@ Create a concrete Worker without creating a new runtime agent. The Worker always
 3. Load the Profession definition and baseline skills.
 4. Load the target Faculty/scope specification when applicable.
 5. Create `university/workers/<worker>/WORKER.md` from `templates/worker/WORKER.template.md`.
-6. Keep the Worker thin: do not copy Profession responsibilities or baseline skills into it.
-7. Record only identity, appointment, scope, specialization and genuine additive or scope-narrowing additions.
-8. Invoke `register-worker` to update staff discovery indexes.
-9. Return the created Worker path and effective composition summary.
+6. Keep the Worker thin: do not copy Profession responsibilities, baseline
+   Skills, or baseline policies into it.
+7. Record only identity, appointment, status, scope, a genuine narrower
+   specialization, and explicit additive or scope-narrowing additions.
+8. If any addition beyond identity/appointment/status/scope is non-empty,
+   mark it as an exception, justify it in `WORKER.md`, and report it to the
+   University owner before commit.
+9. Invoke `register-worker` to update staff discovery indexes.
+10. Return the created Worker path and effective composition summary,
+    including any reported exception.
 
 ## Effective worker
 

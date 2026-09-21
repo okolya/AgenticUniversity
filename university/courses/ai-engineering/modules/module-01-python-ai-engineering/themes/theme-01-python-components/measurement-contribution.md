@@ -1,6 +1,6 @@
 # Theme 1 — Measurement contribution
 
-**Contributor:** Tim, Learning Analyst, Engineering Faculty
+**Contributor:** Learning Analyst Profession, Engineering Faculty scope
 
 ## Purpose
 
@@ -21,9 +21,10 @@ verdict and not a learner-facing assessment artifact.
 
 ## Independence boundary
 
-Lesson submissions are formative evidence owned by Adam. If Dean later needs
-independent Theme measurement, Luke must issue a complete Assessment Request
-Contract before Tim builds or conducts an assessment. Tim does not decide
+Lesson submissions are formative evidence owned by the assigned Lecturer. If
+the Dean later needs independent Theme measurement, the Dean Profession must
+issue a complete Assessment Request Contract before the Learning Analyst
+builds or conducts an assessment. The Analyst does not decide
 progression or Module placement.
 
 ## Current status

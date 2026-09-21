@@ -14,6 +14,9 @@ Use this workflow whenever an authorized Rector or Dean creates a concrete Worke
 
 Example:
 
-`Dean Profession + Engineering Faculty + Luke appointment + additions -> Luke`
+`Dean Profession + Engineering Faculty scope + resolved Dean appointment + additions -> activated Dean context`
 
-Luke still uses the Dean Profession agent. Engineering specialization comes primarily from Faculty/scope context; Luke contains only appointment-specific additions.
+The runtime calls the Dean Profession. Routing resolves the active appointment
+for the Engineering Faculty and attaches it to the context. Faculty
+specialization comes primarily from Faculty/scope context; the Worker contains
+only appointment-specific additions.
