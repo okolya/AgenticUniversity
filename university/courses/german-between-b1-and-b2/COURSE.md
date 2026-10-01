@@ -2,7 +2,7 @@
 
 - faculty: Language Faculty
 - owner: appointed Dean of Language Faculty
-- status: public architecture approved; detailed delivery begins only after Course Entry
+- status: public architecture approved; Themes and Lessons not yet authored
 - language: German
 - route type: bounded bridge to readiness for a separate B2 course
 - pace: adaptive to Student capacity and verified evidence
@@ -46,6 +46,12 @@ The Student may enter this Course when:
 
 These are placement conditions, not claims that the Student currently
 demonstrates the level.
+
+Entry is placement, not an admission barrier. The entry diagnostic shows where
+in the fixed four-Module route a Student begins and which criteria are narrowed
+or skipped. A Student is turned away only when the Course Entry Contract is not
+met (for example, a level far outside the A2/B1 range), and then the Dean
+offers another route instead of a bare refusal.
 
 ## Course Success Criteria
 
@@ -146,16 +152,18 @@ fixed in this public frame.
 ## Delivery boundary
 
 This Course defines public competency and Module frames. Detailed Themes,
-finite Lesson maps, exercises, and teaching materials are created just in time
-after the relevant Module Entry decision and current Student evidence exist.
+finite Lesson maps, exercises, and teaching materials may be prepared ahead for
+Dean-approved Theme frames and carry an `unpiloted` mark until a Student has
+passed them. Delivery to a Student starts only after Course Entry, and each
+Lesson is confirmed against that Student's verified evidence.
 The Dean owns Course and Module contracts. An appointed Lecturer owns
 Theme/Lesson teaching design; a Teacher owns reinforcement; and a Learning
 Analyst owns independent measurement when that workflow is staffed.
 
 The Language Faculty has appointed Lecturer, Teacher, Laboratory Specialist,
 Learning Analyst, and Examiner Workers (see `university/faculties/language/STAFF.md`).
-Detailed delivery still begins only after Course/Module Entry and current
-Student evidence, and the independence rules of `assessment-independence.md`
+Delivery to a Student still begins only after Course Entry, and the
+independence rules of `assessment-independence.md`
 apply to every assessed scope.
 
 ## Source provenance

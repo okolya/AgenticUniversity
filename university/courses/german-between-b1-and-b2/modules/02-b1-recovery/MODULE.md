@@ -5,7 +5,7 @@
 - **Course:** Між B1 та B2
 - **Faculty:** Language Faculty
 - **Module position:** 2 of 4
-- **Status:** public competency frame; detailed Themes open only at Module Entry
+- **Status:** public competency frame; Themes and Lessons not yet authored
 
 ## Purpose and value
 
