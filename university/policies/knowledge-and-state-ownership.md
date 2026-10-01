@@ -5,9 +5,10 @@
 - **University owns behavior.** Professions, Workers, Skills, Policies, Workflows, Protocols and runtime definitions are public University assets.
 - **University owns public/reusable accumulated knowledge.** Materials, explanations, exercises, labs, assessment methods, curated resources, teaching patterns and other depersonalized knowledge created during real learning belong to the public University.
 - **Students owns only private educational state.** Identity/state, goals, enrollments, plans, mastery, gaps, evidence, retention, application/certification state and other student-specific facts belong to the private Students repository.
-- **Workspace owns no separate academic layer.** The public root repository
-  owns orchestration and the public University source under `university/`; it
-  composes the nested private Students repository at runtime.
+- **Workspace owns no separate academic layer.** The public core owns the
+  public University source under `university/`; private Student state is kept
+  in the ignored core-relative `students/` repository. A larger host may add
+  orchestration without moving that state boundary.
 
 ## Promotion rule
 

@@ -8,7 +8,8 @@ state the University already records; it adds no academic meaning.
 
 A **state store** is any implementation of this contract. Two are recognized:
 
-- the private `students/` Git repository of Markdown files (CLI hosts);
+- the private core-relative `students/` Git repository of Markdown files (CLI
+  hosts);
 - any other store a host provides (for example a database) that keeps the same
   entities, operations, and invariants.
 
@@ -106,7 +107,8 @@ A Skill never gains authority by invoking an operation.
 
 ## CLI store mapping
 
-In the `students/` repository each Student has one `students/<id>/STUDENT.md`;
+In the core-relative `students/` repository each Student has one
+`students/<id>/STUDENT.md`;
 `students/registry/REGISTRY.md` is the Registry.
 
 | Entity | Location in `STUDENT.md` |

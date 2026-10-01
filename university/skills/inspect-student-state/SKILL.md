@@ -14,5 +14,6 @@ Input must include the active Worker, purpose, applicable success criteria where
 
 Performs `read` from `protocols/student-state-contract.md`, scoped to one
 Student and to the requested entities only. It works against any state store
-that implements the contract; in CLI hosts that is the private `students/`
-repository. Missing state is reported as missing, never invented.
+that implements the contract; in CLI hosts that is the private core-relative
+`students/` repository. Never search a parent workspace for an alternative
+Student store. Missing state is reported as missing, never invented.

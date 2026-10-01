@@ -14,11 +14,12 @@ in the host's active repository and confirmed the core boundary.
 - `pwd`
 - `test -f AGENTS.md`
 - `test -d university`
+- `test -d students` (only when the selected workflow uses private Student state)
 - `git rev-parse --show-toplevel`
 
-For a composed workspace, the host may additionally use
-`test -d university-core/university` and `test -d students`; these are host
-capabilities, not standalone core requirements.
+For a composed workspace, the host resolves the core boundary first and then
+uses the same core-relative `students/` path. A top-level workspace `students/`
+path is not a fallback for core runtime instructions.
 
 ## University read-only context
 

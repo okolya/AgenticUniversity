@@ -22,13 +22,15 @@ owns an academic decision, appoints a Worker, or reads private Student state.
    `AGENTS.md` and `university/` are in the current repository. In a composed
    workspace, use `university-core/AGENTS.md` and
    `university-core/university/`; read the host/workspace `AGENTS.md` once per
-   session when it exists. `students/` is optional and is required only for a
-   workflow that explicitly uses private Student state.
+   session when it exists. The canonical private Student path is the
+   core-relative `students/` directory; it may be absent until a Student
+   workspace is initialized.
 2. Classify the task and pick the ownership boundary:
    - host root files and `scripts/` — orchestration, runtime installation, Git;
    - resolved core `university/` — public academic knowledge, policies,
      workflows, Skills, Professions, Workers;
-   - optional `students/` — private Student state (only the selected Student).
+   - core-relative `students/` — private Student state (only the selected
+     Student; the directory may be absent for public-only work).
 3. Run `git rev-parse --show-toplevel` inside the chosen boundary before any
    edit or Git command.
 4. Check runtime state read-only: `git status --short`, and, when the host
@@ -49,7 +51,7 @@ owns an academic decision, appoints a Worker, or reads private Student state.
 If routing information is missing, ask using this structure:
 
 ```text
-Boundary: <root | university | students>
+Boundary: <host-root | university | students>
 Profession/Worker: <profession — worker>
 Workflow: <workflow or none>
 Read only: <exact optional docs>

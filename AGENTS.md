@@ -9,7 +9,9 @@ private documentation, component repositories, and Student state are outside
 this repository and are never required for standalone core checks.
 
 Use paths relative to the current repository; do not encode machine-specific
-absolute paths in rules, Skills, workflows, or runtime adapters.
+absolute paths in rules, Skills, workflows, or runtime adapters. Private
+Student state, when used, lives in the ignored core-relative `students/`
+repository and is never committed here.
 
 Before acting, preserve the ontology in `university/constitution/ONTOLOGY.md` and authority matrix in `university/constitution/RESPONSIBILITY-MATRIX.md`.
 
@@ -54,8 +56,9 @@ routing the Student to a Faculty or learning path.
 10. Do not invent missing workers, faculties, curricula, knowledge, evidence, or Student state.
 11. Follow `university/policies/interaction-format.md`: Student-facing navigation and decision questions use explicit choices; learning evidence uses an explicit structured response frame. Follow `university/policies/dialogue-language.md` for session language selection.
 12. When a task changes public University knowledge, work from `university/`.
-    Workspace orchestration and private Student state belong to their owning
-    repositories and are not modified from this standalone core.
+    Workspace orchestration belongs to the host repository. For Student work,
+    inspect only the selected context under the core-relative `students/`
+    repository; never search a parent workspace for a different Student store.
 
 Prefer agentic/declarative execution. Deterministic scripts are infrastructure/tools only when they provide a concrete repeatable benefit.
 
