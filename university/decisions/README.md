@@ -24,3 +24,4 @@ state the status, context, decision, consequences, and scope boundary.
 | [0007](0007-controlled-correction-authority.md) | Controlled correction authority | Accepted |
 | [0008](0008-issue-backed-proposals.md) | Issue-backed correction proposals | Accepted |
 | [0009](0009-session-role-inference.md) | Session role inference from the first message | Accepted |
+| [0010](0010-prepare-material-ahead.md) | Preparing Course material ahead of Students | Accepted |

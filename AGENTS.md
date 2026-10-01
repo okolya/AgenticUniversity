@@ -32,7 +32,7 @@ Before acting, preserve the ontology in `university/constitution/ONTOLOGY.md` an
   evidence is not retaught merely with changed examples, values, or names.
   Lecturer/Assistant handoffs must carry prior evidence, omitted criteria, and
   the new evidence delta; missing context blocks delivery until resolved.
-- Course delivery is layered: `pre-course/` contains public entry bridges and diagnostics; `modules/` contains Course Modules and their contracts; detailed Module Themes/Lessons are created under the opened Module only after Course/Module Entry decisions.
+- Course delivery is layered: `pre-course/` contains public entry bridges and diagnostics; `modules/` contains Course Modules and their contracts; detailed Module Themes/Lessons are created under the Module for an approved Theme frame, ahead of Students or after Course/Module Entry decisions (ADR 0010).
 - private Student repository — mastery, competencies, evidence, retention, and personal planning state.
 
 ## Runtime behavior

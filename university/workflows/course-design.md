@@ -22,9 +22,11 @@ Purpose: create or revise the stable Course direction and Module framework witho
    Module framework.
 8. Detailed pre-course bridge material is created only for a bounded entry gap.
    It does not count as Module delivery.
-9. Detailed Module content is intentionally deferred until Course/Module Entry.
-   It is created/refined just in time from verified Student state, prior
-   learning, current field knowledge, and Course goals.
+9. Detailed Module content is prepared only for approved Theme frames. It may be
+   prepared ahead through `theme-design.md` and `lesson-preparation.md`, or
+   created/refined just in time at Course/Module Entry from verified Student
+   state, prior learning, current field knowledge, and Course goals. Material
+   prepared ahead carries an `unpiloted` mark until a Student has passed it.
 10. Later revisions preserve the distinction between stable Course architecture,
     pre-course entry work, and adaptive Module detail.
 

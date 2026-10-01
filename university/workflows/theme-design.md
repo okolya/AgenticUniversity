@@ -83,3 +83,14 @@ outcome, criteria, boundaries, evidence, and stop condition remain clear.
   names its trigger, scope, input, output, and stop condition.
 - If a required Profession has no active Worker appointment, the workflow
   stops at the staffing boundary; no Worker is invented.
+
+## Preparing ahead of a Student
+
+The Lecturer may prepare a Dean-approved Theme before any Student exists. Steps
+that need Student data are performed at delivery instead: loading permitted
+Student evidence and omitted criteria (steps 1 and 6), asking the Student for
+materials (steps 3 and 4), and the Instructional Assistant's duplication test
+against prior evidence (step 13). The Lecturer records the Theme as `unpiloted`
+and states the evidence each Lesson is expected to add, relative to the Lesson
+map. At delivery the Lecturer confirms the fit against the Student's verified
+evidence.

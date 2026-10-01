@@ -23,18 +23,37 @@ The Dean may request contributions from appointed specialists:
 
 Contributors do not independently change the canonical Course. The Dean approves changes to Course architecture.
 
-## Just-in-time rule
+## Preparing material ahead or just in time
 
-A Course is a route of intended competencies, not a fully pre-authored syllabus.
+A Course is a route of intended competencies. The Dean defines the Module
+framework first. Detailed Module themes, lessons, exercises, labs, materials,
+and assessment artifacts may then be prepared in two ways, and one Course may use
+both (ADR 0010):
 
-The Course may define the Module framework in advance. Detailed Module themes, lessons, exercises, labs, materials, and assessment artifacts are created or refined near Module entry using:
+- **Ahead of any Student**, only for a Dean-approved Theme frame and its finite
+  Lesson map, by the Profession that owns them under
+  `learning-content-authority.md` and reviewed by the Instructional Assistant.
+  Such material is public University material and carries an `unpiloted` mark
+  until a Student has passed it; the mark does not block delivery, and the
+  material may be revised afterwards.
+- **Just in time**, when no suitable prepared material exists or the Student's
+  state calls for something new. It is created or refined near Module entry
+  using:
 - the Student's verified current state;
 - results of prior Modules;
 - current Course goals and Success Criteria;
 - relevant changes in the field;
 - available high-quality materials.
 
-Do not pre-generate detailed content merely to make the Course look complete.
+Do not pre-generate detailed content merely to make the Course look complete:
+material is prepared ahead only for an approved Theme frame.
+
+Prepared material never replaces the per-Student decisions: Course Entry,
+placement, skip and narrowing, the Student's plan, the evidence delta,
+independent evidence, and the Module verdict. A prepared Lesson is delivered only
+after the responsible Worker confirms, against that Student's verified evidence,
+that it adds a new evidence delta; a Lesson that repeats a demonstrated criterion
+is skipped or returned to the Dean.
 
 ## Boundary
 

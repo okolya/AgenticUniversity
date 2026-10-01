@@ -34,7 +34,9 @@ Module Entry are explicit Dean decisions based on evidence.
 
 - Each Module requires an Entry Contract and Exit Contract before detailed
   teaching content is authored.
-- Detailed Themes and Lessons are prepared near Module entry.
+- Detailed Themes and Lessons are prepared only for an approved Theme frame,
+  ahead of Students or near Module entry, and are confirmed to fit each Student
+  before delivery.
 - The Dean owns Course architecture and may skip, bridge, reorder where
   dependencies permit, or narrow a Module based on verified evidence.
 

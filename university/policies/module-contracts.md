@@ -34,7 +34,7 @@ Therefore:
 
 ## Detail boundary
 
-Before Student-specific Module Entry, Dean may define only:
+Before a Theme frame is approved, Dean may define only:
 - Module purpose/value;
 - Entry Contract;
 - Exit Contract;
@@ -49,7 +49,8 @@ Dean should not pre-author merely for completeness:
 - exact learning resources;
 - assessment artifacts.
 
-Those are designed just in time after the actual Student starting state is known.
+Detailed content is prepared only for an approved Theme frame, ahead of Students
+or just in time, as described in `curriculum-authority.md`.
 
 
 ## Public Module versus Student Module Enrollment

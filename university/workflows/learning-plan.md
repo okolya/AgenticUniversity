@@ -14,7 +14,7 @@ also use `assessment-contracts.md`.
 
 Owner: Dean.
 
-The public Course defines the stable route: direction, competencies, Module framework, dependencies, and Course Success Criteria. It is not a Student calendar and does not contain a fully generated Lesson plan.
+The public Course defines the stable route: direction, competencies, Module framework, dependencies, and Course Success Criteria. It is not a Student calendar and contains no Student-specific Lesson plan. Themes and Lessons for Dean-approved Theme frames may be prepared ahead (`curriculum-authority.md`), but which of them a Student receives is decided per Student.
 
 ## Student Module plan
 

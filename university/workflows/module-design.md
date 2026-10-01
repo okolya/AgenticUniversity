@@ -32,7 +32,7 @@ Dean-to-Lecturer and checkpoint handoffs in this workflow use
 4. Entry criteria must be independently measurable without requiring proof that a particular earlier Module was consumed.
 5. Exit criteria must be independently examinable without prescribing Themes, Lessons, exercises, labs, or materials.
 6. When an external certification is intentionally adopted and known, ensure its relevant preparation requirements can be absorbed into the Module without adding unrelated breadth.
-7. Stop. Do not generate detailed content merely to make the Module look complete.
+7. Stop at the contract. Do not generate detailed content merely to make the Module look complete; Theme frames and their Lessons may be prepared ahead only through the approved-frame path below.
 
 ## Stage B — Student-specific Module execution design (near entry)
 
@@ -72,3 +72,16 @@ The Module may maintain an aggregate readiness index linking to each opened
 Theme's local preparation and material-review records. The index summarizes
 status and Module-criterion coverage; it does not duplicate Theme-local
 handoffs or replace the Theme readiness decision.
+
+## Preparing ahead of a Student
+
+The Dean may approve finite Theme frames, with their Lesson maps, ahead of any
+Student, mapped to the Module Exit Contract as in Stage B step 6. The Lecturer
+may prepare the Themes through `theme-design.md` and `lesson-preparation.md`.
+
+Stage B is still performed per Student. The Dean compares the Entry Contract
+with that Student's verified evidence, decides entry, skip, bridge, or
+narrowing, and issues the bounded teaching sequence by selecting, from the
+prepared Theme and Lesson maps, only what the Student's actual gaps need. Themes
+and criteria already demonstrated are not delivered. The Lecturer confirms that
+each prepared Lesson fits the Student instead of preparing it.

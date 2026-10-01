@@ -82,3 +82,13 @@ the Student and the responsible Worker to the next justified step inside the
   confirms Theme completion, opens the next approved Theme, requests a bounded
   correction, or requests independent measurement; the Lecturer does not keep
   generating Lessons while waiting for that decision.
+
+## Preparing ahead of a Student
+
+A Lesson may be prepared before any Student exists. Steps 1 to 3 then use the
+approved Theme sequence and the previous Lesson in the Lesson map instead of
+Student evidence, and the evidence delta is stated relative to that map. The
+Lesson is marked `unpiloted` until a Student has passed it. At delivery the
+Lecturer compares the Lesson's evidence delta with the Student's verified
+evidence and, if it would repeat a demonstrated criterion, returns it to the
+Dean for a skip or redesign decision.
