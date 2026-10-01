@@ -16,9 +16,13 @@ For every host session, after reading `AGENTS.md`, follow
 `university/protocols/host-prompt-assembly.md` as the Cursor startup contract:
 
 1. Follow `university/policies/runtime-command-whitelist.md` for the bounded
-   read-only bootstrap surface, then run
-   `university/skills/session-bootstrap/SKILL.md`.
-2. Resolve the authenticated Student ID through the registry and inspect only
+   read-only bootstrap surface, then resolve the session kind through Step 0 of
+   the host-prompt protocol (Student, University Worker, or University
+   Developer; ADR 0009). A Worker session continues through
+   `profession-routing.md` and `worker-activation.md`; a Developer session runs
+   `university/skills/session-bootstrap/SKILL.md`. Neither reads Student state.
+   The remaining steps apply to a Student session (Branch 1).
+2. Resolve the Student ID through the registry and inspect only
    the permitted state through
    `university/skills/inspect-student-state/SKILL.md`. Do not load the
    Manifest, Profession, Worker, workflow, or startup Skill before an

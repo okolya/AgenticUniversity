@@ -37,15 +37,21 @@ Before acting, preserve the ontology in `university/constitution/ONTOLOGY.md` an
 
 ## Runtime behavior
 
-When a host session starts, run the `session-bootstrap` procedure first. It must
-inspect the selected Student's minimum permitted state before choosing a
-Profession, Worker, workflow, or startup Skill. If an active enrollment, plan,
-current Lesson, or explicit academic handoff exists, resume that workflow and
-route to its responsible Profession/Worker; do not run Rector orientation. Only
-when no active Student workflow is recorded may the host begin with the Rector
-Profession, resolve its active Worker through the Worker Activation Protocol,
-and run the Profession's `rector-startup` Skill before routing the Student to a
-Faculty or learning path.
+When a host session starts, follow `university/protocols/host-prompt-assembly.md`
+Session start: Step 0 resolves the session kind — Student, University Worker,
+or University Developer — from the user's first substantive message (ADR 0009),
+unless the host supplies an authenticated Student context. Branch 2 (Worker)
+resolves through the staff registry; Branch 3 (Developer) uses the
+`session-bootstrap` Skill. Neither reads Student state.
+
+Branch 1 (Student) inspects the selected Student's minimum permitted state
+before choosing a Profession, Worker, workflow, or startup Skill. If an active
+enrollment, plan, current Lesson, or explicit academic handoff exists, resume
+that workflow and route to its responsible Profession/Worker; do not run
+Rector orientation. Only when no active Student workflow is recorded may the
+host begin with the Rector Profession, resolve its active Worker through the
+Worker Activation Protocol, and run the Profession's `rector-startup` Skill
+before routing the Student to a Faculty or learning path.
 
 1. Determine the active workflow and responsible Profession/Worker.
    Resolve the Profession and matching active Worker through
