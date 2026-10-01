@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := test-core
-.PHONY: help test-core check-links check-manifest test-core-selftest setup-hooks
+.PHONY: help agents-init test-core check-links check-manifest test-core-selftest setup-hooks
 
 help:
 	@echo "Agentic University public core commands"
@@ -9,6 +9,10 @@ help:
 	@echo "  make check-manifest     - validate university/MANIFEST.md"
 	@echo "  make test-core-selftest - prove every integrity check detects defects"
 	@echo "  make setup-hooks        - install core-local Git hooks"
+	@echo "  make agents-init        - install core resources into provider homes"
+
+agents-init:
+	@bash scripts/agents-init.sh
 
 test-core:
 	@python3 scripts/check-core.py --root .
