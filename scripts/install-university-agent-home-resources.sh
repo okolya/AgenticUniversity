@@ -14,6 +14,7 @@ CORE_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 POLICIES_DIR="$CORE_ROOT/university/policies"
 WORKFLOWS_DIR="$CORE_ROOT/university/workflows"
 SKILLS_DIR="$CORE_ROOT/university/skills"
+RUNTIME_ROOT="$CORE_ROOT/agent-runtime/adapters"
 NAMESPACE="university"
 RESOURCE_PREFIX="${NAMESPACE}-"
 
@@ -68,8 +69,24 @@ link_skills() {
   done
 }
 
+install_provider_adapters() {
+  case "$AGENT_NAME" in
+    "Claude Code")
+      link_files "$RUNTIME_ROOT/claude/agents" "$TARGET_DIR/agents" '*.md'
+      ;;
+    Codex)
+      link_files "$RUNTIME_ROOT/codex/agents" "$TARGET_DIR/agents" '*.toml'
+      ;;
+    Cursor)
+      link_files "$RUNTIME_ROOT/cursor/agents" "$TARGET_DIR/agents" '*.md'
+      link_files "$RUNTIME_ROOT/cursor/rules" "$TARGET_DIR/rules" '*.mdc'
+      ;;
+  esac
+}
+
 link_files "$POLICIES_DIR" "$TARGET_DIR/policies" '*.md'
 link_files "$WORKFLOWS_DIR" "$TARGET_DIR/workflows" '*.md'
 link_skills "$TARGET_DIR/skills"
+install_provider_adapters
 
 printf '✓ linked University resources to %s\n' "$TARGET_DIR"
