@@ -1,6 +1,6 @@
 ---
 name: session-bootstrap
-description: Bootstrap work in the Agentic University workspace by loading the smallest required context, routing to the owning repository boundary, and handing off to the responsible Profession before any edits or commands.
+description: Bootstrap work in the Agentic University core or a composed host by loading the smallest required context, routing to the owning repository boundary, and handing off to the responsible Profession before any edits or commands.
 ---
 # Session bootstrap
 
@@ -18,18 +18,23 @@ owns an academic decision, appoints a Worker, or reads private Student state.
 
 ### 1. Minimal startup and routing
 
-1. Confirm `pwd` is the workspace root and that `AGENTS.md`, `university/`,
-   and `students/` exist. Read root `AGENTS.md` once per session.
+1. Confirm `pwd` and resolve the core boundary. In standalone mode,
+   `AGENTS.md` and `university/` are in the current repository. In a composed
+   workspace, use `university-core/AGENTS.md` and
+   `university-core/university/`; read the host/workspace `AGENTS.md` once per
+   session when it exists. `students/` is optional and is required only for a
+   workflow that explicitly uses private Student state.
 2. Classify the task and pick the ownership boundary:
-   - root files and `scripts/` — orchestration, runtime installation, Git;
-   - `university/` — public academic knowledge, policies, workflows, Skills,
-     Professions, Workers;
-   - `students/` — private Student state (only the selected Student).
+   - host root files and `scripts/` — orchestration, runtime installation, Git;
+   - resolved core `university/` — public academic knowledge, policies,
+     workflows, Skills, Professions, Workers;
+   - optional `students/` — private Student state (only the selected Student).
 3. Run `git rev-parse --show-toplevel` inside the chosen boundary before any
    edit or Git command.
-4. Check runtime state read-only: `git status --short`, and whether
-   `.claude/agents/` and `.claude/skills/` are populated. If runtime links are
-   missing or stale, propose `make init`; do not run it silently.
+4. Check runtime state read-only: `git status --short`, and, when the host
+   provides them, whether `.claude/agents/` and `.claude/skills/` are
+   populated. If runtime links are missing or stale, propose the host's init
+   command; do not run it silently.
 5. Resolve the workflow and responsible Profession through
    `university/protocols/profession-routing.md`, then the Worker through
    `university/protocols/worker-activation.md`.
@@ -54,14 +59,15 @@ Validation: <make target or check to propose later>
 
 ### 3. Reading order (only when a deep dive is required)
 
-1. `university/constitution/ONTOLOGY.md`
-2. `university/constitution/RESPONSIBILITY-MATRIX.md`
-3. `university/WORKSPACE.md`
-4. `university/protocols/profession-routing.md`
-5. `university/protocols/worker-activation.md`
-6. The task's workflow and policy (`university/workflows/`, `university/policies/`)
-7. `university/policies/interaction-format.md` and
-   `university/policies/dialogue-language.md` before any Student-facing output
+1. `<core>/university/constitution/ONTOLOGY.md`
+2. `<core>/university/constitution/RESPONSIBILITY-MATRIX.md`
+3. `<core>/university/WORKSPACE.md`
+4. `<core>/university/protocols/profession-routing.md`
+5. `<core>/university/protocols/worker-activation.md`
+6. The task's workflow and policy (`<core>/university/workflows/`,
+   `<core>/university/policies/`)
+7. `<core>/university/policies/interaction-format.md` and
+   `<core>/university/policies/dialogue-language.md` before any Student-facing output
 
 ### 4. Output
 

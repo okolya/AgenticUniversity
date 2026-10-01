@@ -1,18 +1,20 @@
 # Agentic University
 
-This is the public Agentic University root repository and runtime workspace.
+This is the public Agentic University core repository. It is independently
+usable as the source of public academic knowledge and runtime adapters.
 
 - `university/` — public University: behavior, agents, reusable knowledge, courses and learning materials.
-- `students/` — private repository: only student registry and private learning-process state.
-- Root AI files are runtime-managed symlinks to the canonical `university/` content.
+- A host may provide `students/` as a separate private repository for Student
+  state; it is not a core dependency.
+- A composed workspace may expose root AI files as runtime-managed links to
+  this core.
 
-Start:
+Standalone core checks:
 
 ```bash
-make init
-make workspace-check
+make test-core
+make setup-hooks
 ```
 
-The root repository owns orchestration and public University content under
-`university/`. Students owns only private educational state and is ignored by
-the root repository.
+Workspace orchestration, host runtime installation, and private Student state
+belong to the host repositories that compose this core.

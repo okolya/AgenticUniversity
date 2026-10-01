@@ -7,23 +7,27 @@ It describes the commands a runtime may use to initialize a session without
 asking the Student to approve each individual file read.
 
 The list is deliberately narrow and applies only after the runtime has started
-in the workspace root and confirmed the repository boundary.
+in the host's active repository and confirmed the core boundary.
 
-## Workspace bootstrap
+## Core bootstrap
 
 - `pwd`
 - `test -f AGENTS.md`
 - `test -d university`
-- `test -d students`
 - `git rev-parse --show-toplevel`
+
+For a composed workspace, the host may additionally use
+`test -d university-core/university` and `test -d students`; these are host
+capabilities, not standalone core requirements.
 
 ## University read-only context
 
-At the workspace root, the generated Codex Skill path is
+In standalone mode, the generated Codex Skill path is
 `.codex/skills/university-rector-startup`; the canonical source is
-`university/skills/rector-startup`. Never use `university/.codex/...` as a
-workspace-root path.
-After routing to the `university/` repository, the runtime may read the
+`university/skills/rector-startup`. A composed workspace may expose the same
+generated path at its host root while sourcing it from
+`university-core/university/skills/rector-startup`.
+After routing to the core repository, the runtime may read the
 canonical contract, constitution, activation protocol, active Profession and
 Worker records, startup Skill, and public Faculty/Staff files required by it.
 
