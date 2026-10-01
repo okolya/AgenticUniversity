@@ -82,7 +82,11 @@
           "properties": { "start": { "type": "string" }, "end": { "type": "string" } }
         },
         "progress": { "type": "string" },
-        "current_lesson_ref": { "type": "string" },
+        "current_lesson_ref": {
+          "type": "string",
+          "description": "Stable course/module/theme/lesson reference, never a host filesystem path.",
+          "pattern": "^[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9-]*$"
+        },
         "checkpoint": { "type": "string" },
         "stop_condition": { "type": "string" },
         "next_actions": { "$ref": "#/$defs/strings" },

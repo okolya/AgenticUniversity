@@ -54,7 +54,11 @@ Every question returned by a Skill or Worker must include:
 - `fallback`: whether and how an `Other / not listed` response is accepted.
 
 Workers may add context, but may not remove this response structure from a
-Student-facing question.
+Student-facing question. Hosts should validate the structured result against
+`schemas/interaction-response.schema.json`. A learning delivery or evidence
+request uses `structured_evidence`, an empty `options` list, and carries its
+outcome, task, evidence burden, AI-use mode, and next handoff in the same
+response object.
 
 ## Feedback and reporting
 

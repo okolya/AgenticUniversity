@@ -515,6 +515,67 @@ def check_host_profile_contract(core):
     return problems
 
 
+@check("startup-state-machine", "contract")
+def check_startup_state_machine(core):
+    problems = []
+    protocol = core.read("protocols", "host-prompt-assembly.md")
+    skill = core.read("skills", "session-bootstrap", "SKILL.md")
+    required_states = (
+        "missing",
+        "unavailable",
+        "available/no-active-workflow",
+        "available/active-workflow",
+    )
+    for state in required_states:
+        if state not in protocol or state not in skill:
+            problems.append(f"startup contract does not declare state '{state}' in both sources")
+    for term in ("stable", "authenticated", "Student ID"):
+        if term not in protocol:
+            problems.append(f"host-prompt-assembly.md: missing startup gate term '{term}'")
+    for term in ("students/registry/REGISTRY.md", "Only after an `available` result"):
+        if term not in protocol:
+            problems.append(f"host-prompt-assembly.md: missing startup gate '{term}'")
+    return problems
+
+
+@check("interaction-response-contract", "contract")
+def check_interaction_response_contract(core):
+    import json
+
+    problems = []
+    schema_path = core.path("schemas", "interaction-response.schema.json")
+    example_path = core.path("schemas", "interaction-response.example.json")
+    if not os.path.isfile(schema_path) or not os.path.isfile(example_path):
+        return ["interaction response schema and example must both exist"]
+    schema = json.loads(core.read("schemas", "interaction-response.schema.json"))
+    example = json.loads(core.read("schemas", "interaction-response.example.json"))
+    required = set(schema.get("required", []))
+    missing = sorted(required - set(example))
+    if missing:
+        problems.append(f"interaction response example misses required fields: {missing}")
+    policy = core.read("policies", "interaction-format.md")
+    if "schemas/interaction-response.schema.json" not in policy:
+        problems.append("interaction-format.md does not reference interaction response schema")
+    if example.get("response_mode") != "structured_evidence" or example.get("options") != []:
+        problems.append("learning delivery example must use structured_evidence with empty options")
+    return problems
+
+
+@check("public-reference-contract", "contract")
+def check_public_reference_contract(core):
+    import json
+
+    problems = []
+    contract = core.read("protocols", "student-state-contract.md")
+    if "<course>/<module>/<theme>/<lesson>" not in contract:
+        problems.append("student-state-contract.md lacks canonical public reference shape")
+    schema = json.loads(core.read("schemas", "student-state.schema.json"))
+    ref = schema["$defs"]["plan"]["properties"]["current_lesson_ref"]
+    if "pattern" not in ref or ref["pattern"].count("/") != 3:
+        problems.append("student-state schema lacks four-part current_lesson_ref pattern")
+    return problems
+
+
 @check("skills-exist", "structure")
 def check_skills_exist(core):
     problems = []

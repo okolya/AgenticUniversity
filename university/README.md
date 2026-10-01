@@ -12,7 +12,8 @@ This directory is the public academic core.
 - `courses/` — public Course architecture. Each Course separates `pre-course/`
   entry bridges and diagnostics from `modules/`; detailed Themes and Lessons
   are created under an opened Module just in time.
-- `schemas/` — machine-readable schemas (Student state) with synthetic examples.
+- `schemas/` — machine-readable Student-state and interaction-response schemas
+  with synthetic examples.
 - `decisions/` — architecture decision records (ADRs).
 - `MANIFEST.md` — generated single entry point listing what exists, for CLI and
   other hosts (`make generate-manifest`, `make check-manifest`).

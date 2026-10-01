@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "interaction-response.schema.json",
+  "title": "Student interaction response",
+  "description": "Structured navigation, learning delivery, or evidence handoff returned to a Student.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["kind", "question", "response_mode", "options", "selection_rule", "fallback"],
+  "properties": {
+    "kind": {
+      "enum": ["navigation_question", "learning_delivery", "evidence_request"]
+    },
+    "question": { "type": "string" },
+    "response_mode": {
+      "enum": ["single_choice", "multiple_choice", "ordered_choice", "structured_evidence"]
+    },
+    "options": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "selection_rule": { "type": "string" },
+    "fallback": { "type": "string" },
+    "outcome": { "type": "string" },
+    "prerequisites": { "type": "array", "items": { "type": "string" } },
+    "task": { "type": "string" },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "ai_use_mode": { "type": "string" },
+    "next_handoff": { "type": "string" }
+  }
+}

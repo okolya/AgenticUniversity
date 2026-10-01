@@ -130,6 +130,7 @@ courses:
   - ai-engineering
 
 schemas:
+  - interaction-response
   - student-state
 ---
 

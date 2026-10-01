@@ -5,20 +5,56 @@ How a host builds the context for one Profession call. It restates
 CLI adapters; it adds no authority and changes no academic rule. CLI hosts
 follow the adapters, which implement the same sequence.
 
-All paths are core-relative and discovered through `MANIFEST.md`.
+Public University routing paths are core-relative and discovered through
+`MANIFEST.md`; the host resolves the authenticated Student through the
+core-relative private registry before reading any public routing index.
 
-The always-on policies (layer 1) are loaded up front, earlier than the
-"applicable policies" step of `worker-activation.md`; this is intentional and
-stricter, not a different rule.
+The always-on policies (layer 1) are loaded before the selected Profession
+call, earlier than the "applicable policies" step of
+`worker-activation.md`; they are not a reason to preload Profession or Worker
+context during Student identification.
 
 ## Session start
 
-1. Read `MANIFEST.md`. Use `startup_profession`, `startup_skill`, and
-   `startup_workflow` when no academic workflow is assigned.
-2. Establish the session's dialogue language per `policies/dialogue-language.md`;
-   it is per-session host state, never stored in the core.
-3. Identify the Student (host authentication) and open only that Student's
-   state through the contract (`protocols/student-state-contract.md`).
+The host follows these states in order:
+
+```text
+missing/unavailable
+  → stop and request initialization or access
+available/no-active-workflow
+  → resolve Manifest startup route and activate Rector
+available/active-workflow
+  → resume the recorded workflow and resolve its Profession/Worker
+```
+
+1. Resolve the authenticated Student identity from the host authentication
+   context. The host must provide a stable Student ID; do not infer it from
+   the current message, a remembered name, or a filesystem search.
+2. In a CLI or composed workspace, resolve that ID against exactly one matching
+   entry in `students/registry/REGISTRY.md`. Then open only the exact
+   `students/<id>/STUDENT.md` path recorded there through the contract
+   (`protocols/student-state-contract.md`) using `inspect-student-state`.
+   Determine whether an active enrollment, plan, current Lesson, or explicit
+   academic handoff exists.
+3. Return one explicit inspection result:
+   - `missing` — the registry or exact Student state is absent;
+   - `unavailable` — the host cannot access the selected state;
+   - `available/no-active-workflow`;
+   - `available/active-workflow`.
+   Missing or unavailable state stops startup; it is never treated as an empty
+   state. The registry is the only Student discovery surface: never guess an
+   ID, glob `students/**`, or search for an alternative Student store.
+4. Establish the session's dialogue language per
+   `policies/dialogue-language.md`; it is per-session host state and is never
+   stored in the core.
+5. Only after an `available` result, read `MANIFEST.md` as the bounded routing
+   index. For an active workflow, resume it and resolve its Profession and
+   Worker; do not use the manifest startup fields or invoke `rector-startup`.
+   With no active workflow, use the manifest `startup_profession`,
+   `startup_skill`, and `startup_workflow`.
+6. Keep startup discovery bounded: resolve only the selected Student, matching
+   Worker, active workflow, and addressed scope. Do not recursively enumerate
+   repository, VCS, hidden runtime, or unrelated Student files.
 
 ## One Profession call
 

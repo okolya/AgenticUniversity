@@ -9,11 +9,17 @@ follow the fallback named in the item.
 ## Core access
 
 - [ ] Reads the core through `MANIFEST.md` and pins it by Git tag or commit.
+- [ ] Uses `MANIFEST.md` as a bounded discovery index and does not recursively
+      scan unrelated repository, VCS, hidden runtime, or Student files.
 - [ ] Treats the core as read-only input by default; the only `.4` mutation
       exception is an authorized, bounded correction to learning MATERIALS
       through the correction-governance contract. Policies, Skills, workflows,
       framework, configuration, and service files remain read-only.
 - [ ] Builds calls per `protocols/host-prompt-assembly.md`.
+- [ ] Implements the startup states `missing`, `unavailable`,
+      `available/no-active-workflow`, and `available/active-workflow`.
+- [ ] Loads `MANIFEST.md` and Profession context only after an `available`
+      Student inspection result.
 
 ## Student state
 
@@ -21,6 +27,10 @@ follow the fallback named in the item.
       shape validates against `schemas/student-state.schema.json`.
 - [ ] Authenticates the Student and isolates state: one Student's session can
       never read or write another Student's state. This is a host duty.
+- [ ] Resolves the authenticated Student ID through the registry and exposes
+      only selector-based reads from `inspect-student-state`.
+- [ ] Creates Student homework/artifact directories only when the selected
+      workflow needs them and the required directory is absent.
 - [ ] Applies the write authority of `policies/student-state-authority.md`
       (by acting Profession and workflow) and reads every write back.
 - [ ] Keeps Evidence append-only and never promotes private state into public
@@ -40,8 +50,14 @@ follow the fallback named in the item.
       administrative or development reachability from a learning chain.
 - [ ] Resolves Workers from the manifest; no prompt, agent, or tool is named
       after a Worker.
+- [ ] Inspects the authenticated Student state before startup routing and
+      resumes any active enrollment, plan, current Lesson, or explicit
+      academic handoff.
 - [ ] Runs the manifest `startup_skill` (`rector-startup`) under the
-      `startup_workflow` for a session without an assigned workflow.
+      `startup_workflow` only after that inspection confirms that no active
+      workflow exists.
+- [ ] Validates Student-facing interaction objects against
+      `schemas/interaction-response.schema.json`.
 
 ## Declared capabilities
 

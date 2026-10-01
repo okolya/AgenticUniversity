@@ -53,8 +53,18 @@ private state and is never published or shown to another Student. A host
 without artifact storage cannot accept work that needs inspection; it follows
 `policies/practical-work.md` (non-executing task or deferral).
 
-A **public entity reference** is a stable identifier or core-relative path of a
-public University entity (Faculty, Course, Module, Theme, Lesson, criterion).
+A **public entity reference** is a stable, slash-separated identifier of a
+public University entity:
+
+```text
+<course>/<module>/<theme>/<lesson>
+```
+
+For example:
+`ai-engineering/module-01-python-ai-engineering/theme-01-python-components/lesson-01-separate-function-responsibilities`.
+References must not omit the owning Course or Module and must not depend on a
+host filesystem prefix. A host resolves the identifier against its canonical
+`university/courses/` tree before presenting or using it.
 
 ## Operations
 

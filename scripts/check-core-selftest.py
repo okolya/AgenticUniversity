@@ -101,6 +101,24 @@ def _(root):
     )
 
 
+@defect("startup-state-machine")
+def _(root):
+    edit(root, "protocols/host-prompt-assembly.md",
+         lambda t: t.replace("missing", "absent"))
+
+
+@defect("interaction-response-contract")
+def _(root):
+    edit(root, "policies/interaction-format.md",
+         lambda t: t.replace("`schemas/interaction-response.schema.json`", "`schemas/response.schema.json`", 1))
+
+
+@defect("public-reference-contract")
+def _(root):
+    edit(root, "protocols/student-state-contract.md",
+         lambda t: t.replace("<course>/<module>/<theme>/<lesson>", "<course>/<lesson>", 1))
+
+
 @defect("worker-professions")
 def _(root):
     edit(root, "workers/adam/WORKER.md", lambda t: t.replace("- profession: Lecturer", "- profession: Wizard", 1))

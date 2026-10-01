@@ -34,24 +34,47 @@ owns an academic decision, appoints a Worker, or reads private Student state.
      Student; the directory may be absent for public-only work).
 3. Run `git rev-parse --show-toplevel` inside the chosen boundary before any
    edit or Git command.
-4. Check runtime state read-only: `git status --short`, and, when the host
-   provides them, whether `.claude/agents/` and `.claude/skills/` are
-   populated. If runtime links are missing or stale, propose the host's init
-   command; do not run it silently.
-5. Identify the Student through the host authentication context and inspect the
-   minimum permitted Student state through the `inspect-student-state` Skill
-   and the Student-state contract before deciding whether a workflow exists.
+4. Check only the chosen boundary's runtime state read-only with
+   `git status --short`. Inspect provider runtime links only when the current
+   task needs a provider adapter or the host reports an initialization
+   problem; do not scan `.claude/`, `.cursor/`, or other runtime trees merely
+   to establish session context. If required runtime links are missing or
+   stale, propose the host's init command; do not run it silently.
+5. Use the canonical core `university/skills/inspect-student-state/SKILL.md`
+   contract; provider-home Skill copies may be used only as installed runtime
+   wiring and never as a replacement for the core source. Require a stable
+   authenticated Student ID from the host. Resolve it against the registry,
+   not from the current message, a remembered name, or filesystem discovery.
+   Inspect the minimum permitted Student state through the
+   `inspect-student-state` Skill and the Student-state contract before deciding
+   whether a workflow exists. The inspection must return one of:
+   `missing`, `unavailable`, `available/no-active-workflow`, or
+   `available/active-workflow`.
+   In a CLI or composed workspace, resolve the authenticated Student through
+   `students/registry/REGISTRY.md` first, then read only the exact
+   `students/<id>/STUDENT.md` path recorded there. The registry is the only
+   Student discovery surface: never guess an ID, glob `students/**`, or search
+   for alternative Student stores.
    The absence of a workflow name in the current message does not mean that
-   the Student has no active workflow. In a CLI host, first run the
-   idempotent `scripts/ensure-student-homeworks.sh <student-id>` helper so the
-   Student's private artifact directory exists before the session continues.
-6. If the Student state contains an active enrollment, plan, current Lesson,
+   the Student has no active workflow. If the authenticated Student state is
+   missing or unavailable, stop startup routing and report that the host must
+   initialize or provision the private Student state first; missing state is
+   not evidence that no workflow exists. In a CLI host, run the idempotent
+   `scripts/ensure-student-homeworks.sh <student-id>` helper only when the
+   selected workflow needs a homework/artifact directory and that directory
+   is absent; do not create Student workspace directories during public-only
+   startup.
+6. If the inspection result is `missing` or `unavailable`, stop and report the
+   initialization or access blocker. Never interpret either state as an empty
+   Student state. If the available Student state contains an active enrollment, plan, current
+   Lesson,
    or another explicit academic handoff, treat that as the active workflow.
    Resume it and resolve its responsible Profession through
    `university/protocols/profession-routing.md`, then the Worker through
    `university/protocols/worker-activation.md`. Do not start Rector
    orientation or offer Faculty selection in this case.
-7. If, and only if, no active Student workflow is recorded, resolve the
+7. If, and only if, Student state is available and no active Student workflow
+   is recorded, resolve the
    startup Profession and Worker and activate Rector for the
    `university-start` workflow, then run `rector-startup`.
 8. Resolve every repository-relative path from the verified boundary before
@@ -60,7 +83,10 @@ owns an academic decision, appoints a Worker, or reads private Student state.
    only after checking the canonical core-relative path.
 9. Load one workflow or policy only if the task needs it, plus the exact files
    the task touches and their nearest governing README.
-10. Stop loading context as soon as the task is actionable. Do not scan trees.
+10. Stop loading context as soon as the task is actionable. Use exact known
+    paths or narrowly scoped patterns; never perform a recursive tree scan,
+    enumerate hidden VCS/runtime files, or load an unused adapter, Skill,
+    workflow, or manifest section.
 
 ### 2. Onboarding query template
 

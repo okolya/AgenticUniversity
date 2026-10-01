@@ -6,4 +6,11 @@ Use project custom agents from `.codex/agents/university-*.toml` when delegating
 
 Use discovered `university-*` Agent Skills as tools/capabilities of the active Worker. Skills do not own academic decisions. The standard `make init` flow also installs the project-scoped Codex overlay from `agent-runtime/adapters/codex/config.toml`.
 
-For every session, follow `university/policies/dialogue-language.md` to select the dialogue language. For a new session, follow `university/policies/runtime-command-whitelist.md` after routing into the `university/` repository. Use the bounded bootstrap context once, then run `university-rector-startup`; do not probe both the workspace aliases and repository paths separately.
+For every session, follow `university/policies/dialogue-language.md` to select
+the dialogue language. For a new host session, follow
+`university/policies/runtime-command-whitelist.md` after routing into the
+`university/` repository, then run `session-bootstrap` and inspect the selected
+Student state. Resume any active enrollment, plan, current Lesson, or explicit
+academic handoff through its responsible Profession/Worker. Run
+`university-rector-startup` only when no active Student workflow exists; do not
+probe both the workspace aliases and repository paths separately.

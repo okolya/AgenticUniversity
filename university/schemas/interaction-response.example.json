@@ -1,0 +1,14 @@
+{
+  "kind": "learning_delivery",
+  "question": "Поверни мінімальне свідчення після виконання завдання.",
+  "response_mode": "structured_evidence",
+  "options": [],
+  "selection_rule": "Надай лише перелічені артефакти та результати.",
+  "fallback": "Повідом про блокер коротко, якщо завдання неможливо виконати.",
+  "outcome": "Виконати один bounded Lesson outcome.",
+  "prerequisites": ["Відомі необхідні команди та терміни."],
+  "task": "Виконай описану практичну дію.",
+  "evidence": ["Шлях до артефакту", "Команда запуску", "Стислий результат"],
+  "ai_use_mode": "AI_ASSISTED",
+  "next_handoff": "Приймаючий Worker перевірить evidence."
+}

@@ -14,6 +14,13 @@ architecture.
 
 ## Preconditions
 
+- The host has completed `university/skills/session-bootstrap`.
+- The inspected Student state is available and contains no active enrollment,
+  plan, current Lesson, or explicit academic handoff. Missing or unavailable
+  Student state is not equivalent to an empty state; the host must initialize
+  or provision the private Student state before invoking this Skill.
+  If any active workflow exists, this Skill must not be invoked; the host must
+  resume the recorded workflow instead.
 - Profession `rector` is active.
 - The concrete Worker context, if required by the workflow, has been activated
   through `university/protocols/worker-activation.md`.
@@ -52,6 +59,8 @@ Return a startup brief containing:
 ## Boundaries
 
 - Do not invent Faculties, Courses, Workers, curricula, evidence, or Student state.
+- Do not use this Skill as the default response to every new chat connection;
+  the session-bootstrap result determines whether orientation is applicable.
 - Do not create a Faculty or Course as part of orientation.
 - Do not select a placement, create an enrollment, or claim a learning verdict.
 - Do not invoke another Skill merely to display this result; the active Rector
