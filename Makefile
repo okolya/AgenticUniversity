@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := test-core
-.PHONY: test-core check-links check-manifest test-core-selftest
+.PHONY: test-core check-links check-manifest test-core-selftest setup-hooks
 
 test-core:
 	@python3 scripts/check-core.py --root .
@@ -14,3 +14,6 @@ check-manifest:
 
 test-core-selftest:
 	@python3 scripts/check-core-selftest.py
+
+setup-hooks:
+	@bash scripts/setup-hooks.sh
