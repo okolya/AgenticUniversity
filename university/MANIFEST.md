@@ -21,13 +21,18 @@ professions:
 workers:
   - {name: adam, profession: lecturer, scope: engineering, status: active, file: workers/adam/WORKER.md}
   - {name: bob, profession: dean, scope: language, status: active, file: workers/bob/WORKER.md}
+  - {name: emma, profession: learning-analyst, scope: language, status: active, file: workers/emma/WORKER.md}
+  - {name: ferdinand, profession: lecturer, scope: language, status: active, file: workers/ferdinand/WORKER.md}
   - {name: livia, profession: instructional-assistant, scope: university, status: active, file: workers/livia/WORKER.md}
   - {name: luke, profession: dean, scope: engineering, status: active, file: workers/luke/WORKER.md}
   - {name: maria, profession: translator, scope: language, status: active, file: workers/maria/WORKER.md}
+  - {name: oleg, profession: examiner, scope: language, status: active, file: workers/oleg/WORKER.md}
   - {name: ollie, profession: examiner, scope: engineering, status: active, file: workers/ollie/WORKER.md}
   - {name: petro, profession: rector, scope: university, status: active, file: workers/petro/WORKER.md}
   - {name: sara, profession: laboratory-specialist, scope: engineering, status: active, file: workers/sara/WORKER.md}
+  - {name: simeon, profession: laboratory-specialist, scope: language, status: active, file: workers/simeon/WORKER.md}
   - {name: tim, profession: learning-analyst, scope: engineering, status: active, file: workers/tim/WORKER.md}
+  - {name: viktor, profession: teacher, scope: language, status: active, file: workers/viktor/WORKER.md}
   - {name: vlad, profession: teacher, scope: engineering, status: active, file: workers/vlad/WORKER.md}
 
 skills:
@@ -128,6 +133,7 @@ faculties:
 
 courses:
   - ai-engineering
+  - german-between-b1-and-b2
 
 schemas:
   - interaction-response
