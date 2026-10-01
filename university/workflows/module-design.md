@@ -53,20 +53,22 @@ Dean-to-Lecturer and checkpoint handoffs in this workflow use
    not ready to start.
    The approved frame must also map each Theme to the Module Exit Contract and
    state which Module criteria the Theme advances and what evidence it returns.
-7. Dean defines only the Theme framework currently needed to move this Student
-   toward the Exit Contract. Later Themes may remain at contract level, but
-   each must receive the same finite Lesson map before it opens.
+7. For this Student, Dean defines only the Theme framework currently needed to
+   move the Student toward the Exit Contract. Later Student-specific coverage
+   may remain at contract level, while any Theme frame prepared ahead must still
+   receive the same finite Lesson map and approval before authoring.
 8. Dean assigns the first Theme to an appointed Lecturer and hands over the
    approved Module contract, Student-relevant evidence, bounded teaching
    sequence, and coverage constraints.
    The handoff includes ordered Theme dependencies and the cumulative evidence
    path toward the Module Exit Contract; a list of topics is not sufficient.
-9. Lecturer prepares the Lessons required by the handed-over sequence just in
-   time. Lecturer may adapt explanation, examples, and depth inside the
-   sequence, but may not add Lesson slots, extend the sequence, or redefine its
-   stop condition. Any such need returns to Dean. The Lecturer's pre-entry work
-   ends with an evidence handoff; the Lecturer does not independently declare
-   Module Entry.
+9. Lecturer prepares or selects the Lessons required by the handed-over
+   sequence, using approved ahead material where suitable or preparing material
+   just in time where needed. Lecturer may adapt explanation, examples, and
+   depth inside the sequence, but may not add Lesson slots, extend the
+   sequence, or redefine its stop condition. Any such need returns to Dean. The
+   Lecturer's pre-entry work ends with an evidence handoff; the Lecturer does
+   not independently declare Module Entry.
 
 The Module may maintain an aggregate readiness index linking to each opened
 Theme's local preparation and material-review records. The index summarizes

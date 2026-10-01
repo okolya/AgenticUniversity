@@ -29,7 +29,7 @@ Worker additions are additive. They may narrow scope or add capabilities, but ma
 
 ## Curriculum ownership
 
-A Course is a Faculty-owned public academic structure. The appointed Dean owns and approves its stable architecture. Subject specialists may contribute proposals and evidence, but contribution does not transfer ownership. Detailed Module content is adaptive and created/refined just in time. See `university/policies/curriculum-authority.md`.
+A Course is a Faculty-owned public academic structure. The appointed Dean owns and approves its stable architecture. Subject specialists may contribute proposals and evidence, but contribution does not transfer ownership. Detailed Module content is prepared only inside Dean-approved Theme frames, either ahead of Students or just in time, and remains adaptive at delivery. See `university/policies/curriculum-authority.md`.
 
 The academic content hierarchy is `Course → Module → Theme → Lesson`.
 The Dean owns Course and Module frames and approves the finite Theme frame;
