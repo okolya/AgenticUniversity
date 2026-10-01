@@ -23,3 +23,4 @@ state the status, context, decision, consequences, and scope boundary.
 | [0006](0006-manifest-classes-v2.md) | Manifest classes and version 2 | Accepted |
 | [0007](0007-controlled-correction-authority.md) | Controlled correction authority | Accepted |
 | [0008](0008-issue-backed-proposals.md) | Issue-backed correction proposals | Accepted |
+| [0009](0009-session-role-inference.md) | Session role inference from the first message | Accepted |

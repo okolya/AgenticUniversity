@@ -1,19 +1,34 @@
 ---
 name: session-bootstrap
-description: Bootstrap work in the Agentic University core or a composed host by loading the smallest required context, routing to the owning repository boundary, and handing off to the responsible Profession before any edits or commands.
+description: Bootstrap a University Developer session — work that changes the University's own protocols, Skills, workflows, plans, or ADRs — by loading the smallest required context and routing to the owning repository boundary before any edits or commands.
 class: development
 ---
 # Session bootstrap
 
-Establish context at the very start of a session or task without spending the
-context budget. This Skill is an orchestration aid: it routes work, it never
-owns an academic decision, appoints a Worker, or reads private Student state.
+Establish context at the very start of a **University Developer** session
+(Branch 3 of `university/protocols/host-prompt-assembly.md` Session start,
+ADR 0009) without spending the context budget. This Skill is an
+orchestration aid: it routes University-maintenance work, it never owns an
+academic decision, appoints a Worker, or reads private Student state.
+
+It is not the entry point for a Student session (use
+`university/skills/inspect-student-state/SKILL.md` via Branch 1) or a
+University Worker session (use `protocols/profession-routing.md` +
+`protocols/worker-activation.md` via Branch 2). `host-prompt-assembly.md`
+Step 0 decides which branch a session belongs to before this Skill runs.
+
+Branch 1's state machine (`missing`, `unavailable`,
+`available/no-active-workflow`, `available/active-workflow`) is canonical in
+`host-prompt-assembly.md` and is not re-decided here: it governs whether a
+Student's stable, authenticated Student ID resolves to usable state before
+any Developer-session delegation into Branch 1 reads that state.
 
 ## Use when
 
-- A session begins and the request does not name an active academic workflow.
-- The target repository, Profession, or Worker is unclear.
-- The user says "bootstrap", "start", or "init" for the project.
+- The resolved session kind is University Developer (changing the
+  University's own protocols, Skills, workflows, plans, or ADRs), and the
+  target repository or task boundary is unclear.
+- The user says "bootstrap", "start", or "init" for University development.
 
 ## Procedure
 
@@ -40,53 +55,25 @@ owns an academic decision, appoints a Worker, or reads private Student state.
    problem; do not scan `.claude/`, `.cursor/`, or other runtime trees merely
    to establish session context. If required runtime links are missing or
    stale, propose the host's init command; do not run it silently.
-5. Use the canonical core `university/skills/inspect-student-state/SKILL.md`
-   contract; provider-home Skill copies may be used only as installed runtime
-   wiring and never as a replacement for the core source. Require a stable
-   authenticated Student ID from the host. Resolve it against the registry,
-   not from the current message, a remembered name, or filesystem discovery.
-   Inspect the minimum permitted Student state through the
-   `inspect-student-state` Skill and the Student-state contract before deciding
-   whether a workflow exists. The inspection must return one of:
-   `missing`, `unavailable`, `available/no-active-workflow`, or
-   `available/active-workflow`.
-   In a CLI or composed workspace, resolve the authenticated Student through
-   `students/registry/REGISTRY.md` first, then read only the exact
-   `students/<id>/STUDENT.md` path recorded there. The registry is the only
-   Student discovery surface: never guess an ID, glob `students/**`, or search
-   for alternative Student stores.
-   The absence of a workflow name in the current message does not mean that
-   the Student has no active workflow. If the authenticated Student state is
-   missing or unavailable, stop startup routing and report that the host must
-   initialize or provision the private Student state first; missing state is
-   not evidence that no workflow exists. In a CLI host, run the idempotent
-   `scripts/ensure-student-homeworks.sh <student-id>` helper only when the
-   selected workflow needs a homework/artifact directory and that directory
-   is absent; do not create Student workspace directories during public-only
-   startup.
-6. If the inspection result is `missing` or `unavailable`, stop and report the
-   initialization or access blocker. Never interpret either state as an empty
-   Student state. If the available Student state contains an active enrollment, plan, current
-   Lesson,
-   or another explicit academic handoff, treat that as the active workflow.
-   Resume it and resolve its responsible Profession through
-   `university/protocols/profession-routing.md`, then the Worker through
-   `university/protocols/worker-activation.md`. Do not start Rector
-   orientation or offer Faculty selection in this case.
-7. If, and only if, Student state is available and no active Student workflow
-   is recorded, resolve the
-   startup Profession and Worker and activate Rector for the
-   `university-start` workflow, then run `rector-startup`.
-8. Resolve every repository-relative path from the verified boundary before
+5. If the task needs a Student's current state for context (for example,
+   reviewing why a Lesson evidence check failed), do not duplicate that
+   lookup here — delegate to Branch 1 of `host-prompt-assembly.md` /
+   `inspect-student-state`, and only for the one Student the task names.
+   This Skill does not itself resolve or inspect Student identity.
+6. If the task needs an academic-staff decision (Dean/Lecturer/etc. acting in
+   a Profession) rather than a direct edit, delegate to Branch 2 of
+   `host-prompt-assembly.md` (`protocols/profession-routing.md` +
+   `protocols/worker-activation.md`) instead of acting as that Worker here.
+7. Resolve every repository-relative path from the verified boundary before
    reading it. In a composed workspace, do not prepend the host root to a
    path that is already relative to `university-core/`; report a missing file
    only after checking the canonical core-relative path.
-9. Load one workflow or policy only if the task needs it, plus the exact files
+8. Load one workflow or policy only if the task needs it, plus the exact files
    the task touches and their nearest governing README.
-10. Stop loading context as soon as the task is actionable. Use exact known
-    paths or narrowly scoped patterns; never perform a recursive tree scan,
-    enumerate hidden VCS/runtime files, or load an unused adapter, Skill,
-    workflow, or manifest section.
+9. Stop loading context as soon as the task is actionable. Use exact known
+   paths or narrowly scoped patterns; never perform a recursive tree scan,
+   enumerate hidden VCS/runtime files, or load an unused adapter, Skill,
+   workflow, or manifest section.
 
 ### 2. Onboarding query template
 
