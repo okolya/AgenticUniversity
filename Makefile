@@ -1,5 +1,14 @@
 .DEFAULT_GOAL := test-core
-.PHONY: test-core check-links check-manifest test-core-selftest setup-hooks
+.PHONY: help test-core check-links check-manifest test-core-selftest setup-hooks
+
+help:
+	@echo "Agentic University public core commands"
+	@echo "  make help               - show standalone core commands"
+	@echo "  make test-core          - run integrity, link, and manifest checks"
+	@echo "  make check-links        - validate Markdown links"
+	@echo "  make check-manifest     - validate university/MANIFEST.md"
+	@echo "  make test-core-selftest - prove every integrity check detects defects"
+	@echo "  make setup-hooks        - install core-local Git hooks"
 
 test-core:
 	@python3 scripts/check-core.py --root .
