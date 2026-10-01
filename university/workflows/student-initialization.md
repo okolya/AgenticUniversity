@@ -10,6 +10,9 @@ Owner: Rector.
    `protocols/student-state-contract.md`). In the CLI host a human creates the
    private Student repository from the public Student template/instructions; in
    another host the Student's own sign-up request creates the Student record.
+   The CLI host also ensures `students/<student-id>/homeworks/` exists and
+   contains only private Student artifacts; its contents are ignored by the
+   private Students repository.
 2. Rector verifies only the minimum Student state required for interaction.
 3. Rector helps establish high-level learning goals through a focused choice
    question using the interaction format policy, and initializes the minimum

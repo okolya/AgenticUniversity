@@ -38,14 +38,29 @@ owns an academic decision, appoints a Worker, or reads private Student state.
    provides them, whether `.claude/agents/` and `.claude/skills/` are
    populated. If runtime links are missing or stale, propose the host's init
    command; do not run it silently.
-5. Resolve the workflow and responsible Profession through
+5. Identify the Student through the host authentication context and inspect the
+   minimum permitted Student state through the `inspect-student-state` Skill
+   and the Student-state contract before deciding whether a workflow exists.
+   The absence of a workflow name in the current message does not mean that
+   the Student has no active workflow. In a CLI host, first run the
+   idempotent `scripts/ensure-student-homeworks.sh <student-id>` helper so the
+   Student's private artifact directory exists before the session continues.
+6. If the Student state contains an active enrollment, plan, current Lesson,
+   or another explicit academic handoff, treat that as the active workflow.
+   Resume it and resolve its responsible Profession through
    `university/protocols/profession-routing.md`, then the Worker through
-   `university/protocols/worker-activation.md`.
-6. No workflow assigned and the task is a Student session: activate Rector and
-   run `rector-startup`.
-7. Load one workflow or policy only if the task needs it, plus the exact files
+   `university/protocols/worker-activation.md`. Do not start Rector
+   orientation or offer Faculty selection in this case.
+7. If, and only if, no active Student workflow is recorded, resolve the
+   startup Profession and Worker and activate Rector for the
+   `university-start` workflow, then run `rector-startup`.
+8. Resolve every repository-relative path from the verified boundary before
+   reading it. In a composed workspace, do not prepend the host root to a
+   path that is already relative to `university-core/`; report a missing file
+   only after checking the canonical core-relative path.
+9. Load one workflow or policy only if the task needs it, plus the exact files
    the task touches and their nearest governing README.
-8. Stop loading context as soon as the task is actionable. Do not scan trees.
+10. Stop loading context as soon as the task is actionable. Do not scan trees.
 
 ### 2. Onboarding query template
 

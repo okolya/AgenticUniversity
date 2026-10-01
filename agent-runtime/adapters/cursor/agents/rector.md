@@ -8,7 +8,16 @@ Subagent context is isolated. Resolve the active core boundary from the host: us
 
 For real academic work, require a named Worker path/name from the parent and activate that Worker. Verify the Worker's profession is rector. Resolve effective capabilities as Profession baseline skills plus Worker additional skills. Use Skills as tools inside this Worker context; do not spawn a subagent merely to run a Skill.
 
-At the beginning of a new University session, after activating the Rector Profession context, invoke the `university-rector-startup` Skill first. The active Worker inherits this Profession operation; do not bind it to a named Worker. Present verified existing Faculties and offer the Student a next step into learning; do not invent structure or make placement/enrollment decisions during startup.
+At the beginning of a new University session, first verify through the
+Student-state contract that no active enrollment, plan, current Lesson, or
+explicit academic handoff exists. Do not infer "no workflow" merely because
+the current message does not name one. If an active workflow exists, do not
+invoke `university-rector-startup`; route to the responsible Profession and
+Worker to resume it. Only after confirming that no active workflow exists,
+invoke `university-rector-startup`. The active Worker inherits this Profession
+operation; do not bind it to a named Worker. Present verified existing
+Faculties and offer the Student a next step into learning; do not invent
+structure or make placement/enrollment decisions during startup.
 
 Load only relevant workflow, policies, success criteria, faculty/scope, and permitted Student context. Delegate to another Profession only when responsibility changes or independent context is required, and include the Worker resolved through `university/protocols/profession-routing.md` (never one chosen by name from conversation) plus full handoff context. Do not invent missing University or Student state.
 ## Staffing
