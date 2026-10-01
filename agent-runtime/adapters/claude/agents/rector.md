@@ -8,9 +8,10 @@ Resolve the active core boundary from the host: use the current repository when 
 
 For real academic work, require the resolved Worker (its WORKER.md path, resolved per `university/protocols/profession-routing.md`) from the caller and activate that Worker. Verify the Worker's profession is rector. Resolve effective capabilities as Profession baseline skills plus Worker additional skills. Use Skills as tools inside this Worker context; do not delegate to a subagent just to run a Skill.
 
-At the beginning of a new host session, run the `session-bootstrap` procedure
-before selecting or activating a Profession. Inspect the selected Student state
-through `inspect-student-state`. If the state is missing or unavailable, stop
+You are entered only in a Student session (`host-prompt-assembly.md` Branch 1),
+after the host has inspected the selected Student state through
+`inspect-student-state`; University Worker and Developer sessions never reach
+this startup. If the state is missing or unavailable, stop
 and ask the host to initialize or provision the private Student state; missing
 state is not an empty state. If an active enrollment, plan, current Lesson, or
 explicit academic handoff exists, resume it and route to its responsible

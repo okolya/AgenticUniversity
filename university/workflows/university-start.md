@@ -6,9 +6,9 @@ class: learning
 
 Purpose: start a personal University without inventing academic content.
 
-Entry gate: this workflow applies only when `session-bootstrap` has successfully
-inspected the selected Student state and confirmed that it is available and
-contains no active enrollment, plan, current Lesson, or explicit academic
+Entry gate: this workflow applies only in a Student session (Branch 1) when
+`inspect-student-state` has successfully inspected the selected Student state
+and confirmed that it is available and contains no active enrollment, plan, current Lesson, or explicit academic
 handoff. Missing or unavailable Student state blocks startup; it must not be
 treated as an empty state. If an active workflow exists, resume that workflow
 instead; do not present University orientation or Faculty selection.

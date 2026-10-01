@@ -535,6 +535,15 @@ def check_startup_state_machine(core):
     for term in ("students/registry/REGISTRY.md", "Only after an `available` result"):
         if term not in protocol:
             problems.append(f"host-prompt-assembly.md: missing startup gate '{term}'")
+    for rel in (
+        ("workflows", "university-start.md"),
+        ("skills", "rector-startup", "SKILL.md"),
+    ):
+        if "session-bootstrap" in core.read(*rel):
+            problems.append(
+                f"{'/'.join(rel)}: Rector startup must depend on "
+                "inspect-student-state (Branch 1), not session-bootstrap (ADR 0009)"
+            )
     return problems
 
 
