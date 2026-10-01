@@ -1,6 +1,7 @@
 ---
 name: inspect-student-state
 description: Read only permitted private Student state and return facts relevant to the active academic decision. Never modify mastery state.
+class: learning
 ---
 # Inspect permitted Student state
 

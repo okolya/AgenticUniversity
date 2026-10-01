@@ -1,6 +1,7 @@
 ---
 name: run-diagnostic
 description: Conduct a focused diagnostic against explicit criteria and return evidence/findings. Normally used by a Learning Analyst; the Skill itself has no placement or progression authority.
+class: learning
 ---
 # Run diagnostic
 

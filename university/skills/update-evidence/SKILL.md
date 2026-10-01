@@ -1,6 +1,7 @@
 ---
 name: update-evidence
 description: Record assessment evidence and the caller's authorized assessment verdict in the private Student workspace; never creates academic authority or lets formative roles mark verified mastery.
+class: learning
 ---
 # Update evidence
 

@@ -46,9 +46,94 @@ def append(root, rel, extra):
     edit(root, rel, lambda t: t + extra)
 
 
+@defect("capability-metadata")
+def _(root):
+    edit(root, "skills/author-material/SKILL.md", lambda t: t.replace("class: development", "class: maintenance", 1))
+
+
+@defect("dependency-reachability")
+def _(root):
+    edit(
+        root,
+        "MANIFEST.md",
+        lambda t: t.replace(
+            "dependencies:\n",
+            "dependencies:\n  - {workflow: course-entry, kind: skill, name: author-material}\n",
+            1,
+        ),
+    )
+
+
+@defect("correction-contract")
+def _(root):
+    edit(
+        root,
+        "policies/learning-material-review.md",
+        lambda t: t.replace("The Lecturer must explicitly", "The Lecturer may optionally", 1)
+        .replace("15%", "ten percent"),
+    )
+
+
+@defect("correction-fixtures")
+def _(root):
+    edit(
+        root,
+        "protocols/correction-governance.md",
+        lambda t: t.replace("ready-to-apply", "ready", 1),
+    )
+
+
+@defect("correction-target-boundary")
+def _(root):
+    edit(
+        root,
+        "skills/approved-material-patch/SKILL.md",
+        lambda t: t.replace("service files", "runtime files", 1),
+    )
+
+
+@defect("host-profile-contract")
+def _(root):
+    edit(
+        root,
+        "protocols/host-conformance.md",
+        lambda t: t.replace("pinned core copy", "core copy", 1),
+    )
+
+
 @defect("worker-professions")
 def _(root):
     edit(root, "workers/adam/WORKER.md", lambda t: t.replace("- profession: Lecturer", "- profession: Wizard", 1))
+
+
+@defect("profession-template-contract")
+def _(root):
+    os.remove(os.path.join(root, "university", "templates", "profession", "SKILLS.template.md"))
+
+
+@defect("faculty-structure")
+def _(root):
+    os.remove(os.path.join(root, "university", "faculties", "language", "STAFF.md"))
+
+
+@defect("faculty-template-contract")
+def _(root):
+    os.remove(os.path.join(root, "university", "templates", "faculty", "STAFF.template.md"))
+
+
+@defect("course-structure")
+def _(root):
+    os.remove(os.path.join(root, "university", "courses", "ai-engineering", "modules", "module-01-python-ai-engineering", "MODULE.md"))
+
+
+@defect("course-template-contract")
+def _(root):
+    os.remove(os.path.join(root, "university", "templates", "course", "MODULE.template.md"))
+
+
+@defect("schema-template-contract")
+def _(root):
+    os.remove(os.path.join(root, "university", "templates", "schema", "SCHEMA.template.json"))
 
 
 @defect("skills-exist")

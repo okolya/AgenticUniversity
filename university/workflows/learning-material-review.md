@@ -1,3 +1,9 @@
+---
+name: learning-material-review
+class: learning
+dependencies:
+  - {kind: skill, name: review-learning-material}
+---
 # Learning Material Review Workflow
 
 Owner of revision and final readiness: the responsible academic owner. This is

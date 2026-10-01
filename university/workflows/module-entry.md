@@ -1,3 +1,9 @@
+---
+name: module-entry
+class: learning
+dependencies:
+  - {kind: skill, name: check-prerequisites}
+---
 # Module Entry
 
 Owner: appointed Dean of the Faculty until the Module is formally started.
@@ -15,7 +21,10 @@ assessment uses `assessment-contracts.md`.
 5. If evidence is missing, stale, contradictory, or uncertain, Dean requests an Entry Assessment from an appointed independent Learning Analyst.
 6. Learning Analyst receives the exact Entry criteria and permitted Student context, conducts only the needed assessment, and returns evidence/findings. Learning Analyst does not decide placement.
 7. Dean interprets verified evidence and confirms direct entry, a bounded bridge, or another Course-permitted placement decision with the Student.
-8. Dean uses `module-planning` to agree initial coverage and a short schedule. Already verified competencies are not taught again merely because they appeared in an earlier Module.
+8. Dean applies the already approved coverage plan and short schedule. Already
+   verified competencies are not taught again merely because they appeared in
+   an earlier Module. New or revised coverage planning belongs to the
+   development workflow `module-design` before this entry handoff.
 9. Dean completes Stage B of `module-design.md` and issues the bounded
    pre-entry teaching sequence for the Entry Contract or approved bridge target.
 10. Dean assigns the first Theme to an appointed Lecturer and hands over the

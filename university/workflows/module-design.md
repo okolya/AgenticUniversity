@@ -1,3 +1,9 @@
+---
+name: module-design
+class: development
+dependencies:
+  - {kind: skill, name: module-planning}
+---
 # Module Design Workflow
 
 Owner: appointed Dean of the Faculty.

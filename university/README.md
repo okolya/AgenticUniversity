@@ -14,7 +14,8 @@ This directory is the public academic core.
   are created under an opened Module just in time.
 - `schemas/` — machine-readable schemas (Student state) with synthetic examples.
 - `decisions/` — architecture decision records (ADRs).
-- `MANIFEST.md` — single entry point listing what exists, for CLI and other hosts (`make check-manifest`).
+- `MANIFEST.md` — generated single entry point listing what exists, for CLI and
+  other hosts (`make generate-manifest`, `make check-manifest`).
 - `templates/student/` — public template/schema for creating private student
   state inside the ignored core-relative `students/` repository.
 - `protocols/` — interaction contracts between university, workers, skills and student workspace.

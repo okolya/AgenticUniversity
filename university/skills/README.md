@@ -14,14 +14,16 @@ Rules:
 - Technical/internal Skills such as `register-worker` may support another Skill without becoming a Profession capability.
 - Do not create a new Skill when an existing Skill already expresses the same bounded operation in another context.
 
-Skill classes (recorded per Skill in `MANIFEST.md`):
+Skill classes (recorded in each Skill front matter and `MANIFEST.md`):
 - `learning` — used by Workers in Student sessions, including Student-state
   operations bounded by `protocols/student-state-contract.md`;
 - `administrative` — staffing operations (`appoint-worker`, `register-worker`);
   never offered in a Student session;
-- `maintenance` — University workspace bootstrap tooling (`session-bootstrap`);
-  CLI/maintainer only. Development planning Skills live in the private
-  documentation repository.
+- `development` — creation and revision of University structure, curriculum,
+  materials, learning plans, and the University itself; maintainer/Worker
+  sessions only;
+- `technical` — bounded Git, issue, storage, or check operations; never offered
+  directly to Students and callable only through an authorized Worker workflow.
 A host exposes only `learning` Skills in Student sessions. Classify every new
 Skill and update `MANIFEST.md` (`make check-manifest`).
 

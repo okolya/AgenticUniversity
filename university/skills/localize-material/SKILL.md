@@ -1,6 +1,7 @@
 ---
 name: localize-material
 description: Localize bounded learner-facing material into the selected dialogue language with native phrasing and controlled technical terminology.
+class: learning
 ---
 # Localize material
 

@@ -126,7 +126,10 @@ to be delivered.
 
 The caller invokes the Profession, not a named Worker. The Assistant returns
 the review report defined by the relevant review Skill and does not edit,
-publish, assess, or approve the material.
+publish, assess, or approve the material during review. A later approved
+correction follows `protocols/correction-governance.md` and may invoke only
+the bounded technical Skills declared for that execution; the Assistant cannot
+self-approve or broaden the correction.
 
 ## Contract 6 — Worker → Dean: learning progress handoff
 

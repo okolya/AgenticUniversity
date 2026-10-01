@@ -1,3 +1,7 @@
+---
+name: student-initialization
+class: learning
+---
 # Student initialization
 
 Owner: Rector.

@@ -1,6 +1,7 @@
 ---
 name: research-materials
 description: Find and curate strong current learning sources for explicit goals and success criteria. Prefer suitable public sources over unnecessary generated substitutes.
+class: development
 ---
 # Research materials
 

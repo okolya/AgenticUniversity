@@ -1,6 +1,7 @@
 ---
 name: ask-question
 description: Ask a focused learning question. Use during teaching, tutoring, diagnostics, or assessment when the active Worker needs evidence or reflection.
+class: learning
 ---
 # Ask question
 

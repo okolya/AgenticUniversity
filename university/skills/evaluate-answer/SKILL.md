@@ -1,6 +1,7 @@
 ---
 name: evaluate-answer
 description: Evaluate a Student answer against explicit criteria. Use for formative feedback, diagnostics, or authorized assessment without exceeding caller authority.
+class: learning
 ---
 # Evaluate answer
 

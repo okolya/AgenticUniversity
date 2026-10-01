@@ -81,11 +81,18 @@ return `ready` for delivery; it returns an incomplete/not-ready finding for
 the missing forward-motion check.
 
 The Instructional Assistant does not create or edit learning material or
-assessment artifacts. It does not decide whether code, facts, sources,
-security guidance, assessment criteria, assessment validity, independence, or
-academic scope are correct. Those remain with the responsible Lecturer,
-Learning Analyst, subject specialist, Dean, Examiner, or other authorized
-owner. Do not silently rewrite the material or declare it approved.
+assessment artifacts during pedagogical review. It does not decide whether
+code, facts, sources, security guidance, assessment criteria, assessment
+validity, independence, or academic scope are correct. Those remain with the
+responsible Lecturer, Learning Analyst, subject specialist, Dean, Examiner, or
+other authorized owner.
+
+After the review and the complete Lecturer/Dean decision chain, the Assistant
+may invoke its bounded technical Skills to coordinate and execute an explicitly
+approved correction. That authority is limited to authorized learning-material
+targets and the approved scope; it cannot approve its own proposal, alter the
+threshold, edit policies/Skills/workflows/framework files, or broaden the
+academic decision.
 
 ## Review result
 

@@ -1,3 +1,10 @@
+---
+name: worker-appointment
+class: administrative
+dependencies:
+  - {kind: skill, name: appoint-worker}
+  - {kind: skill, name: register-worker}
+---
 # Worker Appointment Workflow
 
 Use this workflow whenever an authorized Rector or Dean creates a concrete Worker from an existing Profession.

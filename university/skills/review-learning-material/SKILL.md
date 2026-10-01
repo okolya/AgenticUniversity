@@ -1,6 +1,7 @@
 ---
 name: review-learning-material
 description: Review prepared learning material for pedagogical coherence, gradual vocabulary introduction, and learner-facing clarity before publication; do not use it as a fact, code, or academic-scope correctness review.
+class: learning
 ---
 
 # Review learning material

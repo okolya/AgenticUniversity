@@ -1,3 +1,7 @@
+---
+name: module-exit
+class: learning
+---
 # Module Examination and Student Enrollment Completion
 
 The public University Module is never closed by this workflow. This workflow distinguishes the internal examination from completion of a particular Student's Module Enrollment.

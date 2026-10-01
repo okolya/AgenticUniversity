@@ -1,6 +1,7 @@
 ---
 name: appoint-worker
 description: Create any University Worker from a Profession template for a concrete specialization, faculty/scope, and appointment, then register the appointment.
+class: administrative
 ---
 # Appoint worker
 

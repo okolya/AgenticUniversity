@@ -1,3 +1,7 @@
+---
+name: theme-design
+class: development
+---
 # Theme Design Workflow
 
 Owner: appointed Lecturer assigned to the Theme.

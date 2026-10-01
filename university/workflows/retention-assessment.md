@@ -1,3 +1,7 @@
+---
+name: retention-assessment
+class: learning
+---
 # Retention assessment
 
 Owner: appointed Learning Analyst for the assessment scope.

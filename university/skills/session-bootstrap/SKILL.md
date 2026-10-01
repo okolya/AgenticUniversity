@@ -1,6 +1,7 @@
 ---
 name: session-bootstrap
 description: Bootstrap work in the Agentic University core or a composed host by loading the smallest required context, routing to the owning repository boundary, and handing off to the responsible Profession before any edits or commands.
+class: development
 ---
 # Session bootstrap
 
@@ -63,7 +64,7 @@ Validation: <make target or check to propose later>
 
 1. `<core>/university/constitution/ONTOLOGY.md`
 2. `<core>/university/constitution/RESPONSIBILITY-MATRIX.md`
-3. `<core>/university/WORKSPACE.md`
+3. `<core>/README.md`
 4. `<core>/university/protocols/profession-routing.md`
 5. `<core>/university/protocols/worker-activation.md`
 6. The task's workflow and policy (`<core>/university/workflows/`,

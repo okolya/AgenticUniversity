@@ -1,6 +1,7 @@
 ---
 name: run-quiz
 description: Conduct a quiz under the active practice or assessment policy. Use when the active Worker needs a bounded question sequence.
+class: learning
 ---
 # Run quiz
 

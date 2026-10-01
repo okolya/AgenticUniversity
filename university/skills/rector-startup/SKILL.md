@@ -1,6 +1,7 @@
 ---
 name: rector-startup
 description: Initialize a new University session under the Rector Profession, present the existing faculties, and offer the Student a clear next step into learning.
+class: learning
 ---
 # Rector startup
 

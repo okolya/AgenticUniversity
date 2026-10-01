@@ -149,3 +149,33 @@ respond to every material criticism with one disposition: `accepted` (and what
 was changed), `deferred` (and when/why it will be revisited), or `rejected`
 (with the pedagogical or authority reason). A silent edit or silent omission
 does not complete the review.
+
+## Controlled correction threshold
+
+When a Student criticism may require changing existing material, the
+Instructional Assistant records the source revision, affected Lesson or Theme,
+before/after measurements, scope finding, and proposed route. The text-volume
+impact is the absolute percentage difference:
+`abs(after - before) / before * 100`, so both growth and reduction count.
+The Lecturer also assesses learning-volume impact, including replaced
+knowledge, code, formulas, tasks, and complexity. The larger percentage is the
+combined impact; unchanged length is not automatically zero impact.
+
+An impact strictly below 15%, confidently assessed, and within the approved
+scope may be authorized by the Lecturer. Exactly 15%, any impact at least 15%,
+knowledge replacement of at least 15%, an out-of-Lesson change within the
+Course, or uncertainty requires Lecturer resolution followed by binding Dean
+resolution. A zero baseline or unreliable assessment is uncertain, not an
+automatic below-threshold result.
+
+The Dean may narrow the proposal and issue binding execution instructions.
+The Lecturer checks compliance and does not reopen an approved decision. A
+technical blocker is recorded rather than creating another approval loop.
+Rejected proposals are not retained as new issues; accepted or deferred
+proposals create the future issue record only after the applicable resolutions.
+
+Issue, pull-request, and commit content uses Profession identities only:
+`Instructional Assistant`, `Lecturer`, and `Dean`. It contains no Student names,
+identifiers, private dialogue, or named Worker identities. Technical execution
+may change only authorized learning MATERIALS, never policies, Skills,
+workflows, framework, configuration, or service files.

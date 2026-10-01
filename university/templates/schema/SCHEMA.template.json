@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "<schema-name>.schema.json",
+  "title": "<Schema title>",
+  "description": "<What this schema represents and which public contract defines it>",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {},
+  "$defs": {}
+}

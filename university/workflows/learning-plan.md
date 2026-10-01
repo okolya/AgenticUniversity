@@ -1,3 +1,7 @@
+---
+name: learning-plan
+class: development
+---
 # Learning Plan Workflow
 
 There are two planning levels. Do not collapse them.

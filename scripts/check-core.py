@@ -142,9 +142,377 @@ def check_worker_professions(core):
     return problems
 
 
+@check("profession-template-contract", "structure")
+def check_profession_template_contract(core):
+    problems = []
+    templates = {
+        "PROFESSION.template.md": (
+            "Nature",
+            "Runtime rule",
+            "Boundary",
+            "Core responsibility",
+            "profession-routing.md",
+            "worker-activation.md",
+        ),
+        "SKILLS.template.md": (
+            "baseline skills",
+            "Worker-specific additions",
+            "university/skills/<skill>/SKILL.md",
+        ),
+    }
+    for filename, terms in templates.items():
+        path = core.path("templates", "profession", filename)
+        if not os.path.isfile(path):
+            problems.append(f"missing profession template '{filename}'")
+            continue
+        text = core.read("templates", "profession", filename)
+        for term in terms:
+            if term not in text:
+                problems.append(f"profession template '{filename}' lacks '{term}'")
+    return problems
+
+
+@check("faculty-structure", "structure")
+def check_faculty_structure(core):
+    problems = []
+    base = core.path("faculties")
+    for name in sorted(os.listdir(base)):
+        path = os.path.join(base, name)
+        if not os.path.isdir(path):
+            continue
+        for filename in ("FACULTY.md", "STAFF.md"):
+            if not os.path.isfile(os.path.join(path, filename)):
+                problems.append(f"faculty '{name}' lacks {filename}")
+    return problems
+
+
+@check("faculty-template-contract", "structure")
+def check_faculty_template_contract(core):
+    problems = []
+    templates = {
+        "FACULTY.template.md": (
+            "status:",
+            "domain:",
+            "staff index:",
+            "## Scope",
+            "canonical Worker records",
+        ),
+        "STAFF.template.md": (
+            "Discovery index only",
+            "| Worker | Profession | Appointment | Status | Worker file |",
+            "canonical appointment data",
+        ),
+    }
+    for filename, terms in templates.items():
+        path = core.path("templates", "faculty", filename)
+        if not os.path.isfile(path):
+            problems.append(f"missing faculty template '{filename}'")
+            continue
+        text = core.read("templates", "faculty", filename)
+        for term in terms:
+            if term not in text:
+                problems.append(f"faculty template '{filename}' lacks '{term}'")
+    return problems
+
+
+@check("course-structure", "structure")
+def check_course_structure(core):
+    problems = []
+    base = core.path("courses")
+    for name in sorted(os.listdir(base)):
+        path = os.path.join(base, name)
+        if not os.path.isdir(path):
+            continue
+        if not os.path.isfile(os.path.join(path, "COURSE.md")):
+            problems.append(f"course '{name}' lacks COURSE.md")
+        modules = os.path.join(path, "modules")
+        if not os.path.isdir(modules):
+            continue
+        for module in sorted(os.listdir(modules)):
+            module_path = os.path.join(modules, module)
+            if os.path.isdir(module_path) and not os.path.isfile(
+                os.path.join(module_path, "MODULE.md")
+            ):
+                problems.append(f"course '{name}' module '{module}' lacks MODULE.md")
+    return problems
+
+
+@check("course-template-contract", "structure")
+def check_course_template_contract(core):
+    problems = []
+    templates = {
+        "COURSE.template.md": (
+            "faculty:",
+            "owner:",
+            "## Course purpose",
+            "## Module framework",
+            "## Delivery layers",
+            "Course architecture and Student delivery state are separate",
+        ),
+        "MODULE.template.md": (
+            "## Identity",
+            "## Entry Contract",
+            "## Exit Contract",
+            "## Theme Framework",
+            "## Delivery boundary",
+            "Student-specific",
+        ),
+    }
+    for filename, terms in templates.items():
+        path = core.path("templates", "course", filename)
+        if not os.path.isfile(path):
+            problems.append(f"missing course template '{filename}'")
+            continue
+        text = core.read("templates", "course", filename)
+        for term in terms:
+            if term not in text:
+                problems.append(f"course template '{filename}' lacks '{term}'")
+    return problems
+
+
+@check("schema-template-contract", "structure")
+def check_schema_template_contract(core):
+    import json
+
+    problems = []
+    path = core.path("templates", "schema", "SCHEMA.template.json")
+    if not os.path.isfile(path):
+        return ["missing schema template 'SCHEMA.template.json'"]
+    text = core.read("templates", "schema", "SCHEMA.template.json")
+    try:
+        schema = json.loads(text)
+    except json.JSONDecodeError as exc:
+        return [f"schema template is not valid JSON: {exc.msg}"]
+    for key in ("$schema", "$id", "title", "description", "type", "required", "properties"):
+        if key not in schema:
+            problems.append(f"schema template lacks '{key}'")
+    if schema.get("$id") != "<schema-name>.schema.json":
+        problems.append("schema template must keep the <schema-name> placeholder in $id")
+    if schema.get("type") != "object":
+        problems.append("schema template root type must be object")
+    return problems
+
+
 def skill_bullets(text):
     """Skill names from `- `skill`` bullets (first backtick token of each bullet)."""
     return [m.group(1) for m in re.finditer(r"^\s*[-*]\s+`([^`]+)`", text, re.M)]
+
+
+VALID_CLASSES = {"learning", "administrative", "development", "technical"}
+
+
+def front_matter(text):
+    """Parse the small metadata subset used by Skill and workflow files."""
+    match = re.match(r"^---\n(.*?)\n---\n", text, re.S)
+    if not match:
+        return {}
+    data = {}
+    key = None
+    for raw in match.group(1).splitlines():
+        if not raw.strip() or raw.lstrip().startswith("#"):
+            continue
+        item = re.match(r"^\s+-\s+\{(.*)\}\s*$", raw)
+        if item and key:
+            parts = dict(p.split(":", 1) for p in item.group(1).split(",") if ":" in p)
+            data.setdefault(key, []).append({k.strip(): v.strip() for k, v in parts.items()})
+            continue
+        scalar = re.match(r"^([a-z_]+):\s*(.*)$", raw)
+        if scalar:
+            key, value = scalar.groups()
+            data[key] = [] if not value else value.strip()
+    return data
+
+
+def manifest_capabilities(core):
+    """Return manifest class maps and declared workflow dependencies."""
+    text = core.read("MANIFEST.md")
+    skills = {}
+    workflows = {}
+    skill_section = re.search(r"^skills:\n(.*?)(?=^workflows:\n)", text, re.M | re.S)
+    if skill_section:
+        for m in re.finditer(
+            r"^\s+- \{name: ([a-z0-9-]+), class: ([a-z]+)\}",
+            skill_section.group(1),
+            re.M,
+        ):
+            skills[m.group(1)] = m.group(2)
+    in_workflows = False
+    for line in text.splitlines():
+        if line == "workflows:":
+            in_workflows = True
+            continue
+        if in_workflows and line and not line.startswith(" "):
+            in_workflows = False
+        if in_workflows:
+            m = re.match(r"^\s+- \{name: ([a-z0-9-]+), class: ([a-z]+)\}", line)
+            if m:
+                workflows[m.group(1)] = m.group(2)
+    dependencies = []
+    in_dependencies = False
+    for line in text.splitlines():
+        if line == "dependencies:":
+            in_dependencies = True
+            continue
+        if in_dependencies and line and not line.startswith(" "):
+            in_dependencies = False
+        if in_dependencies:
+            m = re.match(
+                r"^\s+- \{workflow: ([a-z0-9-]+), kind: (skill|workflow), name: ([a-z0-9-]+)\}",
+                line,
+            )
+            if m:
+                dependencies.append(
+                    {"workflow": m.group(1), "kind": m.group(2), "name": m.group(3)}
+                )
+    return skills, workflows, dependencies
+
+
+@check("capability-metadata", "contract")
+def check_capability_metadata(core):
+    problems = []
+    manifest_skills, manifest_workflows, manifest_deps = manifest_capabilities(core)
+    for name, expected in manifest_skills.items():
+        metadata = front_matter(core.read("skills", name, "SKILL.md"))
+        actual = metadata.get("class")
+        if actual not in VALID_CLASSES:
+            problems.append(f"skills/{name}/SKILL.md: invalid or missing class '{actual}'")
+        elif actual != expected:
+            problems.append(f"skills/{name}/SKILL.md: class '{actual}' differs from manifest '{expected}'")
+    for name, expected in manifest_workflows.items():
+        metadata = front_matter(core.read("workflows", f"{name}.md"))
+        actual = metadata.get("class")
+        if actual not in VALID_CLASSES:
+            problems.append(f"workflows/{name}.md: invalid or missing class '{actual}'")
+        elif actual != expected:
+            problems.append(f"workflows/{name}.md: class '{actual}' differs from manifest '{expected}'")
+        declared = {
+            (item.get("kind"), item.get("name"))
+            for item in metadata.get("dependencies", [])
+            if isinstance(item, dict)
+        }
+        expected_deps = {
+            (item["kind"], item["name"])
+            for item in manifest_deps
+            if item["workflow"] == name
+        }
+        if declared != expected_deps:
+            problems.append(
+                f"workflows/{name}.md: dependencies differ from manifest "
+                f"(file={sorted(declared)}, manifest={sorted(expected_deps)})"
+            )
+    return problems
+
+
+@check("dependency-reachability", "contract")
+def check_dependency_reachability(core):
+    problems = []
+    skills, workflows, dependencies = manifest_capabilities(core)
+    known = {"skill": skills, "workflow": workflows}
+    graph = {name: [] for name in workflows}
+    for item in dependencies:
+        source = item["workflow"]
+        target = item["name"]
+        if source not in workflows:
+            problems.append(f"dependency source workflow '{source}' does not exist")
+            continue
+        if target not in known[item["kind"]]:
+            problems.append(f"dependency target {item['kind']} '{target}' does not exist")
+            continue
+        source_class = workflows[source]
+        target_class = known[item["kind"]][target]
+        if source_class == "learning" and target_class in {"administrative", "development"}:
+            problems.append(
+                f"learning workflow '{source}' reaches forbidden {target_class} '{target}'"
+            )
+        if source_class == "learning" and target_class == "technical":
+            problems.append(
+                f"learning workflow '{source}' reaches unbounded technical '{target}'"
+            )
+        if item["kind"] == "workflow":
+            graph[source].append(target)
+
+    def visit(node, stack):
+        if node in stack:
+            return [f"dependency cycle: {' -> '.join(stack + [node])}"]
+        failures = []
+        for child in graph[node]:
+            failures += visit(child, stack + [node])
+        return failures
+
+    for workflow in graph:
+        problems += visit(workflow, [])
+    return sorted(set(problems))
+
+
+@check("correction-contract", "contract")
+def check_correction_contract(core):
+    problems = []
+    policy = core.read("policies", "learning-material-review.md")
+    profession = core.read("professions", "instructional-assistant", "PROFESSION.md")
+    required_policy_terms = (
+        "accepted",
+        "deferred",
+        "rejected",
+        "15%",
+        "issue",
+        "Student",
+        "named Worker",
+    )
+    for term in required_policy_terms:
+        if term not in policy:
+            problems.append(f"learning-material-review.md: missing correction contract term '{term}'")
+    for term in ("bounded technical Skills", "approved correction", "policies/Skills/workflows/framework"):
+        if term not in profession:
+            problems.append(f"instructional-assistant/PROFESSION.md: missing '{term}'")
+    return problems
+
+
+@check("correction-fixtures", "contract")
+def check_correction_fixtures(core):
+    problems = []
+
+    def percentage(before, after):
+        return abs(after - before) / before * 100
+
+    cases = {
+        "growth": percentage(100, 115),
+        "reduction": percentage(100, 85),
+        "replacement": 15,
+        "combined": max(percentage(100, 108), 20),
+    }
+    if cases["growth"] != 15 or cases["reduction"] != 15:
+        problems.append("15% growth/reduction arithmetic fixture is invalid")
+    if max(cases["combined"], cases["replacement"]) != 20:
+        problems.append("larger text/learning impact fixture is invalid")
+    if not all(cases[name] >= 15 for name in ("growth", "reduction", "replacement")):
+        problems.append("threshold boundary fixture is invalid")
+    protocol = core.read("protocols", "correction-governance.md")
+    for term in ("ready-to-apply", "deferred", "blocked", "Profession", "named Worker identities"):
+        if term not in protocol:
+            problems.append(f"correction-governance.md: missing fixture term '{term}'")
+    return problems
+
+
+@check("correction-target-boundary", "contract")
+def check_correction_target_boundary(core):
+    problems = []
+    text = core.read("skills", "approved-material-patch", "SKILL.md")
+    for term in ("MATERIALS", "Policies", "Skills", "workflows", "service files", "explicit blocker"):
+        if term not in text:
+            problems.append(f"approved-material-patch: missing target boundary '{term}'")
+    return problems
+
+
+@check("host-profile-contract", "contract")
+def check_host_profile_contract(core):
+    problems = []
+    text = core.read("protocols", "host-conformance.md") + "\n" + core.read(
+        "protocols", "host-prompt-assembly.md"
+    )
+    for term in ("learning", "development", "technical", "CLI", "Worker", "pinned"):
+        if term not in text:
+            problems.append(f"host contract: missing profile term '{term}'")
+    return problems
 
 
 @check("skills-exist", "structure")
@@ -485,9 +853,10 @@ def check_skills_reachable(core):
         m = re.search(r"^## Additional worker skills\s*\n(.*?)(?=^## |\Z)", core.read("workers", name, "WORKER.md"), re.M | re.S)
         if m:
             used |= set(skill_bullets(m.group(1)))
-    for m in re.finditer(r"^\s+- \{name: ([a-z-]+), class: ([a-z]+)\}", core.read("MANIFEST.md"), re.M):
-        if m.group(2) == "learning" and m.group(1) not in used:
-            problems.append(f"learning Skill '{m.group(1)}' is in no Profession baseline or Worker addition")
+    skills, _workflows, _dependencies = manifest_capabilities(core)
+    for name, cls in skills.items():
+        if cls == "learning" and name not in used:
+            problems.append(f"learning Skill '{name}' is in no Profession baseline or Worker addition")
     return problems
 
 

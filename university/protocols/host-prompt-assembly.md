@@ -32,7 +32,7 @@ tree.
 | 3 | Worker | the record named by the matching `workers` entry of the manifest; validate that its Profession, scope, and status match the task; include its additional policies, if any |
 | 4 | Workflow | `workflows/<workflow>.md` plus the protocols and policies it names |
 | 5 | Scope | only the Faculty, Course, Module, Theme, or Lesson files the task addresses |
-| 6 | Skills | effective Skills = Profession baseline + Worker additions, limited to manifest class `learning` in a Student session; expose each as a tool, load its `SKILL.md` when used |
+| 6 | Skills | effective Skills = Profession baseline + Worker additions. In a Student session expose `learning` only; in an authorized Worker workflow expose only declared `technical` capabilities with bounded inputs and targets. Load each exposed Skill's `SKILL.md` when used |
 | 7 | Student context | only what the workflow permits, obtained with contract operation `read` for a stated purpose |
 | 8 | Task | the delegation fields below |
 
@@ -65,5 +65,7 @@ write, `read` the affected state back before relying on it.
 
 - a runtime agent, prompt, or tool named after a Worker;
 - loading another Student's state, or more Student context than permitted;
-- exposing `administrative` or `maintenance` Skills in a Student session;
+- exposing `administrative`, `development`, or `technical` Skills directly in a Student session;
+- allowing a learning dependency chain to reach `administrative` or `development`,
+  or an undeclared/unbounded technical capability;
 - storing Student-specific or session-specific data in the core.

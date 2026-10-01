@@ -11,6 +11,10 @@ cat > "$HOOKS/pre-commit" <<'HOOK'
 set -euo pipefail
 ROOT="$(git rev-parse --show-toplevel)"
 cd "$ROOT"
+make generate
+git add university/MANIFEST.md university/staff/REGISTRY.md university/faculties/*/STAFF.md
+python3 scripts/generate-manifest.py --check
+python3 scripts/generate-staff.py --check
 npm run links-check-frail --silent
 python3 scripts/check-manifest.py
 python3 scripts/check-core.py --root .

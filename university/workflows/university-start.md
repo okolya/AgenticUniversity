@@ -1,3 +1,7 @@
+---
+name: university-start
+class: learning
+---
 # University start
 
 Purpose: start a personal University without inventing academic content.

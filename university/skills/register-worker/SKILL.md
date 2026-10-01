@@ -1,6 +1,7 @@
 ---
 name: register-worker
 description: Internal staffing-index operation used after an authorized appointment/change to synchronize Worker discovery indexes. It grants no appointment authority.
+class: administrative
 ---
 # Register worker
 

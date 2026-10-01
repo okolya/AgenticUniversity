@@ -1,6 +1,7 @@
 ---
 name: check-prerequisites
 description: Compare explicit prerequisite criteria with available evidence. Use by Dean for placement preparation or Learning Analyst during assessment; never make the placement decision itself.
+class: learning
 ---
 # Check prerequisites
 

@@ -1,6 +1,7 @@
 ---
 name: create-enrollment
 description: Record an enrollment change in the private Student workspace after Student agreement and an authorized Dean decision; it does not choose placement itself.
+class: learning
 ---
 # Create enrollment
 

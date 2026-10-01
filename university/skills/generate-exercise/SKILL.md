@@ -1,6 +1,7 @@
 ---
 name: generate-exercise
 description: Create a focused exercise tied to current learning context and success criteria. Use for practice or assessment preparation.
+class: learning
 ---
 # Generate exercise
 

@@ -15,7 +15,9 @@ capabilities and supply their own start-up.
   `protocols/workspace-composition.md`. Those files bind CLI hosts only.
 - Any host reads the core through `MANIFEST.md`, keeps Student state through
   `protocols/student-state-contract.md`, and exposes only `learning` Skills in
-  Student sessions.
+  Student sessions. A separate authorized Worker profile may expose declared
+  `technical` Skills with bounded inputs and target checks; it never receives
+  `administrative` or `development` access merely from the profile label.
 - A host declares which capabilities it has: code execution, file or artifact
   storage, private state store, public content persistence (writing new
   Lessons, diagnostics, and Theme records into `university/`). A Worker must not
@@ -30,3 +32,6 @@ capabilities and supply their own start-up.
   yes (`students/`), public content persistence yes (`university/` Git).
 - Nothing here weakens or replaces the CLI path; adding a host never changes
   how CLI hosts behave.
+- The CLI keeps both Student teaching and authorized Worker operations. A
+  Student web profile is learning-only, while a future Worker web profile is a
+  separate host permission profile rather than an exception to Student access.

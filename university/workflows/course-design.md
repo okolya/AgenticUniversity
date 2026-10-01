@@ -1,3 +1,9 @@
+---
+name: course-design
+class: development
+dependencies:
+  - {kind: skill, name: research-materials}
+---
 # Course Design Workflow
 
 Owner: appointed Dean of the Faculty.

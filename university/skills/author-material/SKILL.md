@@ -1,6 +1,7 @@
 ---
 name: author-material
 description: Create learning material tied to explicit goals and success criteria. Use when suitable curated material is unavailable or a custom explanation is needed.
+class: development
 ---
 # Author material
 

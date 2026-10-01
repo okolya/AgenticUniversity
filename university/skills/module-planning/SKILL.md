@@ -1,6 +1,7 @@
 ---
 name: module-planning
 description: Build a small initial module coverage plan with the Student from goals, entry state, success criteria, and available capacity.
+class: development
 ---
 # Module planning
 

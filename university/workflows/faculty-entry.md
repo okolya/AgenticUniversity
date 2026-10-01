@@ -1,3 +1,9 @@
+---
+name: faculty-entry
+class: learning
+dependencies:
+  - {kind: skill, name: create-enrollment}
+---
 # Faculty entry
 
 Owner: appointed Dean of the Faculty.

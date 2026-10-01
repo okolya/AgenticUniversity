@@ -1,6 +1,7 @@
 ---
 name: create-lab
 description: Create a practical lab tied to competencies and AI/tool policy. Use for hands-on consolidation or evidence generation.
+class: learning
 ---
 # Create lab
 

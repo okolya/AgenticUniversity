@@ -1,3 +1,9 @@
+---
+name: course-entry
+class: learning
+dependencies:
+  - {kind: skill, name: update-evidence}
+---
 # Course Entry Workflow
 
 Owner: appointed Dean of the target Faculty.

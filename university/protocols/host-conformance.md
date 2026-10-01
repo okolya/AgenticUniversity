@@ -9,7 +9,10 @@ follow the fallback named in the item.
 ## Core access
 
 - [ ] Reads the core through `MANIFEST.md` and pins it by Git tag or commit.
-- [ ] Treats the core as read-only input; never embeds a copy of it.
+- [ ] Treats the core as read-only input by default; the only `.4` mutation
+      exception is an authorized, bounded correction to learning MATERIALS
+      through the correction-governance contract. Policies, Skills, workflows,
+      framework, configuration, and service files remain read-only.
 - [ ] Builds calls per `protocols/host-prompt-assembly.md`.
 
 ## Student state
@@ -27,7 +30,14 @@ follow the fallback named in the item.
 ## Skills and Workers
 
 - [ ] Exposes only `learning` Skills in Student sessions; `administrative` and
-      `maintenance` Skills are not reachable.
+      `development` Skills are not reachable.
+- [ ] Exposes `technical` Skills only through an explicitly authorized Worker
+      workflow with bounded inputs and target checks; class membership alone
+      never grants authority.
+- [ ] Keeps CLI Student teaching and authorized Worker operations distinct from
+      a restricted Student web profile.
+- [ ] Validates all declared workflow/Skill dependencies and rejects
+      administrative or development reachability from a learning chain.
 - [ ] Resolves Workers from the manifest; no prompt, agent, or tool is named
       after a Worker.
 - [ ] Runs the manifest `startup_skill` (`rector-startup`) under the
@@ -44,8 +54,24 @@ The host declares each and Workers do not assume an undeclared one
 - [ ] public content persistence (none: material is delivered in-session and
       reported for maintainer promotion).
 
+## Host evolution boundary
+
+- [ ] The Student bot's purpose is learning from ready plans and materials; it
+      does not create canonical material or development plans.
+- [ ] A future Worker host has a separate permission profile and may expose
+      approved correction operations only after issue/Git/check capabilities,
+      authorization, and required validations exist.
+- [ ] An initial host may expose read-only University tools. MCP transport
+      exposes bounded tools only; it does not grant authority, replace host
+      orchestration, provide state, or bypass the active Profession/workflow.
+- [ ] Mandatory policies, active workflow, current Lesson, and source/version
+      context are loaded explicitly. Retrieval, when added later, supplements
+      that context and does not replace it.
+
 ## Safety
 
 - [ ] Code execution, if offered, runs in an isolated sandbox with limits.
 - [ ] Usage limits and logging exist; logs never expose one Student's state to
       another.
+- [ ] A pinned core copy is checked by exact Git tag or commit before serving;
+      mutable branches and parent-workspace aliases are rejected.

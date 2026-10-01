@@ -1,3 +1,10 @@
+---
+name: lesson-preparation
+class: development
+dependencies:
+  - {kind: skill, name: research-materials}
+  - {kind: skill, name: author-material}
+---
 # Lesson Preparation Workflow
 
 Owner: appointed Lecturer for a lesson introducing new material.

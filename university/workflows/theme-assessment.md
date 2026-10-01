@@ -1,3 +1,9 @@
+---
+name: theme-assessment
+class: learning
+dependencies:
+  - {kind: skill, name: update-evidence}
+---
 # Theme assessment
 
 Owner: appointed Learning Analyst who satisfies Assessment Independence Policy.

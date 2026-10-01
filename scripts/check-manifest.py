@@ -88,6 +88,10 @@ def field(path, label):
 def main():
     man = parse_front_matter(os.path.join(ROOT, "MANIFEST.md"))
     problems = []
+    classes = {"learning", "administrative", "development", "technical"}
+
+    if man.get("manifest_version") != "2":
+        problems.append(f"manifest_version: expected '2', got {man.get('manifest_version')!r}")
 
     def same(label, declared, actual):
         declared, actual = set(declared), set(actual)
@@ -99,7 +103,7 @@ def main():
     same("professions", man["professions"], listing("professions", want_dirs=True, marker="PROFESSION.md"))
     same("policies", man["policies"], listing("policies", suffix=".md"))
     same("protocols", man["protocols"], listing("protocols", suffix=".md"))
-    same("workflows", man["workflows"], listing("workflows", suffix=".md"))
+    same("workflows", [w["name"] for w in man["workflows"]], listing("workflows", suffix=".md"))
     same("faculties", man["faculties"], listing("faculties", want_dirs=True, marker="FACULTY.md"))
     same("courses", man["courses"], listing("courses", want_dirs=True, marker="COURSE.md"))
     same("skills", [s["name"] for s in man["skills"]], listing("skills", want_dirs=True, marker="SKILL.md"))
@@ -118,10 +122,26 @@ def main():
         for err in validate(json.load(open(example_path, encoding="utf-8")), schema, schema):
             problems.append(f"schemas: {name} example {err}")
 
-    classes = {"learning", "administrative", "maintenance"}
     for s in man["skills"]:
         if s.get("class") not in classes:
             problems.append(f"skills: '{s['name']}' has invalid class '{s.get('class')}'")
+    for workflow in man["workflows"]:
+        if workflow.get("class") not in classes:
+            problems.append(
+                f"workflows: '{workflow['name']}' has invalid class '{workflow.get('class')}'"
+            )
+    known_skills = {s["name"] for s in man["skills"]}
+    known_workflows = {w["name"] for w in man["workflows"]}
+    for dependency in man.get("dependencies", []):
+        if dependency.get("kind") not in {"skill", "workflow"}:
+            problems.append(
+                f"dependencies: '{dependency}' has invalid kind '{dependency.get('kind')}'"
+            )
+        targets = known_skills if dependency.get("kind") == "skill" else known_workflows
+        if dependency.get("name") not in targets:
+            problems.append(f"dependencies: unknown {dependency.get('kind')} '{dependency.get('name')}'")
+        if dependency.get("workflow") not in known_workflows:
+            problems.append(f"dependencies: unknown workflow '{dependency.get('workflow')}'")
     professions = set(man["professions"])
     for w in man["workers"]:
         path = os.path.join(ROOT, w["file"])

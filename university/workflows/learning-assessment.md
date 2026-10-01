@@ -1,3 +1,7 @@
+---
+name: learning-assessment
+class: learning
+---
 # Learning assessment
 
 Owner: appointed Learning Analyst satisfying Assessment Independence Policy.

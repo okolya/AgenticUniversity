@@ -1,6 +1,7 @@
 ---
 name: build-assessment
 description: Construct an independent assessment from success criteria and evidence requirements. Use by authorized assessment Workers.
+class: learning
 ---
 # Build assessment
 

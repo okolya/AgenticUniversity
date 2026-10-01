@@ -42,3 +42,7 @@ state during startup unless the workflow explicitly permits it.
 This file is a project policy, not a host-level Codex permission database.
 Provider-specific approval settings remain outside the repository. Adapters
 must use these paths and commands as their portable project contract.
+
+The bootstrap allowlist grants no Student or Worker capability by itself.
+Technical operations require a separately declared host capability, an active
+authorized Worker workflow, bounded targets, and post-operation verification.

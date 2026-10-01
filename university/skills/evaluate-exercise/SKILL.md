@@ -1,6 +1,7 @@
 ---
 name: evaluate-exercise
 description: Evaluate an exercise result against explicit criteria and return observations/evidence to the active Worker.
+class: learning
 ---
 # Evaluate exercise
 

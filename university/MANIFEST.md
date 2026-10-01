@@ -1,5 +1,6 @@
 ---
-manifest_version: 1
+manifest_version: 2
+# GENERATED from this template and canonical core records.
 
 # Entry points a host uses to start a session
 startup_profession: rector
@@ -22,7 +23,7 @@ workers:
   - {name: bob, profession: dean, scope: language, status: active, file: workers/bob/WORKER.md}
   - {name: livia, profession: instructional-assistant, scope: university, status: active, file: workers/livia/WORKER.md}
   - {name: luke, profession: dean, scope: engineering, status: active, file: workers/luke/WORKER.md}
-  - {name: maria, profession: translator, scope: university, status: active, file: workers/maria/WORKER.md}
+  - {name: maria, profession: translator, scope: language, status: active, file: workers/maria/WORKER.md}
   - {name: ollie, profession: examiner, scope: engineering, status: active, file: workers/ollie/WORKER.md}
   - {name: petro, profession: rector, scope: university, status: active, file: workers/petro/WORKER.md}
   - {name: sara, profession: laboratory-specialist, scope: engineering, status: active, file: workers/sara/WORKER.md}
@@ -31,44 +32,61 @@ workers:
 
 skills:
   - {name: appoint-worker, class: administrative}
+  - {name: approved-material-patch, class: technical}
   - {name: ask-question, class: learning}
-  - {name: author-material, class: learning}
+  - {name: author-material, class: development}
   - {name: build-assessment, class: learning}
   - {name: check-prerequisites, class: learning}
+  - {name: correction-checks, class: technical}
+  - {name: correction-git, class: technical}
   - {name: create-enrollment, class: learning}
   - {name: create-lab, class: learning}
   - {name: evaluate-answer, class: learning}
   - {name: evaluate-exercise, class: learning}
   - {name: generate-exercise, class: learning}
   - {name: inspect-student-state, class: learning}
+  - {name: issue-management, class: technical}
   - {name: localize-material, class: learning}
-  - {name: module-planning, class: learning}
+  - {name: module-planning, class: development}
   - {name: rector-startup, class: learning}
   - {name: register-worker, class: administrative}
-  - {name: research-materials, class: learning}
+  - {name: research-materials, class: development}
   - {name: review-learning-material, class: learning}
   - {name: run-diagnostic, class: learning}
   - {name: run-quiz, class: learning}
-  - {name: session-bootstrap, class: maintenance}
+  - {name: session-bootstrap, class: development}
   - {name: update-evidence, class: learning}
 
 workflows:
-  - course-design
-  - course-entry
-  - faculty-entry
-  - learning-assessment
-  - learning-material-review
-  - learning-plan
-  - lesson-preparation
-  - module-design
-  - module-entry
-  - module-exit
-  - retention-assessment
-  - student-initialization
-  - theme-assessment
-  - theme-design
-  - university-start
-  - worker-appointment
+  - {name: course-design, class: development}
+  - {name: course-entry, class: learning}
+  - {name: faculty-entry, class: learning}
+  - {name: learning-assessment, class: learning}
+  - {name: learning-material-review, class: learning}
+  - {name: learning-plan, class: development}
+  - {name: lesson-preparation, class: development}
+  - {name: module-design, class: development}
+  - {name: module-entry, class: learning}
+  - {name: module-exit, class: learning}
+  - {name: retention-assessment, class: learning}
+  - {name: student-initialization, class: learning}
+  - {name: theme-assessment, class: learning}
+  - {name: theme-design, class: development}
+  - {name: university-start, class: learning}
+  - {name: worker-appointment, class: administrative}
+
+dependencies:
+  - {workflow: course-design, kind: skill, name: research-materials}
+  - {workflow: course-entry, kind: skill, name: update-evidence}
+  - {workflow: faculty-entry, kind: skill, name: create-enrollment}
+  - {workflow: learning-material-review, kind: skill, name: review-learning-material}
+  - {workflow: lesson-preparation, kind: skill, name: research-materials}
+  - {workflow: lesson-preparation, kind: skill, name: author-material}
+  - {workflow: module-design, kind: skill, name: module-planning}
+  - {workflow: module-entry, kind: skill, name: check-prerequisites}
+  - {workflow: theme-assessment, kind: skill, name: update-evidence}
+  - {workflow: worker-appointment, kind: skill, name: appoint-worker}
+  - {workflow: worker-appointment, kind: skill, name: register-worker}
 
 policies:
   - academic-authority
@@ -94,6 +112,7 @@ policies:
 protocols:
   - artifact-verification
   - assessment-contracts
+  - correction-governance
   - host-conformance
   - host-prompt-assembly
   - learning-interaction-contracts
@@ -116,29 +135,31 @@ schemas:
 
 # University Manifest
 
-Single entry point for hosts that run this University (the CLI workspace or a
-separate host such as an online chat bot). A host reads this file instead of
-scanning the tree. All names resolve to core-relative paths:
+Single entry point for hosts that run this University. A host reads this
+generated discovery index instead of scanning the tree. Canonical records
+remain in the listed Profession, Worker, Skill, workflow, policy, protocol,
+Faculty, Course, and schema paths.
 
 | List | Location |
 |---|---|
 | `professions` | `professions/<name>/PROFESSION.md` and `SKILLS.md` |
-| `workers` | `file` field (appointment record; canonical) |
+| `workers` | canonical appointment record at the `file` path |
 | `skills` | `skills/<name>/SKILL.md` |
-| `workflows`, `policies`, `protocols` | `<list>/<name>.md` |
+| `workflows`, `policies`, `protocols` | corresponding core directories |
 | `faculties` | `faculties/<name>/FACULTY.md` |
 | `courses` | `courses/<name>/COURSE.md` |
-| `schemas` | `schemas/<name>.schema.json` (JSON Schema) and `schemas/<name>.example.json` (synthetic example) |
+| `schemas` | `schemas/<name>.schema.json` and its example |
 
 ## Skill classes
 
-- `learning` — used by Workers in Student sessions (including Student-state
-  operations bounded by `protocols/student-state-contract.md`).
+- `learning` — used by Workers in Student sessions.
 - `administrative` — staffing operations; never offered in a Student session.
-- `maintenance` — University development and workspace tooling; CLI and
-  maintainer only.
+- `development` — University development and workspace tooling.
+- `technical` — bounded technical operations under authorized Worker workflows.
 
-A host exposes only `learning` Skills in Student sessions.
+A host exposes only `learning` Skills in Student sessions. The manifest is
+generated from canonical records and must be regenerated when those records
+change.
 
 ## Versioning
 
@@ -147,7 +168,5 @@ or commit.
 
 ## Consistency
 
-The manifest must list exactly what exists. `make check-manifest` verifies
-it; run it after adding or removing a Profession, Worker, Skill, Workflow,
-Policy, Protocol, Faculty, or Course. Workers' records remain canonical;
-`staff/REGISTRY.md` is a discovery index for the CLI.
+`make check-manifest` verifies generated output and filesystem membership.
+The pre-commit hook regenerates and stages this discovery index before checks.
