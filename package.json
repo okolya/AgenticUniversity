@@ -1,0 +1,24 @@
+{
+  "name": "agentic-university-core",
+  "private": true,
+  "description": "Markdown link validation for the public Agentic University core",
+  "scripts": {
+    "links-check": "remark .",
+    "links-check-full": "remark .",
+    "links-check-frail": "remark --frail ."
+  },
+  "dependencies": {
+    "remark-cli": "^12.0.1",
+    "remark-validate-links": "^13.1.0"
+  },
+  "remarkConfig": {
+    "plugins": [
+      [
+        "remark-validate-links",
+        {
+          "repository": false
+        }
+      ]
+    ]
+  }
+}

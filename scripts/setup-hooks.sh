@@ -11,7 +11,7 @@ cat > "$HOOKS/pre-commit" <<'HOOK'
 set -euo pipefail
 ROOT="$(git rev-parse --show-toplevel)"
 cd "$ROOT"
-python3 scripts/doc-links.py check
+npm run links-check-frail --silent
 python3 scripts/check-manifest.py
 python3 scripts/check-core.py --root .
 HOOK

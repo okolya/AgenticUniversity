@@ -3,11 +3,11 @@
 
 test-core:
 	@python3 scripts/check-core.py --root .
-	@python3 scripts/doc-links.py check
+	@npm run links-check-frail --silent
 	@python3 scripts/check-manifest.py
 
 check-links:
-	@python3 scripts/doc-links.py check
+	@npm run links-check-frail --silent
 
 check-manifest:
 	@python3 scripts/check-manifest.py
