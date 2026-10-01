@@ -9,8 +9,10 @@ Use discovered `university-*` Agent Skills as tools/capabilities of the active W
 For every session, follow `university/policies/dialogue-language.md` to select
 the dialogue language. For a new host session, follow
 `university/policies/runtime-command-whitelist.md` after routing into the
-`university/` repository, then run `session-bootstrap` and inspect the selected
-Student state. Resume any active enrollment, plan, current Lesson, or explicit
+`university/` repository, then resolve the session kind through
+`university/protocols/host-prompt-assembly.md` Step 0 (Student, University
+Worker, or University Developer; ADR 0009). For a Student session, inspect the
+selected Student state. Resume any active enrollment, plan, current Lesson, or explicit
 academic handoff through its responsible Profession/Worker. Run
 `university-rector-startup` only when no active Student workflow exists; do not
 probe both the workspace aliases and repository paths separately.
