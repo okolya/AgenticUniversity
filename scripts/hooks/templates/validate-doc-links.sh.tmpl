@@ -1,0 +1,18 @@
+# Keep Markdown links valid on every commit.
+# Sourced by the pre-commit hook; expects the hook to have already `cd`ed to the
+# repo root and to be running under `set -e`.
+#   1. relink: rewrite inbound links/paths for staged `git mv` renames and
+#      re-stage only the files it changed (never files with unstaged edits);
+#   2. check: fail the commit if any tracked *.md has a broken relative link or
+#      #anchor. Fix it, or run `make relink` after a rename.
+# Skipped cleanly when python3 is unavailable or no Markdown/rename is staged.
+
+if command -v python3 >/dev/null 2>&1 && [ -f scripts/doc-links.py ]; then
+    if git diff --cached --name-only --diff-filter=ACMRD | grep -qE '\.md$|^scripts/doc-links\.py$' \
+        || git diff --cached -M --name-status --diff-filter=R | grep -q .; then
+        python3 scripts/doc-links.py relink
+        python3 scripts/doc-links.py check
+    fi
+else
+    echo "⚠️  python3 or scripts/doc-links.py missing; documentation link check skipped"
+fi

@@ -1,0 +1,11 @@
+.state/
+.logs/
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

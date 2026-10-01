@@ -1,0 +1,11 @@
+# Keep university/MANIFEST.md in sync with the University contents.
+# Sourced by the pre-commit hook after `cd` to the repo root, under `set -e`.
+# Runs only when a manifest-tracked path (Profession, Worker, Skill, Workflow,
+# Policy, Protocol, Faculty, Course, schema) or the manifest itself is staged.
+
+if command -v python3 >/dev/null 2>&1 && [ -f scripts/check-manifest.py ]; then
+    if git diff --cached --name-only --diff-filter=ACMRD \
+        | grep -qE '^university/(MANIFEST\.md|(professions|workers|skills|workflows|policies|protocols|faculties|courses|schemas)/)|^scripts/check-manifest\.py$'; then
+        python3 scripts/check-manifest.py
+    fi
+fi

@@ -1,0 +1,54 @@
+{
+  "student": { "id": "example-student", "status": "registered", "goals": ["Example goal: learn a programming language"] },
+  "enrollments": [
+    {
+      "id": "enr-1",
+      "public_ref": "courses/example-course/modules/module-01",
+      "mode": "active",
+      "status": "active",
+      "rationale": "Synthetic example entry decision.",
+      "next_actions": ["Complete the first Lesson checkpoint"],
+      "recorded": { "profession": "dean", "workflow": "module-entry", "date": "2000-01-01" }
+    }
+  ],
+  "plans": [
+    {
+      "id": "plan-1",
+      "kind": "module_learning_plan",
+      "enrollment_id": "enr-1",
+      "status": "active",
+      "purpose": "Synthetic example plan.",
+      "coverage": ["example coverage area"],
+      "capacity": "example weekly capacity",
+      "dates": { "start": "2000-01-01" },
+      "checkpoint": "Submit the artifact after each Lesson",
+      "stop_condition": "After the assigned Lesson checkpoint",
+      "recorded": { "profession": "dean", "workflow": "learning-plan", "date": "2000-01-01" }
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-1",
+      "kind": "assessment",
+      "criteria_refs": ["example-criterion"],
+      "artifact_ref": { "ref": "example-artifact-key" },
+      "observed": "Synthetic observation.",
+      "demonstrated": "Synthetic demonstrated capability.",
+      "evidence_status": "verified for the assigned criteria only",
+      "limitation": "Synthetic limitation.",
+      "handoff": "Dean review required",
+      "recorded": { "profession": "learning-analyst", "workflow": "theme-assessment", "date": "2000-01-02" }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "dec-1",
+      "scope": "module-entry",
+      "decision": "Synthetic entry confirmed.",
+      "recorded": { "profession": "dean", "workflow": "module-entry", "date": "2000-01-03" }
+    }
+  ],
+  "notes": [
+    { "id": "note-1", "text": "Synthetic note.", "recorded": { "profession": "dean", "workflow": "learning-plan", "date": "2000-01-03" } }
+  ]
+}

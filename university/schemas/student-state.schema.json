@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "student-state.schema.json",
+  "title": "Student state",
+  "description": "Machine-readable form of protocols/student-state-contract.md for one Student. Entities are referenced, never copied, from the public University.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["student", "enrollments", "plans", "evidence", "decisions", "notes"],
+  "properties": {
+    "student": { "$ref": "#/$defs/student" },
+    "enrollments": { "type": "array", "items": { "$ref": "#/$defs/enrollment" } },
+    "plans": { "type": "array", "items": { "$ref": "#/$defs/plan" } },
+    "evidence": { "type": "array", "items": { "$ref": "#/$defs/evidence" } },
+    "decisions": { "type": "array", "items": { "$ref": "#/$defs/decision" } },
+    "notes": { "type": "array", "items": { "$ref": "#/$defs/note" } }
+  },
+  "$defs": {
+    "strings": { "type": "array", "items": { "type": "string" } },
+    "recorded": {
+      "description": "Every write carries the acting Profession, the active workflow, and a date.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["profession", "workflow", "date"],
+      "properties": {
+        "profession": { "type": "string" },
+        "workflow": { "type": "string" },
+        "date": { "type": "string" }
+      }
+    },
+    "artifact_ref": {
+      "description": "Opaque reference to a submitted Student artifact; a path in a CLI store, an object key elsewhere.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ref"],
+      "properties": {
+        "ref": { "type": "string" },
+        "description": { "type": "string" }
+      }
+    },
+    "student": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "status", "goals"],
+      "properties": {
+        "id": { "type": "string" },
+        "status": { "type": "string" },
+        "goals": { "$ref": "#/$defs/strings" }
+      }
+    },
+    "enrollment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "public_ref", "status", "recorded"],
+      "properties": {
+        "id": { "type": "string" },
+        "public_ref": { "type": "string" },
+        "mode": { "type": "string" },
+        "status": { "type": "string" },
+        "rationale": { "type": "string" },
+        "prior_context": { "type": "string" },
+        "unconfirmed_capabilities": { "$ref": "#/$defs/strings" },
+        "next_actions": { "$ref": "#/$defs/strings" },
+        "recorded": { "$ref": "#/$defs/recorded" }
+      }
+    },
+    "plan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "enrollment_id", "status", "recorded"],
+      "properties": {
+        "id": { "type": "string" },
+        "kind": { "enum": ["module_learning_plan", "application_plan", "certification_plan"] },
+        "enrollment_id": { "type": "string" },
+        "status": { "type": "string" },
+        "purpose": { "type": "string" },
+        "verified_not_repeated": { "$ref": "#/$defs/strings" },
+        "coverage": { "$ref": "#/$defs/strings" },
+        "capacity": { "type": "string" },
+        "dates": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": { "start": { "type": "string" }, "end": { "type": "string" } }
+        },
+        "progress": { "type": "string" },
+        "current_lesson_ref": { "type": "string" },
+        "checkpoint": { "type": "string" },
+        "stop_condition": { "type": "string" },
+        "next_actions": { "$ref": "#/$defs/strings" },
+        "adaptations": { "$ref": "#/$defs/strings" },
+        "recorded": { "$ref": "#/$defs/recorded" }
+      }
+    },
+    "evidence": {
+      "description": "Append-only. A correction is a new entry whose 'corrects' names the earlier entry.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "evidence_status", "recorded"],
+      "properties": {
+        "id": { "type": "string" },
+        "kind": { "enum": ["assessment", "finding", "gap", "retention", "competency_verification", "module_verdict"] },
+        "criteria_refs": { "$ref": "#/$defs/strings" },
+        "artifact_ref": { "$ref": "#/$defs/artifact_ref" },
+        "observed": { "type": "string" },
+        "demonstrated": { "type": "string" },
+        "evidence_status": { "type": "string" },
+        "limitation": { "type": "string" },
+        "handoff": { "type": "string" },
+        "corrects": { "type": "string" },
+        "recorded": { "$ref": "#/$defs/recorded" }
+      }
+    },
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "scope", "decision", "recorded"],
+      "properties": {
+        "id": { "type": "string" },
+        "scope": { "type": "string" },
+        "decision": { "type": "string" },
+        "conditions_carried_forward": { "$ref": "#/$defs/strings" },
+        "recorded": { "$ref": "#/$defs/recorded" }
+      }
+    },
+    "note": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "text", "recorded"],
+      "properties": {
+        "id": { "type": "string" },
+        "text": { "type": "string" },
+        "recorded": { "$ref": "#/$defs/recorded" }
+      }
+    }
+  }
+}
