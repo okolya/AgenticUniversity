@@ -14,7 +14,8 @@ CORE_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 POLICIES_DIR="$CORE_ROOT/university/policies"
 WORKFLOWS_DIR="$CORE_ROOT/university/workflows"
 SKILLS_DIR="$CORE_ROOT/university/skills"
-NAMESPACE="university-"
+NAMESPACE="university"
+RESOURCE_PREFIX="${NAMESPACE}-"
 
 die() { printf '✗ %s\n' "$*" >&2; exit 1; }
 
@@ -36,7 +37,7 @@ guard_target() {
 cleanup_broken_links() {
   local target_dir="$1"
   [ -d "$target_dir" ] || return 0
-  find "$target_dir" -maxdepth 1 -type l -name "${NAMESPACE}*" \
+  find "$target_dir" -maxdepth 1 -type l -name "${RESOURCE_PREFIX}*" \
     ! -exec test -e {} \; -delete
 }
 
@@ -47,7 +48,7 @@ link_files() {
   for source in "$source_dir"/$pattern; do
     [ -f "$source" ] || continue
     base="$(basename "$source")"
-    target="$target_dir/$NAMESPACE$base"
+    target="$target_dir/$RESOURCE_PREFIX$base"
     guard_target "$target" "$source"
     ln -s "$source" "$target"
   done
@@ -61,7 +62,7 @@ link_skills() {
     [ -d "$source" ] || continue
     [ -f "$source/SKILL.md" ] || continue
     base="$(basename "$source")"
-    target="$target_dir/$NAMESPACE$base"
+    target="$target_dir/$RESOURCE_PREFIX$base"
     guard_target "$target" "$source"
     ln -s "$source" "$target"
   done
