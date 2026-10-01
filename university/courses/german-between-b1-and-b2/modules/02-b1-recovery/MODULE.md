@@ -34,11 +34,11 @@ source. Completing Module 1 is not required.
 The Student can independently:
 
 1. understand the main points and relevant details of clear standard German
-   on familiar everyday, study, and work-related topics;
+   on familiar everyday, study, and work-related topics *(attested)*;
 2. read connected B1-level texts and identify their main message, supporting
    information, and relevant vocabulary;
 3. speak coherently about experiences, plans, opinions, and familiar problems,
-   with enough interactional control to maintain a conversation;
+   with enough interactional control to maintain a conversation *(attested)*;
 4. write connected practical texts with an understandable structure and
    appropriate B1-level language;
 5. use the B1 grammar and vocabulary needed for meaning, while identifying
@@ -46,7 +46,11 @@ The Student can independently:
 6. transfer a recovered form or expression from controlled practice into a
    new but familiar communicative context;
 7. notice uncertainty in a spoken or written attempt and request clarification
-   or repair when communication breaks down.
+   or repair when communication breaks down (the spoken part is *attested*).
+
+Criteria marked *attested* are met by recorded completion of the required
+practice; no measurement or Examiner verdict is issued on them
+(`COURSE.md`, Evidence classes for Hören and Sprechen).
 
 ## Broad competency areas
 

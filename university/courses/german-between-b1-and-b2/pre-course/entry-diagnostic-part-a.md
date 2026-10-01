@@ -167,7 +167,7 @@ Er ist freundlich.
 
 ## Was Teil A nicht prüft
 
-- Teil A prüft nicht Hören und Sprechen. Das kommt in Teil B.
+- Teil A hat kein Hören und kein Sprechen. Das kommt in Teil B. Dort bewerten wir es nicht.
 - Teil A hat keine Themen für B2 und keine Fragen wie in einer Prüfung.
 - Schöne Schrift, schnelles Tippen und kleine Rechtschreibfehler sind
   nicht wichtig, wenn man Sie gut versteht.

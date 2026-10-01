@@ -38,6 +38,9 @@ The Student can independently, in familiar contexts:
 6. use these foundations in short listening, reading, speaking, and writing
    tasks rather than only isolated grammar exercises.
 
+Listening and speaking tasks inside criterion 6 are *attested*: recorded as
+done, not measured (`COURSE.md`, Evidence classes for Hören and Sprechen).
+
 ## Broad competency areas
 
 - sentence structure and word order;

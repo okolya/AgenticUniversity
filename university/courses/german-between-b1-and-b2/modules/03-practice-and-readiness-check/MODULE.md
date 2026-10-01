@@ -38,6 +38,12 @@ The Student can independently:
 6. produce the evidence for criteria 1–5 without assistance beyond the stated
    tool and AI-use mode.
 
+Hören and Sprechen parts of criteria 1–6, and of Module 2 Exit criteria 1, 3,
+and 7 required by the Entry Contract, are *attested*: met by recorded
+completion of the required practice, not measured. Independent measurement and
+the Examiner's verdict cover only the Lesen and Schreiben evidence
+(`COURSE.md`, Evidence classes for Hören and Sprechen).
+
 ## Broad competency areas
 
 - integrated four-skill performance;

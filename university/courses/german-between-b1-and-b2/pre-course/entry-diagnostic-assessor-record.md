@@ -5,6 +5,14 @@ Assessor-only companion of `entry-diagnostic-part-a.md` and
 during the diagnostic. It holds answer keys, audio scripts, the task-to-criterion
 map, and judgement rules.
 
+Evidence classes (Dean decision, `COURSE.md`, "Evidence classes for Hören and
+Sprechen"): Hören and Sprechen are never measured in this Course. The Hören
+task (B2) and the Sprechen task (B5) are recorded only as `attested`: a record
+that the task was done, with no claim about quality or level. `attested` is
+never reported as `demonstrated`, and these criteria are never reported as
+`uncertain` pending measurement. Lesen, Schreiben, and the written parts of
+the remaining criteria are measured under `NO_AI` as before.
+
 ## 1. Identity and authority
 
 - Contract 2 artifact for the Dean's Assessment Request (Contract 1) in
@@ -14,7 +22,9 @@ map, and judgement rules.
 - Public and Student-independent. No Student data appears in any file. Results
   are recorded in the private Student workspace through `update-evidence` after
   administration; that is outside this artifact.
-- Emma measures and reports. Placement, Module choice, skip/narrowing, bridge,
+- Emma measures Lesen and Schreiben (and the written parts of the other
+  criteria), records attestation for Hören and Sprechen, and reports.
+  Placement, Module choice, skip/narrowing, bridge,
   and trajectory remain with the Dean (`README.md` decision map, which is not
   changed here).
 - Independence: the administering Analyst must not have taught or coached this
@@ -31,7 +41,11 @@ map, and judgement rules.
 - Audio is not supplied as a file. Section 5 gives the scripts for live or
   self-recorded reading by a human. Delivery channel must be recorded.
 
-## 3. Measured criteria (quoted from the Course; not changed)
+## 3. Criteria in scope (quoted from the Course; not changed)
+
+Evidence class per criterion: E1-E4, X2, X4, X5, X6 are measured. X1 and X3
+are `attested` only. X7 is measured for its written part; its spoken part is
+`attested` only (see `COURSE.md`).
 
 Module 2 Entry Contract (A2 foundations), the Student can, in familiar
 contexts:
@@ -67,19 +81,23 @@ The learner files use Aufgabe 1-4 (A1-A4) and Aufgabe 5-9 (B1 = 5 Lesen,
 B2 = 6 Hören, B3a/B3b = 7a/7b, B4 = 8, B5a/B5b = 9a/9b); Z is "Extra-Aufgabe Z".
 The renaming avoids confusion with CEFR level labels.
 
-| Task | Part | Skill | Measures | Mode |
+| Task | Part | Skill | Criterion and evidence class | Mode |
 |---|---|---|---|---|
 | A1 sentence order (items 1-3) and questions (items 4-6) | A | Schreiben (controlled) | E1 | NO_AI |
 | A2 cloze, 12 items (articles 1, 2, 10; prepositions 3, 4; pronouns 8, 9; verb forms 5, 6, 7, 11, 12) | A | Schreiben (controlled) | E2 | NO_AI |
 | A3 present / past / future, 2 sentences each | A | Schreiben (guided) | E3 | NO_AI |
 | A4 situations (8) and words (6) | A | Schreiben / vocabulary | E4 | NO_AI |
 | B1 reading, 9 items | B | Lesen | X2 | NO_AI |
-| B2 listening, 6 items | B | Hören | X1 | NO_AI (notes on paper allowed) |
+| B2 listening, 2 texts, 6 questions | B | Hören | X1: attestation only (not scored) | task conditions as in 5.3; notes on paper allowed |
 | B3a e-mail | B | Schreiben | X4, X5 (use of B1 grammar), X6 (free production side) | NO_AI |
-| B3b mark and correct own text | B | Schreiben | X5 (identify/correct), X7 (noticing) | NO_AI |
-| B4 two clarification questions | B | Schreiben | X7 | NO_AI |
-| B5a monologue, B5b conversation | B | Sprechen | X3, X7 (spoken), X6 (free production side), X5 (spoken use) | NO_AI |
-| Z optional revision | B | Schreiben | supplementary evidence for X5 and X7 only | AI_ASSISTED, disclosed, recorded separately |
+| B3b mark and correct own text | B | Schreiben | X5 (identify/correct), X7 (written noticing) | NO_AI |
+| B4 two clarification questions | B | Schreiben | X7 (written) | NO_AI |
+| B5a monologue, B5b conversation | B | Sprechen | X3: attestation only (not judged); X7 spoken part: attestation only | live voice exchange; not judged |
+| Z optional revision | B | Schreiben | supplementary evidence for X5 and the written part of X7 only | AI_ASSISTED, disclosed, recorded separately |
+
+Hören (B2) and Sprechen (B5) yield no criterion-level result. Their answers
+and speech are not scored, not judged, and not used as evidence for any
+measured criterion (not X5, not X6, not X7).
 
 X6 additionally uses the controlled-form results of Part A (see 6.X6).
 
@@ -87,21 +105,31 @@ X6 additionally uses the controlled-form results of Part A (see 6.X6).
 
 ### 5.1 Common rules
 
-- One attempt per part. No retake. A disrupted sitting is recorded with the
+- One attempt per part for the measured tasks (A1-A4, B1, B3, B4). No retake
+  of a measured task. The attestation sitting below is not a retake. A disrupted sitting is recorded with the
   disruption; any further measurement is a Dean decision (`README.md`
   decision map: "request a bounded further measurement").
 - Part A at most 45 minutes, Part B at most 75 minutes (B1-B5), one sitting
-  each. Per-task slots: A1 8, A2 10, A3 10, A4 12 (Part A); B1 20, B2 12, B3 20
+  each. A B2 or B5 moved to another Termin stays outside the 75 minutes and
+  has its own 12-minute slot (Dean decision). It is recorded like the
+  separate attestation sitting below (same slot, same attestation record,
+  not a retake). Per-task slots: A1 8, A2 10, A3 10, A4 12 (Part A); B1 20, B2 12, B3 20
   (15 + 5), B4 5, B5 12 (Part B). The learner is told to move on when a slot
-  ends. B5 must keep its slot; if earlier tasks overrun, cut them, not B5.
+  ends. B2 (Hören) and B5 (Sprechen) both keep their slots so that they can
+  be attested (Dean decision); if earlier tasks overrun, cut the other tasks
+  first, not B2 and not B5.
   A short pause (at most 5 minutes) is allowed between tasks and is
   recommended before B5. Parts may be in separate sessions.
 - Record per part: date, start/end, channel (typed / handwritten / spoken /
   audio), whether the sitting was unobserved, any tool use observed or
   disclosed, any technical disruption, items left blank, items cut by time.
 - `NO_AI`, no dictionary, no translator, no autocorrect for every task except Z.
-  If a violation is observed or disclosed, the affected items are reported
-  `uncertain` and the violation recorded; they are never `demonstrated`.
+  If a violation is observed or disclosed in a measured task, the affected
+  items are reported `uncertain` and the violation recorded; they are never
+  `demonstrated`. A violation in B2 or B5 is recorded with the
+  attestation and does not change `attested`; the rule is not weakened, but
+  there is nothing measured to downgrade. The reader in B2 and the partner in
+  B5 are not "help".
 - Instructions are A2 or lower. If an answer shows that the Student
   misunderstood the instruction (off-task answer), do not count that item
   against the criterion; mark it "instruction not understood" and treat as no
@@ -111,6 +139,38 @@ X6 additionally uses the controlled-form results of Part A (see 6.X6).
   ignored when meaning and form are recognisable. Missing umlauts count as
   correct. Do not request a correction for cosmetic differences.
 - Part B is not administered if the stop rule (5.2) applies.
+- Separate attestation sitting (Dean decision): if B2 or B5 was skipped,
+  cut by time, or not possible in the sitting, if Part B was withheld
+  (5.2), or if B2 or B5 was done but ended `not attested` (for example no
+  answer attempt, a text not played), the missing or `not attested` Hören
+  and/or Sprechen task may be done in a separate sitting for the
+  attestation alone. That sitting holds only the missing
+  or `not attested` task or tasks (B2 and/or B5, with the delivery rules of 5.3 and 5.4); it
+  adds no Part A or Part B task. Record for it: date, start/end, channel, which
+  task, the attestation record of 5.3 or 5.4, and the reason for the
+  separate sitting. It is not a retake and not a further measurement. It
+  does not add, change, or replace any measured result, and its content is
+  not used as evidence for any criterion. If B2 or B5 was done in the
+  sitting and is `attested`, it is not repeated. Triggers are those of the
+  Dean decisions: the task was skipped (including cut by time or no channel
+  available), Part B was withheld, or the task was done but ended `not
+  attested`. For a repeat, the record keeps the first result with its reason
+  (`not attested`) and adds the repeat's own attestation record; the
+  repeat's `attested` or `not attested` is the attestation result reported.
+  The Analyst offers the sitting; the Student may decline, recorded as `not
+  attested`, reason "not taken". Conditions: same rules, delivery, and
+  12-minute slot per task as in the main sitting (5.3, 5.4; Hören preview
+  and no-AI/no-help recording included); record the administrator and
+  whether the sitting was observed. Learner announcement (simple German,
+  only the Aufgabe 6 and/or 9 text is shown): "Heute machen Sie nur Aufgabe 6
+  (oder 9). Es gibt keine Punkte. Bitte machen Sie die Aufgabe ganz." The
+  Part B rules "nur einmal" and "an einem Termin" concern the measured
+  tasks (Aufgabe 5, 7, 8) only; Aufgabe 6 and 9 say in the learner text that
+  they are done at another Termin when needed, and the attestation sitting
+  is that exception. Z is not offered in an
+  attestation-only sitting (see section 8). "Cut" means the Analyst ends a
+  task early and records the items as cut by time; B2 and B5 are cut only if
+  the sitting itself must end.
 
 ### 5.2 Stop rule after Part A (Dean's stop condition, operationalised)
 
@@ -126,22 +186,48 @@ placement:
   `uncertain`, or when at most one of E2-E4 is `not demonstrated` and E1 is
   not `not demonstrated`. A Part B measurement is then interpreted with the A2
   gap in mind.
-- When withheld: return the Part A evidence, state that X1-X7 were not
-  measured, and do not infer B1 results.
+- When withheld: return the Part A evidence, state that the measured criteria
+  X2, X4, X5, X6, and the written part of X7 were not measured, state that the
+  Hören and Sprechen tasks were not administered in this sitting (so no
+  attestation exists yet for X1, X3, or the spoken part of X7), and do not
+  infer B1 results. State that a separate sitting for the attestation alone
+  of B2 and B5 is allowed (Dean decision); if it is held, it is recorded
+  as in 5.1 and does not change the stop result, any Part A result, or any
+  measured criterion.
 - The Analyst announces only "Teil B ist sinnvoll / Teil B ist jetzt nicht
   sinnvoll" without placement advice.
 
-### 5.3 Delivery of listening (B2)
+### 5.3 Delivery of listening (B2): attestation only
 
-- Preferred delivery: a person reads the scripts below aloud at natural
+- Purpose: record that the Hören task was done. Nothing is scored or judged.
+- Sequence as in Part B: the Student sees the six questions for about 1 minute,
+  then hears text 1 twice and writes the answers for text 1, then hears
+  text 2 twice and writes the answers for text 2 (the answers are written
+  after each text; Dean decision), and may take short notes on paper. Preferred delivery: a person reads the scripts below aloud at natural
   pace, or plays a recording of a human reading, to the Student. Two plays per
   text, a 10-second pause between plays. Do not repeat further. Do not show the
   script.
-- If the only available channel is text or a text-to-speech engine, record
-  this. A text-to-speech recording is audio, but pronunciation may differ from
-  human speech; record the channel. If no audio is possible, B2 is not
-  administered and X1 is `uncertain` (never `demonstrated` from reading
-  alone, because reading the script measures X2 not X1).
+- Record the delivery channel (live human voice, recording of a human,
+  text-to-speech). A text-to-speech recording is audio, but pronunciation may
+  differ from human speech.
+- Attestation record for X1 (task-done record only; no claim about the
+  criterion): date, channel, both texts played twice (yes/no),
+  and whether the Student wrote an answer attempt for each text. An answer
+  attempt is any written word or mark for that text, including "Ich verstehe
+  nichts"; a blank for a text is no attempt. Its content is not read for
+  correctness and no key exists. If the Student asks afterwards whether an
+  answer was right, reply only: "Wir sagen nicht, ob es richtig ist."
+  Heard means a live reader or a recording; if a technical fault
+  allowed only one play of a text, the Analyst records it and the text still
+  counts as heard.
+- `attested` when both texts were heard in audio as above and the Student made
+  an answer attempt for each text. Otherwise `not attested` with the reason
+  (no audio possible, a text not played, no answer attempt, disruption); a
+  repeat in a separate attestation sitting is then allowed (5.1). A
+  text delivered only for reading is never a Hören task; reading is not
+  recorded as Hören.
+- Do not report Hören as measured, verified, or independently shown, and do
+  not report it as `uncertain`.
 - Script H1 (everyday; about 85 words):
   "Guten Tag, hier ist die Praxis von Doktor Berger. Mein Name ist Anna
   Roth. Ich rufe wegen Ihres Termins am Donnerstag an. Leider ist die
@@ -159,36 +245,34 @@ placement:
   schreibt bitte bis Mittwoch eine E-Mail an das Sekretariat. Dann
   bekommt er die Materialien online."
 
-### 5.4 Delivery of speaking (B5)
+### 5.4 Delivery of speaking (B5): attestation only
 
-- Channel: live voice with the Analyst or another human assessor; a
-  synchronous voice or video call counts. Record the channel.
+- Purpose: record that the Sprechen task was done. Nothing is judged.
+- Channel: a real exchange with the Analyst or another human, by telephone,
+  by video, or in person (Dean decision). Record the channel.
 - B5a: 30 seconds thinking, no notes, about one minute of speech. Do not
   interrupt; one neutral prompt allowed after 20 seconds of silence.
-- B5b scripted conversation. The partner follows this sequence, with natural
-  adaptation to the Student's answers, and records the turns:
-  1. "Wie lernen Sie im Moment Deutsch?" (familiar topic; gets the
-     conversation going; follow up with "Warum?")
+- B5b conversation. The partner follows this sequence with natural adaptation
+  to the Student's answers:
+  1. "Wie lernen Sie im Moment Deutsch?" (follow up with "Warum?")
   2. "Was ist für Sie im Alltag ein Problem mit der deutschen Sprache?"
-     (familiar problem)
-  3. Planned repair trigger R1 (lexical): "Welche Hürden gibt es dabei?"
-     (Hürden is deliberately unfamiliar; say it once at normal pace; do not
-     explain unless the Student asks.)
-  4. "Was denken Sie über Online-Kurse? Sind sie gut oder schlecht?"
-     (opinion; follow up with "Warum?")
-  5. Planned repair trigger R2 (referential vagueness): "Und wie war das
-     dann mit der Sache?" said without a clear referent; do not clarify unless
-     the Student asks.
-  6. Invite: "Haben Sie auch eine Frage an mich?" (interaction; the Student
-     may have already asked).
-- Do not correct, teach, or help. If the Student requests clarification, give
-  one brief, simpler rephrasing and record that the Student initiated it. Do not
-  rescue silently; record how long the breakdown lasted.
-- Record, per turn: Student initiated or responded; trigger R1/R2 reaction
-  (clarification request / guess / silence / off-topic answer / answered
-  appropriately); understandability.
-- Optional: a recorded monologue only, without an exchange, may be collected
-  as an observation. It cannot yield `demonstrated` for X3 (see section 7).
+  3. "Was denken Sie über Online-Kurse? Sind sie gut oder schlecht?"
+     (follow up with "Warum?")
+  4. Invite: "Haben Sie auch eine Frage an mich?"
+- Do not correct, teach, or help. If the Student asks for clarification, give
+  one brief, simpler rephrasing. Do not record quality, understandability,
+  functions performed, repair moves, or breakdowns as evidence.
+- Attestation record for X3 and the spoken part of X7 (task-done record
+  only; no claim about the criterion): date, channel, start
+  and end time, whether B5a was spoken (yes/no; any speech in response to the
+  prompt, of any length, no quality threshold), whether the B5b exchange took
+  place (yes/no), any disruption. No notes on content.
+- `attested` when B5a was spoken and the B5b exchange took place as a real
+  exchange (telephone, video, or in person). Otherwise `not attested` with the reason; a repeat in a
+  separate attestation sitting is then allowed (5.1). A recording of a
+  monologue alone does not complete the task (see section 7).
+- Do not report Sprechen as measured, verified, or independently shown, and do
+  not report it as `uncertain`.
 
 ## 6. Judgement rules by criterion
 
@@ -203,8 +287,10 @@ three items are answered; otherwise `uncertain`.
 
 The count thresholds below are the Analyst's proposed measurement rules
 (the Course leaves thresholds to the Analyst). They are not Dean thresholds and
-are not converted into a score in the report. The three-way result is the only
-reported result. Judging is by pattern; one-off slips do not decide.
+are not converted into a score in the report. For measured criteria the
+three-way result is the only reported result. X1, X3, and the spoken part of
+X7 are not judged and have no three-way result; they carry only the
+attestation record. Judging is by pattern; one-off slips do not decide.
 
 ### E1: word order (A1, 6 items)
 
@@ -317,22 +403,14 @@ moves more, can read/listen to music on the train.
 - Reading is NO_AI untimed apart from the 15-minute block; blank/time-out rules
   apply.
 
-### X1: listening (B2, 6 items)
+### X1: listening (B2): attestation only
 
-Keys: 1 a. 2 Friday, 10:30. 3 The insurance card (Versichertenkarte). 4 b. 5
-Saturday, 9-12, room 204 (second floor, next to the library). Both time and
-place needed; either alone is partial. 6 Write an e-mail to the secretariat
-by Wednesday.
-
-- `demonstrated`: items 1 and 4 correct and at least 3 of items 2, 3, 5, 6
-  correct, and both texts show at least one correct detail.
-- `not demonstrated`: at most 2 of the 6 items correct overall, or items 1 and 4
-  both wrong.
-- otherwise `uncertain`.
-- Only if heard in audio (5.3). A reading delivery or no audio gives `uncertain`
-  (not measured), never `demonstrated`.
-- Note: items 1 and 4 are multiple choice (guessing chance 1 in 3). They
-  count only together with the details.
+No keys, no item scoring, no `demonstrated` / `not demonstrated` / `uncertain`
+result. The Hören answers are not judged for correctness. The recorded result
+is `attested` or `not attested` under the rule in 5.3, with the channel.
+`attested` carries no claim about quality or level, is never reported as
+`demonstrated`, and is not grounds to skip or narrow Hören practice
+(`COURSE.md`, Evidence classes).
 
 ### X4: connected writing (B3a)
 
@@ -357,7 +435,8 @@ is recorded, not penalised unless it prevents the points).
 
 Two components, both from NO_AI evidence only:
 
-- (a) Use: across B3a, B5 (if available), and A-part items where relevant, the B1
+- (a) Use: across B3a and A-part items where relevant (written evidence only;
+  speech is not judged), the B1
   grammar and vocabulary needed for meaning is mostly controlled (main verb
   forms, word order in main and subordinate clauses, essential cases and
   connectors) and errors do not obstruct meaning.
@@ -389,8 +468,8 @@ production. This is a measurement reading, flagged for the Dean in section 9.
 - Select up to five target forms that were correct in Part A (for example Perfekt,
   dative pronoun, preposition with accusative, V2 inversion, modal + infinitive,
   question order).
-- Look for opportunities to use each form in B3a, B3b, B4, and B5 (NO_AI
-  only). Count a form as "transferred" when it appears and is correct in at
+- Look for opportunities to use each form in B3a, B3b, and B4 (written,
+  NO_AI only; speech is not judged). Count a form as "transferred" when it appears and is correct in at
   least one free context.
 - `demonstrated`: at least three target forms found, and at least two
   transferred, and none of the forms that were controlled in Part A is
@@ -398,27 +477,26 @@ production. This is a measurement reading, flagged for the Dean in section 9.
 - `not demonstrated`: at least two target forms found in free production
   and wrong in them though controlled in Part A.
 - `uncertain`: fewer than three target forms found with an opportunity in
-  free production, Part A was not administered or Part B Sprechen/Schreiben
-  evidence is incomplete.
+  free production, Part A was not administered or Part B Schreiben
+  evidence is incomplete. Because Sprechen is not used, free-production
+  contexts are few; this makes `uncertain` more likely (limitation L10).
 
-### X3: speaking and interaction (B5)
+### X3: speaking and interaction (B5): attestation only
 
-Functions to observe: experience (B5a), plan (B5a), problem (B5b turn 2),
-opinion (B5b turn 4). Interactional control: responds to follow-up, keeps the
-exchange going, asks the Analyst at least one question, handles R1/R2.
-
-- `demonstrated`: all four functions comprehensibly performed, with
-  connected speech (linking, not only isolated words), the exchange
-  is maintained, and the Student asks at least one question. At most one
-  breakdown needs Analyst rescue.
-- `not demonstrated`: at least two functions are not comprehensible, or the
-  exchange cannot be maintained (repeated silence/off-task responses).
-- otherwise `uncertain`.
-- No spoken exchange possible: see section 7. Result is `uncertain`.
+No functions are observed, no interactional control is judged, and no
+`demonstrated` / `not demonstrated` / `uncertain` result is issued. The
+recorded result is `attested` or `not attested` under the rule in 5.4, with the
+channel. `attested` carries no claim about quality or level, is never reported
+as `demonstrated`, and is not grounds to skip or narrow Sprechen practice
+(`COURSE.md`, Evidence classes).
 
 ### X7: noticing uncertainty and requesting clarification or repair
 
-Evidence sources: B4 (written), B3b (marks), B5 R1/R2 (spoken).
+X7 is split by evidence class: the written part is measured; the spoken part is
+`attested` only (attestation record from 5.4; no judgement of spoken repair
+moves).
+
+Evidence sources for the measured written part: B4 (written) and B3b (marks).
 
 - Written: B4 contains two distinct requests; each names a specific missing
   or unknown piece (for example time, which documents, which Amt/where, what
@@ -430,41 +508,46 @@ Evidence sources: B4 (written), B3b (marks), B5 R1/R2 (spoken).
   real problem (a hit). A mark at a correct place counts as noticing without
   correctness of the repair; a hit is also evidence of noticing an error the
   Student could not fix.
-- Spoken: Student requests clarification at R1 or R2, or uses paraphrase/repair
-  moves of their own (self-correction, "Ich meine ...").
-- `demonstrated`: B4 yields two specific, understandable requests, and at
-  least one of (a hit in B3b, a spoken repair move).
-- `not demonstrated`: B4 yields no specific request, and no hit in B3b, and no
-  spoken repair move although a breakdown occurred. (If no spoken exchange
-  occurred, spoken evidence is `no evidence`.)
+- Written part `demonstrated`: B4 yields two specific, understandable
+  requests, and at least one hit in B3b.
+- Written part `not demonstrated`: B4 yields no specific request, and no hit
+  in B3b.
 - otherwise `uncertain`.
-- Limitation: the written tasks cue the request. Uncued evidence exists only
-  from spoken R1/R2 and from unprompted self-corrections. The record must
-  state which evidence was cued.
-- The spoken part is not scored if there is no spoken exchange. Without
-  spoken evidence, the result can still be `demonstrated` for the written side,
-  because the criterion says "spoken or written". Record that the spoken
-  side was not measured.
+- Report X7 as two lines: "written part" with the result above, and "spoken
+  part" with `attested` / `not attested`. Do not combine them into one
+  `demonstrated`, and do not describe the written result as covering the
+  spoken part.
+- Limitation: the written tasks cue the request. The record must state that
+  the written X7 evidence was cued.
 
-## 7. Sprechen when no spoken exchange is possible
+## 7. Hören and Sprechen when the channel is not available
 
-- If no live spoken exchange is possible, B5 is not administered as designed.
-  X3 is reported `uncertain` (not measured in the available channel). It is never
-  `demonstrated`.
-- A recorded monologue (B5a) without interaction may be collected, but is only
-  an observation. It does not change X3 from `uncertain`, because X3 requires
-  interactional control. Record what the monologue showed (functions
-  performed, comprehensibility) as an observation for the Dean.
-- X7 spoken side, X5 spoken use, and X6 spoken free production are not
-  measured. The report states which written evidence stands in for them and
-  that this is partial.
-- The report must say: "Sprechen was not measured as an exchange" and the Dean's
-  map row "Criteria `uncertain`: request a bounded further measurement" applies.
-  The Analyst does not decide that route.
+- If no live spoken exchange is possible, B5 is not administered as designed
+  and the Sprechen task is `not attested` for this sitting, with the reason
+  recorded. This is not `uncertain`, is not `demonstrated`, and no measurement
+  is pending. X3 and the spoken part of X7 carry `not attested`.
+- A recorded monologue (B5a) without an exchange does not complete the task
+  and is not collected as an observation of quality.
+- If no audio is possible for Hören, B2 is not administered as designed and
+  X1 is `not attested` for this sitting, with the reason recorded. Reading the
+  scripts is not a Hören task.
+- The missing Hören or Sprechen task, or one done but `not attested`, may
+  be done later in a separate sitting for the attestation alone (Dean
+  decisions; see 5.1). No Hören or
+  Sprechen measurement is involved in it, and it changes no measured
+  result.
+- The report must say that Hören and Sprechen were not measured in this
+  Course and that written evidence does not stand in for them.
 
 ## 8. AI-assisted revision step (Z): recording and handling
 
-- Administered only after B5, never before an unassisted task is complete.
+- Administered only after B5, and only after the unassisted Schreiben
+  tasks are complete (a moved Aufgabe 6 outstanding does not delay it; Z
+  stays in the main sitting), in the sitting where B5 is completed
+  together with the unassisted Schreiben tasks. It is not offered in an
+  attestation-only sitting (5.1) and not after a B5 moved to another
+  Termin (Dean decision). It is then recorded as "step not offered" (a
+  Student who skips Z is "step not taken"). Z concerns Schreiben only.
   Release the Z section to the Student only after B5 (the learner file contains
   it, so withhold that section or page until then). The unassisted B3a/B3b texts
   are collected and frozen first. Maximum 15 minutes, outside the Part B limit.
@@ -475,7 +558,7 @@ Evidence sources: B4 (written), B3b (marks), B5 R1/R2 (spoken).
 - Report in a separate evidence row labelled `AI_ASSISTED`. Do not merge it into
   the criterion results of X4, X5, X6, X7 from NO_AI evidence.
 - What it can show: whether the Student, after help, identifies errors
-  and understands the correction. Use as supporting observation for X5 and X7. If
+  and understands the correction. Use as supporting observation for X5 and the written part of X7. If
   the Student's account is not in own words or does not match the changes, record
   `uncertain` for that evidence.
 - It cannot raise a criterion from `uncertain`/`not demonstrated` to
@@ -494,28 +577,78 @@ Evidence sources: B4 (written), B3b (marks), B5 R1/R2 (spoken).
   validated or piloted.
 - L3 X6 transfer reading (section 6, X6) is a diagnostic adaptation of the
   criterion's wording. The Dean may disagree with this reading.
-- L4 Hören and Sprechen need channels (audio delivery, spoken exchange). Without
-  them X1 and X3 are `uncertain`.
-- L5 Written X7 evidence is cued by the task. Spoken evidence is the only
-  uncued evidence.
+- L4 Hören and Sprechen are never measured in this Course (Dean decision).
+  They need channels (audio delivery, spoken exchange) to be attested. Without
+  a channel the task is `not attested` for that sitting. The evidence about
+  Hören and Sprechen is therefore a known boundary and is stated as such in
+  every report.
+- L5 Written X7 evidence is cued by the task. No uncued X7 evidence is
+  collected, because speech is not judged.
 - L6 One short text per skill. The evidence is a small sample; contradictory
   or thin evidence is reported `uncertain`, not smoothed.
-- L7 The Z step is designed for Schreiben only. A Sprechen revision step would
-  need a transcript or recording and is not designed here. The Dean's frame
-  makes it optional.
+- L7 The Z step is designed for Schreiben only. No Sprechen or Hören revision
+  step exists, because those skills are not measured. The Dean's frame makes Z
+  optional.
 - L8 Learner-facing text is German only; this record is English. Learner-text
   German and A2 level were written and checked by the Analyst alone, with the
   Contract 3 review below as the only external check.
 - L9 Time limits (Part A 45 minutes, Part B 75 minutes) are proposed within
   the Dean's "single sitting" bound; not tested.
+- L10 X5(a), X6, and X7 rest on written evidence only; speech is not used.
+  X5(a) and X6 may more often be
+  `uncertain`. The thresholds were not changed.
+- L11 Dean-decided (accepting the Analyst's proposals; `README.md`, "Decided"):
+  the label `not attested`; Hören `attested` = both texts heard (a live
+  reader is allowed) and an answer attempt for each text; Sprechen `attested`
+  = any spoken language produced and the exchange held; a no-AI/no-help
+  violation in Hören or Sprechen is recorded only and does not change
+  `attested` (5.1); a separate sitting for the attestation alone is allowed
+  if Hören or Sprechen was skipped, Part B was withheld, or the task was
+  done but ended `not attested` (5.1, 5.2, 5.3, 5.4, 7); it adds no
+  measured evidence and changes no measured result; the learner text of
+  Aufgabe 6 and 9 says (paraphrase) that if audio or a spoken exchange is not
+  possible, the Student says so before the test and the task is done at
+  another Termin; and "nur einmal" / "an einem Termin" concerns the
+  measured tasks only (Part B rules); the learner A2 wording in Part B was
+  simplified (Gesprächspartner, Aussprache, the label "B2", "prüft"); the
+  time protection of B5 applies equally to B2, other tasks are cut first
+  (5.1); the learner sentence "Hören und Sprechen üben Sie auch im Kurs"
+  stays; a moved Aufgabe 6 or 9 stays outside the 75 minutes with its own
+  12-minute slot and no Z is offered after a moved Aufgabe 9 (5.1, 8;
+  Part B rules); Sprechen may take place by telephone, video, or in person
+  if a real exchange is held (5.4; Aufgabe 9); the Hören answers are
+  written after each text (5.3; Aufgabe 6). The conditions are still
+  unpiloted (L2 and L9 apply to times).
+- L12 Open for the Dean (deferred until a pilot): who administers and
+  observes an attestation-only sitting (recorded, not decided); whether
+  Aufgabe 6 answer sheets are kept; whether the number of repeats of an
+  attestation sitting is limited (the Analyst applies no limit and records
+  each sitting). Who administers and observes the main sitting, and the
+  typed or handwritten channel for Lesen and Schreiben, remain open in
+  `README.md`. The simplified A2 wording in Part B is checked only by
+  Contract 3 (11.4, 11.5), not piloted with learners (L8).
 
 ## 10. Report format to the Dean (Contract 4)
 
-For each of E1-E4 and X1-X7: result (`demonstrated`, `not demonstrated`,
-`uncertain`), the evidence items it rests on, the mode (`NO_AI`; `AI_ASSISTED`
-only for Z), the channel, and any limitation. Do not report a score or
-percentage. State explicitly that the Analyst did not choose placement or
-trajectory.
+For each of E1-E4, X2, X4, X5, X6, and the written part of X7: result
+(`demonstrated`, `not demonstrated`, `uncertain`), the evidence items it rests
+on, the mode (`NO_AI`; `AI_ASSISTED` only for Z), the channel, and any
+limitation.
+
+For X1, X3, and the spoken part of X7: the attestation only (`attested` or
+`not attested`), the date, the channel, and the reason when not attested. If
+the attestation was done in a separate sitting (5.1), say so and give that
+sitting's date and channel and, if the task had been done before and was
+`not attested`, the first result with its reason; state that the sitting
+added no measured evidence and changed no measured result. If a no-AI/no-help violation was
+observed or disclosed in B2 or B5, state it as a record only; it does not
+change `attested`. No
+quality or level statement, no `demonstrated`, no `uncertain`. State that
+Hören and Sprechen were not measured and that this is a known boundary of the
+evidence.
+
+Do not report a score or percentage. State explicitly that the Analyst did not
+choose placement or trajectory.
 
 ## 11. Contract 3 review record
 
@@ -525,8 +658,16 @@ trajectory.
   calibration, and the audio scripts were not validated by the reviewer.
 - Pedagogical readiness reported: `ready_with_changes`.
 - Owner review (Analyst): findings applied or rejected below. The reviewed
-  version was revised afterwards; the revised files were not re-reviewed.
-  Status: reviewed once, changes applied, no second review.
+  version was revised afterwards.
+  Status: first review (11.1), second review (11.2), third review (11.3),
+  fourth review (11.4) and a short check of the final revision (11.5) done;
+  changes applied; the 11.5 revision is the current version.
+
+### 11.1 First review (earlier design)
+
+The rows below reflect the first review, when Hören and Sprechen were still
+designed as measured. The attested-only decision (preamble, 11.2) supersedes
+them; rows T6 and Q7 are superseded.
 
 | # | Finding | Disposition |
 |---|---|---|
@@ -557,6 +698,120 @@ trajectory.
 | T3 | B3b inconsistent | Applied: single contract, list of up to three, no editing |
 | T4 | Z under-specified | Applied: 15 minutes, unmarked e-mail version, item 4 without AI in lighter form, release only after B5. Not applied: a physically separate page (outside the allowed three files); handled by the release rule |
 | T5 | Channel and delivery not told | Partly applied: Aufgabe 6 and 9 say who/how; typed or handwritten left open (5.1) |
-| T6 | B5 asking questions optional vs measured | Applied: "Bitte stellen Sie auch Fragen" |
-| Q7 | Audio scripts need language check | Not done: scripts use B1-level words (Versichertenkarte, Fortbildung, Zusatztermin, Sekretariat) by design as B1 listening content; not separately reviewed. Limitation L8 |
+| T6 | B5 asking questions optional vs measured | Superseded: Sprechen is no longer measured; learner text now "Sie dürfen auch selbst Fragen stellen" |
+| Q7 | Audio scripts need language check | Superseded (Hören is attested only, not measured). Earlier disposition: not done: scripts use B1-level words (Versichertenkarte, Fortbildung, Zusatztermin, Sekretariat) by design as B1 listening content; not separately reviewed. Limitation L8 |
 | Q8 | Danach silent about "Teil B nicht sinnvoll" | Applied: neutral "Dann sprechen wir über den nächsten Schritt" |
+
+### 11.2 Second review (Hören/Sprechen attested-only revision)
+
+- Reviewer: Instructional Assistant Livia (`workers/livia/WORKER.md`), separate
+  review call (Contract 3) with the revised Part B, the assessor record, Part A
+  for context, the Dean frame (`README.md`), `COURSE.md` Evidence classes, and
+  the attested-only decision. Read-only. Scoring, independence, and level
+  calibration were not validated by the reviewer.
+- Pedagogical readiness reported: `ready_with_changes`. No blocking problem.
+  The reviewer found no remaining text saying Hören or Sprechen is judged,
+  scored, verified, or `uncertain` pending measurement in the two artifacts;
+  one such sentence exists in the Dean-owned `README.md` (F5).
+- Owner review (Analyst). The version revised after this review has not been
+  re-reviewed.
+
+| # | Finding | Disposition |
+|---|---|---|
+| F1 | "leave the line empty" conflicts with the attestation condition; "eine Antwort" ambiguous | Applied: Regeln exception; Aufgabe 6 says to write something for each text; 5.3 defines "answer attempt" (any written word or mark, including "Ich verstehe nichts"; a blank is none) |
+| F2 | Learner not told the unscored tasks are still required | Applied: "Bitte machen Sie die Aufgabe trotzdem ganz" in 6 and 9, and in the intro. Also added "Hören und Sprechen üben Sie auch im Kurs", consistent with `COURSE.md` rule 3; Stays (Dean decision, L11) |
+| F3 | "No help" rule unclear for unscored tasks; reader/partner are persons | Applied: reader and partner are not "help"; 5.1 states a violation in B2/B5 is recorded and does not change `attested` (Analyst proposal, L11) |
+| F4 | Stale section 11 status and rows T6, Q7 | Applied: status updated, 11.1 marker, T6 and Q7 marked superseded |
+| F5 | README sentence "Sprechen ... `uncertain`" contradicts the decision | Not in Analyst authority; reported to the Dean |
+| F6 | A2 vocabulary (bewerten, Niveau), message placement, heading | Applied: "keine Punkte" and "wir sagen nicht, wie gut Sie hören oder sprechen"; message moved to the top of Aufgabe 6 and 9 as "Wichtig"; "Das ist wichtig" removed there. Not applied: Gesprächspartner kept (used throughout the artifact); final-section repetition kept, shortened |
+| F7 | Questions look like a test; whether answers are kept | Applied: "Die Fragen helfen beim Hören"; neutral reply "Wir sagen nicht, ob es richtig ist". Kept the six questions as the visible attempt (L11). Whether answer sheets are retained is not decided here; open for the Dean |
+| F8 | Residual wording: Z and X7; history in the procedure; audio vs live reader; minimum for B5a | Applied: Z wording, history sentences removed from 5.4 and X6, "heard in audio includes a live human reader", B5a minimum "any speech in response to the prompt". Not applied: script labels "everyday"/"study" kept (descriptive; section 2 and 5.3 state nothing is scored); 1-minute preview vs 10-second pause left as is (both stated in their own file) |
+| Out of scope | 5.1 B5 slot priority; stop rule withholds attestation; L1 public keys; Z on same page | Left unchanged; noted for the Dean |
+
+### 11.3 Third review (equal Hören protection and separate attestation sitting)
+
+- Reviewer: Instructional Assistant Livia (`workers/livia/WORKER.md`), separate
+  review call (Contract 3), Student-independent. Material: revised assessor
+  record and Part B (unchanged), with Part A and `README.md` for context.
+  Purpose, criteria, scope, and the attested-only decision were supplied.
+  Read-only. Scoring, independence, and level calibration were not validated.
+- Pedagogical readiness reported: `ready_with_changes`. No blocking problem.
+  The reviewer found no wording in the two artifacts that calls Hören or
+  Sprechen demonstrated, measured, verified, judged, scored, or `uncertain`
+  pending measurement.
+- Owner review (Analyst). The version revised after this review has not been
+  re-reviewed.
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | Part B says "one sitting"; no learner wording for the attestation sitting | Superseded by 11.4 (Part B now edited). Earlier: applied in the record (5.1: announcement in simple German; "an einem Termin" concerns measured tasks). Part B not edited (not required by the Dean decision); one-sentence addition to Aufgabe 9 left for the Dean |
+| 2 | Triggers vs `not attested` reasons; who proposes; decline | Partly applied: triggers kept to the Dean wording; Analyst offers, Student may decline ("not taken"). Repeat after a done-but-`not attested` task not arranged by the Analyst; open for the Dean |
+| 3 | Z release when B5 is in a separate sitting | Applied: Z only in the sitting where B5 is completed; not offered in an attestation-only sitting (section 8) |
+| 4 | Section 11 status and stale "Dean may remove it" | Applied (11.3 added; row F2 corrected) |
+| 5 | 5.3 omits preview and sequence; single play; "heard" wording | Applied |
+| 6 | Separate sitting under-specified | Applied: same rules and 12-minute slots; administrator and observation recorded |
+| 7 | Part B partner recording narrower than 5.4 | Partly superseded by 11.4 (finding 6). Earlier: not applied: Part B unchanged; the Analyst records the 5.4 fields |
+| 8 | "Cut" undefined | Applied |
+| 9 | Attestation labelled with criterion code | Applied |
+| 10 | History wording in L10 | Applied |
+| 11 | A2 wording in Part B (Gesprächspartner, Aussprache, "B2" label, etc.) | Superseded by 11.4: applied after the Dean decision. Earlier: not applied: Part B learner text not in this revision's scope; offered to the Dean as a later revision |
+| 12 | `README.md` wording on "Criteria to measure", stop condition, stale "Pending Analyst revision" | Dean-owned; reported to the Dean |
+
+### 11.4 Fourth review (repeat of done-but-not-attested tasks; moved Hören/Sprechen; A2 wording)
+
+- Reviewer: Instructional Assistant Livia (`workers/livia/WORKER.md`), separate
+  review call (Contract 3), Student-independent. Material: revised Part B and
+  assessor record. Purpose, criteria, scope, and the attested-only decision
+  were supplied. Read-only. Scoring, independence, level calibration, and
+  audio scripts were not validated.
+- Pedagogical readiness reported: `ready_with_changes`. No blocking problem.
+  No wording in the two artifacts calls Hören or Sprechen demonstrated,
+  measured, verified, judged, scored, or `uncertain` pending measurement; no
+  assessor-only content in the learner text; "Gesprächspartner", "Aussprache",
+  the label "B2", and "prüft" are gone from Part B.
+- Owner review (Analyst). The version revised after this review has not been
+  re-reviewed.
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | Z release rule: Part B silent when Aufgabe 9 is moved | Applied: "Wenn Sie Aufgabe 9 an einem anderen Termin machen, gibt es Aufgabe Z nicht" (matches section 8) |
+| 2 | First rule hard to parse ("das") | Applied: rule rewritten (5, 7, 8 once, one Termin; 6 and 9 may be at another Termin) |
+| 3 | 75-minute rule silent on moved tasks | Applied: moved 6/9 do not count to the 75 minutes (each has its own 12-minute slot, 5.1); confirmed by the Dean (11.5) |
+| 4 | "keine Hilfe" confusing | Applied: "darf die Person vorlesen oder mit Ihnen sprechen. Das ist okay." |
+| 5 | Remaining above-A2 words | Partly applied: begleitet, technisches Problem, Rechtschreibung, korrigieren, Aufnahme simplified. Not applied: Notizen, Prüfung (negated), "fällt aus" and "Öffnungszeiten" in Hören question options (task content; not scored); Aufgabe 8 and Lesen words (tested words) |
+| 6 | Partner recording "nur" narrower than 5.4 | Applied: "nur" removed. The 5.4 fields remain the Analyst's record |
+| 7 | Hören/Sprechen inconsistent on telling the administrator | Applied: same sentence in Aufgabe 6 and 9 |
+| 8 | Aufgabe 9 does not name in-person contact | Superseded by 11.5: applied after the Dean decision (telephone, video, or in person) |
+| 9 | 9b topics vs 5.4 prompts | Superseded by 11.5: applied (Part B topics aligned with 5.4) |
+| 10 | When Hören answers are written | Superseded by 11.5: applied (after each text) |
+| 11 | 5.1 too dense; terminology; showing only Aufgabe 6/9 | Not applied in this revision (structure only); noted as an open item |
+| 12 | Stale section 11 and L12 reference | Applied: 11.4 added; status line and 11.3 rows 1, 7, 11 marked superseded |
+
+### 11.5 Fifth review (short check of the final revision)
+
+- Reviewer: Instructional Assistant Livia (`workers/livia/WORKER.md`), separate
+  review call (Contract 3), Student-independent, read-only. Scope: only the
+  changed parts: Part B Regeln (moved tasks outside the 75 minutes), Aufgabe 6
+  (answers after each text), Aufgabe 9 (telephone, video, in person), the 9b
+  topics, and 5.1, 5.3, 5.4, section 8, L11, L12 of this record. Scoring,
+  independence, and level calibration were not validated.
+- Pedagogical readiness reported: `ready_with_changes`. No blocking problem.
+  No wording in the two artifacts calls Hören or Sprechen demonstrated,
+  measured, verified, judged, scored, or `uncertain` pending measurement; no
+  assessor-only content in the changed learner text. The 9b topics match the
+  5.4 prompts; the Aufgabe 6 sequence matches 5.3; the channels match 5.4.
+- Owner review (Analyst): changes applied. This version is the current one and
+  was not reviewed again.
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | 75-minute sentence above A2; "dann" unclear | Applied: "haben immer 12 Minuten ... extra Zeit" |
+| 2 | Aufgabe 9 channel sentence ("das", "per Video") | Applied: "am Telefon, mit Video oder im gleichen Raum. Wenn keine dieser Möglichkeiten geht" |
+| 3 | Question preview vs 5.3 | Applied: "alle sechs Fragen" |
+| 4 | Repeated "Fragen stellen" in Aufgabe 9 | Applied: kept in 9b only |
+| 5 | Moved task vs separate attestation sitting | Applied: 5.1 says the moved task is recorded like the separate sitting |
+| 6 | Z: "unassisted task complete" when only Aufgabe 6 is moved; "step not taken" for a moved Aufgabe 9 | Partly applied: "step not offered" added. Z release wording: applied afterwards as a wording-only change without a new review |
+| 7 | L11 inexact quote; dangling 11.5 | Applied: paraphrase marked; this section added |
+| 8 | Section 4 column "Measures" over attested rows | Applied afterwards as a wording-only change without a new review |
+
+Findings 6 (Z release wording) and 8 (column "Measures") were afterwards applied as wording-only changes (Z released only after the unassisted Schreiben tasks are complete; column renamed "Criterion and evidence class"), without a new review.

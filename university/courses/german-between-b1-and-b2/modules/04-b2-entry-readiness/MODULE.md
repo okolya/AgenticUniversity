@@ -33,11 +33,16 @@ The Student can independently:
    they have demonstrated, which limitations remain, and what next step those
    limitations suggest.
 
+Hören and Sprechen parts of criteria 1, 3, and 4 and of the Entry Contract are
+*attested*, not measured; the Examiner's verdict covers only Lesen and
+Schreiben evidence (`COURSE.md`, Evidence classes for Hören and Sprechen).
+
 ## Dean decision (not an Exit criterion)
 
 After the Examiner's verdict on the Exit Contract, the Dean issues the
-readiness report: demonstrated B1 criteria, remaining limitations, and the
-recommended B2 entry route. The report is the Dean's placement decision, not
+readiness report: demonstrated B1 criteria, criteria that are only attested
+(Hören and Sprechen), remaining limitations, and the recommended B2 entry
+route. The report states that Hören and Sprechen are not measured. The report is the Dean's placement decision, not
 evidence of B2 mastery, and it does not change the Exit Contract.
 
 ## Broad competency areas

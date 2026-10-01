@@ -56,12 +56,13 @@ offers another route instead of a bare refusal.
 ## Course Success Criteria
 
 At the end of the Course, the Student independently demonstrates B1 readiness
-in all four skills:
+in Lesen and Schreiben, and has completed the required Hören and Sprechen
+practice (criteria marked *attested*; see Evidence classes below):
 
 1. understand the main points and relevant details of clear standard German
-   on familiar everyday, study, and work-related topics;
+   on familiar everyday, study, and work-related topics *(attested)*;
 2. participate in routine conversations and handle common situations with
-   comprehensible, coherent language;
+   comprehensible, coherent language *(attested)*;
 3. write connected practical texts with an understandable structure, adequate
    vocabulary, and controlled B1 grammar;
 4. read and extract the main information and relevant details from B1-level
@@ -72,6 +73,29 @@ in all four skills:
    clarification, and revise a spoken or written attempt;
 7. complete a bounded readiness check whose result supports entry into a
    separate B2 course.
+
+## Evidence classes for Hören and Sprechen
+
+Dean decision: in this Course, listening and speaking are recorded only as
+completion of the required practice. There is no other route.
+
+- `demonstrated` — independently measured evidence (Lesen, Schreiben, and the
+  written parts of error repair and strategies).
+- `attested` — a record that the required Hören or Sprechen task was done. It
+  carries no claim about quality or level.
+
+Rules:
+
+1. `attested` is never reported or counted as `demonstrated`, and no report may
+   describe Hören or Sprechen as measured, verified, or independently shown.
+2. For criteria marked *attested*, an Entry or Exit requirement is met by
+   recorded completion of the required practice. No Learning Analyst
+   measurement and no Examiner verdict is issued on them.
+3. Attestation alone is never grounds to skip or narrow Hören or Sprechen
+   practice for a Student.
+4. The Dean's B2 readiness report (Module 4) states which criteria were
+   demonstrated and which were only attested, and that the Hören and Sprechen
+   limitation is a known boundary of the evidence.
 
 The Course does not require the Student to demonstrate B2 abilities such as
 routine comprehension of complex abstract texts, fluent native-speaker
