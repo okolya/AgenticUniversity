@@ -1,7 +1,7 @@
 # Thema 2 — Erfahrungen, Pläne, Meinungen und Erklärungen / Тема 2 — Досвід, плани, думки й пояснення
 
 - **Kurs / Modul:** Між B1 та B2 / Modul 2 — B1-Wiederherstellung
-- **Status:** vom Dean genehmigter Theme-Rahmen; vier Lesson-Slots genehmigt; Lessons noch nicht vorbereitet
+- **Status:** ahead-of-student ready; vier Lessons vorbereitet; unpiloted; Student delivery not ready
 - **Outcome:** Der Student erzählt, beschreibt, erklärt und äußert eine einfache Meinung zu vertrauten Themen in zusammenhängenden kurzen Beiträgen.
 
 ## Grenzen und Kriterien
@@ -44,4 +44,3 @@ Checkpoint: one new familiar-topic prompt requiring experience, plan, opinion, a
 ### Карта Уроків
 
 Рівно чотири слоти: досвід у часовій послідовності → плани, причини й наслідки → думка, причина й протиставлення → інтегрований чекпойнт. Усна практика фіксується як `attested`, якщо немає окремого дозволеного вимірювання.
-
