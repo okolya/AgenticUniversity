@@ -1,6 +1,8 @@
 ---
 name: theme-design
 class: development
+dependencies:
+  - {kind: skill, name: curate-multimedia}
 ---
 # Theme Design Workflow
 

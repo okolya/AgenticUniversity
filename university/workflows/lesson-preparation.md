@@ -3,6 +3,7 @@ name: lesson-preparation
 class: development
 dependencies:
   - {kind: skill, name: research-materials}
+  - {kind: skill, name: curate-multimedia}
   - {kind: skill, name: author-material}
 ---
 # Lesson Preparation Workflow

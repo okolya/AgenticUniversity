@@ -3,7 +3,7 @@
 - **Kurs / Modul:** Між B1 та B2 / Modul 1 — A2-Wiederherstellung
 - **Rahmen genehmigt von:** ernannter Dekan der Sprachfakultät
 - **Didaktische Gestaltung:** zugewiesene Dozentin / zugewiesener Dozent der Sprachfakultät
-- **Status:** vom Dekan genehmigter Rahmen; Lektionen noch nicht vorbereitet; vorbereitetes Material gilt als `unpiloted`, bis ein Student es durchlaufen hat
+- **Status:** vom Dekan genehmigter Rahmen; drei Lektionen vorbereitet, `unpiloted`; Instructional-Assistant-Review abgeschlossen, Dean-Readiness-Entscheidung steht noch aus
 
 ---
 

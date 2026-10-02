@@ -46,6 +46,7 @@ skills:
   - {name: correction-git, class: technical}
   - {name: create-enrollment, class: learning}
   - {name: create-lab, class: learning}
+  - {name: curate-multimedia, class: development}
   - {name: evaluate-answer, class: learning}
   - {name: evaluate-exercise, class: learning}
   - {name: generate-exercise, class: learning}
@@ -86,10 +87,12 @@ dependencies:
   - {workflow: faculty-entry, kind: skill, name: create-enrollment}
   - {workflow: learning-material-review, kind: skill, name: review-learning-material}
   - {workflow: lesson-preparation, kind: skill, name: research-materials}
+  - {workflow: lesson-preparation, kind: skill, name: curate-multimedia}
   - {workflow: lesson-preparation, kind: skill, name: author-material}
   - {workflow: module-design, kind: skill, name: module-planning}
   - {workflow: module-entry, kind: skill, name: check-prerequisites}
   - {workflow: theme-assessment, kind: skill, name: update-evidence}
+  - {workflow: theme-design, kind: skill, name: curate-multimedia}
   - {workflow: worker-appointment, kind: skill, name: appoint-worker}
   - {workflow: worker-appointment, kind: skill, name: register-worker}
 
