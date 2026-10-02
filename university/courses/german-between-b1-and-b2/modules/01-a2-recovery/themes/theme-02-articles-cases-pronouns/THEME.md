@@ -3,7 +3,8 @@
 - **Kurs / Modul:** Між B1 та B2 / Modul 1 — A2-Wiederherstellung
 - **Rahmen genehmigt von:** ernannter Dekan der Sprachfakultät
 - **Didaktische Gestaltung:** zugewiesene Dozentin / zugewiesener Dozent der Sprachfakultät
-- **Status:** vom Dekan genehmigter Rahmen; Lektionen noch nicht vorbereitet; vorbereitetes Material gilt als `unpiloted`, bis ein Student es durchlaufen hat
+- **Status:** vom Dekan genehmigter Rahmen; vier Lektionen vorbereitet (`unpiloted`, bis ein Student sie durchlaufen hat); Bereitschaftsentscheidung des Dekans im Preparation Record
+- **Status / Статус:** затверджений Деканом фрейм; чотири Уроки підготовлено (`unpiloted`, доки Студент їх не пройде); рішення Декана про готовність — у записі підготовки
 
 ---
 
@@ -25,7 +26,7 @@ Der Student kann selbstständig Artikel und Kasusformen, Personalpronomen und ge
 2. Der Dativ wird nach den gebräuchlichen Dativpräpositionen und für das indirekte Objekt in häufigen Mustern verwendet.
 3. Personal- und Possessivpronomen werden in Nominativ, Akkusativ und Dativ in vertrauten Sätzen richtig gewählt.
 4. Gebräuchliche Wechselpräpositionen werden für Ort und Richtung richtig gewählt.
-5. Ein eigener Kasus- oder Artikelfehler wird in einem kurzen Text erkannt und korrigiert.
+5. Ein eigener Kasus- oder Artikelfehler wird in einem kurzen Text erkannt und korrigiert; enthält der eigene Text keinen solchen Fehler, erkennt und korrigiert der Student stattdessen einen Fehler in einem vorgegebenen kurzen Text (Entscheidung des Dekans).
 
 ### Verbindung zum Exit Contract des Moduls
 
@@ -50,7 +51,7 @@ Zeigt der aktuelle Nachweis eines Studenten, dass das Kriterium eines Platzes sc
 
 ### Checkpoint und Stoppbedingung
 
-Checkpoint: eine kurze Schreibaufgabe ohne Hilfsmittel in einer unbekannten Alltagssituation und eine kurze Leseaufgabe, plus ein selbst erkannter und korrigierter Kasus- oder Artikelfehler.
+Checkpoint: eine kurze Schreibaufgabe ohne Hilfsmittel in einer unbekannten Alltagssituation und eine kurze Leseaufgabe, plus ein selbst erkannter und korrigierter Kasus- oder Artikelfehler; enthält der eigene Text keinen, ein erkannter und korrigierter Fehler in einem vorgegebenen kurzen Text.
 
 Stoppbedingung: Das Thema endet, wenn die Nachweise aus Lektion 4 vorliegen oder der Nachweis zeigt, dass das Kriterium bereits stabil ist. Der Dozent übergibt Contract 6 Evidence an den Dekan. Eine ungelöste Lücke geht zur begrenzten Entscheidung an den Dekan zurück, nicht in eine zusätzliche Lektion.
 
@@ -78,7 +79,7 @@ Die Arbeit in den Lektionen ist formativer Lernnachweis, keine unabhängige Prü
 2. Dativ вживається після звичних прийменників Dativ і для непрямого додатка у поширених зразках.
 3. Особові та присвійні займенники правильно обрані в Nominativ, Akkusativ і Dativ у знайомих реченнях.
 4. Вживані прийменники з двома відмінками (Wechselpräpositionen) правильно обрані для місця та напрямку.
-5. Одну власну помилку відмінка чи артикля виявлено й виправлено в короткому тексті.
+5. Одну власну помилку відмінка чи артикля виявлено й виправлено в короткому тексті; якщо у власному тексті такої помилки немає, Студент натомість виявляє й виправляє помилку в заданому короткому тексті (рішення Декана).
 
 ### Зв'язок з Exit Contract Модуля
 
@@ -103,7 +104,7 @@ Die Arbeit in den Lektionen ist formativer Lernnachweis, keine unabhängige Prü
 
 ### Чекпойнт і умова зупинки
 
-Чекпойнт: коротке письмове завдання без допоміжних засобів у незнайомій побутовій ситуації та коротке завдання на читання, плюс одна самостійно виявлена й виправлена помилка відмінка чи артикля.
+Чекпойнт: коротке письмове завдання без допоміжних засобів у незнайомій побутовій ситуації та коротке завдання на читання, плюс одна самостійно виявлена й виправлена помилка відмінка чи артикля; якщо у власному тексті її немає, — виявлена й виправлена помилка в заданому короткому тексті.
 
 Умова зупинки: Тема завершується, коли отримано свідчення з Уроку 4 або свідчення показує, що критерій уже стабільний. Лектор повертає Декану Contract 6 evidence. Нерозв'язана прогалина повертається Декану для обмеженого рішення, а не в додатковий Урок.
 
