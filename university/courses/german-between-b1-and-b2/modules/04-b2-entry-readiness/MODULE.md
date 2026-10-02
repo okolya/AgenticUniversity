@@ -1,74 +1,98 @@
-# Module 4 — B2 Entry Readiness
+# Modul 4 — B2-Einstiegsbereitschaft / Модуль 4 — Готовність до вступу на B2
 
-## Identity
+- **Kurs / Курс:** Між B1 та B2
+- **Fakultät / Факультет:** Sprachfakultät / Мовний факультет
+- **Position / Позиція:** 4 von 4 / 4 із 4
+- **Status:** öffentlicher Übergangsrahmen; kein B2-Lehrmodul / публічна перехідна рамка; не навчальний модуль B2
 
-- **Course:** Між B1 та B2
-- **Faculty:** Language Faculty
-- **Module position:** 4 of 4
-- **Status:** public transition frame; not a B2 teaching Module
+---
 
-## Purpose and value
+## Deutsch
 
-Make the boundary between this Course and a separate B2 course explicit.
-Confirm that the Student has a stable B1 base, understands the next level's
-demands, and can begin B2 study without mistaking orientation for B2 mastery.
+### Zweck und Wert
 
-## Entry Contract
+Die Grenze zwischen diesem Kurs und einem separaten B2-Kurs deutlich machen. Bestätigen, dass der Student eine stabile B1-Basis hat, die Anforderungen der nächsten Stufe versteht und B2-Studien beginnen kann, ohne Orientierung mit B2-Beherrschung zu verwechseln.
 
-The Student has current evidence for Course Success Criteria 1–6: the four
-skills (criteria 1–4) plus error repair and correction strategies (criteria
-5–6), or the Dean has documented the remaining bounded limitations
-and the reason a final readiness check is still meaningful.
+### Entry Contract
 
-## Exit Contract
+Der Student hat aktuelle Nachweise für die Kurs-Erfolgskriterien 1–6: die vier Fertigkeiten (Kriterien 1–4) sowie Fehlerkorrektur und Korrekturstrategien (Kriterien 5–6), oder der Dekan hat die verbleibenden begrenzten Einschränkungen dokumentiert und begründet, warum ein abschließender Bereitschaftscheck dennoch sinnvoll ist.
 
-The Student can independently:
+### Exit Contract
 
-1. complete a bounded B1-level integrated task with sufficient
-   comprehensibility, coherence, and task completion;
-2. identify the difference between current B1 performance and the demands of
-   a B2 course;
-3. use a short unfamiliar but B1-appropriate input to demonstrate transfer;
-4. state in their own words, consistent with the evidence, which B1 criteria
-   they have demonstrated, which limitations remain, and what next step those
-   limitations suggest.
+Der Student kann selbstständig:
 
-Hören and Sprechen parts of criteria 1, 3, and 4 and of the Entry Contract are
-*attested*, not measured; the Examiner's verdict covers only Lesen and
-Schreiben evidence (`COURSE.md`, Evidence classes for Hören and Sprechen).
+1. eine begrenzte integrierte Aufgabe auf B1-Niveau mit ausreichender Verständlichkeit, Kohärenz und Aufgabenerfüllung bewältigen;
+2. den Unterschied zwischen der aktuellen B1-Leistung und den Anforderungen eines B2-Kurses benennen;
+3. mit einem kurzen unbekannten, aber B1-angemessenen Input Transfer zeigen;
+4. in eigenen Worten, im Einklang mit den Nachweisen, angeben, welche B1-Kriterien er nachgewiesen hat, welche Einschränkungen bleiben und welchen nächsten Schritt diese nahelegen.
 
-## Dean decision (not an Exit criterion)
+Die Hör- und Sprechanteile der Kriterien 1, 3 und 4 sowie des Entry Contracts sind *attested*, nicht gemessen; das Urteil des Examiners umfasst nur Nachweise in Lesen und Schreiben (`COURSE.md`, Evidence classes für Hören und Sprechen).
 
-After the Examiner's verdict on the Exit Contract, the Dean issues the
-readiness report: demonstrated B1 criteria, criteria that are only attested
-(Hören and Sprechen), remaining limitations, and the recommended B2 entry
-route. The report states that Hören and Sprechen are not measured. The report is the Dean's placement decision, not
-evidence of B2 mastery, and it does not change the Exit Contract.
+### Entscheidung des Dekans (kein Exit-Kriterium)
 
-## Broad competency areas
+Nach dem Urteil des Examiners über den Exit Contract erstellt der Dekan den Bereitschaftsbericht: nachgewiesene B1-Kriterien, nur attestierte Kriterien (Hören und Sprechen), verbleibende Einschränkungen und die empfohlene B2-Eintrittsroute. Der Bericht stellt klar, dass Hören und Sprechen nicht gemessen sind. Der Bericht ist die Platzierungsentscheidung des Dekans, kein Nachweis für B2-Beherrschung, und er ändert den Exit Contract nicht.
 
-- stable B1 transfer under light novelty;
-- integrated reading, listening, writing, and speaking;
-- self-assessment and learning-route awareness;
-- evidence-based B2 entry recommendation.
+### Breite Kompetenzbereiche
 
-## Scope exclusions
+- stabiler B1-Transfer bei leichter Neuheit;
+- integriertes Lesen, Hören, Schreiben und Sprechen;
+- Selbsteinschätzung und Bewusstsein für den Lernweg;
+- nachweisbasierte B2-Eintrittsempfehlung.
 
-This Module does not teach complex B2 texts, fluent native-speaker
-interaction, detailed current-issue argumentation, or B2 grammar as a
-curriculum. Those outcomes belong to a separate B2 Course that may be added
-to the University later.
+### Ausgeschlossen
 
-## Practice and checkpoint
+Dieses Modul unterrichtet keine komplexen B2-Texte, keine flüssige muttersprachliche Interaktion, keine detaillierte Argumentation zu aktuellen Fragen und keine B2-Grammatik als Curriculum. Diese Ergebnisse gehören zu einem separaten B2-Kurs, der der Universität später hinzugefügt werden kann.
 
-The final checkpoint is a bounded readiness decision, not a placement by
-attendance. If B1 evidence is insufficient, the Dean opens a targeted return
-to the relevant earlier Module or bridge instead of extending this Module
-indefinitely.
+### Praxis und Checkpoint
 
-## Source provenance
+Der abschließende Checkpoint ist eine begrenzte Bereitschaftsentscheidung, keine Platzierung nach Anwesenheit. Reichen die B1-Nachweise nicht aus, eröffnet der Dekan eine gezielte Rückkehr zum betreffenden früheren Modul oder zur Brücke, statt dieses Modul unbegrenzt zu verlängern.
 
-The official [Goethe B2 descriptors](https://www.goethe.de/ins/de/en/prf/prf/gzb2.html)
-are used only to define the deferred boundary: complex texts, more fluent
-interaction, and detailed argumentation belong to the next B2 course.
+### Quellenherkunft
 
+Die offiziellen [Goethe B2-Deskriptoren](https://www.goethe.de/ins/de/en/prf/prf/gzb2.html) dienen nur dazu, die aufgeschobene Grenze zu definieren: komplexe Texte, flüssigere Interaktion und detaillierte Argumentation gehören zum nächsten B2-Kurs.
+
+---
+
+## Українською (переклад)
+
+### Мета і цінність
+
+Зробити явною межу між цим курсом і окремим курсом B2. Підтвердити, що Студент має стабільну базу B1, розуміє вимоги наступного рівня й може розпочати навчання B2, не плутаючи орієнтацію з опануванням B2.
+
+### Entry Contract
+
+Студент має поточні свідчення за Критеріями успіху курсу 1–6: чотири навички (критерії 1–4) плюс виправлення помилок і стратегії виправлення (критерії 5–6), або Декан задокументував залишкові обмежені обмеження та причину, чому завершальна перевірка готовності все ж має сенс.
+
+### Exit Contract
+
+Студент може самостійно:
+
+1. виконати обмежене інтегроване завдання рівня B1 з достатньою зрозумілістю, зв'язністю та виконанням завдання;
+2. назвати різницю між поточним результатом B1 і вимогами курсу B2;
+3. показати перенесення на короткому незнайомому, але відповідному рівню B1 вхідному матеріалі;
+4. своїми словами, узгодженими зі свідченнями, викласти, які критерії B1 він підтвердив, які обмеження залишаються й який наступний крок вони підказують.
+
+Складові Hören і Sprechen критеріїв 1, 3 і 4 та Entry Contract — *attested*, не виміряні; вердикт Examiner охоплює лише свідчення з Lesen і Schreiben (`COURSE.md`, Evidence classes для Hören і Sprechen).
+
+### Рішення Декана (не Exit-критерій)
+
+Після вердикту Examiner щодо Exit Contract Декан видає звіт про готовність: підтверджені критерії B1, критерії лише attested (Hören і Sprechen), залишкові обмеження та рекомендований маршрут вступу до B2. Звіт зазначає, що Hören і Sprechen не виміряні. Звіт — рішення Декана про розміщення, а не свідчення опанування B2, і він не змінює Exit Contract.
+
+### Широкі галузі компетенцій
+
+- стабільне перенесення B1 за легкої новизни;
+- інтегровані читання, слухання, письмо й говоріння;
+- самооцінка та усвідомлення маршруту навчання;
+- рекомендація щодо вступу до B2 на основі свідчень.
+
+### Виключено
+
+Цей Модуль не навчає складних текстів B2, вільної взаємодії на рівні носія, докладної аргументації щодо поточних питань і граматики B2 як навчального плану. Ці результати належать до окремого курсу B2, який Університет може додати пізніше.
+
+### Практика і чекпойнт
+
+Завершальний чекпойнт — обмежене рішення про готовність, а не розміщення за відвідуваністю. Якщо свідчень B1 недостатньо, Декан відкриває цільове повернення до відповідного раннього Модуля чи мосту замість безмежного продовження цього Модуля.
+
+### Походження джерел
+
+Офіційні [дескриптори Goethe B2](https://www.goethe.de/ins/de/en/prf/prf/gzb2.html) використовують лише для визначення відкладеної межі: складні тексти, вільніша взаємодія та докладна аргументація належать до наступного курсу B2.
