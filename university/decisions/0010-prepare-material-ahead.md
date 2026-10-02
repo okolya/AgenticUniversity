@@ -69,6 +69,10 @@ repeats a demonstrated criterion is skipped or returned to the Dean.
 - The Lesson step for prepared material changes from "prepare for this Student"
   to "confirm the prepared Lesson fits this Student". The evidence-delta check
   and the Instructional Assistant's duplication test move to delivery.
+- Preparation ahead is not complete merely because Lesson files exist or core
+  checks pass. ADR 0011 defines the ordered research, curation, authoring,
+  review, disposition, final-control, and readiness-record gate for ahead
+  preparation.
 - No Course needs a new declaration, and no core check or manifest field is
   added.
 - The Student model, assessment independence, and Examiner and Learning Analyst

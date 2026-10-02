@@ -50,6 +50,27 @@ declared criterion.
     Student feedback cannot compel a change to Lesson, Theme, Module, Course,
     criteria, or academic authority.
 
+## Completion gate
+
+For a Theme package or materially revised Lesson package, the Lecturer must
+complete the ordered preparation gate in ADR 0011 before claiming readiness:
+
+1. record the Dean scope handoff and Lesson evidence delta;
+2. record the research decision and, when applicable, the bounded
+   `curate-multimedia` report or explicit no-multimedia decision;
+3. author within the approved slot and record exact source provenance;
+4. obtain the complete Instructional Assistant review;
+5. record dispositions and apply/reject findings;
+6. perform and record the complete Lecturer final-control review;
+7. record required specialist/language handoffs or their concrete non-trigger;
+8. update the Theme-local preparation and review records.
+
+An in-progress package may be committed for collaboration, but its status must
+remain non-ready. `ready` for ahead-of-student preparation requires the full
+record and keeps the package `unpiloted`; Student delivery additionally
+requires the Student-specific evidence-delta and omission check. Repository
+hooks and core checks verify integrity only and do not replace this gate.
+
 ## After Student submission
 
 Submitting the Lesson evidence is a handoff, not the end of the learning
