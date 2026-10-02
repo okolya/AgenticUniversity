@@ -1,7 +1,7 @@
 # Thema 1 — Zusammenhängendes Lesen und Informationen entnehmen / Тема 1 — Зв’язне читання та добування інформації
 
 - **Kurs / Modul:** Між B1 та B2 / Modul 2 — B1-Wiederherstellung
-- **Status:** vom Dean genehmigter Theme-Rahmen; vier Lesson-Slots genehmigt; Lessons noch nicht vorbereitet
+- **Status:** vom Dean genehmigter Theme-Rahmen; vier Lessons vorbereitet und pädagogisch reviewed; `unpiloted`
 - **Outcome:** Der Student erkennt Hauptaussage, stützende Details und wichtigen Wortschatz in kurzen zusammenhängenden B1-Texten.
 
 ## Grenzen und Kriterien
@@ -44,4 +44,3 @@ Checkpoint: one unfamiliar short text with four bounded responses and a short su
 ### Карта Уроків
 
 Рівно чотири слоти: головна думка й структура → релевантні деталі → лексика з контексту й короткий підсумок → чекпойнт на незнайомому тексті. Жоден слот не додається без нового рішення Декана.
-
