@@ -12,6 +12,15 @@ the outcome better.
 
 ## Required review path
 
+The material review is a bounded state machine, not a terminal report:
+
+`draft → assistant_review → owner_disposition → owner_correction → assistant_re_review → final_control → ready`
+
+`owner_correction` may be skipped only when every finding is explicitly
+rejected or deferred with a reason and no repeat review is required. A missing
+authority, scope, required context, or parent-scope decision is a real stop;
+an ordinary correction inside the responsible owner's scope is not.
+
 Before a new or materially revised learner-facing Lesson, exercise, lab,
 diagnostic, quiz, assessment brief, or explanation is published or delivered:
 
@@ -32,10 +41,19 @@ diagnostic, quiz, assessment brief, or explanation is published or delivered:
    which changes are appropriate, and updates the material within the approved
    scope. The Lecturer remains the owner of Lessons and teaching material;
    the authorized assessment Worker owns an independent assessment artifact.
+   The owner must record a disposition for every actionable finding as
+   `accepted`, `rejected`, or `deferred`, with the reason and next action.
+   Accepted findings are corrected before the workflow can proceed. A finding
+   that requires correction also requires a repeat Assistant review; the owner
+   must not return the original Assistant report as the final result.
 6. The responsible owner performs a complete final review of the entire source
    prepared material, including outcome, prerequisites, vocabulary, sequence,
    tasks, evidence instructions, source notes, AI-use boundaries, and any
-   learner-facing failure cases.
+   learner-facing failure cases. This review must also remove internal host,
+   repository, container, volume, database, runtime, Student-ID, and storage
+   details when the learner only needs a logical task path or artifact name.
+   A technical path is retained only when the learner must type or inspect it
+   for the declared outcome, and then it is clearly identified as such.
 
 For Student delivery, the review must also compare the material with the
 Student's permitted prior evidence and active plan. The owner records the
@@ -55,6 +73,12 @@ the material may repeat prior work.
    language audit does not trigger a full second review.
 9. Only after the applicable final checks may the material proceed through the
    publication/delivery process.
+
+The caller must continue this sequence when the review returns
+`ready_with_changes` or `not_ready` and the owner has authority to act. It must
+not hand the next step back to the Student or user merely because an Assistant
+report has been produced. The workflow may stop only at a recorded authority,
+scope, context, or external technical blocker.
 
 ## Assessment and diagnostic artifacts
 
@@ -130,6 +154,23 @@ The task must state that the accepting Worker will inspect and run the submitted
 code where executable behavior is part of the criterion. The task may request a
 short explanation or a focused controlled change for understanding, but must
 not make a long written report the proxy for authorship or comprehension.
+
+## Learner-facing versus runtime information
+
+Learning material describes what the Student must learn, create, observe, and
+submit. It must not expose how the host stores private Student state or routes
+artifacts internally. In particular, a Lesson must not give a Student-ID path,
+private repository path, container path, mounted volume, database location, or
+implementation-specific workspace path merely to explain where an artifact
+belongs. Use the approved logical relative path instead, for example
+`homeworks/.../delivery_quote.py`.
+
+The Instructional Assistant flags this as a pedagogical clarity and boundary
+finding and recommends the learner-facing replacement; it does not edit the
+Lesson. The Lecturer decides and applies the correction within the Lesson's
+scope, then records the disposition and repeats the complete final-control
+review. A change that affects the Theme or Module contract is handed to the
+Dean rather than silently expanded by the Lecturer.
 
 ## Responsibility boundary
 

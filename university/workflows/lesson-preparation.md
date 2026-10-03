@@ -42,9 +42,15 @@ declared criterion.
 10. After receiving a Student response, send it through the dual-track process:
    Lecturer evaluates knowledge against the Lesson criteria; Instructional
    Assistant extracts criticism and reviews the complete material.
-11. Lecturer decides whether feedback warrants a revision, makes any revision,
-    and performs a complete final review of the whole Lesson.
-12. Return the prepared Lesson through the material-owner → Instructional
+11. Lecturer decides whether each Assistant finding warrants a revision and
+    records one disposition for every finding: `accepted`, `rejected`, or
+    `deferred`, with a reason and next action. The Lecturer applies accepted
+    corrections within scope. If any accepted finding changes the material or
+    affects learner clarity, the Lecturer sends the corrected material through
+    a repeat Instructional Assistant review before claiming readiness.
+12. Lecturer performs a complete final review of the whole Lesson after the
+    last required repeat review.
+13. Return the prepared Lesson through the material-owner → Instructional
     Assistant review contract before delivery. Do not add Lesson slots, extend
     the bounded sequence, or expand Theme or Module scope from inside a Lesson.
     Student feedback cannot compel a change to Lesson, Theme, Module, Course,
@@ -60,10 +66,16 @@ complete the ordered preparation gate in ADR 0011 before claiming readiness:
    `curate-multimedia` report or explicit no-multimedia decision;
 3. author within the approved slot and record exact source provenance;
 4. obtain the complete Instructional Assistant review;
-5. record dispositions and apply/reject findings;
-6. perform and record the complete Lecturer final-control review;
-7. record required specialist/language handoffs or their concrete non-trigger;
-8. update the Theme-local preparation and review records.
+5. record dispositions and apply/reject/defer every actionable finding;
+6. obtain a repeat Instructional Assistant review after every accepted
+   correction that requires re-review;
+7. perform and record the complete Lecturer final-control review;
+8. record required specialist/language handoffs or their concrete non-trigger;
+9. update the Theme-local preparation and review records.
+
+An intermediate `ready_with_changes` or `not_ready` report does not satisfy
+this gate. If the Lecturer has authority and context to correct the material,
+the workflow continues without returning control to the Student or user.
 
 An in-progress package may be committed for collaboration, but its status must
 remain non-ready. `ready` for ahead-of-student preparation requires the full

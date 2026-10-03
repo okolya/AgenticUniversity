@@ -62,6 +62,14 @@ the exact part to change or observe, the expected result, the unchanged or
 failure case to check, and the evidence format to return. The learner must not
 have to infer the task contract from scattered examples.
 
+The Assistant must also inspect the whole learner-facing artifact for internal
+runtime leakage. Flag host and repository paths, Student identifiers, private
+repository wording, container or volume names, database locations, and other
+storage or orchestration details when the learner only needs a logical task
+path or artifact name. Recommend a concise learner-facing replacement and
+state whether the detail is genuinely required by the declared outcome. The
+Assistant reports this finding; it does not edit or approve the material.
+
 For executable practical work, the Assistant additionally checks that the task
 requires the accepting Worker to inspect and run the submitted code, verify the
 required behavior and failure cases, and compare the Student's short explanation

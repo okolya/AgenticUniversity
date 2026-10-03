@@ -12,6 +12,22 @@ An interaction without the required input, output, scope, and authority fields
 is incomplete. The receiving Worker returns it for completion instead of
 inventing a task, criterion, or next step.
 
+## Evidence ingress boundary
+
+For evidence-bearing practical, executable, or file-based work, the Student
+must transmit the requested file or files through the host's client Artifact
+control. The host's Artifact receipt is the authoritative submission. A local
+path, pasted code, claimed terminal output, or dialogue statement that a file
+exists is provisional and must not trigger inspection, verification, or an
+academic decision.
+
+Dialogue remains the valid channel for teaching, questions, short explanations,
+observations, material criticism, and AI/tool-use disclosure. Non-file tasks
+may use dialogue evidence when their declared criteria permit it. If Artifact
+delivery is unavailable, the accepting Worker stops the evidence path and
+offers a bounded non-file fallback or defers the executable task; it does not
+silently lower the evidence standard or expose internal runtime details.
+
 ## Contract 1 — Dean → Lecturer: bounded teaching assignment
 
 The Dean sends:
@@ -59,7 +75,7 @@ Student-facing navigation and decisions also follow the response contract in
 
 The Student returns only the minimum evidence needed for the declared outcome:
 
-- the requested answer, artifact, or file path;
+- the requested answer or the client Artifact receipt for the submitted file(s);
 - actual observations/results where required;
 - a short explanation or controlled-change result when understanding must be
   checked;
@@ -71,8 +87,9 @@ or program map unless a criterion explicitly requires it. The accepting Worker
 interprets the response semantically and asks for clarification only when
 understanding is missing, contradictory, or genuinely ambiguous.
 
-For code, the Student's description never replaces the submitted artifact or
-the accepting Worker's run-and-inspect obligation.
+For code or other file-based work, a local file path, pasted content, or
+Student description never replaces the client Artifact receipt or the
+accepting Worker's run-and-inspect obligation.
 
 ## Contract 4 — accepting Worker → Student: feedback and next action
 

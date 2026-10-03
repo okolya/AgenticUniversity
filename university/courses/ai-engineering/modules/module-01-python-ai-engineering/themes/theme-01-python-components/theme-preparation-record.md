@@ -108,8 +108,9 @@ The cumulative traceability is:
 
 ## Delivery status
 
-`ready` after the correction pass: the four Lessons have a declared forward
-motion, minimal evidence burden, and complete profession review chain. Teacher,
+`ready` after the current Lecturer → Instructional Assistant review pass:
+Lessons 2–4 received the required wording and output-contract corrections, and
+the Assistant reran the complete review. Teacher,
 Laboratory Specialist, Learning Analyst, and Examiner remain dormant because no
 concrete reinforcement gap, independent measurement request, practical Lab
 need, or Module examination is currently required.

@@ -70,6 +70,15 @@ complete prepared material from the learner's perspective. The Lecturer's
 final control review must cover the whole artifact, not only reported lines:
 outcome, prerequisites, progressive vocabulary, explanations, examples, tasks,
 evidence instructions, provenance, and applicable safety/AI-use boundaries.
+It must also separate learner-facing instructions from University runtime
+implementation. Remove internal host/repository/container/volume/database
+paths and Student identifiers when a logical relative path is enough; retain a
+technical path only when the learner must use it for the declared outcome.
+For every Assistant finding, the Lecturer records `accepted`, `rejected`, or
+`deferred` with a reason and next action. Accepted changes that affect the
+material require a repeat Instructional Assistant review before the Lecturer
+returns `ready`. The Lecturer must continue this handoff when the correction is
+within scope; an Assistant report is not a terminal result.
 
 When a Student response is available, the Lecturer processes it in parallel
 with the Instructional Assistant review. The Lecturer evaluates the Student's

@@ -48,33 +48,48 @@ provides permitted context relevant to learner level or prior evidence.
    rewrite, or enforce a language change. Identify exact code/API names,
    commands, file paths, source titles, URLs, and required identifiers that may
    remain, and recommend an explanation in the selected language before use.
+   An unnecessary English term in learner-facing prose is a blocking finding:
+   return `ready_with_changes` until the responsible owner replaces it with
+   clear native phrasing or explicitly records why the exact term must remain.
 7. Check that each practical task states the action, exact target, expected
    result, comparison/failure case, and evidence format without requiring the
    learner to infer a hidden task contract.
-8. Check alignment between outcome, examples, practice, and evidence request.
-9. For Student-specific delivery, compare the task with prior diagnostics,
+8. Check that learner-facing instructions do not expose host, repository,
+   container, volume, database, runtime, Student-ID, or other internal
+   implementation details unless the learner's declared outcome explicitly
+   requires that detail. Flag an internal machine path when a logical
+   learner-facing path is sufficient, and recommend the shortest usable
+   wording. Distinguish a path the learner must create or submit from the
+   storage location used by the University runtime.
+9. Check alignment between outcome, examples, practice, and evidence request.
+10. For Student-specific delivery, compare the task with prior diagnostics,
    Lessons, and verified artifacts. Mark whether the task adds a new
    capability, independence level, or transfer context. Renamed examples or
    changed values are not a new delta.
-10. Trace the Lesson through its parent Theme criterion and its preceding and
+11. Trace the Lesson through its parent Theme criterion and its preceding and
     following sequence links. Flag a Lesson that is locally clear but does not
     contribute to the Theme outcome or enable the next bounded step.
-11. For a diagnostic or assessment artifact, check that purpose, target
+12. For a diagnostic or assessment artifact, check that purpose, target
    capability, task, inputs, outputs, failure cases, evidence requirements,
    bounded scope, allowed tools, and learner/assessor boundaries are explicit.
    Check that the document does not coach the learner or accidentally assess a
    different capability.
-12. For an executable practical task, check that the accepting Worker is
+13. For an executable practical task, check that the accepting Worker is
     instructed to inspect and run the submitted code, and that the requested
     evidence is minimal: artifact, command, compact required-case results, and
     only a short understanding check. Flag long reports, repeated traces,
     program maps, or descriptions that do not expose a declared criterion.
-13. If prior evidence needed for a Student-specific duplication check is
+14. If prior evidence needed for a Student-specific duplication check is
     missing, report the review as incomplete and pedagogically not ready for
     delivery; do not infer that the material is new.
-14. Report strengths and findings from the entire artifact with exact
+15. Report strengths and findings from the entire artifact with exact
    headings/locations and concrete revision suggestions. Do not create, edit,
    remove, or publish the source material.
+16. For every finding that requires a material-owner decision, identify the
+   responsible Profession, required disposition (`accepted`, `rejected`, or
+   `deferred`), whether a correction is required, and whether a repeat review
+   is required. An actionable review with unresolved findings is not a final
+   delivery result.
 
 ## Explicit non-goals
 
@@ -114,4 +129,22 @@ Questions for responsible Worker:
 
 Pedagogical readiness: ready | ready_with_changes | not_ready
 Technical/factual review: not performed by this Skill
+
+Required dispositions:
+- Finding:
+- Responsible Profession:
+- Required disposition:
+- Correction required: yes | no
+- Repeat review required: yes | no
+
+Workflow handoff:
+- Completed step:
+- Next required actor:
+- Blocking condition: none | missing authority | missing scope | missing context | unresolved correction
+- Can continue within current workflow: yes | no
 ```
+
+`ready_with_changes` and `not_ready` are intermediate review signals when the
+responsible owner can still act within the current workflow. They do not close
+the handoff. The caller must continue to the responsible owner, collect the
+dispositions and corrections, and request a repeat review when required.

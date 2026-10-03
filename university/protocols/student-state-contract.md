@@ -130,5 +130,8 @@ In the core-relative `students/` repository each Student has one
 | Decision | `## Dean decision — <date>` sections |
 | Note | `## Notes` |
 
-Artifact references in Evidence are repository-relative paths (for example
-under `homeworks/`). The template is `templates/student-state/STUDENT.template.md`.
+Artifact references in Evidence are host-issued references created after a
+client Artifact receipt; a host may represent one internally as a
+repository-relative path or object key. A Student local path is never an
+Evidence artifact reference. The template is
+`templates/student-state/STUDENT.template.md`.
