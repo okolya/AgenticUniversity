@@ -98,7 +98,10 @@ messen).
 ### Status dieses Requests
 
 - Contract 1: **issued** (2026-10-18).
-- Contract 2 Artefakt: **ausstehend** (Learning Analyst).
+- Contract 2 Artefakt: **fertig** — `module-03-exit-lesen-schreiben.md` +
+  `module-03-exit-assessor-record.md` (Learning Analyst Emma, 2026-10-18).
+- Contract 3: **abgeschlossen** — `material-review.md` (IA → Emma dispositions).
+- Contract 4 Evidence Handoff: **ausstehend** (nach Durchführung mit Student).
 - Examiner-Autorisierung: **gated** bis Contract 4.
 
 ---
@@ -133,5 +136,7 @@ Hören/Sprechen — лише `attested`; B2 і Goethe-формат виключ�
 ### Статус
 
 - Contract 1: **видано** (2026-10-18).
-- Contract 2: **очікує** Learning Analyst (Emma).
+- Contract 2: **готово** (Emma) — learner + assessor файли в `assessment/`.
+- Contract 3: **завершено** (`material-review.md`).
+- Contract 4: **очікує** проведення з Студентом.
 - Авторизація Examiner: **gated** до Contract 4.

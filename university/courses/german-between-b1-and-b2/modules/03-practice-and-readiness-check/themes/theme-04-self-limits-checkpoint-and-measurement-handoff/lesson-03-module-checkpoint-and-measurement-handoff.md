@@ -32,6 +32,12 @@ Der Lecturer füllt bei Student-Durchlauf:
 - Empfehlung: Dean Assessment Request an Learning Analyst **nur** für Lesen/Schreiben;
 - Nicht-Ansprüche: kein Module-Urteil, kein HS-Messwert, keine B2-Bereitschaft.
 
+### Recycle-Spiel — Theme-Pack (vor dem Nachweis, ~5–8 Min.)
+
+Formatives Sammelspiel (nicht Teil eines `NO_AI`-Nachweises, falls getrennt): Einschränkung, Nachweis, bündeln, demonstrated, attested. Match-3 oder Lücken-Duell. Fail → Teacher vocab gym vor dem Nachweis. Keine neue Pflicht-`Lektionslexik`, außer unten zusätzlich genannt.
+
+**Optional:** ein Satz mit einem schwachen Lemma (formativ).
+
 ### Nachweis
 
 - Checkpoint-Antworten (Lesen + Schreiben + ein Limitsatz);

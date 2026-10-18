@@ -34,6 +34,29 @@ Ordnen Sie die fünf Ereignisse und erzählen Sie daraus eine kurze Geschichte. 
 
 Sprechen Sie Ihre Geschichte laut oder schreiben Sie zuerst fünf bis sieben Sätze. Prüfen Sie danach: Ist die Reihenfolge für eine andere Person klar?
 
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| die Erfahrung | досвід |
+| zuerst | спочатку |
+| danach | після того |
+| plötzlich | раптом |
+| am Ende | наприкінці |
+### Lexik-Spiel — Match-3 (~5 Min.)
+
+**Regeln:** 3 Leben. Paare Lemma ↔ Kurzbedeutung. Formativ.
+
+Karten: die Erfahrung · zuerst · danach · plötzlich · am Ende
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Kurze Erzählung: fünf Sätze, jedes Lemma einmal.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ### Nachweis
 
 Eine **Ausgangssituation** ist die Situation am Anfang; eine **Reaktion** ist, wie Sie sich fühlen oder was Sie danach denken. Wählen Sie ein eigenes vertrautes Thema, zum Beispiel einen ersten Arbeitstag, eine Reise, einen Kurs oder ein gelungenes Problem. Schreiben Sie **80–100 Wörter** oder nehmen Sie eine **60–90 Sekunden** lange eigene Sprachaufnahme auf. Ihr Beitrag muss enthalten:

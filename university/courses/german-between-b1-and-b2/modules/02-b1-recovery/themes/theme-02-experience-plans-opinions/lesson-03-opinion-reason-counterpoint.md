@@ -31,6 +31,33 @@ Thema: **Soll man regelmäßig in einer Bibliothek oder in einem Café lernen?**
 3. Ergänzen Sie einen Gegenpunkt mit *andererseits* oder *zwar …, aber …*.
 4. Schreiben Sie die drei Teile mit den Überschriften *Meinung, Grund, Gegenpunkt*. Lesen Sie Ihren Mini-Beitrag laut und prüfen Sie bei einer Aufnahme, ob alle drei Teile hörbar sind.
 
+### Recycle-Spiel (Start, ~5 Min.)
+
+Aus vorheriger Lektion / schwachen Lemmata: Plan, deshalb, weil, Folge, beabsichtigen. Format: Match-3 oder Rate-mich. Fail-Trigger (≥2 Fehler) → Teacher vocab gym (`lektionslexik-guide.md`).
+
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| die Meinung | думка |
+| ich finde | я вважаю |
+| der Grund | причина |
+| andererseits | з іншого боку |
+| trotzdem | попри це |
+### Lexik-Spiel — Rate-mich (~5 Min.)
+
+**Regeln:** 3 Leben. Agent umschreibt ohne das Wort; Sie nennen es. Formativ.
+
+Lemmata: die Meinung · ich finde · der Grund · andererseits · trotzdem
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Meinung + Grund + Gegenpunkt: fünf Sätze mit allen Lemmata.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ### Nachweis
 
 Wählen Sie ein vertrautes Thema, zum Beispiel Online-Lernen, öffentliche Verkehrsmittel, Urlaub in der eigenen Region oder tägliche Bewegung. Schreiben Sie **100–120 Wörter** oder nehmen Sie eine **75–100 Sekunden** lange eigene Sprachaufnahme auf. Ihr Beitrag muss enthalten:

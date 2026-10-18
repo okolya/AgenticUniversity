@@ -35,6 +35,12 @@ Planen Sie zuerst mit dieser kurzen Tabelle:
 | 3 | Meinung + Grund + Gegenpunkt |
 | 4 | eine belegte oder ausdrücklich gewählte Form korrigieren |
 
+### Recycle-Spiel — Theme-Pack (vor dem Nachweis, ~5–8 Min.)
+
+Formatives Sammelspiel (nicht Teil eines `NO_AI`-Nachweises, falls getrennt): Erfahrung, Plan, deshalb, Meinung, andererseits. Match-3 oder Lücken-Duell. Fail → Teacher vocab gym vor dem Nachweis. Keine neue Pflicht-`Lektionslexik`, außer unten zusätzlich genannt.
+
+**Optional:** ein Satz mit einem schwachen Lemma (formativ).
+
 ### Nachweis
 
 Schreiben Sie **140–170 Wörter** oder nehmen Sie eine **2–2,5 Minuten** lange eigene Sprachaufnahme auf. Verwenden Sie mindestens:

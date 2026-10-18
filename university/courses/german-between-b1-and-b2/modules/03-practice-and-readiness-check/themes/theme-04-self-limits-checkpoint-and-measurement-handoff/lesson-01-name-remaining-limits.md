@@ -19,6 +19,29 @@ Nach dieser Lektion benennen Sie **verbleibende Einschränkungen** gegenüber de
 2. Hören/Sprechen (Thema 2): Welche Praxis ist nur `attested` und daher keine gemessene Aussage?
 3. Überarbeitung (Thema 3): Bleibt ein Fehlermuster trotz einer Korrektur?
 
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| die Einschränkung | обмеження |
+| gegenüber B1 | відносно B1 |
+| konkret | конкретно |
+| kein B2-Urteil | без вердикту B2 |
+| ehrlich | чесно |
+### Lexik-Spiel — Match-3 (~5 Min.)
+
+**Regeln:** 3 Leben. Paare Lemma ↔ Kurzbedeutung. Formativ.
+
+Karten: die Einschränkung · gegenüber B1 · konkret · kein B2-Urteil · ehrlich
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Fünf Sätze Selbstlimits mit allen Lemmata.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ### Nachweis
 
 Schreiben Sie 80–100 Wörter:

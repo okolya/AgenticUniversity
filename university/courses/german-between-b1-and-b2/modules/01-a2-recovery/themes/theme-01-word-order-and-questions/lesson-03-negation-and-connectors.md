@@ -21,6 +21,11 @@ Nach dieser Lektion sagen Sie „Nein“ mit `nicht` oder `kein-`. Die Bedeutung
 
 Aus Lektion 1 und 2: Im Satz mit Punkt steht das Verb an Position 2. In der Ja/Nein-Frage steht es an Position 1. In der W-Frage steht es an Position 2.
 
+### Recycle-Spiel — Match-3 (Start, ~5 Min.)
+
+Aus Lektion 2: Ja/Nein-Frage, W-Frage, wo, wann, warum (+ schwache Lemmata).
+Fail-Trigger wie in `lektionslexik-guide.md` → Teacher vocab gym.
+
 ### Wörter für diese Lektion
 
 - verneinen (Nein sagen): nicht, kein, keine, keinen
@@ -29,6 +34,21 @@ Aus Lektion 1 und 2: Im Satz mit Punkt steht das Verb an Position 2. In der Ja/N
 - das Nomen (*das Auto, die Zeit*), das Adjektiv (*gut, neu*), der Artikel (*ein, eine, der, die, das*)
 - der Gegensatz: *aber* zeigt etwas anderes
 - die Zeit (*Ich habe keine Zeit.*), das Geld, der Kaffee, der Hund, die Katze, das Auto, das Handy, das Brot, die Kinder, das Wetter
+
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Im Kontext | Kurz |
+|---|---|---|
+| nicht | verneint Verb/Adjektiv | не |
+| kein- | verneint Nomen mit ein-/ohne Artikel | жоден/немає |
+| und | verbindet gleichrangig | і |
+| aber | Gegensatz | але |
+| denn | Grund (Verb bleibt Position 2) | бо/адже |
+
+### Lexik-Spiel — Rate-mich (Ende, ~5 Min.)
+
+3 Leben. Agent umschreibt; Sie nennen `nicht` / `kein-` / `und` / `aber` / `denn`.
+Formativ. ≥2 Fehler → `weak` für Recycle vor dem Checkpoint.
 
 ### Teil A: Verneinung
 
@@ -151,9 +171,21 @@ Sie können am Sonntag nicht kommen. Schreiben Sie Jule eine Antwort mit **6 bis
 
 **Noch ein Schritt (freiwillig):** Lesen Sie Ihre Antwort noch einmal. Suchen Sie einen Fehler in der Wortstellung. Wenn Sie einen Fehler finden: Schreiben Sie unter den Satz *Korrektur: …*. Löschen Sie nichts.
 
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Schreiben Sie **fünf kurze Sätze** — jedes Lemma der `Lektionslexik` einmal:
+
+1. ein Satz mit **nicht**;  
+2. ein Satz mit **kein-** (Passende Form: kein / keine / keinen);  
+3. zwei Hauptsätze mit **und**;  
+4. zwei Hauptsätze mit **aber**;  
+5. zwei Hauptsätze mit **denn**.
+
+Verb an der richtigen Stelle. Formativ — zusätzlich zu Aufgabe 2/4.
+
 ### Das geben Sie zurück
 
-Aufgabe 2 und Aufgabe 4. Schreiben Sie die Antworten in eine Nachricht oder in eine Datei. Wenn etwas unklar ist, schreiben Sie eine kurze Frage dazu.
+Aufgabe 2 und Aufgabe 4 **und** Lexik-Schreiben. Schreiben Sie die Antworten in eine Nachricht oder in eine Datei. Wenn etwas unklar ist, schreiben Sie eine kurze Frage dazu.
 
 ### Danach
 
@@ -217,6 +249,11 @@ Die Erklärungen, Beispiele und Aufgaben sind original (neu geschrieben). Zur Ko
 - das Nomen (іменник: *das Auto, die Zeit*), das Adjektiv (прикметник: *gut, neu*), der Artikel (артикль: *ein, eine, der, die, das*)
 - der Gegensatz (протиставлення): *aber* показує щось інше
 - die Zeit (час — у значенні «мати час», вільний час: *Ich habe keine Zeit.*), das Geld (гроші), der Kaffee (кава), der Hund (собака), die Katze (кішка), das Auto (автомобіль), das Handy (мобільний телефон), das Brot (хліб), die Kinder (діти), das Wetter (погода)
+
+### Recycle / Lektionslexik / Lexik-Spiel / Lexik-Schreiben
+
+Recycle Уроку 2, цільові 5 лексем, Rate-mich і п’ять речень з ними —
+у німецькій секції. Fail → Teacher vocab gym.
 
 ### Частина A: Заперечення
 

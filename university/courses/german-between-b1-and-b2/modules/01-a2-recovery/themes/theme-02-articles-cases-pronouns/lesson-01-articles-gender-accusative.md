@@ -62,6 +62,37 @@ Merken Sie: Nur beim **der-Wort** ändert sich der Artikel im Akkusativ: *der �
 - Wir haben **kein** Sofa. (das Sofa)
 - Tom braucht **einen** Schlüssel. (der Schlüssel)
 
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Artikel | Kollokation | Merkhilfe | Kurz |
+|---|---|---|---|---|
+| Artikel | der | der bestimmte Artikel | der=blau | артикль |
+| Genus | das | das Genus des Nomens | das=grün | рід |
+| Akkusativ | der | im Akkusativ stehen | der→den | знахідний |
+| ein/eine | none | ein Hund / eine Katze | u = unbestimmt | неозначений артикль |
+| Objekt | das | das Objekt im Akkusativ | Wen? Was? | додаток |
+
+### Lexik-Track (bei Student-ID)
+
+1. Start: `python3 scripts/student_store.py list-lexicon-due <id> --course german-between-b1-and-b2`
+2. Nach Einführung: `upsert-lexicon` je Lemma (`article`, optional `collocation`/`mnemonic`, `introduced_lesson_ref` = diese Lektion, `status=new`)
+3. Nach Spiel: `record-lexicon-check <id> <lemma> ok|fail --course german-between-b1-and-b2 --profession Lecturer --workflow lesson-preparation`
+4. `Lexik-Schreiben` → **kein** Store-Schreiben (Festigung). Siehe `lektionslexik-guide.md`.
+
+### Lexik-Spiel — Match-3 (~5 Min.)
+
+**Regeln:** 3 Leben. Paare Lemma ↔ Kurzbedeutung. Formativ. Wiederholung → Track.
+
+Karten: der Artikel · das Genus · der Akkusativ · ein/eine · das Objekt
+
+Bei ≥2 Fehlern: `record-lexicon-check … fail` (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Schreiben Sie fünf kurze Sätze: benutzen Sie jeden Lemma-Begriff einmal (oder markieren Sie Artikel + Akkusativobjekt in eigenen Sätzen).
+
+Formativ / Festigung — nicht in SQLite. Siehe `lektionslexik-guide.md`.
+
 ### Aufgaben
 
 #### Aufgabe 1 — Subjekt und Objekt finden (Üben)
@@ -161,6 +192,10 @@ Die Erklärungen, Beispiele und Aufgaben sind original (neu geschrieben). Zur Ko
 ---
 
 ## Українською (переклад)
+
+### Lektionslexik / Lexik-Spiel / Lexik-Schreiben
+
+Цільові лексеми, гра й речення — у німецькій секції (`lektionslexik-guide.md`).
 
 - **Курс / Модуль / Тема:** Між B1 та B2 / Модуль 1 — Відновлення A2 / Тема 2 — Артиклі, основні відмінки, займенники й прийменники
 - **Урок:** 1 із 4

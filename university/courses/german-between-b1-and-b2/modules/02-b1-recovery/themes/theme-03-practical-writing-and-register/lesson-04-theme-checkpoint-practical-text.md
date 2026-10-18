@@ -19,6 +19,12 @@ zuvor — nicht nur ein ausgetauschtes Datum oder ein neuer Name. Der Checkpoint
 zeigt, ob Sie Struktur, Register und eine einzelne Reparatur selbstständig
 verbinden können.
 
+### Recycle-Spiel — Theme-Pack (vor dem Nachweis, ~5–8 Min.)
+
+Formatives Sammelspiel: Zweck, Anrede, Bitte, höflich, überarbeiten.
+Match-3 oder Lücken-Duell. Fail → Teacher vocab gym. Optional: ein Satz mit
+schwachem Lemma. Siehe `lektionslexik-guide.md`.
+
 ### Aufgabe
 
 Sie schreiben an eine bekannte Sport- oder Kursorganisation. Sie müssen Ihre

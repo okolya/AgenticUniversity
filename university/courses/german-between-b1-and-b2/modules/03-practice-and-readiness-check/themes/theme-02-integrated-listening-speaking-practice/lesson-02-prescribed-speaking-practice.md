@@ -14,6 +14,33 @@
 
 Nach dieser Lektion erzeugen Sie einen **verständlichen kurzen Sprechbeitrag** in einer vertrauten Situation und tragen die Praxis als `attested` ein. Neu ist die zusammenhängende mündliche Reaktion ohne **isolierte Satzmuster** (*Ok.* / *Passt.* allein). Diese Lektion **misst nicht** Sprechen und vergibt keine Note.
 
+### Recycle-Spiel (Start, ~5 Min.)
+
+Aus vorheriger Lektion / schwachen Lemmata: zuhören, notieren, Hauptpunkt, attested, kein Urteil. Format: Match-3 oder Rate-mich. Fail-Trigger (≥2 Fehler) → Teacher vocab gym (`lektionslexik-guide.md`).
+
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| sprechen | говорити |
+| die Antwort | відповідь |
+| nachfragen | уточнити |
+| verständlich | зрозуміло |
+| kurz | коротко |
+### Lexik-Spiel — Rate-mich (~5 Min.)
+
+**Regeln:** 3 Leben. Agent umschreibt ohne das Wort; Sie nennen es. Formativ.
+
+Lemmata: sprechen · die Antwort · nachfragen · verständlich · kurz
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Schreiben Sie fünf geplante Sprechzeilen mit allen Lemmata (vor dem Sprechen).
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ### Situation
 
 Sie rufen bei einem Kursbüro an. Die Mitarbeiterin sagt:

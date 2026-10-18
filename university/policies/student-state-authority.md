@@ -9,6 +9,7 @@ Workers may read only the Student context needed by their active workflow and ap
 ## Write
 
 - Lecturer, Teacher, and Laboratory Specialist may return formative observations; they do not mark verified mastery.
+- Lecturer and Teacher may write formative `lexicon_item` status through `upsert-lexicon` and `record-lexicon-check` (ADR 0013). Lexicon rows are never verified mastery and never Module Exit Evidence. `Lexik-Schreiben` is not stored in the lexicon track.
 - Learning Analyst may record independent assessment evidence, criterion-level findings, competency verification, gaps, and retention findings when authorized by the active assessment workflow.
 - Examiner may record Module examination evidence and the final Module-level verdict under `module-exit`.
 - Dean may create/update enrollment and agreed planning state, persist post-examination application/certification plans, mark the private Student Module Enrollment completed when its plan is resolved, and may use verified evidence for placement/module-skipping decisions. Dean may add a Note limited to their own decisions and metadata. Dean does not rewrite independent evidence or examination verdicts.

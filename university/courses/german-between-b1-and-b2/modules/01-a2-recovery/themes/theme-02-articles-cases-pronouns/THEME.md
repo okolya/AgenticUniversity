@@ -4,7 +4,10 @@
 - **Rahmen genehmigt von:** ernannter Dekan der Sprachfakultät
 - **Didaktische Gestaltung:** zugewiesene Dozentin / zugewiesener Dozent der Sprachfakultät
 - **Status:** ahead-of-student `ready` (Dean 2026-10-18); vier Lektionen `unpiloted` (`unpiloted` blockiert die Durchführung nicht); per-Student delivery confirmation (Evidence-Delta, ausgelassene Kriterien, Duplikatprüfung) erfolgt bei der Durchführung
+- **Lektionslexik-Track:** Pilot SQLite (`lexicon_item`, ADR 0013) — Karten mit Artikel/Kollokation/Merkhilfe; Delivery: `list-lexicon-due` / `upsert-lexicon` / `record-lexicon-check` (siehe `lektionslexik-guide.md`)
+- **IA disposition (Livia, 2026-10-18):** Theme-2 Lexik-Karten — `ready_with_changes` cleared: Artikel+Lemma einheitlich; Merkhilfe kurz; CLI-Schritte in Lecturer-Notiz, nicht als Student-Aufgabe. Schreiben bleibt Festigung ohne Store.
 - **Status / Статус:** ahead-of-student `ready` (Декан 2026-10-18); чотири Уроки `unpiloted` (`unpiloted` не блокує проведення); підтвердження delivery для кожного Студента (evidence delta, пропущені критерії, перевірка дублювання) — під час проведення
+- **Lektionslexik-трек:** пілот SQLite (ADR 0013) — картки з артиклем/колокацією/мнемонікою; CLI як у гідові
 
 ---
 

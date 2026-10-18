@@ -33,6 +33,12 @@ Feedback:
 
 Erstellen Sie eine zweite Fassung. Ändern Sie nur die Zielstelle; markieren Sie sie mit `[geändert]`. Kein zweiter Feedback-Zyklus.
 
+### Recycle-Spiel — Theme-Pack (vor dem Nachweis, ~5–8 Min.)
+
+Formatives Sammelspiel (nicht Teil eines `NO_AI`-Nachweises, falls getrennt): Feedback, Zielstelle, überarbeiten, verbessern, vergleichen. Match-3 oder Lücken-Duell. Fail → Teacher vocab gym vor dem Nachweis. Keine neue Pflicht-`Lektionslexik`, außer unten zusätzlich genannt.
+
+**Optional:** ein Satz mit einem schwachen Lemma (formativ).
+
 ### Nachweis
 
 1. erste Fassung;

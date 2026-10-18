@@ -36,6 +36,33 @@ Markieren Sie:
 
 Ein **Zeitraum** sagt, wann oder wie lange etwas passiert, zum Beispiel *im nächsten Monat* oder *in den nächsten drei Wochen*. Ein **Umsetzungsschritt** ist eine konkrete Handlung, die den Plan möglich macht. Formulieren Sie danach vier eigene Sätze nach diesem Gerüst: **Plan + Zeitraum → Grund 1 → Grund 2 mit außerdem → Folge mit deshalb → Umsetzungsschritt**. Verbinden Sie die Sätze mit *weil, außerdem* und *deshalb*.
 
+### Recycle-Spiel (Start, ~5 Min.)
+
+Aus vorheriger Lektion / schwachen Lemmata: Erfahrung, zuerst, danach, plötzlich, am Ende. Format: Match-3 oder Rate-mich. Fail-Trigger (≥2 Fehler) → Teacher vocab gym (`lektionslexik-guide.md`).
+
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| der Plan | план |
+| deshalb | тому |
+| weil | тому що |
+| die Folge | наслідок |
+| beabsichtigen | мати намір |
+### Lexik-Spiel — Lücken-Duell (~5 Min.)
+
+**Regeln:** 3 Leben. Kurze Lückensätze mit den Lemmata (Zeitbox ~60 s). Formativ.
+
+Lemmata: der Plan · deshalb · weil · die Folge · beabsichtigen
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Fünf Sätze zu einem Plan mit deshalb/weil/Folge/beabsichtigen.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ### Nachweis
 
 Erklären Sie einen realistischen Plan für die nächsten Wochen, zum Beispiel für Lernen, Arbeit, Gesundheit, Freizeit oder eine Reise. Schreiben Sie **90–110 Wörter**. Ihr Beitrag muss enthalten:

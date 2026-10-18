@@ -4,6 +4,7 @@
 import sys
 import tempfile
 import unittest
+from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -159,6 +160,108 @@ class AppendEvidenceTests(unittest.TestCase):
         with self.assertRaises(store_module.UnavailableStateError):
             self.append(dict(self.entry, corrects="ev-nope"))
         self.assertIn(f"corrects: `{first}`", self.store.read_document("mykola"))
+
+
+COURSE = "german-between-b1-and-b2"
+LESSON = (
+    "german-between-b1-and-b2/01-a2-recovery/"
+    "theme-02-articles-cases-pronouns/lesson-01-articles-gender-accusative"
+)
+
+
+class LexiconTrackTests(unittest.TestCase):
+    def setUp(self):
+        self.tempdir = tempfile.TemporaryDirectory()
+        self.store = store_module.StudentStore(Path(self.tempdir.name) / "students")
+        self.store.write_document(
+            "mykola", DOC.format(id="mykola", note=""), actor="Rector/x", label="Mykola"
+        )
+        self.base = {
+            "lemma": "Artikel",
+            "article": "der",
+            "collocation": "der bestimmte Artikel",
+            "status": "new",
+            "introduced_lesson_ref": LESSON,
+            "course_id": COURSE,
+            "mnemonic": "der=blau",
+            "streak_ok": 0,
+        }
+
+    def tearDown(self):
+        self.tempdir.cleanup()
+
+    def upsert(self, item=None, profession="Lecturer", workflow="lesson-preparation"):
+        return self.store.upsert_lexicon(
+            "mykola", item or self.base, profession=profession, workflow=workflow, recorded_on="2026-10-18"
+        )
+
+    def check(self, result, lemma="Artikel", profession="Lecturer", workflow="lesson-preparation", on="2026-10-18"):
+        return self.store.record_lexicon_check(
+            "mykola",
+            lemma=lemma,
+            course_id=COURSE,
+            result=result,
+            profession=profession,
+            workflow=workflow,
+            recorded_on=on,
+        )
+
+    def test_upsert_and_list(self):
+        item = self.upsert()
+        self.assertEqual(item["lemma"], "Artikel")
+        self.assertEqual(item["article"], "der")
+        self.assertEqual(item["status"], "new")
+        self.assertEqual(item["recorded"]["profession"], "lecturer")
+        listed = self.store.list_lexicon("mykola", course_id=COURSE)
+        self.assertEqual(len(listed), 1)
+        self.assertEqual(listed[0]["collocation"], "der bestimmte Artikel")
+
+    def test_no_lexicon_without_registered_student(self):
+        with self.assertRaises(store_module.MissingStateError):
+            self.store.upsert_lexicon(
+                "other", self.base, profession="Lecturer", workflow="lesson-preparation"
+            )
+
+    def test_only_lecturer_and_teacher_write(self):
+        for role in ("Dean", "Learning Analyst", "Examiner", ""):
+            with self.assertRaises(store_module.UnavailableStateError):
+                self.upsert(profession=role)
+
+    def test_fail_becomes_weak_and_is_due(self):
+        self.upsert()
+        item = self.check("fail")
+        self.assertEqual(item["status"], "weak")
+        self.assertEqual(item["streak_ok"], 0)
+        self.assertEqual(item["next_due"], "2026-10-18")
+        due = self.store.list_lexicon_due(
+            "mykola", course_id=COURSE, on=date.fromisoformat("2026-10-18")
+        )
+        self.assertEqual([row["lemma"] for row in due], ["Artikel"])
+
+    def test_spiel_ok_then_double_recycle_to_stable(self):
+        self.upsert()
+        first = self.check("ok", on="2026-10-18")
+        self.assertEqual(first["status"], "recycling")
+        self.assertEqual(first["streak_ok"], 1)
+        self.assertEqual(first["next_due"], "2026-10-19")
+        second = self.check("ok", on="2026-10-19")
+        self.assertEqual(second["status"], "stable")
+        self.assertEqual(second["streak_ok"], 2)
+        self.assertEqual(second["next_due"], "2026-10-22")
+
+    def test_fail_from_stable_returns_to_weak(self):
+        self.upsert(dict(self.base, status="stable", streak_ok=2, next_due="2026-10-18"))
+        item = self.check("fail")
+        self.assertEqual(item["status"], "weak")
+        self.assertEqual(item["streak_ok"], 0)
+
+    def test_teacher_may_record_gym_check(self):
+        self.upsert()
+        item = self.check("fail", profession="Teacher", workflow="teacher-reinforcement")
+        self.assertEqual(item["recorded"]["profession"], "teacher")
+        recovered = self.check("ok", profession="Teacher", workflow="teacher-reinforcement", on="2026-10-19")
+        self.assertEqual(recovered["status"], "recycling")
+        self.assertEqual(recovered["streak_ok"], 1)
 
 
 if __name__ == "__main__":

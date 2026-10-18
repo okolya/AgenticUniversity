@@ -21,12 +21,40 @@ Nach dieser Lektion schreiben Sie Fragen. Bei einer W-Frage steht das Verb an Po
 
 Aus Lektion 1: Im Satz mit Punkt steht das Verb an Position 2. Auch nach *Heute* oder *Im Park* steht das Verb an Position 2. Das Subjekt kommt danach.
 
+### Recycle-Spiel — Rate-mich (Start, ~5 Min.)
+
+Aus Lektion 1: Aussagesatz, Subjekt, Position 2, heute, zu Hause (+ schwache
+Lemmata, falls notiert). Agent beschreibt ohne das Wort; Sie nennen es.
+**Fail-Trigger:** ≥2 Fehler → nächste Aktion Teacher vocab gym (`lektionslexik-guide.md`).
+
 ### Wörter für diese Lektion
 
 - die Fragewörter: wer, was, wo, woher, wohin, wann, wie, warum, wie lange, wie oft, wie viel, wie viele, um wie viel Uhr
 - die Frage, die Antwort, ja, nein
 - die Verbformen mit *du* und *Sie*: du wohnst, du kommst, du kannst, du hast — Sie wohnen, Sie kommen, Sie können, Sie haben
 - der Wohnort (wo Sie wohnen), die Herkunft (woher Sie kommen), der Beruf (Arbeit)
+
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Im Kontext | Kurz |
+|---|---|---|
+| die Ja/Nein-Frage | Antwort ja oder nein | питання так/ні |
+| die W-Frage | Frage mit wer/was/wo … | W-питання |
+| wo | Frage nach dem Ort | де |
+| wann | Frage nach der Zeit | коли |
+| warum | Frage nach dem Grund | чому |
+
+### Lexik-Spiel — Lücken-Duell (Ende, ~5 Min.)
+
+3 Leben. Ergänzen Sie das passende Lemma (Zeitbox ~60 s). Formativ.
+
+1. ___ wohnen Sie? — In Berlin.  
+2. ___ beginnt der Kurs? — Am Montag.  
+3. Eine Frage mit *ja* oder *nein* heißt ___.  
+4. Eine Frage mit *wo* oder *wann* ist eine ___.  
+5. ___ lernen Sie Deutsch? — Weil ich in Deutschland arbeite.
+
+Schlüssel (Lehrperson): 1 wo · 2 wann · 3 Ja/Nein-Frage · 4 W-Frage · 5 warum
 
 ### 1. Die Ja/Nein-Frage: Das Verb steht an Position 1
 
@@ -133,9 +161,21 @@ Schreiben Sie 6 Fragen. Schreiben Sie so, wie Sie mit Jana sprechen. Benutzen Si
 
 **Noch ein Schritt (freiwillig):** Lesen Sie Ihre Fragen noch einmal. Wo steht das Verb? Wenn Sie einen Fehler finden: Schreiben Sie unter die Frage *Korrektur: …*. Löschen Sie nichts.
 
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Schreiben Sie **fünf kurze Fragen** — jedes Lemma der `Lektionslexik` einmal:
+
+1. eine **Ja/Nein-Frage**;  
+2. eine **W-Frage** mit **wo**;  
+3. eine **W-Frage** mit **wann**;  
+4. eine **W-Frage** mit **warum**;  
+5. noch eine freie **W-Frage** (anderes Fragewort erlaubt).
+
+Verbstellung wie in dieser Lektion. Formativ.
+
 ### Das geben Sie zurück
 
-Aufgabe 2 und Aufgabe 3. Schreiben Sie die Antworten in eine Nachricht oder in eine Datei. Wenn etwas unklar ist, schreiben Sie eine kurze Frage dazu.
+Aufgabe 2 und Aufgabe 3 **und** Lexik-Schreiben. Schreiben Sie die Antworten in eine Nachricht oder in eine Datei. Wenn etwas unklar ist, schreiben Sie eine kurze Frage dazu.
 
 ### Danach
 
@@ -187,6 +227,11 @@ Die Erklärungen, Beispiele und Aufgaben sind original (neu geschrieben). Zur Ko
 - die Frage (питання), die Antwort (відповідь), ja (так), nein (ні)
 - форми дієслів із *du* (ти) і *Sie* (ви): du wohnst, du kommst, du kannst, du hast — Sie wohnen, Sie kommen, Sie können, Sie haben
 - der Wohnort (місце проживання — де ви живете), die Herkunft (походження — звідки ви), der Beruf (професія — робота)
+
+### Recycle / Lektionslexik / Lexik-Spiel / Lexik-Schreiben
+
+Recycle Уроку 1, цільові 5 лексем, Lücken-Duell і п’ять питань-речень —
+у німецькій секції. Fail → Teacher vocab gym.
 
 ### 1. Питання «так/ні»: дієслово стоїть на позиції 1
 

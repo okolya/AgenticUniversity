@@ -54,7 +54,38 @@ Neu ist die verständliche Verbindung von Präsens-Hilfsverb und Partizip II fü
 
 Originale Erklärung, Tabelle und Aufgaben; keine fremden Texte übernommen.
 
+### Recycle-Spiel (Start, ~5 Min.)
+
+Aus vorheriger Lektion / schwachen Lemmata: Präsens, trennbar, aufstehen, können, müssen. Format: Match-3 oder Rate-mich. Fail-Trigger (≥2 Fehler) → Teacher vocab gym (`lektionslexik-guide.md`).
+
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| das Perfekt | перфект |
+| haben | допоміжне haben |
+| sein | допоміжне sein |
+| gemacht | Partizip II machen |
+| gegangen | Partizip II gehen |
+### Lexik-Spiel — Lücken-Duell (~5 Min.)
+
+**Regeln:** 3 Leben. Kurze Lückensätze mit den Lemmata (Zeitbox ~60 s). Formativ.
+
+Lemmata: das Perfekt · haben · sein · gemacht · gegangen
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Fünf Perfekt-Sätze: haben/sein + passende Partizipien inkl. gemacht/gegangen.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ## Українською
+
+### Lektionslexik / Lexik-Spiel / Lexik-Schreiben
+
+Цільові лексеми, гра й речення — у німецькій секції (`lektionslexik-guide.md`).
 
 ### Мета
 

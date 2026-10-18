@@ -2,7 +2,7 @@
 
 - Fakultät / Факультет: Sprachfakultät / Мовний факультет
 - Verantwortlich / Відповідальний: ernannter Dekan der Sprachfakultät / призначений Декан мовного факультету
-- Status: öffentliche Architektur genehmigt; Module 1–2 ahead-of-student `ready` (`unpiloted` blockiert die Durchführung nicht); Module 3 ahead-of-student formative `ready` (`unpiloted` blockiert die Durchführung nicht; Theme 4 formative only); per-Student delivery confirmation bei der Durchführung / публічну архітектуру затверджено; Модулі 1–2 ahead-of-student `ready` (`unpiloted` не блокує проведення); Модуль 3 ahead-of-student formative `ready` (`unpiloted` не блокує проведення; Тема 4 лише formative); підтвердження delivery — під час проведення для кожного Студента
+- Status: öffentliche Architektur genehmigt; Modules 1–4 ahead-of-student `ready` (`unpiloted` blockiert die Durchführung nicht); Lektionslexik (3–5 + Spiel + Schreiben + Recycle) auf allen 51 Lessons; LA + Examiner instruments Modules 3–4 (conduct gated); per-Student delivery confirmation bei der Durchführung / Модулі 1–4 `ready`; Lektionslexik на всіх 51 Уроках; інструменти LA/Examiner М3–М4 (проведення gated)
 - Sprache / Мова: Deutsch / німецька
 - Routentyp / Тип маршруту: begrenzte Brücke zur Bereitschaft für einen separaten B2-Kurs / обмежений міст до готовності до окремого курсу B2
 - Tempo / Темп: angepasst an Kapazität des Studenten und verifizierte Nachweise / адаптивний до можливостей Студента й верифікованих свідчень
@@ -102,6 +102,35 @@ Jedes Modul muss Nachweise erzeugen, die das vorige nicht erzeugt hat; nachgewie
 
 Die Exit-Kriterien sind bewusst qualitativ formuliert. Sie werden anhand der B1-Deskriptoren aus der Quellenherkunft interpretiert. Die konkreten Aufgaben, Schwellen und Nachweisregeln definieren der ernannte Examiner und Learning Analyst in ihren Prüfungsartefakten innerhalb der Kurs-Erfolgskriterien; sie sind in diesem öffentlichen Rahmen nicht festgelegt.
 
+### Lektionslexik (nur dieser Kurs)
+
+Jeder Unterrichts-Slot führt genau **3–5** Ziellexeme (`Lektionslexik`). Sie
+kommen aus dem Lektionskontext und werden im **Spielmodus** geübt und
+wiederholt — nicht als isolierter Wörterbuchdrill und nicht als Module-Exit-
+Kriterium. Die große Wortliste einer Lektion (falls vorhanden) bleibt
+Verständnisstütze und ersetzt `Lektionslexik` nicht.
+
+- **Autor / Durchführung:** ernannter Lecturer; Spiele, **Lexik-Schreiben**
+  (Sätze mit Ziellexemen) und Recycle laut `lektionslexik-guide.md`.
+- **Nomen:** immer **mit Artikel** als eine Einheit (`der`/`die`/`das`); optional
+  eine **Wortverbindung** (Kollokation) und eine kurze Text-Merkhilfe auf derselben
+  Karte. Nicht-Nomen: Artikel `none`.
+- **Wiederholung vs Festigung:** Spiel/Recycle (**Wiederholung**) schreibt den
+  Student-Lexikon-Track in SQLite (`lexicon_item`, ADR 0013). **Lexik-Schreiben**
+  ist nur in-lesson **Festigung** und wird **nicht** gespeichert oder gespaced.
+- **Student-Track (CLI):** bei bekannter Student-ID — Start
+  `list-lexicon-due`; nach Einführung `upsert-lexicon`; nach Spiel/Recycle
+  `record-lexicon-check` (`ok`|`fail`). Details: `lektionslexik-guide.md`.
+- **Recycle:** Start der nächsten Lektion (Satz N−1 + bis zwei schwache/ältere
+  Lemmata aus dem Track); kurzes Sammelspiel vor dem Theme-Checkpoint.
+- **Teacher:** nur nach Fail-Trigger (siehe Guide) — kurzes vocab gym, Status
+  im Track aktualisieren, dann zurück zum Lecturer-Slot; erweitert Theme/Module
+  nicht.
+- **Learning Analyst / Examiner:** keine Routine-Lexikspiele; keine Änderung
+  der Exit Contracts wegen Mikrolexik.
+- **Formativ:** Punkte/Leben motivieren; sie ersetzen keinen Nachweis und kein
+  Examiner-Urteil.
+
 ### Grenze der Durchführung
 
 Dieser Kurs definiert öffentliche Kompetenz- und Modulrahmen. Detaillierte Themen, endliche Lektionskarten, Übungen und Lehrmaterialien können für vom Dekan genehmigte Themenrahmen vorab vorbereitet werden und tragen die Markierung `unpiloted`, bis ein Student sie durchlaufen hat. Die Durchführung für einen Studenten beginnt erst nach dem Course Entry, und jede Lektion wird anhand der verifizierten Nachweise dieses Studenten bestätigt. Der Dekan besitzt Kurs- und Modulverträge. Eine ernannte Dozentin bzw. ein ernannter Dozent besitzt Themen- und Lektionsdidaktik; ein Teacher besitzt die Festigung; ein Learning Analyst besitzt die unabhängige Messung, wenn dieser Workflow besetzt ist.
@@ -146,8 +175,8 @@ Die Sprachfakultät hat Lecturer, Teacher, Laboratory Specialist, Learning Analy
 |---|---:|---:|---|
 | 1. Відновлення A2 | 4 | 15 | карта затверджена; Теми 1–4 ahead-of-student `ready`; `unpiloted` (не блокує проведення); per-Student delivery confirmation під час проведення |
 | 2. Відновлення B1 | 4 | 16 | карта затверджена; Теми 1–4 ahead-of-student `ready`; `unpiloted` (не блокує проведення); per-Student delivery confirmation під час проведення |
-| 3. Практика і перевірка готовності | 4 | 12 | карта затверджена; Теми 1–4 ahead-of-student `ready` (Тема 4 formative only); `unpiloted` (не блокує проведення); per-Student confirmation під час проведення; LA/Examiner gated |
-| 4. Готовність до вступу на B2 | не визначено | не визначено | спочатку затвердити кінцеву карту Тем і слотів |
+| 3. Практика і перевірка готовності | 4 | 12 | Теми/Уроки `ready` (`unpiloted`); LA Exit RW Contracts 1–3; Examiner-інструмент готовий; проведення LA/Examiner gated per Student |
+| 4. Готовність до вступу на B2 | 3 | 8 | Теми/Уроки `ready` (`unpiloted`); Examiner-інструмент готовий; проведення gated після formative handoff / авторизації Декана |
 
 Ця таблиця є control index, а не прихованим syllabus. Для кожного Студента Декан вибирає лише потрібні Теми та слоти за актуальними свідченнями.
 
@@ -226,6 +255,17 @@ Die Sprachfakultät hat Lecturer, Teacher, Laboratory Specialist, Learning Analy
 ### Калібрування Exit-критеріїв
 
 Exit-критерії навмисно сформульовані якісно. Їх інтерпретують за дескрипторами B1, названими в розділі про джерела. Конкретні завдання, пороги й правила свідчень визначають призначені Examiner і Learning Analyst у своїх артефактах оцінювання в межах Критеріїв успіху курсу; у цій публічній рамці вони не фіксуються.
+
+### Lektionslexik (лише цей курс)
+
+Кожен навчальний слот має рівно **3–5** цільових лексем (`Lektionslexik`) з
+грою, **написанням речень** (`Lexik-Schreiben`) і recycle. Іменники — **з
+артиклем**; опційна колокація й текстова мнемоніка на тій же картці.
+**Wiederholung** (Spiel/Recycle) → SQLite-трек (`lexicon_item`, ADR 0013);
+**Festigung** (`Lexik-Schreiben`) лише в уроці, без запису в store. При
+Student-ID: `list-lexicon-due` / `upsert-lexicon` / `record-lexicon-check`.
+Це не критерій Module Exit. Автор — Lecturer; Teacher — лише за fail
+(vocab gym). Деталі: `lektionslexik-guide.md`.
 
 ### Межа проведення
 

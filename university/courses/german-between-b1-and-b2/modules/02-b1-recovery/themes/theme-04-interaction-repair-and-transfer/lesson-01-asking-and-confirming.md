@@ -51,6 +51,29 @@ eine kurze nächste Handlung hinzu.
 Nutzen Sie diese Folge: **Information → Nachfrage → Bestätigung → nächste
 Handlung**. Wechseln Sie danach die Rollen.
 
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| Wie bitte? | прошу повторити |
+| Meinen Sie …? | ви маєте на увазі… |
+| Verstehe ich richtig …? | чи правильно я розумію… |
+| genau | саме так |
+| noch einmal | ще раз |
+### Lexik-Spiel — Match-3 (~5 Min.)
+
+**Regeln:** 3 Leben. Paare Lemma ↔ Kurzbedeutung. Formativ.
+
+Karten: Wie bitte? · Meinen Sie …? · Verstehe ich richtig …? · genau · noch einmal
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Fünf kurze Klärungsäußerungen — jedes Lemma einmal.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ### Nachweis
 
 Geben Sie einen Dialog mit **6–8 Repliken** ab oder nehmen Sie eine eigene

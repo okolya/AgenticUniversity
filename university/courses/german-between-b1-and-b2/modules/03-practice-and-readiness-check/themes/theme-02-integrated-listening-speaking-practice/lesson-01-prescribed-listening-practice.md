@@ -16,6 +16,27 @@ Nach dieser Lektion schließen Sie eine **vorgeschriebene Hörpraxis** ab und tr
 
 **Attestation** bedeutet nur: die vorgeschriebene Praxis wurde erledigt. Sie sagt nichts über Qualität oder Niveau.
 
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| zuhören | слухати уважно |
+| notieren | занотувати |
+| der Hauptpunkt | головний пункт |
+| attested | лише засвідчена практика |
+| kein Urteil | без оцінки рівня |
+
+### Lexik-Spiel — Match-3 (~5 Min.)
+
+**Regeln:** 3 Leben. Paare Lemma ↔ Kurzbedeutung. Formativ.
+Karten: zuhören · notieren · Hauptpunkt · attested · kein Urteil
+Bei ≥2 Fehlern: `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Fünf Sätze: was Sie gehört/notiert haben; attested/kein Urteil erklären.
+Formativ.
+
 ### Hörinput (Skript)
 
 Standardweg: eine Partnerperson oder Sie selbst lesen den Dialog **einmal** in natürlichem Tempo vor. Optionaler Ersatz: ein kurzer öffentlicher Lern-Audio-Clip zum vertrauten Alltagsthema (siehe `multimedia-curation.md`), danach dieselbe Attestationsliste.

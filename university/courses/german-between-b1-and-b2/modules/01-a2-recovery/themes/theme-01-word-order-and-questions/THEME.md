@@ -3,8 +3,8 @@
 - **Kurs / Modul:** Між B1 та B2 / Modul 1 — A2-Wiederherstellung
 - **Rahmen genehmigt von:** ernannter Dekan der Sprachfakultät
 - **Didaktische Gestaltung:** zugewiesene Dozentin / zugewiesener Dozent der Sprachfakultät
-- **Status:** ahead-of-student `ready` (Dean 2026-10-18); vier Lektionen `unpiloted` (`unpiloted` blockiert die Durchführung nicht); per-Student delivery confirmation (Evidence-Delta, ausgelassene Kriterien, Duplikatprüfung) erfolgt bei der Durchführung
-- **Status / Статус:** ahead-of-student `ready` (Декан 2026-10-18); чотири Уроки `unpiloted` (`unpiloted` не блокує проведення); підтвердження delivery для кожного Студента (evidence delta, пропущені критерії, перевірка дублювання) — під час проведення
+- **Status:** ahead-of-student `ready` (Dean 2026-10-18); vier Lektionen `unpiloted`; Lektionslexik-Pilot (3–5 + Spiele) 2026-10-18 — siehe `lektionslexik-guide.md`; Teacher vocab gym on recycle fail; per-Student delivery confirmation bei der Durchführung
+- **Status / Статус:** ahead-of-student `ready`; пілот Lektionslexik (3–5 + ігри); Teacher vocab gym при fail recycle; підтвердження delivery — під час проведення
 
 ---
 

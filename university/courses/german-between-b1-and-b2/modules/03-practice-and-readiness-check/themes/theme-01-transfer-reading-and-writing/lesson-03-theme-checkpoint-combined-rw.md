@@ -37,6 +37,12 @@ Ihre E-Mail muss:
 - um eine passende Alternative bitten (B08 oder Lesesaal) **oder** um Stornierungsbestätigung bitten;
 - verständlich und zusammenhängend bleiben.
 
+### Recycle-Spiel — Theme-Pack (vor dem Nachweis, ~5–8 Min.)
+
+Formatives Sammelspiel (nicht Teil eines `NO_AI`-Nachweises, falls getrennt): Hauptaussage, Detail, zusammenhängend, Struktur, höflich. Match-3 oder Lücken-Duell. Fail → Teacher vocab gym vor dem Nachweis. Keine neue Pflicht-`Lektionslexik`, außer unten zusätzlich genannt.
+
+**Optional:** ein Satz mit einem schwachen Lemma (formativ).
+
 ### Nachweis
 
 Geben Sie zurück:

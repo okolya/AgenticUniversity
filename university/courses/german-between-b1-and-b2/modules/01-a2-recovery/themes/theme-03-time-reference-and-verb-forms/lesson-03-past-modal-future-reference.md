@@ -53,7 +53,38 @@ Die neue Leistung ist die kontrollierte Verbindung mehrerer Zeitbezüge in einem
 
 Originale Erklärung, Beispiele und Aufgaben; keine fremden Texte übernommen.
 
+### Recycle-Spiel (Start, ~5 Min.)
+
+Aus vorheriger Lektion / schwachen Lemmata: Perfekt, haben, sein, gemacht, gegangen. Format: Match-3 oder Rate-mich. Fail-Trigger (≥2 Fehler) → Teacher vocab gym (`lektionslexik-guide.md`).
+
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| war | був/була |
+| hatte | мав/мала |
+| wollte | хотів (Präteritum) |
+| werden | майбутнє/werden |
+| morgen | завтра |
+### Lexik-Spiel — Rate-mich (~5 Min.)
+
+**Regeln:** 3 Leben. Agent umschreibt ohne das Wort; Sie nennen es. Formativ.
+
+Lemmata: war · hatte · wollte · werden · morgen
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Fünf Sätze: war, hatte, wollte, werden+Infinitiv, morgen.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ## Українською
+
+### Lektionslexik / Lexik-Spiel / Lexik-Schreiben
+
+Цільові лексеми, гра й речення — у німецькій секції (`lektionslexik-guide.md`).
 
 ### Мета
 

@@ -41,7 +41,34 @@ Die drei Mini-Dialoge und eine Markierung der verwendeten Wendungen.
 
 Wendungen, Dialoge und Aufgaben sind original für diesen Slot geschrieben.
 
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| Entschuldigung | перепрошую |
+| Können Sie …? | чи можете ви… |
+| Ich hätte gern … | я б хотів… |
+| Wie komme ich …? | як пройти… |
+| Vielen Dank | дякую |
+### Lexik-Spiel — Match-3 (~5 Min.)
+
+**Regeln:** 3 Leben. Paare Lemma ↔ Kurzbedeutung. Formativ.
+
+Karten: Entschuldigung · Können Sie …? · Ich hätte gern … · Wie komme ich …? · Vielen Dank
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Fünf kurze Äußerungen/Sätze — jedes Lemma einmal in einer Alltagssituation.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ## Українською
+
+### Lektionslexik / Lexik-Spiel / Lexik-Schreiben
+
+Цільові лексеми, гра й речення — у німецькій секції (`lektionslexik-guide.md`).
 
 ### Мета
 

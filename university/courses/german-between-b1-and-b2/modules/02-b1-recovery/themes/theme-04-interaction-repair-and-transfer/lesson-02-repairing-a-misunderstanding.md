@@ -48,6 +48,33 @@ Dialog enthalten:
 2. eine Bestätigung der gemeinsamen Bedeutung;
 3. eine nächste Handlung.
 
+### Recycle-Spiel (Start, ~5 Min.)
+
+Aus vorheriger Lektion / schwachen Lemmata: Wie bitte, Meinen Sie, Verstehe ich richtig, genau, noch einmal. Format: Match-3 oder Rate-mich. Fail-Trigger (≥2 Fehler) → Teacher vocab gym (`lektionslexik-guide.md`).
+
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| das Missverständnis | непорозуміння |
+| entschuldigen | перепрошувати |
+| klären | зʼясувати |
+| ich meinte | я мав на увазі |
+| jetzt ist klar | тепер зрозуміло |
+### Lexik-Spiel — Lücken-Duell (~5 Min.)
+
+**Regeln:** 3 Leben. Kurze Lückensätze mit den Lemmata (Zeitbox ~60 s). Formativ.
+
+Lemmata: das Missverständnis · entschuldigen · klären · ich meinte · jetzt ist klar
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Mini-Dialog (5 Zeilen) mit allen Lemmata.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ### Nachweis
 
 Geben Sie den Dialog ab. Markieren Sie `[R]` bei der Reformulierung oder

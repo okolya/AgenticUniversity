@@ -67,6 +67,29 @@ Planen Sie vor dem Schreiben mit vier Stichpunkten:
 Schreiben Sie danach **60–80 Wörter**. Der Text muss einen Betreff, eine
 Anrede, den Hauptgrund, den neuen Zeitpunkt und einen Abschluss enthalten.
 
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| der Zweck | мета тексту |
+| die Anrede | звертання |
+| der Schluss | закінчення |
+| das Detail | деталь |
+| klar | зрозуміло |
+### Lexik-Spiel — Match-3 (~5 Min.)
+
+**Regeln:** 3 Leben. Paare Lemma ↔ Kurzbedeutung. Formativ.
+
+Karten: der Zweck · die Anrede · der Schluss · das Detail · klar
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Skizzieren Sie Zweck/Anrede/Schluss in fünf kurzen Sätzen mit den Lemmata.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ### Nachweis
 
 Geben Sie den Text und die ausgefüllte Vier-Felder-Planung ab. Markieren Sie

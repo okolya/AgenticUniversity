@@ -31,7 +31,17 @@ Nach diesem Slot gibt es keine vierte Lektion. Der Dean entscheidet anhand des E
 
 Die konkrete Checkpoint-Aufgabe wird für den nachgewiesenen Entry-Gap original zusammengestellt; sie wird nicht vorab als Student-spezifischer Inhalt festgelegt.
 
+### Recycle-Spiel — Theme-Pack (vor dem Nachweis, ~5–8 Min.)
+
+Formatives Sammelspiel (nicht Teil eines `NO_AI`-Nachweises, falls getrennt): Entschuldigung, Ich hätte gern, verstehen, wiederholen, antworten. Match-3 oder Lücken-Duell. Fail → Teacher vocab gym vor dem Nachweis. Keine neue Pflicht-`Lektionslexik`, außer unten zusätzlich genannt.
+
+**Optional:** ein Satz mit einem schwachen Lemma (formativ).
+
 ## Українською
+
+### Recycle / Lektionslexik
+
+Theme-Pack / recycle — див. німецьку секцію (`lektionslexik-guide.md`).
 
 ### Мета
 

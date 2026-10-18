@@ -30,6 +30,26 @@ Sie kennen einfache Sätze, zum Beispiel: *Ich wohne in Berlin.* Die Verbformen 
 - die Zeit: heute, morgen, am Montag, am Abend, im Sommer, jeden Morgen, nach dem Kurs
 - der Ort: zu Hause, im Park, im Garten, in der Stadt, bei Oma
 
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Im Kontext | Kurz |
+|---|---|---|
+| der Aussagesatz | Satz mit Punkt | твердження |
+| das Subjekt | wer macht etwas | підмет |
+| Position 2 | Stelle des Verbs | друга позиція |
+| heute | Zeit am Satzanfang | сьогодні |
+| zu Hause | Ort am Satzanfang | вдома |
+
+### Lexik-Spiel — Match-3 (Ende der Lektion, ~5 Min.)
+
+**Regeln:** 3 Leben. Paare Lemma ↔ Kurzbedeutung oder Beispielsatz. Ein Fehler =
+ein Leben weniger. Ziel: alle fünf Paare. Formativ — keine Note, kein Exit.
+
+Kärtchen (mischen): Aussagesatz · Subjekt · Position 2 · heute · zu Hause  
+↔ Satz mit Punkt · wer macht etwas · Stelle des Verbs · Zeitwort · Ort „zu Hause“
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (für Recycle in Lektion 2).
+
 ### 1. Die Regel
 
 Im Aussagesatz (Satz mit Punkt) steht das Verb an **Position 2**.
@@ -120,9 +140,19 @@ Schreiben Sie **5 Sätze** über Ihre Woche. Die Sätze müssen nicht wahr sein.
 - Mindestens 1 Satz hat *möchten*, *können* oder *müssen* mit einem zweiten Verb am Ende.
 - Schreiben Sie in jedem Satz das Verb an Position 2 mit GROSSBUCHSTABEN. Beispiel: *Am Montag ARBEITE ich.*
 
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Benutzen Sie die `Lektionslexik`. Formativ — zusätzlich zu Aufgabe 3/4.
+
+1. Schreiben Sie **einen Aussagesatz** über sich. Markieren Sie darunter:
+   *Subjekt: …* und *Position 2 (Verb): …*.
+2. Schreiben Sie einen Satz, der mit **Heute** beginnt (Verb an Position 2).
+3. Schreiben Sie einen Satz, der mit **Zu Hause** beginnt (Verb an Position 2).
+4. In einem Ihrer Sätze aus 2 oder 3: unterstreichen Sie das **Subjekt**.
+
 ### Das geben Sie zurück
 
-Aufgabe 3 und Aufgabe 4. Schreiben Sie die Antworten in eine Nachricht oder in eine Datei. Sie brauchen keinen langen Text. Wenn etwas unklar ist, schreiben Sie eine kurze Frage dazu.
+Aufgabe 3 und Aufgabe 4 **und** Lexik-Schreiben. Schreiben Sie die Antworten in eine Nachricht oder in eine Datei. Sie brauchen keinen langen Text. Wenn etwas unklar ist, schreiben Sie eine kurze Frage dazu.
 
 ### Danach
 
@@ -187,6 +217,11 @@ Andere Reihenfolgen sind auch richtig, wenn das Verb an Position 2 steht. Bei *m
 - das Subjekt (підмет — хто щось робить)
 - die Zeit (час): heute (сьогодні), morgen (завтра), am Montag (у понеділок), am Abend (увечері), im Sommer (улітку), jeden Morgen (щоранку), nach dem Kurs (після курсу)
 - der Ort (місце): zu Hause (вдома), im Park (у парку), im Garten (у саду), in der Stadt (у місті), bei Oma (у бабусі)
+
+### Lektionslexik / Lexik-Spiel / Lexik-Schreiben
+
+Цільові 5 лексем, гра Match-3 і письмові речення з ними — у німецькій секції
+(`Lektionslexik`, `Lexik-Spiel`, `Lexik-Schreiben`).
 
 ### 1. Правило
 

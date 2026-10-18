@@ -62,6 +62,33 @@ erkennbar bestehen. Wenn Sie keine eigene unsichere Stelle markiert haben,
 wählen Sie eine Form, deren Richtigkeit Sie gerade prüfen wollen, und schreiben
 Sie ausdrücklich: *Kontrollfokus, nicht bestätigter persönlicher Fehler.*
 
+### Recycle-Spiel (Start, ~5 Min.)
+
+Aus vorheriger Lektion / schwachen Lemmata: Sie, du, Bitte, höflich, formell. Format: Match-3 oder Rate-mich. Fail-Trigger (≥2 Fehler) → Teacher vocab gym (`lektionslexik-guide.md`).
+
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| überarbeiten | переробити |
+| das Raster | контрольна сітка |
+| prüfen | перевірити |
+| korrigieren | виправити |
+| klarer | зрозуміліше |
+### Lexik-Spiel — Rate-mich (~5 Min.)
+
+**Regeln:** 3 Leben. Agent umschreibt ohne das Wort; Sie nennen es. Formativ.
+
+Lemmata: überarbeiten · das Raster · prüfen · korrigieren · klarer
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Fünf Sätze: was Sie im Raster prüfen/überarbeiten/korrigieren.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ### Nachweis
 
 Geben Sie drei Dinge ab: den ursprünglichen Text, den überarbeiteten Text und

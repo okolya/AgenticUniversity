@@ -869,21 +869,23 @@ def check_state_schema(core):
     schema = json.loads(core.read("schemas", "student-state.schema.json"))
     rows = {re.sub(r"[^a-z]", "", c[0].lower()): c for c in table_rows(section(core.read("protocols", "student-state-contract.md"), "Entities"))}
     defs = schema.get("$defs", {})
-    for entity in ("student", "enrollment", "plan", "evidence", "decision", "note"):
+    def_keys_norm = {re.sub(r"[^a-z]", "", name): name for name in defs}
+    for entity in ("student", "enrollment", "plan", "evidence", "decision", "note", "lexicon_item"):
         if entity not in defs:
             problems.append(f"schema has no definition for contract entity '{entity}'")
             continue
-        if entity not in rows:
+        row_key = re.sub(r"[^a-z]", "", entity)
+        if row_key not in rows:
             problems.append(f"schema entity '{entity}' is absent from the contract Entities table")
             continue
-        row = " ".join(rows[entity])
+        row = " ".join(rows[row_key])
         for field in defs[entity].get("properties", {}):
             if field in ("id", "recorded", "text"):
                 continue
             if not stem_hits(field, row + " " + core.read("protocols", "student-state-contract.md")):
                 problems.append(f"schema field '{entity}.{field}' is not described in the contract")
     for name in rows:
-        if name != "registry" and name not in defs:
+        if name != "registry" and name not in def_keys_norm:
             problems.append(f"contract entity '{name}' has no schema definition")
     return problems
 

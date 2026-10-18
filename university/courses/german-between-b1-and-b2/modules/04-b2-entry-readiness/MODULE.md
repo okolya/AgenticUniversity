@@ -3,7 +3,7 @@
 - **Kurs / Курс:** Між B1 та B2
 - **Fakultät / Факультет:** Sprachfakultät / Мовний факультет
 - **Position / Позиція:** 4 von 4 / 4 із 4
-- **Status:** öffentlicher Übergangsrahmen; kein B2-Lehrmodul / публічна перехідна рамка; не навчальний модуль B2
+- **Status:** ahead-of-student `ready` (Themes/Lessons + Examiner instrument 2026-10-18); 3 Themes / 8 Lessons `unpiloted`; Theme 3 formative → Dean → Examiner conduct (instrument `assessment/module-04-exit-examination.md` ready; conduct gated); kein B2-Lehrmodul / ahead-of-student `ready`; інструмент Examiner готовий; проведення gated; не навчальний модуль B2
 
 ---
 
@@ -46,6 +46,22 @@ Dieses Modul unterrichtet keine komplexen B2-Texte, keine flüssige muttersprach
 ### Praxis und Checkpoint
 
 Der abschließende Checkpoint ist eine begrenzte Bereitschaftsentscheidung, keine Platzierung nach Anwesenheit. Reichen die B1-Nachweise nicht aus, eröffnet der Dekan eine gezielte Rückkehr zum betreffenden früheren Modul oder zur Brücke, statt dieses Modul unbegrenzt zu verlängern.
+
+### Themenkarte
+
+Vom Dekan genehmigte endliche Themenrahmen (2026-10-18), vor jedem Studenten. Das Modul ist kein B2-Lehrmodul und keine Wiederholung von Modul 3: jedes Thema erzeugt Grenzorientierung, leichte-Neuheit-Transfer oder Evidenz-Selbstbild / Prüfungsübergabe.
+
+| Thema | Rahmen | Lektionen | Exit-Kriterien | Evidence class |
+|---|---|---|---|---|
+| 1. B1/B2-Grenze verstehen (ohne B2 zu lehren) | `themes/theme-01-b1-b2-boundary-orientation/THEME.md` | 2 | 2 | `demonstrated` (schriftlich) |
+| 2. Leichte Neuheit: integrierter B1-Transfer | `themes/theme-02-light-novelty-b1-transfer/THEME.md` | 3 | 1, 3 | RW `demonstrated`; HS nur `attested` |
+| 3. Evidenzlage, Selbstbild und Prüfungsübergabe | `themes/theme-03-evidence-self-portrait-and-exam-handoff/THEME.md` | 3 | 4; Module-Checkpoint | formativ → Dean → Examiner |
+
+Gesamt: 3 Themen, 8 Lektionsplätze (2 + 3 + 3). Planungsorientierung 45–60 Minuten pro Platz, etwa 6–8 Stunden für die volle Karte ohne Selbststudium. Für einen Studenten kann der Dekan Plätze nach Evidence verkürzen oder überspringen; der Module-Checkpoint in Thema 3 und die spätere Examiner-Prüfung (nach Dean-Autorisierung) werden nicht stillschweigend ausgelassen. Kein Lecturer fügt einen Platz hinzu, erweitert den Rahmen oder unterrichtet B2-Stoff ohne neue Dean-Entscheidung.
+
+**Stop condition (Modul):** Evidenzbund an den Dekan zurück oder gezielte Rückkehr/Brücke — kein viertes Thema und kein offenes B2-Curriculum innerhalb dieses Moduls.
+
+**Vorbereitung:** acht Lessons authored (Lecturer Ferdinand) und pedagogisch reviewed (`material-review.md`). Examiner-Instrument separat nach Dean-Request (ahead-of-student erlaubt; Durchführung erst nach Autorisierung).
 
 ### Quellenherkunft
 
@@ -93,9 +109,9 @@ Die offiziellen [Goethe B2-Deskriptoren](https://www.goethe.de/ins/de/en/prf/prf
 
 Завершальний чекпойнт — обмежене рішення про готовність, а не розміщення за відвідуваністю. Якщо свідчень B1 недостатньо, Декан відкриває цільове повернення до відповідного раннього Модуля чи мосту замість безмежного продовження цього Модуля.
 
-### Контур підготовки й захист від розповзання
+### Карта Тем
 
-Теми та слоти Уроків ще не затверджені. Перед авторингом Декан затверджує кінцеву карту Тем, обмежений readiness checkpoint, stop condition, виключення всього, що належить до окремого B2-курсу, і планувальний діапазон часу. Жоден слот не може непомітно перетворити перевірку B2-вступу на викладання B2; розширення карти потребує нового рішення Декана та нового evidence delta.
+Затверджено Деканом (2026-10-18): 3 Теми, 8 Уроків (2+3+3) — зміст написано (Ferdinand), IA review у `material-review.md`. Stop: передача Декану або цільове повернення. Examiner — окремий запит Декана.
 
 ### Походження джерел
 

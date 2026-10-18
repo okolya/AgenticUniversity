@@ -60,7 +60,34 @@ Thema 1 prüfte die Position des finiten Verbs. Diese Lektion fügt die Formen t
 
 Erklärung, Beispiele und Aufgaben sind original für diesen Lesson-Slot geschrieben. Es wurden keine fremden Texte übernommen.
 
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| das Präsens | теперішній час |
+| trennbar | віддільне дієслово |
+| aufstehen | вставати |
+| können | могти |
+| müssen | мусити |
+### Lexik-Spiel — Match-3 (~5 Min.)
+
+**Regeln:** 3 Leben. Paare Lemma ↔ Kurzbedeutung. Formativ.
+
+Karten: das Präsens · trennbar · aufstehen · können · müssen
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Fünf Sätze: Präsens; ein trennbares Verb; aufstehen; können; müssen.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ## Українською
+
+### Lektionslexik / Lexik-Spiel / Lexik-Schreiben
+
+Цільові лексеми, гра й речення — у німецькій секції (`lektionslexik-guide.md`).
 
 ### Мета
 

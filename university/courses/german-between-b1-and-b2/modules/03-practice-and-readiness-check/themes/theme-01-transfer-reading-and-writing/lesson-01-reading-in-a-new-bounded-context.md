@@ -48,6 +48,29 @@ Notieren Sie danach die relevanten Details:
 3. was mitgebracht werden muss;
 4. Frist für eine Absage.
 
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| der Kontext | контекст |
+| die Hauptaussage | головна думка |
+| das Detail | деталь |
+| die Textstelle | місце з тексту |
+| unbekannt | незнайомий |
+### Lexik-Spiel — Match-3 (~5 Min.)
+
+**Regeln:** 3 Leben. Paare Lemma ↔ Kurzbedeutung. Formativ.
+
+Karten: der Kontext · die Hauptaussage · das Detail · die Textstelle · unbekannt
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Fünf Sätze zum gelesenen Text mit allen Lemmata.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ### Nachweis
 
 Schreiben Sie ohne Übersetzer und ohne generative KI:

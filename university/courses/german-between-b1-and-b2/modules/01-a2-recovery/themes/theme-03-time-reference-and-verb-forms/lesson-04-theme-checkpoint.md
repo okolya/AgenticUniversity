@@ -43,7 +43,17 @@ Geben Sie Teil A, Teil B und Teil C zurück. Die Lehrperson gibt formative Rück
 
 Lesetext, Schreibsituation und Korrektursatz sind original für den Checkpoint geschrieben.
 
+### Recycle-Spiel — Theme-Pack (vor dem Nachweis, ~5–8 Min.)
+
+Formatives Sammelspiel (nicht Teil eines `NO_AI`-Nachweises, falls getrennt): Präsens, Perfekt, haben/sein, war/hatte, werden/morgen. Match-3 oder Lücken-Duell. Fail → Teacher vocab gym vor dem Nachweis. Keine neue Pflicht-`Lektionslexik`, außer unten zusätzlich genannt.
+
+**Optional:** ein Satz mit einem schwachen Lemma (formativ).
+
 ## Українською
+
+### Recycle / Lektionslexik
+
+Theme-Pack / recycle — див. німецьку секцію (`lektionslexik-guide.md`).
 
 ### Мета й межа
 

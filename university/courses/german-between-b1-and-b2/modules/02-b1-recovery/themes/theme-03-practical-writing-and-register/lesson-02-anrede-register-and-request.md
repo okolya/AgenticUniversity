@@ -67,6 +67,33 @@ und dieselbe Bitte um Antwort. Ändern Sie nur, was wegen des Adressaten und des
 Registers sinnvoll ist. Nutzen Sie in jeder Version den stabilen Rahmen:
 Adressat, Zweck, Schlüsselinformation, Abschluss.
 
+### Recycle-Spiel (Start, ~5 Min.)
+
+Aus vorheriger Lektion / schwachen Lemmata: Zweck, Anrede, Schluss, Detail, klar. Format: Match-3 oder Rate-mich. Fail-Trigger (≥2 Fehler) → Teacher vocab gym (`lektionslexik-guide.md`).
+
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| Sie | ввічливе ви |
+| du | неформальне ти |
+| die Bitte | прохання |
+| höflich | ввічливо |
+| formell | офіційно |
+### Lexik-Spiel — Lücken-Duell (~5 Min.)
+
+**Regeln:** 3 Leben. Kurze Lückensätze mit den Lemmata (Zeitbox ~60 s). Formativ.
+
+Lemmata: Sie · du · die Bitte · höflich · formell
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Zwei Bitten: eine formell (Sie), eine mit du; fünf Sätze insgesamt mit allen Lemmata.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ### Nachweis
 
 Geben Sie beide Texte ab und notieren Sie unter jedem Text einen Satz:

@@ -18,6 +18,12 @@ aber vertraute Interaktion aufrecht, reparieren ein Missverständnis,
 die Verbindung aller vier Reparaturhandlungen unter begrenzten Bedingungen;
 kein einzelner Satz wird isoliert abgefragt.
 
+### Recycle-Spiel — Theme-Pack (vor dem Nachweis, ~5–8 Min.)
+
+Formatives Sammelspiel: Wie bitte, klären, Missverständnis, übertragen,
+selbst korrigieren. Fail → Teacher vocab gym. Optional: ein Satz mit schwachem
+Lemma (`lektionslexik-guide.md`).
+
 ### Aufgabe
 
 Sie organisieren mit einer anderen Person die Teilnahme an einem Kurs. Die

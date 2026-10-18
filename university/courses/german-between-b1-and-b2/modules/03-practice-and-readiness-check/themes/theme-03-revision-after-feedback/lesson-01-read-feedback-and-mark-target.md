@@ -35,6 +35,29 @@ Feedback an Max:
 
 Markieren Sie im Ausgangstext mit `[Ziel]` die Stelle, an der der Anlass fehlen. Schreiben Sie in einem Satz, was das Feedback genau verlangt. Schreiben Sie den Text noch nicht neu.
 
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| das Feedback | зворотний звʼязок |
+| markieren | позначити |
+| die Zielstelle | місце для правки |
+| das Kriterium | критерій |
+| verstehen | зрозуміти коментар |
+### Lexik-Spiel — Match-3 (~5 Min.)
+
+**Regeln:** 3 Leben. Paare Lemma ↔ Kurzbedeutung. Formativ.
+
+Karten: das Feedback · markieren · die Zielstelle · das Kriterium · verstehen
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Fünf Sätze: was das Feedback sagt; welche Zielstelle; welches Kriterium.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ### Nachweis
 
 - der markierte Ausgangstext mit `[Ziel]`;

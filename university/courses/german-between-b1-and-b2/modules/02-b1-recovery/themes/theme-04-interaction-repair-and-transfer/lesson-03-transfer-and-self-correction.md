@@ -46,6 +46,33 @@ Sekunden**. Die andere Person missversteht eine Information. Sie müssen:
 Planen Sie vorab: *Was war unklar? Welche Reparatur wähle ich? Was bestätige
 ich? Welche eine Form prüfe ich danach?*
 
+### Recycle-Spiel (Start, ~5 Min.)
+
+Aus vorheriger Lektion / schwachen Lemmata: Missverständnis, entschuldigen, klären, ich meinte, jetzt ist klar. Format: Match-3 oder Rate-mich. Fail-Trigger (≥2 Fehler) → Teacher vocab gym (`lektionslexik-guide.md`).
+
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| übertragen | перенести |
+| die Situation | ситуація |
+| selbst korrigieren | самовиправлення |
+| unsicher | невпевнено |
+| trotzdem | попри це |
+### Lexik-Spiel — Rate-mich (~5 Min.)
+
+**Regeln:** 3 Leben. Agent umschreibt ohne das Wort; Sie nennen es. Formativ.
+
+Lemmata: übertragen · die Situation · selbst korrigieren · unsicher · trotzdem
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Fünf Sätze: Transfer in neue Situation + Selbstkorrektur.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ### Nachweis
 
 Geben Sie die Planung und den ersten sowie den korrigierten Dialog ab. Markieren

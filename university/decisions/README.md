@@ -27,3 +27,4 @@ state the status, context, decision, consequences, and scope boundary.
 | [0010](0010-prepare-material-ahead.md) | Preparing Course material ahead of Students | Accepted |
 | [0011](0011-complete-material-preparation-gate.md) | Complete material-preparation gate | Accepted |
 | [0012](0012-sqlite-student-state-store.md) | SQLite Student state store in the core | Accepted |
+| [0013](0013-formative-lexicon-track.md) | Formative lexicon track in Student state | Accepted |

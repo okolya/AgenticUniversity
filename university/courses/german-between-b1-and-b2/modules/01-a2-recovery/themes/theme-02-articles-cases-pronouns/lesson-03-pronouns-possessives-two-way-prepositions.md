@@ -102,6 +102,41 @@ Verben für **Wo?**: *sein, bleiben, stehen*. Verben für **Wohin?**: *gehen, fa
 
 Feste Wörter ohne Artikel: *zu Hause* (Wo?), *nach Hause* (Wohin?).
 
+### Recycle-Spiel (Start, ~5 Min.)
+
+Zuerst `list-lexicon-due`. Aus vorheriger Lektion / schwachen Lemmata: Dativ, mit, zu, von, indirektes Objekt. Format: Match-3 oder Rate-mich. Nach jedem Item: `record-lexicon-check`. Fail-Trigger (≥2 Fehler) → Teacher vocab gym (`lektionslexik-guide.md`).
+
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Artikel | Kollokation | Merkhilfe | Kurz |
+|---|---|---|---|---|
+| Pronomen | das | das Personalpronomen | er/sie/es | займенник |
+| mein/dein | none | mein Buch / dein Auto | Possessiv | присвійний |
+| in | none | in der Küche / in die Küche | Wo? Dativ · Wohin? Akk | в (Wechsel) |
+| auf | none | auf dem Tisch / auf den Tisch | Wechsel | на (Wechsel) |
+| an | none | an der Wand / an die Wand | Wechsel | біля/на (Wechsel) |
+
+### Lexik-Track (bei Student-ID)
+
+1. Start: `list-lexicon-due` (+ Recycle)
+2. `upsert-lexicon` für neue Lemmata
+3. Nach Spiel/Recycle: `record-lexicon-check … ok|fail`
+4. Schreiben = Festigung, kein Store. Siehe `lektionslexik-guide.md`.
+
+### Lexik-Spiel — Rate-mich (~5 Min.)
+
+**Regeln:** 3 Leben. Agent umschreibt ohne das Wort; Sie nennen es. Formativ. Wiederholung → Track.
+
+Lemmata: das Pronomen · mein/dein · in · auf · an
+
+Bei ≥2 Fehlern: `record-lexicon-check … fail` (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Fünf Sätze mit Pronomen/Possessiv und je einer Wechselpräposition wo sinnvoll.
+
+Formativ / Festigung — nicht in SQLite. Siehe `lektionslexik-guide.md`.
+
 ### Aufgaben
 
 #### Aufgabe 1 — Nomen durch Pronomen ersetzen (Üben)
@@ -207,6 +242,10 @@ Kurzformen sind auch richtig: *im, ins, am, ans, zum* (zum Beispiel *Ich bin im 
 ---
 
 ## Українською (переклад)
+
+### Lektionslexik / Lexik-Spiel / Lexik-Schreiben
+
+Цільові лексеми, гра й речення — у німецькій секції (`lektionslexik-guide.md`).
 
 - **Курс / Модуль / Тема:** Між B1 та B2 / Модуль 1 — Відновлення A2 / Тема 2 — Артиклі, основні відмінки, займенники й прийменники
 - **Урок:** 3 з 4

@@ -27,6 +27,12 @@ Aus Lektion 1 bis 3:
 
 Wiederholen Sie diese Punkte **vor** dem Termin. Während der Aufgaben dürfen Sie nichts benutzen.
 
+### Recycle-Spiel — Theme-Pack (vor dem Nachweis, ~5–8 Min.)
+
+Bei Student-ID zuerst `list-lexicon-due` (Theme-Pack / `stable` + `weak`). Formatives Sammelspiel (nicht Teil eines `NO_AI`-Nachweises, falls getrennt): Artikel, Akkusativ, Dativ, Pronomen, mein/dein, in/auf/an. Match-3 oder Lücken-Duell. Nach Items: `record-lexicon-check`. Fail → Teacher vocab gym vor dem Nachweis. Keine neue Pflicht-`Lektionslexik`, außer unten zusätzlich genannt. Schreiben hier nicht in den Lexikon-Track.
+
+**Optional:** ein Satz mit einem schwachen Lemma (formativ / Festigung, kein Store).
+
 ### So läuft der Checkpoint
 
 Alles an einem Termin, ohne lange Pause. Plan: höchstens 45 Minuten (50 Minuten, wenn Ihr Text keinen Fehler bei Artikel oder Fall hat).
@@ -84,6 +90,10 @@ Die Aufgaben und Texte sind original (neu geschrieben). Sie stehen nicht in den 
 ---
 
 ## Українською (переклад)
+
+### Recycle / Lektionslexik
+
+Theme-Pack / recycle — див. німецьку секцію (`lektionslexik-guide.md`).
 
 - **Курс / Модуль / Тема:** Між B1 та B2 / Модуль 1 — Відновлення A2 / Тема 2 — Артиклі, основні відмінки, займенники й прийменники
 - **Урок:** 4 з 4 (чекпойнт)

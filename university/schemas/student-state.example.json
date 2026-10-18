@@ -50,5 +50,22 @@
   ],
   "notes": [
     { "id": "note-1", "text": "Synthetic note.", "recorded": { "profession": "dean", "workflow": "learning-plan", "date": "2000-01-03" } }
+  ],
+  "lexicon_items": [
+    {
+      "lemma": "Artikel",
+      "article": "der",
+      "collocation": "der bestimmte Artikel",
+      "status": "recycling",
+      "introduced_lesson_ref": "german-between-b1-and-b2/01-a2-recovery/theme-02-articles-cases-pronouns/lesson-01-articles-gender-accusative",
+      "last_check": "2000-01-02",
+      "next_due": "2000-01-03",
+      "streak_ok": 1,
+      "mnemonic": "der=blau",
+      "course_id": "german-between-b1-and-b2",
+      "image_ref": null,
+      "audio_ref": null,
+      "recorded": { "profession": "lecturer", "workflow": "lesson-preparation", "date": "2000-01-02" }
+    }
   ]
 }

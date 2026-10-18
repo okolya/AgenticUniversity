@@ -24,6 +24,33 @@ Lesen Sie diese Nachricht:
 3. **Hören:** Lassen Sie eine Partnerperson genau diese Nachricht zweimal vorlesen oder verwenden Sie eine von der Lehrperson bereitgestellte Aufnahme derselben Nachricht. Hören Sie höchstens zweimal und notieren Sie drei Informationen. Dies wird nur als erledigte Praxis (`attested`) festgehalten.
 4. **Sprechen:** Sagen Sie Ihre Antwort laut oder spielen Sie den kurzen Dialog mit einer Partnerperson. Auch dies wird nur als `attested` festgehalten.
 
+### Recycle-Spiel (Start, ~5 Min.)
+
+Aus vorheriger Lektion / schwachen Lemmata: Entschuldigung, Können Sie, Ich hätte gern, Wie komme ich, Vielen Dank. Format: Match-3 oder Rate-mich. Fail-Trigger (≥2 Fehler) → Teacher vocab gym (`lektionslexik-guide.md`).
+
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| verstehen | розуміти |
+| wiederholen | повторити |
+| notieren | занотувати |
+| antworten | відповідати |
+| zusammenfassen | стисло сказати |
+### Lexik-Spiel — Lücken-Duell (~5 Min.)
+
+**Regeln:** 3 Leben. Kurze Lückensätze mit den Lemmata (Zeitbox ~60 s). Formativ.
+
+Lemmata: verstehen · wiederholen · notieren · antworten · zusammenfassen
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Fünf Sätze über Ihren Lernzyklus mit je einem Lemma.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ### Nachweis
 
 Geben Sie die markierten Leseinformationen und Ihre schriftliche Antwort zurück. Fügen Sie eine kurze Notiz bei, dass Sie die Hör- und Sprechpraxis durchgeführt haben.
@@ -37,6 +64,10 @@ Die neue Leistung ist der Transfer: Wortstellung, Artikel/Kasus und Verbformen m
 Nachricht, Aufgaben und Antwortsituation sind original geschrieben. Für die Hörpraxis darf die Lehrperson eine eigene Aufnahme aus demselben Text erstellen.
 
 ## Українською
+
+### Lektionslexik / Lexik-Spiel / Lexik-Schreiben
+
+Цільові лексеми, гра й речення — у німецькій секції (`lektionslexik-guide.md`).
 
 ### Мета
 

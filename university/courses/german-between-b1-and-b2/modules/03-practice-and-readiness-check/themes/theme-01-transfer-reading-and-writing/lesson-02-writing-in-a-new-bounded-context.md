@@ -41,6 +41,33 @@ Ordnen Sie die vier Schritte und streichen Sie Formulierungen, die nur isolierte
 3. um die Liste der offenen Punkte bitten
 4. höflich schließen
 
+### Recycle-Spiel (Start, ~5 Min.)
+
+Aus vorheriger Lektion / schwachen Lemmata: Kontext, Hauptaussage, Detail, Textstelle, unbekannt. Format: Match-3 oder Rate-mich. Fail-Trigger (≥2 Fehler) → Teacher vocab gym (`lektionslexik-guide.md`).
+
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| zusammenhängend | звʼязно |
+| die Struktur | структура |
+| die Situation | ситуація |
+| höflich | ввічливо |
+| der Schluss | закінчення |
+### Lexik-Spiel — Lücken-Duell (~5 Min.)
+
+**Regeln:** 3 Leben. Kurze Lückensätze mit den Lemmata (Zeitbox ~60 s). Formativ.
+
+Lemmata: zusammenhängend · die Struktur · die Situation · höflich · der Schluss
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Fünf Sätze/Zeilen Ihrer Nachricht bewusst mit jedem Lemma markiert.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ### Nachweis
 
 Schreiben Sie **80–100 Wörter** als zusammenhängende Antwort an Lena. Der Text muss enthalten:

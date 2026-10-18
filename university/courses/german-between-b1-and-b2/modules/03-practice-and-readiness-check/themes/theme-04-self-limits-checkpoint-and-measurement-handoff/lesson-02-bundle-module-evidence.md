@@ -21,6 +21,33 @@ Nach dieser Lektion stellen Sie das **Mindestpaket** der Modulnachweise zusammen
 - [ ] Thema 4 Lektion 1: Selbstbegrenzungstext
 - [ ] Kurznotiz: welche Dateien/Antworten fehlen noch
 
+### Recycle-Spiel (Start, ~5 Min.)
+
+Aus vorheriger Lektion / schwachen Lemmata: Einschränkung, gegenüber B1, konkret, kein B2-Urteil, ehrlich. Format: Match-3 oder Rate-mich. Fail-Trigger (≥2 Fehler) → Teacher vocab gym (`lektionslexik-guide.md`).
+
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| der Nachweis | свідчення |
+| bündeln | зібрати докупи |
+| demonstrated | виміряно |
+| attested | лише практика |
+| fehlt | бракує |
+### Lexik-Spiel — Lücken-Duell (~5 Min.)
+
+**Regeln:** 3 Leben. Kurze Lückensätze mit den Lemmata (Zeitbox ~60 s). Formativ.
+
+Lemmata: der Nachweis · bündeln · demonstrated · attested · fehlt
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Fünf Sätze: was Sie bündeln; demonstrated vs attested; was fehlt.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ### Nachweis
 
 Geben Sie die ausgefüllte Checkliste zurück plus eine 40–60-Wörter-Notiz: was fehlt und warum. Kein B2-Urteil. Keine Umdeutung von `attested` zu `demonstrated`.

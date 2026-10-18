@@ -3,7 +3,7 @@
 - **Kurs / Курс:** Між B1 та B2
 - **Fakultät / Факультет:** Sprachfakultät / Мовний факультет
 - **Position / Позиція:** 3 von 4 / 3 із 4
-- **Status:** ahead-of-student formative `ready` (Dean 2026-10-18; Theme 4 formative only); 12 Lessons `unpiloted` (`unpiloted` blockiert die Durchführung nicht); per-Student delivery confirmation bei der Durchführung; Dean Assessment Request issued (`assessment/dean-assessment-request.md`); Contract-2 Artefakt ausstehend (Learning Analyst) / ahead-of-student formative `ready` (Декан 2026-10-18; Тема 4 лише formative); 12 Уроків `unpiloted` (`unpiloted` не блокує проведення); підтвердження delivery — під час проведення; Dean Assessment Request видано; артефакт Contract 2 очікує Learning Analyst
+- **Status:** ahead-of-student formative `ready` (Dean 2026-10-18; Theme 4 formative only); 12 Lessons `unpiloted`; LA Exit RW Contracts 1–3 complete; Examiner instrument ready (`assessment/module-03-exit-examination.md`; conduct gated after Dean authorization / typically Contract 4) / ahead-of-student formative `ready`; LA Contracts 1–3 готові; Examiner-інструмент готовий; проведення Examiner gated
 
 ---
 

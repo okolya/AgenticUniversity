@@ -14,6 +14,12 @@
 
 Nach dieser Lektion schließen Sie **eine** kurze integrierte Hör-/Sprechpraxis in einem **neuen** vertrauten Kontext ab und tragen sie als `attested` ein. Neu ist die Kombination; getrennte Übungen aus Lektion 1–2 werden nicht wiederholt. Keine Messung, keine Note, kein Überspringen der Praxis durch Attestation allein.
 
+### Recycle-Spiel — Theme-Pack (vor der Praxis, ~5–8 Min.)
+
+Formatives Sammelspiel: zuhören, notieren, sprechen, nachfragen, attested.
+Fail → Teacher vocab gym. Optional: ein Satz mit schwachem Lemma
+(`lektionslexik-guide.md`).
+
 ### Checkpoint-Hörinput (Skript)
 
 Einmal vorlesen lassen oder selbst vorlesen (optionaler Audio-Ersatz wie in Lektion 1).

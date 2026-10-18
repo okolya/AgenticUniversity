@@ -25,6 +25,33 @@ Nach dieser Lektion überarbeiten Sie **nur die markierte Zielstelle** und lasse
 Erste Fassung: `Freitag geht nicht.`  
 Zweite Fassung: `[geändert] Danke für deine Nachricht zu unserem Abstimmungsgespräch: Freitag geht bei mir leider nicht.`
 
+### Recycle-Spiel (Start, ~5 Min.)
+
+Aus vorheriger Lektion / schwachen Lemmata: Feedback, markieren, Zielstelle, Kriterium, verstehen. Format: Match-3 oder Rate-mich. Fail-Trigger (≥2 Fehler) → Teacher vocab gym (`lektionslexik-guide.md`).
+
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| überarbeiten | переробити |
+| verbessern | покращити |
+| derselbe Fokus | той самий фокус |
+| die neue Version | нова версія |
+| vergleichen | порівняти |
+### Lexik-Spiel — Lücken-Duell (~5 Min.)
+
+**Regeln:** 3 Leben. Kurze Lückensätze mit den Lemmata (Zeitbox ~60 s). Formativ.
+
+Lemmata: überarbeiten · verbessern · derselbe Fokus · die neue Version · vergleichen
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Fünf Sätze: was Sie überarbeiten/verbessern und wie Sie vergleichen.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ### Nachweis
 
 Geben Sie zurück:

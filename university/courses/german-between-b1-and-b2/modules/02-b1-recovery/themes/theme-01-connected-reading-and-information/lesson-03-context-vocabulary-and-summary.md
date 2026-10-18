@@ -33,6 +33,33 @@ Schreiben Sie für jedes Wort eine kurze Vermutung und eine Textstelle als Begr�
 
 Eine gute kurze Zusammenfassung nennt Thema, zentrale Handlung und wichtigste Folge. Sie lässt Beispiele und Nebendetails weg. Verwenden Sie eigene Satzstrukturen und höchstens ein direkt übernommenes Schlüsselwort.
 
+### Recycle-Spiel (Start, ~5 Min.)
+
+Aus vorheriger Lektion / schwachen Lemmata: Detail, Textstelle, belegen, relevant, übersehen. Format: Match-3 oder Rate-mich. Fail-Trigger (≥2 Fehler) → Teacher vocab gym (`lektionslexik-guide.md`).
+
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| der Kontext | контекст |
+| schätzen | здогадуватись за сенсом |
+| die Zusammenfassung | стислий виклад |
+| mit eigenen Worten | своїми словами |
+| unklar | неясно |
+### Lexik-Spiel — Rate-mich (~5 Min.)
+
+**Regeln:** 3 Leben. Agent umschreibt ohne das Wort; Sie nennen es. Formativ.
+
+Lemmata: der Kontext · schätzen · die Zusammenfassung · mit eigenen Worten · unklar
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Kurze Zusammenfassung (4–5 Sätze) mit jedem Lemma mindestens einmal sinngemäß.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ### Nachweis
 
 1. Erklären Sie die drei markierten Wörter mit eigenen Worten.

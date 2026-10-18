@@ -27,6 +27,19 @@ Aus Lektion 1 bis 3:
 
 Wiederholen Sie diese Punkte **vor** dem Termin. Während der Aufgaben dürfen Sie nichts benutzen.
 
+### Recycle-Spiel — Theme-Pack (vor dem Nachweis, ~5–8 Min.)
+
+Formatives Sammelspiel (nicht Teil des `NO_AI`-Nachweises). Mischen Sie bis
+acht Lemmata aus Lektion 1–3, bevorzugt schwache: Aussagesatz, Subjekt,
+Position 2, Ja/Nein-Frage, W-Frage, nicht, kein-, aber (oder gleichwertig).
+Format: Match-3 oder Lücken-Duell. Fail-Trigger → Teacher vocab gym **vor**
+dem Checkpoint-Nachweis, wenn ≥2 Fehler; sonst weiter zum Checkpoint.
+
+Keine neue `Lektionslexik` in dieser Lektion — nur Recycle.
+
+**Optional nach dem Spiel (1–2 Min., formativ):** Schreiben Sie **einen** Satz
+mit einem schwachen Lemma aus dem Pack (nicht Teil des `NO_AI`-Nachweises).
+
 ### So läuft der Checkpoint
 
 Alles an einem Termin, ohne lange Pause. Plan: höchstens 45 Minuten (50 Minuten, wenn Ihr Text keinen Fehler in der Wortstellung hat).
@@ -105,6 +118,11 @@ Die Aufgaben und Texte sind original (neu geschrieben). Sie stehen nicht in den 
 - `und`, `aber`, `oder`, `denn` поєднують два речення. Друге речення зберігає свій звичайний порядок слів (твердження: дієслово на позиції 2; питання «так/ні»: дієслово на позиції 1).
 
 Повторіть ці пункти **до** заняття. Під час виконання завдань нічим користуватися не можна.
+
+### Recycle-Spiel (Theme-Pack)
+
+Коротка збірна гра перед `NO_AI`-свідченням — див. німецьку секцію. Нової
+`Lektionslexik` немає. Fail → Teacher vocab gym перед чекпойнтом.
 
 ### Як проходить чекпойнт
 

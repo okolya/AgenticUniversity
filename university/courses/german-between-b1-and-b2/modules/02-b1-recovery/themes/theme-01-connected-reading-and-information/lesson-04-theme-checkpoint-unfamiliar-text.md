@@ -19,6 +19,12 @@ Dies ist der Theme checkpoint, keine neue Lektion. Sie lesen einen kurzen unbeka
 
 Die Bewohner eines Wohnblocks haben ihren Innenhof neu gestaltet. Früher standen dort nur Mülltonnen und zwei kaputte Bänke. Jetzt gibt es Hochbeete, einen kleinen Tisch und eine überdachte Ecke für Kinderwagen. Die Hausverwaltung bezahlte das Holz, die Bewohner übernahmen die Arbeit an zwei Samstagen. Ein Kalender neben dem Eingang zeigt, wer die Pflanzen gießt. Einige Bewohner hatten zuerst Sorge, dass der Hof dadurch lauter wird. Nach drei Monaten berichten sie jedoch, dass sie sich häufiger treffen und die neuen Regeln gemeinsam besprechen. Der Hof ist noch nicht perfekt, aber er wird von mehr Menschen genutzt als früher.
 
+### Recycle-Spiel — Theme-Pack (vor dem Nachweis, ~5–8 Min.)
+
+Formatives Sammelspiel (nicht Teil eines `NO_AI`-Nachweises, falls getrennt): Hauptaussage, Detail, Textstelle, Kontext, Zusammenfassung. Match-3 oder Lücken-Duell. Fail → Teacher vocab gym vor dem Nachweis. Keine neue Pflicht-`Lektionslexik`, außer unten zusätzlich genannt.
+
+**Optional:** ein Satz mit einem schwachen Lemma (formativ).
+
 ### Aufgaben
 
 1. Formulieren Sie die Hauptaussage in einem Satz.

@@ -40,6 +40,29 @@ Ordnen Sie anschließend die Sätze den Funktionen **Einführung**, **Ablauf**, 
 2. Im Viertel gibt es eine Tausch-Ecke.
 3. Menschen kommen miteinander ins Gespräch.
 
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Kurz |
+|---|---|
+| die Hauptaussage | головна думка |
+| der Abschnitt | абзац |
+| zuerst | спочатку |
+| dann | потім |
+| schließlich | нарешті |
+### Lexik-Spiel — Match-3 (~5 Min.)
+
+**Regeln:** 3 Leben. Paare Lemma ↔ Kurzbedeutung. Formativ.
+
+Karten: die Hauptaussage · der Abschnitt · zuerst · dann · schließlich
+
+Bei ≥2 Fehlern: Lemma als `weak` notieren (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Fünf Sätze über einen Text: Hauptaussage, Abschnitt, zuerst/dann/schließlich.
+
+Formativ. Siehe `lektionslexik-guide.md`.
+
 ### Nachweis
 
 Lesen Sie den Text noch einmal und schreiben Sie:

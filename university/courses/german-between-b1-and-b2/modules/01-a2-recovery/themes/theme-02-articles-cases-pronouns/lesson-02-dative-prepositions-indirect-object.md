@@ -84,6 +84,41 @@ Diese Verben haben nur ein Objekt, und es steht im Dativ. Das ist anders als in 
 - Das Buch **gehört** dem Kind.
 - Das Auto **gefällt** dem Mann.
 
+### Recycle-Spiel (Start, ~5 Min.)
+
+Zuerst `list-lexicon-due`. Aus vorheriger Lektion / schwachen Lemmata: Artikel, Genus, Akkusativ, ein/eine, Objekt. Format: Match-3 oder Rate-mich. Nach jedem Item: `record-lexicon-check`. Fail-Trigger (≥2 Fehler) → Teacher vocab gym (`lektionslexik-guide.md`).
+
+### Lektionslexik (Ziel: 5)
+
+| Lemma | Artikel | Kollokation | Merkhilfe | Kurz |
+|---|---|---|---|---|
+| Dativ | der | im Dativ stehen | Wem? | давальний |
+| mit | none | mit dem Bus | immer Dativ | з (Dativ) |
+| zu | none | zum Arzt / zur Schule | zu+dem=zum | до (Dativ) |
+| von | none | vom Bahnhof | von+dem=vom | від (Dativ) |
+| indirekte Objekt | das | jemandem etwas geben | Wem? + Wen? | непрямий додаток |
+
+### Lexik-Track (bei Student-ID)
+
+1. Start: `list-lexicon-due` (+ Recycle oben)
+2. `upsert-lexicon` für neue Lemmata dieser Lektion
+3. Nach Spiel/Recycle: `record-lexicon-check … ok|fail`
+4. Schreiben = Festigung, kein Store. Siehe `lektionslexik-guide.md`.
+
+### Lexik-Spiel — Lücken-Duell (~5 Min.)
+
+**Regeln:** 3 Leben. Kurze Lückensätze mit den Lemmata (Zeitbox ~60 s). Formativ. Wiederholung → Track.
+
+Lemmata: der Dativ · mit · zu · von · das indirekte Objekt
+
+Bei ≥2 Fehlern: `record-lexicon-check … fail` (`lektionslexik-guide.md`).
+
+### Lexik-Schreiben (Üben, ~5–8 Min.)
+
+Fünf Sätze: je einmal Dativ, mit, zu, von, indirektes Objekt (oder Markierung im Satz).
+
+Formativ / Festigung — nicht in SQLite. Siehe `lektionslexik-guide.md`.
+
 ### Aufgaben
 
 #### Aufgabe 1 — *Wem?* finden (Üben)
@@ -186,6 +221,10 @@ Die Erklärungen, Beispiele und Aufgaben sind original (neu geschrieben). Zur Ko
 ---
 
 ## Українською (переклад)
+
+### Lektionslexik / Lexik-Spiel / Lexik-Schreiben
+
+Цільові лексеми, гра й речення — у німецькій секції (`lektionslexik-guide.md`).
 
 - **Курс / Модуль / Тема:** Між B1 та B2 / Модуль 1 — Відновлення A2 / Тема 2 — Артиклі, основні відмінки, займенники й прийменники
 - **Урок:** 2 із 4
