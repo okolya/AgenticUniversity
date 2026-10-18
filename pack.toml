@@ -23,3 +23,11 @@ layout = "flat"
 label = "Agentic University core overlay"
 project_root = "pack"
 legacy_labels = ["Agentic University project overlay"]
+
+[legacy]
+# Host-only: disable Cursor CLI commit/PR attribution in the real ~/.cursor home.
+# Runs from the composition workspace root after `dev-agents approve` (composed or standalone).
+# Each workspace root must own scripts/agents/disable-cursor-attribution.sh (root and university-core).
+commands = [
+  'bash scripts/agents/disable-cursor-attribution.sh',
+]

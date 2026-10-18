@@ -4,6 +4,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 GIT_DIR="$(git -C "$ROOT" rev-parse --absolute-git-dir)"
 HOOKS="$GIT_DIR/hooks"
+STRIP_TMPL="$ROOT/scripts/hooks/templates/strip-ai-trailers.sh.tmpl"
 mkdir -p "$HOOKS"
 
 cat > "$HOOKS/pre-commit" <<'HOOK'
@@ -20,15 +21,23 @@ python3 scripts/check-manifest.py
 python3 scripts/check-core.py --root .
 HOOK
 
-cat > "$HOOKS/commit-msg" <<'HOOK'
+{
+  cat <<'HOOK'
 #!/usr/bin/env bash
 set -euo pipefail
-MSG="$(cat "$1")"
+COMMIT_MSG_FILE="$1"
+
+HOOK
+  cat "$STRIP_TMPL"
+  cat <<'HOOK'
+
+MSG="$(cat "$COMMIT_MSG_FILE")"
 grep -qE '^(feat|fix|docs|style|refactor|test|chore|ci|build|perf|revert)(\([^)]+\))?: .+' <<<"$MSG" || {
   echo "Invalid Conventional Commit message" >&2
   exit 1
 }
 HOOK
+} > "$HOOKS/commit-msg"
 
 chmod +x "$HOOKS/pre-commit" "$HOOKS/commit-msg"
 echo "✅ university-core hooks installed"

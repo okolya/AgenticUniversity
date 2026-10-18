@@ -13,4 +13,6 @@ command -v dev-agents >/dev/null 2>&1 || {
 }
 
 dev-agents init --composition "$CORE_ROOT/dev-agents.toml" "$@"
+# Host Cursor CLI: always opt out of commit/PR attribution (also declared as pack legacy after approve).
+bash "$CORE_ROOT/scripts/agents/disable-cursor-attribution.sh"
 printf '✅ university-core home agent resources initialized\n'
