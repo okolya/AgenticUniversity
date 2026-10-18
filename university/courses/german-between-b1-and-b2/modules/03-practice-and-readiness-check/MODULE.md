@@ -3,7 +3,7 @@
 - **Kurs / Курс:** Між B1 та B2
 - **Fakultät / Факультет:** Sprachfakultät / Мовний факультет
 - **Position / Позиція:** 3 von 4 / 3 із 4
-- **Status:** öffentlicher Kompetenzrahmen; unabhängig gemessen durch die Rolle des Learning Analyst (aktuelle Besetzung: siehe `COURSE.md`) / публічна рамка компетенцій; незалежно вимірюється роллю Learning Analyst (поточне укомплектування: див. `COURSE.md`)
+- **Status:** Themes 1–4 ahead-of-student `ready` (2026-10-18; Theme 4 formative only); 12 Lessons `unpiloted`; Student delivery `not_ready`; unabhängige Messung erst nach Dean Assessment Request / Теми 1–4 ahead-of-student `ready` (2026-10-18; Тема 4 лише formative); 12 Уроків `unpiloted`; Student delivery `not_ready`; незалежне вимірювання лише після Dean Assessment Request
 
 ---
 
@@ -45,6 +45,19 @@ Dieses Modul unterrichtet keine B2-Ergebnisse und erteilt kein B2-Urteil. Es mis
 ### Praxis und Checkpoint
 
 Ein abschließender Checkpoint bündelt die Nachweise, ersetzt aber nicht die Praxis in den vorherigen Modulen. Die unabhängige Messung erfolgt durch die Rolle des Learning Analyst, das Modulurteil durch die Rolle des Examiner.
+
+### Themenkarte
+
+Vom Dekan genehmigte endliche Themenrahmen (2026-10-18), vor jedem Studenten vorbereitet. Das Modul ist kein zweiter Theoriekurs: jedes Thema erzeugt Transfer, Überarbeitung oder Messübergabe, keine Wiederholung von Modul-2-Inhalten nur mit neuen Namen.
+
+| Thema | Rahmen | Lektionen | Exit-Kriterien | Evidence class |
+|---|---|---|---|---|
+| 1. Transfer Lesen/Schreiben in neuen begrenzten Kontexten | `themes/theme-01-transfer-reading-and-writing/THEME.md` | 3 | 1 (RW), 2, 3 (Schreiben) | `demonstrated` |
+| 2. Integrierte Hören/Sprechen-Praxis | `themes/theme-02-integrated-listening-speaking-practice/THEME.md` | 3 | 1 (HS), 2 | nur `attested` |
+| 3. Überarbeitung nach Feedback | `themes/theme-03-revision-after-feedback/THEME.md` | 3 | 4; teilweise 5 | `demonstrated` |
+| 4. Selbstbegrenzung, Module-Checkpoint und Messübergabe | `themes/theme-04-self-limits-checkpoint-and-measurement-handoff/THEME.md` | 3 | 5, 6; Module-Checkpoint | formativ → Dean → Learning Analyst / Examiner |
+
+Gesamt: 4 Themen, 12 Lektionsplätze (3 + 3 + 3 + 3). Planungsorientierung 45–60 Minuten pro Platz, etwa 9–12 Stunden für die volle Karte ohne Selbststudium. Für einen Studenten kann der Dekan Plätze nach Evidence verkürzen oder überspringen; der Module-Checkpoint in Thema 4 und die unabhängige Messung in Lesen/Schreiben werden nicht stillschweigend ausgelassen. Kein Lecturer fügt einen Platz hinzu oder erweitert den Rahmen ohne neue Dean-Entscheidung.
 
 ### Quellenherkunft
 
@@ -91,9 +104,20 @@ Die offiziellen [Goethe B1-Deskriptoren und Übungsmaterialien](https://www.goet
 
 Завершальний чекпойнт зводить свідчення докупи, але не замінює практики, вбудованої в попередні Модулі. Незалежне вимірювання виконує роль Learning Analyst, вердикт Модуля виносить роль Examiner.
 
+### Карта Тем і контроль обсягу
+
+| Тема | Результат | Слоти Уроків | Exit-критерії | Клас свідчень |
+|---|---|---:|---|---|
+| 1. Перенесення Lesen/Schreiben у нові обмежені контексти | самостійний результат у незнайомих, але B1-контекстах | 3 | 1 (RW), 2, 3 (письмо) | `demonstrated` |
+| 2. Інтегрована практика Hören/Sprechen | спілкування без шаблонів + обов’язкова практика | 3 | 1 (HS), 2 | лише `attested` |
+| 3. Переробка після feedback | покращення за тим самим критерієм після зворотного зв’язку | 3 | 4; частково 5 | `demonstrated` |
+| 4. Самообмеження, Module checkpoint, передача на вимірювання | назвати залишкові обмеження; зібрати свідчення; checkpoint → Dean → Learning Analyst | 3 | 5, 6; checkpoint | formative → далі LA/Examiner |
+
+Затверджено (2026-10-18): 4 Theme-фрейми, 12 слотів Уроків (3 + 3 + 3 + 3). Планувальний контактний орієнтир — 45–60 хвилин на слот, приблизно 9–12 годин для повної карти без самостійної роботи. Для конкретного Студента Декан може звузити або пропустити слоти за evidence; Module checkpoint у Темі 4 і незалежне вимірювання Lesen/Schreiben не пропускаються мовчки. Жоден Lecturer не додає слот або не розширює тему без нового Dean decision.
+
 ### Контур підготовки й захист від розповзання
 
-Теми та слоти Уроків ще не затверджені. Перед авторингом Декан затверджує кінцеву карту Тем, слоти, новий evidence delta Модуля, межі практики, checkpoint, stop condition і планувальний діапазон часу. Практика не може перетворитися на повторний теоретичний курс; кожен слот має додавати новий контекст перенесення або рівень самостійності. Будь-яке розширення потребує окремого рішення Декана.
+Карта Тем і слоти Уроків затверджені в межах, наведених вище. Модуль не є другим теоркурсом: кожен слот додає новий контекст перенесення, рівень самостійності або цикл переробки, а не повторює зміст Module 2 лише з новими іменами. Перед наповненням кожної Теми Lecturer працює лише в її трьох слотах, Exit Contract, checkpoint і stop condition. Додавання або розширення слота потребує окремого рішення Декана з новим evidence delta; час залишається орієнтиром, а не вимогою Студента.
 
 ### Походження джерел
 
