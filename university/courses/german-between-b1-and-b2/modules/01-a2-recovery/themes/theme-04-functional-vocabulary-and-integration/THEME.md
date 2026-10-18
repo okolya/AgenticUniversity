@@ -3,7 +3,7 @@
 - **Kurs / Modul:** Між B1 та B2 / Modul 1 — A2-Wiederherstellung
 - **Rahmen genehmigt von:** ernannter Dekan der Sprachfakultät
 - **Didaktische Gestaltung:** zugewiesene Dozentin / zugewiesener Dozent der Sprachfakultät
-- **Status:** vom Dekan genehmigter Rahmen; drei Lektionen als vorab vorbereitetes Material freigegeben, `unpiloted`; nicht bereit für Student delivery ohne Student-spezifische Nachweise, ausgelassene Kriterien und Duplikatprüfung
+- **Status:** ahead-of-student `ready` (Dean 2026-10-18); drei Lektionen `unpiloted` (`unpiloted` blockiert die Durchführung nicht); per-Student delivery confirmation (Evidence-Delta, ausgelassene Kriterien, Duplikatprüfung; Entry-Lücke) erfolgt bei der Durchführung
 
 ---
 

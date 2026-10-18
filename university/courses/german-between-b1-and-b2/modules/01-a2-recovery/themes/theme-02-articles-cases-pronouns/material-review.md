@@ -99,11 +99,11 @@ Modul-Exit 2 ← Kriterien 1–4 ← L1 (K1), L2 (K2), L3 (K3, K4) ← L4 (K1–
 
 ### 8. Rahmenvorschläge an den Dekan (keine Änderung durch die Lehrperson)
 
-1. Statuszeile in `THEME.md` („Lektionen noch nicht vorbereitet“) aktualisieren (nach dem letzten Lesen unverändert).
-2. Lektionskarte, Zeile 4, „Neuer Nachweis“: den Ersatztext aus Kriterium 5 ergänzen (wie bei Thema 1).
-3. Begriff in Kriterium 3: „Possessivpronomen“ (die geprüfte Quelle sagt *Possessivartikel*; die Materialien benutzen „Possessivpronomen“ einheitlich).
-4. Fehlerart für Kriterium 5: Die Materialien definieren „Fehler bei Artikel oder Fall (auch Pronomen, Possessivpronomen, *Wo?*/*Wohin?*)“; bitte bestätigen.
-5. Der ukrainische Abschnitt von `THEME.md` (Kriterium 2, Zeile 2 der Lektionskarte) enthält „непрямий додаток“ ohne Glosse (falscher Freund; die Materialien benutzen eine Glosse).
+1. Statuszeile in `THEME.md` — **geschlossen** (Dean 2026-10-18): ahead-of-student `ready`; `unpiloted` blockiert die Durchführung nicht.
+2. Lektionskarte, Zeile 4, „Neuer Nachweis“: Ersatztext — **geschlossen** in `THEME.md` (wie Thema 1).
+3. Begriff in Kriterium 3: „Possessivpronomen“ — **geschlossen**: lernseitiger Terminus bestätigt; Hinweis auf *Possessivartikel* in Quellen in `THEME.md`.
+4. Fehlerart für Kriterium 5 — **geschlossen** / bestätigt in `THEME.md`.
+5. Ukrainische Glosse zu „непрямий додаток“ / *indirektes Objekt* — **geschlossen** in `THEME.md`.
 
 ### 9. Lokalisierung
 
@@ -115,7 +115,7 @@ Translator Profession (Worker laut `university/workers/maria/WORKER.md`) lokalis
 
 ### 10. Pädagogische Bereitschaft und Grenzen
 
-Signale des Instructional Assistant: Stufe 1 `not_ready` (Checkpoint-Teil), Stufe 2 `ready_with_changes`; danach N1–N17 bearbeitet (Abschnitt 6), nicht erneut vom Assistenten geprüft. **Die Lehrperson gibt kein eigenes `ready`-Signal ab.** Empfehlung an den Dekan: Sichtkontrolle der Änderungen aus Abschnitt 6 (Ersatztexte, Items, Schwellen) und Entscheidung über die offenen Rahmenhinweise. Für die Durchführung bei einem Studenten: `not_ready`, bis der Duplikat-Test gegen den echten Nachweis erledigt ist. Grenzen: kein technisches Ausführungsurteil, kein Mastery-Urteil, keine Platzierung, keine Veröffentlichungsbefugnis, keine Änderung des Theme-Rahmens. Die Lehrperson gibt kein `ready`-Signal ab.
+Signale des Instructional Assistant: Stufe 1 `not_ready` (Checkpoint-Teil), Stufe 2 `ready_with_changes`; danach N1–N17 bearbeitet (Abschnitt 6), nicht erneut vom Assistenten geprüft. **Die Lehrperson gibt kein eigenes `ready`-Signal ab.** Dean (2026-10-18): ahead-of-student `ready`; Rahmenhinweise §8 geschlossen. Per-Student Duplikat-Test läuft bei der Durchführung und blockiert das öffentliche Paket nicht (ADR 0010). Grenzen: kein technisches Ausführungsurteil, kein Mastery-Urteil, keine Platzierung, keine Veröffentlichungsbefugnis, keine Änderung des Theme-Rahmens.
 
 ---
 
@@ -211,11 +211,11 @@ Exit-критерій Модуля 2 ← критерії 1–4 ← У1 (К1), �
 
 ### 8. Рамкові пропозиції Декану (Лектор нічого не змінює)
 
-1. Оновити рядок статусу в `THEME.md` («Lektionen noch nicht vorbereitet») (після останнього читання без змін).
-2. Карта Уроків, рядок 4, «Нове свідчення»: додати замінний текст із критерію 5 (як у Темі 1).
-3. Термін у критерії 3: «Possessivpronomen» (перевірене джерело каже *Possessivartikel*; у матеріалах скрізь «Possessivpronomen»).
-4. Вид помилки для критерію 5: матеріали визначають «помилка артикля або відмінка (також займенники, присвійні займенники, *Wo?*/*Wohin?*)»; прошу підтвердити.
-5. Український розділ `THEME.md` (критерій 2, рядок 2 карти Уроків) містить «непрямий додаток» без глоси (хибний друг; матеріали вживають глосу).
+1. Рядок статусу в `THEME.md` — **закрито** (Декан 2026-10-18): ahead-of-student `ready`; `unpiloted` не блокує проведення.
+2. Карта Уроків, рядок 4, Ersatztext — **закрито** в `THEME.md` (як у Темі 1).
+3. Термін у критерії 3 «Possessivpronomen» — **закрито**: навчальний термін підтверджено; у `THEME.md` є примітка про *Possessivartikel* у джерелах.
+4. Вид помилки для критерію 5 — **закрито** / підтверджено в `THEME.md`.
+5. Українська глоса «непрямий додаток» / *indirektes Objekt* — **закрито** в `THEME.md`.
 
 ### 9. Локалізація
 
@@ -227,4 +227,4 @@ Exit-критерій Модуля 2 ← критерії 1–4 ← У1 (К1), �
 
 ### 10. Педагогічна готовність і межі
 
-Сигнали Instructional Assistant: етап 1 `not_ready` (частина чекпойнту), етап 2 `ready_with_changes`; після цього опрацьовано N1–N17 (розділ 6), Assistant повторно їх не перевіряв. **Лектор не видає власного сигналу `ready`.** Рекомендація Декану: оглянути зміни з розділу 6 (замінні тексти, пункти, пороги) і вирішити відкриті рамкові примітки. Для проведення зі Студентом: `not_ready`, доки не виконано тест на дублювання зі справжнім свідченням. Межі: жодного технічного вердикту виконання, вердикту про опанування, визначення рівня, права публікації чи зміни рамки Теми. Лектор не видає сигналу `ready`.
+Сигнали Instructional Assistant: етап 1 `not_ready` (частина чекпойнту), етап 2 `ready_with_changes`; після цього опрацьовано N1–N17 (розділ 6), Assistant повторно їх не перевіряв. **Лектор не видає власного сигналу `ready`.** Декан (2026-10-18): ahead-of-student `ready`; рамкові примітки §8 закрито. Per-Student тест на дублювання — під час проведення і не блокує публічний пакет (ADR 0010). Межі: жодного технічного вердикту виконання, вердикту про опанування, визначення рівня, права публікації чи зміни рамки Теми.

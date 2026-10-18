@@ -3,7 +3,7 @@
 - **Kurs / Modul / Thema:** Між B1 та B2 / Modul 2 — B1-Wiederherstellung / Thema 1 — Zusammenhängendes Lesen und Informationen entnehmen
 - **Dialogsprache / мова:** Deutsch mit ukrainischer Orientierung / німецька з українською підтримкою
 - **Verantwortliche Profession / відповідальна роль:** Lecturer, Language Faculty; appointment `university/workers/ferdinand/WORKER.md`
-- **Status:** `ready` for ahead-of-student preparation; `not_ready` for Student delivery; four Lessons remain `unpiloted`
+- **Status:** ahead-of-student `ready` (Dean 2026-10-18; reconciled 2026-10-18); four Lessons `unpiloted` (`unpiloted` does not block delivery); per-Student delivery confirmation at teach time
 
 ## Contract 1 — Dean → Lecturer
 
@@ -32,9 +32,10 @@
 
 Dean readiness decision: **ahead-of-student readiness: yes** (2026-10-18). The
 Dean confirmed the approved four-slot scope, research/multimedia decisions, IA
-dispositions, Lecturer final control, and specialist non-triggers. The package
-remains `unpiloted` and `not_ready` for Student delivery until prior evidence,
-omitted criteria, and the duplication check are supplied.
+dispositions, Lecturer final control, and specialist non-triggers. Public package
+is delivery-capable; `unpiloted` does not block delivery (ADR 0010). Per-Student
+confirmation (prior evidence, omitted criteria, duplication check) runs at teach
+time for each Student. Status wording reconciled 2026-10-18.
 
 ## Stop boundary
 

@@ -36,7 +36,7 @@ Package inspected for:
 |---|---|---|---|---|
 | T2-1 | Lesson 1 Ziel | `attested` could be skimmed as a grade synonym. | `accepted`: plain-language definition of Attestation added before practice. | Lecturer |
 | T2-2 | Complete package | Optional audio might be read as required media. | `accepted`: standard path is script read-aloud; optional channel documented in curation. | Lecturer |
-| T2-3 | Student-specific forward motion | No prior Student evidence for duplication check. | `deferred`: `unpiloted` / delivery `not_ready`. | Lecturer + Dean |
+| T2-3 | Student-specific forward motion | No prior Student evidence for duplication check. | `deferred`: teach-time per-Student confirmation; not a public blocker. | Lecturer + Dean |
 | T2-4 | Evidence class leakage | No “measured/verified listening” wording found after authoring pass. | `accepted`: retain `attested`-only checklists. | Lecturer |
 | T2-5 | Sequence | Three-slot HS map reaches Theme outcome; no fourth slot; Lab not required. | `accepted`: retain. | Lecturer |
 
@@ -50,6 +50,6 @@ German target path with Ukrainian orientation. No separate localized sibling req
 
 ## Readiness and boundaries
 
-- **Pedagogical readiness:** `ready` for ahead-of-student preparation; `not_ready` for Student delivery.
+- **Pedagogical readiness:** `ready` for ahead-of-student preparation (Dean 2026-10-18). Per-Student confirmation at teach time is not a public blocker.
 - **Technical/factual review:** not performed.
 - **Not decided here:** mastery, placement, HS measurement, Lab creation, Theme-scope mutation.

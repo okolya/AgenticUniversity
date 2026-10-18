@@ -4,7 +4,7 @@
 - **Lektion:** 2 von 3 / 2 із 3
 - **Kriterium:** Theme 2–3; Module Exit 1 (Sprechen-Anteil), 2
 - **Evidence class:** `attested` only — no quality or level claim
-- **Status:** `unpiloted`; pädagogisches Review abgeschlossen; `not_ready` für Student delivery
+- **Status:** `unpiloted` (blockiert die Durchführung nicht); pädagogisches Review abgeschlossen; per-Student confirmation bei der Durchführung
 - **Arbeitsmodus:** `NO_AI` für den Sprechbeitrag und die Attestationsliste
 - **Planzeit:** 45–60 Minuten
 

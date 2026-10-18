@@ -1,7 +1,7 @@
 # Thema 2 — Erfahrungen, Pläne, Meinungen und Erklärungen / Тема 2 — Досвід, плани, думки й пояснення
 
 - **Kurs / Modul:** Між B1 та B2 / Modul 2 — B1-Wiederherstellung
-- **Status:** ahead-of-student ready; vier Lessons vorbereitet und pädagogisch reviewed; `unpiloted`; nicht bereit für Student delivery ohne Student-spezifische Nachweise, ausgelassene Kriterien und Duplikatprüfung
+- **Status:** ahead-of-student `ready` (Dean 2026-10-18); vier Lektionen `unpiloted` (`unpiloted` blockiert die Durchführung nicht); per-Student delivery confirmation (Evidence-Delta, ausgelassene Kriterien, Duplikatprüfung) erfolgt bei der Durchführung
 - **Outcome:** Der Student erzählt, beschreibt, erklärt und äußert eine einfache Meinung zu vertrauten Themen in zusammenhängenden kurzen Beiträgen.
 
 ## Grenzen und Kriterien

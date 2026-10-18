@@ -3,7 +3,7 @@
 - **Kurs / Курс:** Між B1 та B2
 - **Fakultät / Факультет:** Sprachfakultät / Мовний факультет
 - **Position / Позиція:** 2 von 4 / 2 із 4
-- **Status:** öffentlicher Kompetenzrahmen; vier Themes als vorab vorbereitetes Material freigegeben (`unpiloted`); nicht bereit für Student delivery ohne Student-spezifische Nachweise / публічна рамка компетенцій; чотири Теми схвалено як заздалегідь підготовлений матеріал (`unpiloted`); не готово до проведення без свідчень конкретного Студента
+- **Status:** ahead-of-student `ready` (Dean 2026-10-18); vier Themes / 16 Lessons `unpiloted` (`unpiloted` blockiert die Durchführung nicht); per-Student delivery confirmation erfolgt bei der Durchführung / ahead-of-student `ready` (Декан 2026-10-18); чотири Теми / 16 Уроків `unpiloted` (`unpiloted` не блокує проведення); підтвердження delivery для кожного Студента — під час проведення
 
 ---
 

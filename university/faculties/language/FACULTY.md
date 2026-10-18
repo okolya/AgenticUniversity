@@ -6,9 +6,11 @@
 - courses:
   - `university/courses/german-between-b1-and-b2/COURSE.md`
 - modules: four public Module frames in the Course
-- knowledge/materials: Course architecture approved; Module 1–3 Themes prepared
-  ahead of Students (`unpiloted`; Module 3 Theme 4 formative only); Student
-  delivery not ready; Module 4 Theme map not yet approved
+- knowledge/materials: Course architecture approved; Modules 1–2 ahead-of-student
+  `ready`; Module 3 ahead-of-student formative `ready` (`unpiloted` does not
+  block delivery; Theme 4 formative only; LA/Examiner gated behind Assessment
+  Request); per-Student delivery confirmation at teach time; Module 4 Theme
+  map not yet approved
 
 ## Scope
 

@@ -3,7 +3,7 @@
 - **Materials:** four Lesson files in `theme-02-experience-plans-opinions/`; review stage `post-revision/pre-publication`
 - **Owner:** Lecturer, Language Faculty; pedagogical review by the Instructional Assistant Profession
 - **Outcome:** the learner produces short connected German contributions about familiar experiences, plans, reasons, consequences and opinions, with one bounded revision.
-- **Student context:** no Student-specific context supplied; ahead-of-student review only. Delivery remains `not_ready` until prior evidence, omitted criteria and duplication check are supplied.
+- **Student context:** no Student-specific context supplied; ahead-of-student review only. Public package may be delivered; per-Student confirmation runs at teach time.
 - **Theme traceability:** Module 2 criteria 3, 4, 5, 6 → Theme criteria 1–4 → Lessons 1–4 → Theme checkpoint
 
 ## Instructional Assistant review
@@ -35,6 +35,6 @@ The delegated Contract 5 review read the complete Theme package and returned `no
 
 After applying the accepted dispositions, the Lecturer reread all four German and Ukrainian paths, the exercises, evidence instructions, provenance notes, and checkpoint. The complete package is pedagogically coherent for ahead-of-student preparation. Student-specific forward-motion review remains open by design.
 
-- **Pedagogical readiness:** `ready` for generic ahead-of-student preparation; `not_ready` for Student delivery.
+- **Pedagogical readiness:** `ready` for generic ahead-of-student preparation (Dean readiness recorded 2026-10-18). Per-Student confirmation at teach time is not a public-package blocker.
 - **Technical/factual review:** not performed by the Instructional Assistant.
 - **Boundaries:** this report does not certify source correctness, copyright, assessment validity, mastery, placement, publication authority, or Theme-scope mutation.

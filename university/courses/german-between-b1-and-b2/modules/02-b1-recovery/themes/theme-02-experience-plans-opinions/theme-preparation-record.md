@@ -3,7 +3,7 @@
 - **Kurs / Modul / Thema:** Між B1 та B2 / Modul 2 — B1-Wiederherstellung / Thema 2 — Erfahrungen, Pläne, Meinungen und Erklärungen
 - **Dialogsprache / мова:** German learner path with Ukrainian orientation; delivery language is confirmed per Student session
 - **Verantwortliche Profession / відповідальна роль:** Lecturer, Language Faculty; resolved appointment `university/workers/ferdinand/WORKER.md`
-- **Status:** `ready` for ahead-of-student preparation after accepted IA dispositions and Lecturer final control; `not_ready` for Student delivery; four Lessons remain `unpiloted`
+- **Status:** ahead-of-student `ready` (Dean 2026-10-18; reconciled 2026-10-18); four Lessons `unpiloted` (`unpiloted` does not block delivery); per-Student delivery confirmation at teach time
 
 ## Contract 1 — Dean → Lecturer
 
@@ -24,7 +24,7 @@ The sequence moves from a short ordered experience to a plan with reasons and co
 | 3, 4, 5, 6 | 3 | L3 gives a bounded opinion with a reason and counterpoint | integrated contribution |
 | 3, 4, 5, 6 | 4 | L4 transfers all three production patterns to a new prompt and revises one recurring form | Theme checkpoint → Dean |
 
-For ahead-of-student preparation, prior evidence is the approved Lesson map rather than a Student artifact. Criteria already demonstrated and omitted criteria cannot be identified until delivery; that Student-specific check remains open and blocks delivery if missing.
+For ahead-of-student preparation, prior evidence is the approved Lesson map rather than a Student artifact. Criteria already demonstrated and omitted criteria are confirmed at teach time for each Student; missing that confirmation does not block public readiness (ADR 0010).
 
 ## Research → multimedia → authoring
 
@@ -37,7 +37,7 @@ For ahead-of-student preparation, prior evidence is the approved Lesson map rath
 - **Input:** complete Theme frame, Module frame, four Lessons, learner outcome, criteria, evidence burden, AI mode, and ahead-of-student context.
 - **Output:** delegated Instructional Assistant review: sequence coherent, generic package initially `not_ready` because of vocabulary/instruction clarifications and absent Student-specific context.
 - **Disposition:** T2-1 through T2-7 accepted and applied; T2-8 deferred to Dean because it concerns the Dean-owned Theme status.
-- **Post-disposition signal:** `ready` for generic ahead-of-student preparation; `not_ready` for delivery.
+- **Post-disposition signal:** `ready` for generic ahead-of-student preparation; per-Student confirmation deferred to teach time (not a public blocker).
 
 ## Specialist and language handoffs
 
@@ -53,10 +53,8 @@ The Lecturer reread the complete final source after dispositions, checking: outc
 
 ## Dean readiness and Contract 6 boundary
 
-The delegated Dean readiness decision returned **ahead-of-student readiness: yes**. The Dean confirmed the approved four-slot scope, complete traceability, research/curation decision, IA dispositions, Lecturer final control, and specialist non-triggers. The Dean requested and authorized only the bounded Theme metadata reconciliation now recorded in `THEME.md`: four Lessons prepared, `unpiloted`, Student delivery not ready. No Lesson or scope correction was required.
+The delegated Dean readiness decision returned **ahead-of-student readiness: yes** (2026-10-18). The Dean confirmed the approved four-slot scope, complete traceability, research/curation decision, IA dispositions, Lecturer final control, and specialist non-triggers. Theme metadata in `THEME.md` reconciled 2026-10-18: ahead-of-student `ready`; `unpiloted` does not block delivery; per-Student confirmation at teach time. No Lesson or scope correction was required.
 
-Student delivery remains **not ready**. The Lecturer must first receive current permitted Student evidence, identify demonstrated/omitted criteria, confirm each new evidence delta and delivery-language fit, and complete the duplication check. At the checkpoint, the Lecturer returns formative evidence, demonstrated criteria, unresolved gaps and the new evidence delta to the Dean; the stop condition is reached at Lesson 4, with no further Lesson generated without a new Dean decision.
+## Teach-time checks (per Student; not public blockers)
 
-## Ahead-of-student open checks
-
-Before any Student delivery, the Lecturer must receive the permitted current Student evidence, identify already-demonstrated and omitted criteria, confirm the single new evidence delta for each delivered Lesson, ask for relevant Student-provided materials, and rerun the duplication/fit check. The four Lessons remain `unpiloted` until a Student passes them.
+At delivery the Lecturer receives permitted Student evidence, identifies demonstrated/omitted criteria, confirms each Lesson evidence delta and language fit, asks for relevant Student-provided materials, and runs the duplication/fit check. At the checkpoint, formative evidence returns to the Dean via Contract 6; stop condition at Lesson 4; no fifth Lesson without a new Dean decision. Lessons remain `unpiloted` until a Student passes them.

@@ -4,7 +4,7 @@
 - **Lektion:** 2 von 4 / 2 із 4
 - **Parent-Kriterium:** Module 2, Kriterien 4 und 6 → Theme-Kriterien 2 und 3
 - **Voraussetzung:** Lesson 1: Zweck, vierteilige Textplanung und relevante Details
-- **Status:** `unpiloted`; IA-review abgeschlossen; `not_ready` für Student delivery
+- **Status:** `unpiloted` (blockiert die Durchführung nicht); IA-review abgeschlossen; per-Student confirmation bei der Durchführung
 - **Arbeitsmodus:** `NO_AI` für den ersten Nachweis
 - **Planzeit:** 45–60 Minuten
 

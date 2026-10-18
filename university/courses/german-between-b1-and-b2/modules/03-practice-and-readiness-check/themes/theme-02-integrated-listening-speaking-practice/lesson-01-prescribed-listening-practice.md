@@ -4,7 +4,7 @@
 - **Lektion:** 1 von 3 / 1 із 3
 - **Kriterium:** Theme 1; Module Exit 1 (Hören-Anteil)
 - **Evidence class:** `attested` only — no quality or level claim
-- **Status:** `unpiloted`; pädagogisches Review abgeschlossen; `not_ready` für Student delivery
+- **Status:** `unpiloted` (blockiert die Durchführung nicht); pädagogisches Review abgeschlossen; per-Student confirmation bei der Durchführung
 - **Arbeitsmodus:** `NO_AI` für die Hörpraxis und die Attestationsliste
 - **Planzeit:** 45–60 Minuten
 

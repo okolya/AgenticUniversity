@@ -1,7 +1,7 @@
 # Vorbereitungsprotokoll Thema 1 / Протокол підготовки Теми 1
 
 - **Kurs / Modul / Thema:** Між B1 та B2 / Modul 1 — A2-Wiederherstellung / Thema 1 — Wortstellung, Fragen und Verneinung
-- **Status:** vorbereitet vor einem Studenten; Thema und alle vier Lektionen sind `unpiloted`. Die Lehrperson erklärt das Thema nicht für bereit (Entscheidung des Dekans).
+- **Status:** ahead-of-student `ready` (Dean 2026-10-18; reconciled 2026-10-18); vier Lessons `unpiloted` (`unpiloted` blockiert die Durchführung nicht); per-Student delivery confirmation erfolgt bei der Durchführung
 
 ---
 
@@ -20,7 +20,7 @@
 - **Ausgang:** `lesson-01-verb-position-2-statements.md`, `lesson-02-questions.md`, `lesson-03-negation-and-connectors.md`, `lesson-04-theme-checkpoint.md`; das Dozenten-Material `lecturer-evidence-guide.md` (Lösungen der Nachweis-Aufgaben, Checkpoint-Aufgabenpaket, Beobachtungsraster, Contract-6-Gerüst; **zusätzliche Datei**, keine zusätzliche Lektion); `material-review.md`; dieses Protokoll.
 - **Grenze:** keine neuen Plätze, keine Änderung von Kriterien, Reihenfolge, Stoppbedingung; THEME.md, MODULE.md, COURSE.md unverändert; kein Studenten-Zustand gelesen.
 - **Dean-Entscheidungen angewendet:** Hören/Sprechen nur `attested` (dieses Thema beansprucht nichts); Checkpoint-Versuch `NO_AI`, kein Wörterbuch; Überarbeitung `AI_ASSISTED` nur wenn angegeben; Provenienz je Quelle.
-- **Bereitschaftsentscheidung (Dekan):** Das Thema ist bereit als vorab vorbereitetes, `unpiloted` Material der Sprachfakultät. Es ist nicht lieferbereit für einen Studenten: Dafür fehlen die Nachweise des Studenten, die ausgelassenen Kriterien und der Duplikat-Test gegen vorherige Nachweise (beim Dekan und beim Dozenten zur Durchführung). Entscheidung zu N10: Kriterium 5 verlangt einen gefundenen und korrigierten Fehler; „nur einer von mehreren Fehlern gefunden“ erfüllt Kriterium 5 und darf in Rasterzeile 5 nicht schwächer bewertet werden. Rasterzeile 5 wird entsprechend angeglichen (kleine Korrektur der Dozentin bzw. des Dozenten). Nicht überprüfte Beispielsätze (siehe `unverified`) bleiben Beispiele, keine Regeln.
+- **Bereitschaftsentscheidung (Dekan):** ahead-of-student `ready` (2026-10-18). Das öffentliche Paket ist lieferfähig; `unpiloted` blockiert die Durchführung nicht (ADR 0010, `curriculum-authority.md`). Die per-Student confirmation (Nachweise, ausgelassene Kriterien, Duplikat-Test gegen vorherige Nachweise) ist kein öffentlicher Blocker, sondern ein Schritt bei der Durchführung für jeden Studenten. Entscheidung zu N10: Kriterium 5 verlangt einen gefundenen und korrigierten Fehler; „nur einer von mehreren Fehlern gefunden“ erfüllt Kriterium 5 und darf in Rasterzeile 5 nicht schwächer bewertet werden. Rasterzeile 5 wird entsprechend angeglichen (kleine Korrektur der Dozentin bzw. des Dozenten). Nicht überprüfte Beispielsätze (siehe `unverified`) bleiben Beispiele, keine Regeln.
 
 ### 3. Genehmigter Rahmen (Quelle: THEME.md, nicht kopiert)
 
@@ -48,7 +48,7 @@ Es gibt keinen Studenten und keinen Studenten-Zustand. **Aufgeschoben auf die Du
 ### 6. Contract 5 — Lecturer → Instructional Assistant
 
 - **Eingabe:** vollständiges Paket (4 Lektionen, Dozenten-Material, Rahmen, öffentlicher Eingangstest), Ziel, Kriterien, Lernerkontext, Evidence Delta je Lektion, KI-Modus, Beweislast, Ausschlüsse, Provenienz; Studenten-Duplikat-Test ausdrücklich aufgeschoben.
-- **Ausgabe Stufe 1:** `ready_with_changes`, 20 Befunde; **Stufe 2 (gezielt):** `ready_with_changes`, 10 neue Befunde; **Stufe 3 (gezielt, nach Dekan-Entscheidung zu Kriterium 5):** `ready_with_changes`, N1–N9 und B5e `gelöst`, 9 neue Befunde T1–T9 (T1–T8 bearbeitet, T9 Rahmenhinweis). Für die Durchführung bei einem Studenten: `not_ready`, bis der Duplikat-Test erledigt ist.
+- **Ausgabe Stufe 1:** `ready_with_changes`, 20 Befunde; **Stufe 2 (gezielt):** `ready_with_changes`, 10 neue Befunde; **Stufe 3 (gezielt, nach Dekan-Entscheidung zu Kriterium 5):** `ready_with_changes`, N1–N9 und B5e `gelöst`, 9 neue Befunde T1–T9 (T1–T8 bearbeitet, T9 Rahmenhinweis). Frühere Formulierung „delivery `not_ready` ohne Duplikat-Test“ meint den per-Student Schritt bei der Durchführung, nicht einen öffentlichen Blocker (Dean 2026-10-18 / ADR 0010).
 - **Dispositionen:** siehe `material-review.md` (Abschnitte 5, 6 und 6a). Offen/aufgeschoben: nicht verifizierte Aussagen (T9 und Ablageort sind vom Dekan geschlossen) (Abschnitt 11), Überschneidung mit dem Eingangstest bei der Durchführung, Wortschatz-Feinschliff beim Pilotdurchlauf.
 - **Bereitschaftssignal:** `ready_with_changes`, danach N1–N9 bearbeitet. Die kleinen Korrekturen T1–T8 wurden vom Instructional Assistant nicht erneut geprüft; die Lehrperson hat sie in beiden Sprachen kontrolliert.
 
@@ -73,8 +73,8 @@ Es gibt keinen Studenten und keinen Studenten-Zustand. **Aufgeschoben auf die Du
 ### 9. Abschließende Kontrolle der Lehrperson und Entscheidung des Dekans
 
 - **Kontrolle aus Lernersicht** (nach Stufe 1, nach Stufe 2 und nach den Korrekturen N1–N9): Ziel, Voraussetzungen, Wortschatz, Erklärungen, Beispiele, Aufgaben, Rückgabe, Provenienz, KI-Modus und Grenzen der Evidenzklasse wurden in allen vier Lektionen und im Dozenten-Material gelesen; Widersprüche zwischen Regeln und Schlüsseln (N1, N2) wurden behoben. Die ukrainischen Abschnitte wurden nach der Lokalisierung vollständig gelesen (Abschnitt 7).
-- **Lehrperson-Signal:** kein `ready`. Empfehlung an den Dekan: Sichtkontrolle der Änderungen T1–T8 (laut Instructional Assistant genügt das); Kenntnisnahme der nicht verifizierten Aussagen (Abschnitt 11).
-- **Entscheidung des Dekans:** offen.
+- **Lehrperson-Signal:** kein eigenes `ready` (Bereitschaft liegt beim Dekan). Empfehlung an den Dekan: Sichtkontrolle der Änderungen T1–T8 (laut Instructional Assistant genügt das); Kenntnisnahme der nicht verifizierten Aussagen (Abschnitt 11).
+- **Entscheidung des Dekans:** ahead-of-student `ready` (2026-10-18); Statuszeilen und dieses Protokoll am 2026-10-18 mit ADR 0010 abgeglichen (`unpiloted` ≠ Blocker; per-Student confirmation bei der Durchführung).
 
 ### 10. Contract 6 und Stopp-/Nächste-Entscheidung
 
@@ -146,7 +146,7 @@ Diese Endkontrolle ist keine Bereitschaftserklärung; die Entscheidung liegt bei
 - **Вихід:** `lesson-01-verb-position-2-statements.md`, `lesson-02-questions.md`, `lesson-03-negation-and-connectors.md`, `lesson-04-theme-checkpoint.md`; матеріал для Лектора `lecturer-evidence-guide.md` (розв'язки до свідчень, пакет завдань чекпойнту, таблиця спостережень, каркас Contract 6; **додатковий файл**, не додатковий Урок); `material-review.md`; цей протокол.
 - **Межа:** нових слотів немає, критерії, порядок і умова зупинки не змінені; THEME.md, MODULE.md, COURSE.md не змінені; стан Студента не читався.
 - **Застосовані рішення Декана:** Hören/Sprechen лише `attested` (ця Тема нічого не заявляє); спроба чекпойнту `NO_AI`, без словника; виправлення `AI_ASSISTED` лише коли оголошено; походження за кожним джерелом.
-- **Рішення про готовність (Декан):** Тема готова як заздалегідь підготовлений матеріал Мовного факультету зі станом `unpiloted`. Вона не готова до проведення для Студента: для цього бракує свідчень Студента, пропущених критеріїв і тесту на дублювання щодо попередніх свідчень (Декан і Лектор під час проведення). Рішення щодо N10: критерій 5 вимагає одну знайдену й виправлену помилку; «знайдено лише одну з кількох помилок» виконує критерій 5 і не може оцінюватися слабше в рядку 5 таблиці. Рядок 5 узгоджується відповідно (невелика корекція Лектора). Неперевірені приклади речень (див. `unverified`) лишаються прикладами, а не правилами.
+- **Рішення про готовність (Декан):** ahead-of-student `ready` (2026-10-18). Публічний пакет готовий до проведення; `unpiloted` не блокує проведення (ADR 0010, `curriculum-authority.md`). Підтвердження для кожного Студента (свідчення, пропущені критерії, тест на дублювання) — крок під час проведення, а не блокер публічної готовності. Рішення щодо N10: критерій 5 вимагає одну знайдену й виправлену помилку; «знайдено лише одну з кількох помилок» виконує критерій 5 і не може оцінюватися слабше в рядку 5 таблиці. Рядок 5 узгоджується відповідно (невелика корекція Лектора). Неперевірені приклади речень (див. `unverified`) лишаються прикладами, а не правилами.
 
 ### 3. Затверджена рамка (джерело: THEME.md, не скопійовано)
 
@@ -174,7 +174,7 @@ Diese Endkontrolle ist keine Bereitschaftserklärung; die Entscheidung liegt bei
 ### 6. Contract 5 — Лектор → Instructional Assistant
 
 - **Вхід:** повний пакет (4 Уроки, матеріал для Лектора, рамка, публічний вхідний тест), мета, критерії, контекст Студента, Evidence Delta кожного Уроку, режим ШІ, обсяг свідчень, виключення, походження; тест на дублювання для Студента прямо відкладено.
-- **Вихід етапу 1:** `ready_with_changes`, 20 знахідок; **етап 2 (цільовий):** `ready_with_changes`, 10 нових знахідок; **етап 3 (цільовий, після рішення Декана щодо критерію 5):** `ready_with_changes`, N1–N9 і B5e розв'язано, 9 нових знахідок T1–T9 (T1–T8 опрацьовано, T9 — рамкова примітка). Для проведення зі Студентом: `not_ready`, доки не виконано тест на дублювання.
+- **Вихід етапу 1:** `ready_with_changes`, 20 знахідок; **етап 2 (цільовий):** `ready_with_changes`, 10 нових знахідок; **етап 3 (цільовий, після рішення Декана щодо критерію 5):** `ready_with_changes`, N1–N9 і B5e розв'язано, 9 нових знахідок T1–T9 (T1–T8 опрацьовано, T9 — рамкова примітка). Раніше «delivery `not_ready` без тесту на дублювання» означає per-Student крок під час проведення, а не публічний блокер (Декан 2026-10-18 / ADR 0010).
 - **Рішення:** див. `material-review.md` (розділи 5, 6 і 6a). Відкрито/відкладено: неперевірені твердження (T9 і місце зберігання закрито Деканом) (розділ 11), збіги з вхідним тестом під час проведення, доведення лексики під час пілотного проходження.
 - **Сигнал готовності:** `ready_with_changes`, потім опрацьовано N1–N9. Дрібні виправлення T1–T8 Instructional Assistant повторно не перевіряв; Лектор перевірив їх в обох мовах.
 
@@ -199,8 +199,8 @@ Diese Endkontrolle ist keine Bereitschaftserklärung; die Entscheidung liegt bei
 ### 9. Остаточний контроль Лектора і рішення Декана
 
 - **Контроль із погляду Студента** (після етапу 1, після етапу 2 і після виправлень N1–N9): мету, передумови, лексику, пояснення, приклади, завдання, повернення, походження, режим ШІ та межі класу свідчень прочитано в усіх чотирьох Уроках і в матеріалі для Лектора; суперечності між правилами й ключами (N1, N2) усунуто. Українські розділи після локалізації прочитано повністю (розділ 7).
-- **Сигнал Лектора:** не `ready`. Рекомендація Декану: оглянути зміни T1–T8 (за оцінкою Instructional Assistant цього достатньо); прийняти до відома неперевірені твердження (розділ 11).
-- **Рішення Декана:** відкрите.
+- **Сигнал Лектора:** власного `ready` немає (готовність за Деканом). Рекомендація Декану: оглянути зміни T1–T8 (за оцінкою Instructional Assistant цього достатньо); прийняти до відома неперевірені твердження (розділ 11).
+- **Рішення Декана:** ahead-of-student `ready` (2026-10-18); рядки статусу й цей протокол узгоджено 2026-10-18 з ADR 0010 (`unpiloted` ≠ блокер; per-Student confirmation під час проведення).
 
 ### 10. Contract 6 і межа зупинки / наступного рішення
 

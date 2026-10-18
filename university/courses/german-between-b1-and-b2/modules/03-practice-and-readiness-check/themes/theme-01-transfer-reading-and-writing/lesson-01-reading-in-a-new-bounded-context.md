@@ -3,7 +3,7 @@
 - **Kurs / Modul / Thema:** Між B1 та B2 / Modul 3 — Praxis und Bereitschaftsprüfung / Thema 1
 - **Lektion:** 1 von 3 / 1 із 3
 - **Kriterium:** Theme 1; Module Exit 1 (Lesen)
-- **Status:** `unpiloted`; pädagogisches Review abgeschlossen; `not_ready` für Student delivery
+- **Status:** `unpiloted` (blockiert die Durchführung nicht); pädagogisches Review abgeschlossen; per-Student confirmation bei der Durchführung
 - **Arbeitsmodus:** `NO_AI` für die Nachweisaufgabe
 - **Planzeit:** 45–60 Minuten
 

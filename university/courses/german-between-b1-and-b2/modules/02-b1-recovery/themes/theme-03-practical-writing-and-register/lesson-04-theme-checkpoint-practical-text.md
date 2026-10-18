@@ -4,7 +4,7 @@
 - **Lektion:** 4 von 4 / 4 із 4
 - **Parent-Kriterium:** Module Kriterien 4, 5, 6 und 7 → Theme-Kriterien 1–4
 - **Voraussetzung:** Lessons 1–3: Struktur, Register und begrenzte Überarbeitung
-- **Status:** `unpiloted`; IA-review abgeschlossen; `not_ready` für Student delivery
+- **Status:** `unpiloted` (blockiert die Durchführung nicht); IA-review abgeschlossen; per-Student confirmation bei der Durchführung
 - **Arbeitsmodus:** `NO_AI` für den ersten Nachweis
 - **Planzeit:** 45–60 Minuten
 

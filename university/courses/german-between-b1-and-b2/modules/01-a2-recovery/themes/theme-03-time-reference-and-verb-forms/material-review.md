@@ -3,7 +3,7 @@
 - **Materials:** four Lesson files in this Theme, review stage `pre-publication`, all `unpiloted`
 - **Owner:** Lecturer, Language Faculty; pedagogical review by Instructional Assistant Profession
 - **Outcome:** the learner keeps present, past, and planned time reference understandable in short statements and a short text
-- **Student context:** no Student-specific context supplied; this is an ahead-of-student review. Delivery remains `not_ready` until prior evidence, omitted criteria, and duplication check are supplied.
+- **Student context:** no Student-specific context supplied; this is an ahead-of-student review. Public package may be delivered; per-Student confirmation (prior evidence, omitted criteria, duplication check) runs at teach time.
 - **Theme traceability:** Module 1 criteria 2, 3, 5, 6 → Theme 3 criteria 1–6 → Lessons 1–4 → Contract 6 checkpoint
 
 ## Strengths to preserve
@@ -39,6 +39,6 @@ All findings `T3-1`–`T3-5` were `accepted` and applied by the Lecturer. The Le
 
 ## Readiness
 
-`ready` for ahead-of-student preparation; `not_ready` for Student delivery until Student-specific forward-motion context and the required final Dean readiness decision exist.
+`ready` for ahead-of-student preparation (Dean readiness recorded 2026-10-18). Per-Student forward-motion confirmation runs at teach time; it is not a public-package blocker.
 
 **Boundaries:** this report does not certify factual correctness, assessment validity, source provenance, mastery, placement, or Theme authority.

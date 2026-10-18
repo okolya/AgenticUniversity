@@ -3,7 +3,7 @@
 - **Kurs / Modul / Thema:** Між B1 та B2 / Modul 2 — B1-Wiederherstellung / Thema 3
 - **Lektion:** 1 von 4 / 1 із 4
 - **Parent-Kriterium:** Module 2, Kriterium 4 → Theme-Kriterium 1
-- **Status:** `unpiloted`; IA-review abgeschlossen; `not_ready` für Student delivery
+- **Status:** `unpiloted` (blockiert die Durchführung nicht); IA-review abgeschlossen; per-Student confirmation bei der Durchführung
 - **Arbeitsmodus:** `NO_AI` für den ersten Nachweis
 - **Planzeit:** 45–60 Minuten
 

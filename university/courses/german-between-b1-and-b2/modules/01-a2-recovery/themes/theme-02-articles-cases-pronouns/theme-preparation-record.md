@@ -1,7 +1,7 @@
 # Vorbereitungsprotokoll Thema 2 / Протокол підготовки Теми 2
 
 - **Kurs / Modul / Thema:** Між B1 та B2 / Modul 1 — A2-Wiederherstellung / Thema 2 — Artikel, wichtige Kasus, Pronomen und Präpositionen
-- **Status:** vorbereitet vor einem Studenten; Thema und alle vier Lektionen sind `unpiloted`. Die Lehrperson erklärt das Thema nicht für bereit (Entscheidung des Dekans).
+- **Status:** ahead-of-student `ready` (Dean 2026-10-18; reconciled 2026-10-18); vier Lessons `unpiloted` (`unpiloted` blockiert die Durchführung nicht); per-Student delivery confirmation erfolgt bei der Durchführung; Rahmenhinweise RV1–RV5 geschlossen
 
 ---
 
@@ -20,7 +20,7 @@
 - **Ausgang:** `lesson-01-articles-gender-accusative.md`, `lesson-02-dative-prepositions-indirect-object.md`, `lesson-03-pronouns-possessives-two-way-prepositions.md`, `lesson-04-theme-checkpoint.md`; das Dozenten-Material `lecturer-evidence-guide.md` (Lösungen der Nachweis-Aufgaben, Checkpoint-Aufgabenpaket mit Lesetext, drei Schreibsituationen und drei Ersatztexten, Beobachtungsraster, Contract-6-Gerüst; **zusätzliche Datei**, keine zusätzliche Lektion); `material-review.md`; dieses Protokoll.
 - **Grenze:** keine neuen Plätze, keine Änderung von Kriterien, Reihenfolge, Stoppbedingung; MODULE.md und COURSE.md unverändert; kein Studenten-Zustand gelesen. `THEME.md` wurde vom Dekan angepasst (Kriterium 5 mit Ersatztext); die Lehrperson hat `THEME.md` nicht geändert.
 - **Dean-Entscheidungen angewendet:** Hören/Sprechen nur `attested` (dieses Thema beansprucht nichts); Checkpoint-Versuch `NO_AI`, kein Wörterbuch (wie in Thema 1 für Lernende erklärt); Überarbeitung `AI_ASSISTED` nur wenn angegeben; Kriterium 5 mit Ersatztext innerhalb von Platz 4; Aufgaben und Lösungen öffentlich im Repository (gleiche Entscheidung wie beim Eingangstest und bei Thema 1); Modulnamen deutsch und ukrainisch.
-- **Bereitschaftsentscheidung (Dekan):** Das Thema ist bereit als vorab vorbereitetes, `unpiloted` Material der Sprachfakultät. Es ist nicht lieferbereit für einen Studenten: Dafür fehlen die Nachweise des Studenten, die ausgelassenen Kriterien und der Duplikat-Test gegen vorherige Nachweise (Eingangstest, Thema 1), durchzuführen bei der Lieferung. Die Korrekturen der zweiten Assistant-Prüfung (N1–N17) wurden nicht erneut geprüft; die Dozentin bzw. der Dozent prüft sie bei der Lieferung gegen den Lernpfad. Als `unverified` markierte Punkte (Dativ Plural, idiomatische Beispiele, „lange Form auch richtig“) bleiben Beispiele bzw. vorsichtige Hinweise, keine sicher formulierten Regeln.
+- **Bereitschaftsentscheidung (Dekan):** ahead-of-student `ready` (2026-10-18). Das öffentliche Paket ist lieferfähig; `unpiloted` blockiert die Durchführung nicht (ADR 0010, `curriculum-authority.md`). Die per-Student confirmation (Nachweise, ausgelassene Kriterien, Duplikat-Test gegen Eingangstest und Thema 1) erfolgt bei der Durchführung und ist kein öffentlicher Blocker. Rahmenhinweise aus `material-review.md` §8 geschlossen in `THEME.md` (Statuszeile; Ersatztext in Lektionskarte Zeile 4; Possessivpronomen als lernseitiger Terminus bestätigt; Fehlerart für Kriterium 5 bestätigt; ukrainische Glosse *indirektes Objekt*). Die Korrekturen N1–N17 wurden nicht erneut vom Assistant geprüft; die Lehrperson hat sie kontrolliert. Als `unverified` markierte Punkte bleiben Beispiele bzw. vorsichtige Hinweise, keine sicher formulierten Regeln.
 
 ### 3. Genehmigter Rahmen (Quelle: THEME.md, nicht kopiert)
 
@@ -48,7 +48,7 @@ Es gibt keinen Studenten und keinen Studenten-Zustand. **Aufgeschoben auf die Du
 ### 6. Contract 5 — Lecturer → Instructional Assistant
 
 - **Eingabe:** vollständiges Paket (4 Lektionen, Dozenten-Material, Rahmen, Thema 1, öffentlicher Eingangstest), Ziel, Kriterien, Lernerkontext, Evidence Delta je Lektion, KI-Modus, Beweislast, Ausschlüsse, Provenienz; Studenten-Duplikat-Test ausdrücklich aufgeschoben.
-- **Ausgabe:** Stufe 1 (vollständig): `not_ready`, 25 Befunde B1–B25 und 4 Rahmenvorschläge RV1–RV4 (Checkpoint-Teil als Nachweisinstrument nicht gültig; Lehrfolge L1–L3 für sich `ready_with_changes`). Stufe 2 (gezielt, vor der Lokalisierung; ein erster Lauf wurde durch ein API-Limit abgebrochen und wiederholt): `ready_with_changes`, Befunde N1–N17. Für die Durchführung bei einem Studenten: `not_ready`, bis der Duplikat-Test erledigt ist.
+- **Ausgabe:** Stufe 1 (vollständig): `not_ready`, 25 Befunde B1–B25 und 4 Rahmenvorschläge RV1–RV4 (Checkpoint-Teil als Nachweisinstrument nicht gültig; Lehrfolge L1–L3 für sich `ready_with_changes`). Stufe 2 (gezielt, vor der Lokalisierung; ein erster Lauf wurde durch ein API-Limit abgebrochen und wiederholt): `ready_with_changes`, Befunde N1–N17. Frühere Formulierung „delivery `not_ready` ohne Duplikat-Test“ meint den per-Student Schritt bei der Durchführung, nicht einen öffentlichen Blocker (Dean 2026-10-18 / ADR 0010).
 - **Dispositionen:** siehe `material-review.md` (Abschnitte 5 und 6). Alle bearbeitbaren Befunde angenommen; aufgeschoben: Rahmenvorschläge, Wortschatz-Feinschliff, N14 teilweise.
 - **Bereitschaftssignal:** `ready_with_changes`; die Korrekturen aus Stufe 2 wurden vom Instructional Assistant nicht erneut geprüft (Lehrperson-Sichtkontrolle, Abschnitt 9).
 
@@ -70,8 +70,8 @@ Es gibt keinen Studenten und keinen Studenten-Zustand. **Aufgeschoben auf die Du
 ### 9. Abschließende Kontrolle der Lehrperson und Entscheidung des Dekans
 
 - **Kontrolle aus Lernersicht** (nach Stufe 1, nach Stufe 2 und nach der Lokalisierung): Ziel, Voraussetzungen, Wortschatz, Erklärungen, Beispiele, Aufgaben, Rückgabe, Provenienz, KI-Modus und Grenzen der Evidenzklasse wurden in allen vier Lektionen und im Dozenten-Material gelesen; Widersprüche zwischen Regeln und Schlüsseln, abschreibbare Items, Überschneidungen der Ersatztexte und der Schwellen wurden behoben (siehe `material-review.md`). Die ukrainischen Abschnitte wurden vollständig gelesen (Abschnitt 7). Nicht erneut vom Instructional Assistant geprüft: die Korrekturen N1–N17 (Stufe 2); die Lehrperson hat sie in beiden Sprachen kontrolliert.
-- **Lehrperson-Signal:** kein `ready`. Empfehlung an den Dekan: Sichtkontrolle der Änderungen aus Stufe 2 (Ersatztexte, Items, Schwellen); Rahmenhinweise (`material-review.md`, Abschnitt 8); Kenntnisnahme der nicht verifizierten Aussagen (Abschnitt 11); Duplikat-Test bei der Durchführung.
-- **Entscheidung des Dekans:** offen.
+- **Lehrperson-Signal:** kein eigenes `ready` (Bereitschaft liegt beim Dekan). Empfehlung an den Dekan: Sichtkontrolle der Änderungen aus Stufe 2; Rahmenhinweise (`material-review.md`, Abschnitt 8); Kenntnisnahme der nicht verifizierten Aussagen (Abschnitt 11).
+- **Entscheidung des Dekans:** ahead-of-student `ready` (2026-10-18); Rahmenhinweise RV1–RV5 in `THEME.md` geschlossen; Statuszeilen und dieses Protokoll am 2026-10-18 mit ADR 0010 abgeglichen.
 
 ### 10. Contract 6 und Stopp-/Nächste-Entscheidung
 
@@ -103,8 +103,7 @@ Nach Abschluss des Themas mit einem Studenten übergibt die Lehrperson Contract 
 
 ### 12. Weitere Hinweise
 
-- `THEME.md` hat eine vom Dekan eingetragene, noch nicht committete Änderung (Kriterium 5); die Statuszeile in `THEME.md` („Lektionen noch nicht vorbereitet“) ist noch nicht aktualisiert (Rahmenhinweis RV1).
-- Es wurde nichts committet; es stehen keine absoluten Pfade in den Dateien.
+- Rahmenhinweise RV1–RV5 sind in `THEME.md` geschlossen (Dean 2026-10-18). Absolute Pfade stehen nicht in den Dateien.
 
 ---
 
@@ -123,7 +122,7 @@ Nach Abschluss des Themas mit einem Studenten übergibt die Lehrperson Contract 
 - **Вихід:** `lesson-01-articles-gender-accusative.md`, `lesson-02-dative-prepositions-indirect-object.md`, `lesson-03-pronouns-possessives-two-way-prepositions.md`, `lesson-04-theme-checkpoint.md`; матеріал для Лектора `lecturer-evidence-guide.md` (розв'язки до свідчень, пакет завдань чекпойнту з текстом для читання, трьома ситуаціями письма й трьома замінними текстами, таблиця спостережень, каркас Contract 6; **додатковий файл**, не додатковий Урок); `material-review.md`; цей протокол.
 - **Межа:** нових слотів немає, критерії, порядок і умова зупинки не змінені; MODULE.md і COURSE.md не змінені; стан Студента не читався. `THEME.md` змінив Декан (критерій 5 із замінним текстом); Лектор `THEME.md` не змінював.
 - **Застосовані рішення Декана:** Hören/Sprechen лише `attested` (ця Тема нічого не заявляє); спроба чекпойнту `NO_AI`, без словника (як пояснено Студентові в Темі 1); виправлення `AI_ASSISTED` лише коли оголошено; критерій 5 із замінним текстом у межах слота 4; завдання й розв'язки публічні в репозиторії (те саме рішення, що для вхідного тесту й Теми 1); назви Модулів німецькою й українською.
-- **Рішення про готовність (Декан):** Тема готова як заздалегідь підготовлений матеріал Мовного факультету зі станом `unpiloted`. Вона не готова до проведення для Студента: бракує свідчень Студента, пропущених критеріїв і тесту на дублювання щодо попередніх свідчень (вхідний тест, Тема 1), який виконують під час проведення. Виправлення другої перевірки Assistant (N1–N17) повторно не перевірялись; Лектор перевіряє їх на навчальному шляху під час проведення. Пункти з позначкою `unverified` (Dativ множини, ідіоматичні приклади, «довга форма теж правильна») лишаються прикладами чи обережними підказками, а не впевнено сформульованими правилами.
+- **Рішення про готовність (Декан):** ahead-of-student `ready` (2026-10-18). Публічний пакет готовий до проведення; `unpiloted` не блокує проведення (ADR 0010, `curriculum-authority.md`). Підтвердження для кожного Студента (свідчення, пропущені критерії, тест на дублювання щодо вхідного тесту й Теми 1) — під час проведення, не блокер публічної готовності. Рамкові примітки з `material-review.md` §8 закрито в `THEME.md` (рядок статусу; Ersatztext у карті Уроків рядок 4; Possessivpronomen як навчальний термін; вид помилки для критерію 5; українська глоса *indirektes Objekt*). Виправлення N1–N17 Assistant повторно не перевіряв; Лектор їх контролював. Пункти `unverified` лишаються прикладами чи обережними підказками.
 
 ### 3. Затверджена рамка (джерело: THEME.md, не скопійовано)
 
@@ -151,7 +150,7 @@ Nach Abschluss des Themas mit einem Studenten übergibt die Lehrperson Contract 
 ### 6. Contract 5 — Лектор → Instructional Assistant
 
 - **Вхід:** повний пакет (4 Уроки, матеріал для Лектора, рамка, Тема 1, публічний вхідний тест), мета, критерії, контекст Студента, Evidence Delta кожного Уроку, режим ШІ, обсяг свідчень, виключення, походження; тест на дублювання для Студента прямо відкладено.
-- **Вихід:** етап 1 (повний): `not_ready`, 25 знахідок B1–B25 і 4 рамкові пропозиції RV1–RV4 (частина чекпойнту як інструмент свідчення недійсна; послідовність У1–У3 сама по собі `ready_with_changes`). Етап 2 (цільовий, до локалізації; перший запуск перервано через ліміт API й повторено): `ready_with_changes`, знахідки N1–N17. Для проведення зі Студентом: `not_ready`, доки не виконано тест на дублювання.
+- **Вихід:** етап 1 (повний): `not_ready`, 25 знахідок B1–B25 і 4 рамкові пропозиції RV1–RV4 (частина чекпойнту як інструмент свідчення недійсна; послідовність У1–У3 сама по собі `ready_with_changes`). Етап 2 (цільовий, до локалізації; перший запуск перервано через ліміт API й повторено): `ready_with_changes`, знахідки N1–N17. Раніше «delivery `not_ready` без тесту на дублювання» означає per-Student крок під час проведення, а не публічний блокер (Декан 2026-10-18 / ADR 0010).
 - **Рішення:** див. `material-review.md` (розділи 5 і 6). Усі знахідки, які можна виправити, прийнято; відкладено: рамкові пропозиції, доведення лексики, N14 частково.
 - **Сигнал готовності:** `ready_with_changes`; виправлення за етапом 2 Instructional Assistant повторно не перевіряв (огляд Лектором, розділ 9).
 
@@ -173,8 +172,8 @@ Nach Abschluss des Themas mit einem Studenten übergibt die Lehrperson Contract 
 ### 9. Остаточний контроль Лектора і рішення Декана
 
 - **Контроль із погляду Студента** (після етапу 1, після етапу 2 і після локалізації): мету, передумови, лексику, пояснення, приклади, завдання, повернення, походження, режим ШІ та межі класу свідчень прочитано в усіх чотирьох Уроках і в матеріалі для Лектора; суперечності між правилами й ключами, пункти, які можна переписати, перетини замінних текстів і порогів усунуто (див. `material-review.md`). Українські розділи прочитано повністю (розділ 7). Instructional Assistant повторно не перевіряв виправлення N1–N17 (етап 2); Лектор перевірив їх в обох мовах.
-- **Сигнал Лектора:** не `ready`. Рекомендація Декану: оглянути зміни етапу 2 (замінні тексти, пункти, пороги); рамкові примітки (`material-review.md`, розділ 8); прийняти до відома неперевірені твердження (розділ 11); тест на дублювання під час проведення.
-- **Рішення Декана:** відкрите.
+- **Сигнал Лектора:** власного `ready` немає (готовність за Деканом). Рекомендація Декану: оглянути зміни етапу 2; рамкові примітки (`material-review.md`, розділ 8); прийняти до відома неперевірені твердження (розділ 11).
+- **Рішення Декана:** ahead-of-student `ready` (2026-10-18); рамкові примітки RV1–RV5 у `THEME.md` закрито; рядки статусу й цей протокол узгоджено 2026-10-18 з ADR 0010.
 
 ### 10. Contract 6 і межа зупинки / наступного рішення
 
@@ -206,5 +205,4 @@ Nach Abschluss des Themas mit einem Studenten übergibt die Lehrperson Contract 
 
 ### 12. Інші примітки
 
-- `THEME.md` має внесену Деканом, ще не закомічену зміну (критерій 5); рядок статусу в `THEME.md` («Lektionen noch nicht vorbereitet») ще не оновлено (рамкова примітка RV1).
-- Нічого не закомічено; абсолютних шляхів у файлах немає.
+- Рамкові примітки RV1–RV5 закрито в `THEME.md` (Декан 2026-10-18). Абсолютних шляхів у файлах немає.

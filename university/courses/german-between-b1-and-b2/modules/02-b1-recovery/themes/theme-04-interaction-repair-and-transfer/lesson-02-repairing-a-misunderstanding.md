@@ -4,7 +4,7 @@
 - **Lektion:** 2 von 4 / 2 із 4
 - **Parent-Kriterium:** Module Kriterien 1, 3 und 7 → Theme-Kriterien 1–3
 - **Voraussetzung:** Lesson 1: nachfragen und Verständnis bestätigen
-- **Status:** `unpiloted`; IA-review abgeschlossen; `not_ready` für Student delivery
+- **Status:** `unpiloted` (blockiert die Durchführung nicht); IA-review abgeschlossen; per-Student confirmation bei der Durchführung
 - **Arbeitsmodus:** `NO_AI` für den ersten Nachweis
 - **Planzeit:** 45–60 Minuten
 

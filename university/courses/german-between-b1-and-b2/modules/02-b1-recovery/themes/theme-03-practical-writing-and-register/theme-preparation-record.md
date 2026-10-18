@@ -3,7 +3,7 @@
 - **Kurs / Modul / Thema:** Між B1 та B2 / Modul 2 — B1-Wiederherstellung / Thema 3 — Praktisches Schreiben und Register
 - **Dialogsprache / мова:** German learner path with Ukrainian orientation; die Liefer-/Dialogsprache bleibt für eine konkrete Student-Sitzung zu bestätigen
 - **Verantwortliche Profession / відповідальна роль:** Lecturer, Language Faculty; resolved appointment `university/workers/ferdinand/WORKER.md`
-- **Status:** `ready` for ahead-of-student preparation after second IA pass and Dean readiness; Lessons `unpiloted`; `not_ready` für Student delivery
+- **Status:** ahead-of-student `ready` (Dean 2026-10-18; reconciled 2026-10-18); four Lessons `unpiloted` (`unpiloted` does not block delivery); per-Student delivery confirmation at teach time
 
 ## Contract 1 — Dean → Lecturer
 
@@ -70,11 +70,12 @@ evidence with each delta and skip or redesign only through a Dean decision.
 - **Result:** complete pedagogical review returned findings T3-1 through T3-6;
   the full report and dispositions are recorded in `material-review.md`.
 - **Disposition:** T3-1 through T3-3 were accepted and applied by the
-  Lecturer; T3-4 was deferred to Student delivery because prior evidence is
-  absent; T3-5 and T3-6 were accepted without material change.
+  Lecturer; T3-4 was deferred to teach-time per-Student confirmation because
+  prior evidence is absent (not a public-package blocker); T3-5 and T3-6 were
+  accepted without material change.
 - **Gate consequence:** first pass returned `ready_with_changes`; after the
   second IA pass the generic package is `ready` for ahead-of-student
-  preparation. Student delivery remains `not_ready`.
+  preparation (Dean 2026-10-18).
 
 ## Specialist and language handoffs
 
@@ -102,9 +103,10 @@ NO_AI boundary, new-situation checkpoint, and absence of a fifth slot.
 Dean readiness decision: **ahead-of-student readiness: yes** (2026-10-18). The
 Dean confirmed the approved four-slot scope, complete traceability, no-multimedia
 decision, applied IA dispositions T3-1–T3-3, second IA pass after those
-corrections, Lecturer final control, and specialist non-triggers. The package
-remains `unpiloted` and `not_ready` for Student delivery until prior evidence,
-omitted criteria, and the duplication check are supplied.
+corrections, Lecturer final control, and specialist non-triggers. Public package
+is delivery-capable; `unpiloted` does not block delivery (ADR 0010). Per-Student
+confirmation (prior evidence, omitted criteria, duplication check) runs at teach
+time. Status wording reconciled 2026-10-18.
 
 ## Contract 6 boundary
 

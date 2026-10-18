@@ -48,7 +48,7 @@ inspected the four Lessons together, not only individual wording, and checked:
 | T3-1 | Lesson 1, `Ziel und evidence delta` | `Register` was mentioned before its learner-facing definition. A learner could treat it as known before Lesson 2. | `accepted`: definition added in Lesson 1 before the task; the intentional register decision remains in Lesson 2. | Lecturer; bounded vocabulary clarification |
 | T3-2 | Lesson 1, `Aufgabe` and `Nachweis` | `Anrede` and `Schlussformel` were required in the evidence before being defined. This increases avoidable task ambiguity. | `accepted`: both terms are defined before the task; Ukrainian orientation remains explanatory support. | Lecturer; bounded vocabulary clarification |
 | T3-3 | Lesson 1, `Nachweis` | `Kontrollraster` was used without a short definition. | `accepted`: defined as a short list of fixed checkpoints at first use. | Lecturer; bounded instruction clarification |
-| T3-4 | Complete package, Student-specific forward motion | No Student prior evidence, omitted criteria or artifact was supplied. Duplication cannot be ruled out for an individual Student. | `deferred`: package remains `unpiloted` and `not_ready` for delivery; rerun comparison at delivery. | Lecturer + Dean boundary; requires permitted Student context |
+| T3-4 | Complete package, Student-specific forward motion | No Student prior evidence, omitted criteria or artifact was supplied. Duplication cannot be ruled out for an individual Student. | `deferred`: rerun comparison at teach time for each Student; does not block public ahead-of-student readiness (ADR 0010). | Lecturer + Dean boundary; requires permitted Student context |
 | T3-5 | Complete package, evidence burden | Planning table plus first/revised text and one correction table is proportionate to the declared writing/revision criteria; no unnecessary report or media dependency found. | `accepted`: retain compact evidence set. | Lecturer; no change |
 | T3-6 | Lesson sequence and Theme map | Structure → register → revision → new-situation checkpoint is monotonic and reaches the approved Theme outcome; no extra slot found. | `accepted`: retain four-slot sequence. | Lecturer; no scope change |
 
@@ -79,16 +79,16 @@ Focused re-review of the learner-facing changes from T3-1–T3-3:
   unchanged;
 - no new blocking pedagogical finding for ahead-of-student preparation.
 
-Result: `ready` for generic ahead-of-student preparation. Student-specific
-forward motion (T3-4) remains deferred until delivery.
+Result: `ready` for generic ahead-of-student preparation (Dean readiness
+recorded 2026-10-18). Student-specific forward motion (T3-4) runs at teach time
+and is not a public-package blocker (ADR 0010).
 
 ## Readiness and boundaries
 
 - **Pedagogical readiness:** `ready` for generic ahead-of-student preparation
-  after the second IA pass; `not_ready` for Student delivery because prior
-  evidence and the duplication check are absent.
-- **Student delivery:** `not_ready`; prior evidence, omitted criteria and the
-  Student-specific duplication check are absent by design.
+  after the second IA pass and Dean decision 2026-10-18.
+- **Per-Student confirmation:** prior evidence, omitted criteria and duplication
+  check at teach time; does not block public readiness.
 - **Technical/factual review:** not performed by this review record.
 - **Not decided here:** mastery, placement, assessment validity, publication
   authority, or Theme-scope mutation.

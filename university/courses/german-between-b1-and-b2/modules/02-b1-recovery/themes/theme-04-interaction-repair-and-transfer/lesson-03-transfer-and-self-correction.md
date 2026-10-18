@@ -4,7 +4,7 @@
 - **Lektion:** 3 von 4 / 3 із 4
 - **Parent-Kriterium:** Module Kriterien 3, 5 und 6 → Theme-Kriterien 3 und 4
 - **Voraussetzung:** Lessons 1–2: Nachfrage, Bestätigung und Bedeutungsreparatur
-- **Status:** `unpiloted`; IA-review abgeschlossen; `not_ready` für Student delivery
+- **Status:** `unpiloted` (blockiert die Durchführung nicht); IA-review abgeschlossen; per-Student confirmation bei der Durchführung
 - **Arbeitsmodus:** `NO_AI` für den ersten Nachweis
 - **Planzeit:** 45–60 Minuten
 

@@ -1,7 +1,7 @@
 # Thema 3 — Überarbeitung nach Feedback / Тема 3 — Переробка після feedback
 
 - **Kurs / Modul:** Між B1 та B2 / Modul 3 — Praxis und Bereitschaftsprüfung
-- **Status:** ahead-of-student `ready` (Dean 2026-10-18); drei Lessons `unpiloted`; Student delivery `not_ready`
+- **Status:** ahead-of-student `ready` (Dean 2026-10-18); drei Lektionen `unpiloted` (`unpiloted` blockiert die Durchführung nicht); per-Student delivery confirmation erfolgt bei der Durchführung
 - **Outcome:** Der Student nutzt Feedback, überarbeitet eine Antwort und zeigt Verbesserung beim selben Kriterium.
 
 ## Grenzen und Kriterien

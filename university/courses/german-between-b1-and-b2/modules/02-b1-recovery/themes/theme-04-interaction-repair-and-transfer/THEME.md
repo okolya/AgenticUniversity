@@ -1,7 +1,7 @@
 # Thema 4 — Interaktion, Reparatur und Transfer / Тема 4 — Взаємодія, виправлення й перенесення
 
 - **Kurs / Modul:** Між B1 та B2 / Modul 2 — B1-Wiederherstellung
-- **Status:** ahead-of-student ready; vier Lessons vorbereitet und pädagogisch reviewed; `unpiloted`; nicht bereit für Student delivery ohne Student-spezifische Nachweise, ausgelassene Kriterien und Duplikatprüfung
+- **Status:** ahead-of-student `ready` (Dean 2026-10-18); vier Lektionen `unpiloted` (`unpiloted` blockiert die Durchführung nicht); per-Student delivery confirmation (Evidence-Delta, ausgelassene Kriterien, Duplikatprüfung; Hören/Sprechen nur `attested` wo beansprucht) erfolgt bei der Durchführung
 - **Outcome:** Der Student hält eine vertraute Interaktion aufrecht, bemerkt Unsicherheit, bittet um Klärung/Reparatur und überträgt eine wiederhergestellte Form oder Wendung in einen neuen vertrauten Kontext.
 
 ## Grenzen und Kriterien

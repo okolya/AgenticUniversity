@@ -4,7 +4,7 @@
 - **Lektion:** 3 von 4 / 3 із 4
 - **Parent-Kriterium:** Module Kriterien 5 und 6 → Theme-Kriterium 4
 - **Voraussetzung:** Lessons 1–2: Struktur, Zweck, Register und Anrede
-- **Status:** `unpiloted`; IA-review abgeschlossen; `not_ready` für Student delivery
+- **Status:** `unpiloted` (blockiert die Durchführung nicht); IA-review abgeschlossen; per-Student confirmation bei der Durchführung
 - **Arbeitsmodus:** `NO_AI` für den ersten Nachweis
 - **Planzeit:** 45–60 Minuten
 

@@ -36,7 +36,7 @@ the final handoff. No Student response or private evidence was supplied.
 | T4-1 | Lesson 1, `Sprachmittel` | `Nachfragen` and `Bestätigen` could be confused as the same action. | `accepted`: separate definitions and the four-step dialogue sequence make the distinction explicit. | Lecturer; bounded vocabulary clarification |
 | T4-2 | Lesson 2, `Sprachmittel` | `Reformulieren`, `Korrigieren` and `Bestätigen` need separate learner-facing meanings before the task. | `accepted`: definitions and a worked dialogue are included before the task. | Lecturer; bounded progression clarification |
 | T4-3 | Lesson 3, `Aufgabe` | The learner could perform repair without showing which action was selected. | `accepted`: planning prompt and `[R]`, `[B]`, `[SC]` markers expose the decision. | Lecturer; bounded evidence clarification |
-| T4-4 | Complete package, forward motion | No Student prior evidence or prior repair artifact was supplied, so individual duplication cannot be ruled out. | `deferred`: remain `unpiloted` and `not_ready` for delivery; rerun at Student handoff. | Lecturer + Dean boundary |
+| T4-4 | Complete package, forward motion | No Student prior evidence or prior repair artifact was supplied, so individual duplication cannot be ruled out. | `deferred`: rerun at teach time for each Student; does not block public ahead-of-student readiness (ADR 0010). | Lecturer + Dean boundary |
 | T4-5 | Lesson 4, evidence burden | The marker table is compact and each row maps to a declared criterion; no long reflection is required. | `accepted`: retain the minimal handoff table. | Lecturer; no change |
 | T4-6 | Sequence and scope | The four slots reach the approved Theme outcome and Module checkpoint without adding a fifth slot or independent measurement. | `accepted`: retain scope and `attested` boundary. | Lecturer; no scope change |
 
@@ -59,13 +59,15 @@ Focused re-review of the learner-facing changes from T4-1–T4-3:
   checkpoint remain unchanged;
 - no new blocking pedagogical finding for ahead-of-student preparation.
 
-Result: `ready` for generic ahead-of-student preparation. Student-specific
-forward motion (T4-4) remains deferred until delivery.
+Result: `ready` for generic ahead-of-student preparation (Dean readiness
+recorded 2026-10-18). Student-specific forward motion (T4-4) runs at teach time
+and is not a public-package blocker (ADR 0010).
 
 ## Readiness and boundaries
 
 - **Pedagogical readiness:** `ready` for generic ahead-of-student preparation
-  after the second IA pass; `not_ready` for Student delivery.
+  after the second IA pass and Dean decision 2026-10-18.
+- **Per-Student confirmation:** at teach time; does not block public readiness.
 - **Technical/factual review:** not performed by this pedagogical review.
 - **Not decided:** mastery, placement, assessment validity, or Theme-scope
   mutation.

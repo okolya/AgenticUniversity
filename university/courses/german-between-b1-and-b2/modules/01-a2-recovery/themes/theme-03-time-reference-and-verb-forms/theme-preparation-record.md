@@ -3,7 +3,7 @@
 - **Kurs / Modul / Thema:** Між B1 та B2 / Modul 1 — A2-Wiederherstellung / Thema 3 — Zeitbezug und häufige Verbformen
 - **Dialogsprache / мова:** Deutsch mit vollständiger ukrainischer Übersetzung / німецька з повним українським перекладом
 - **Verantwortliche Profession / відповідальна роль:** Lecturer, Language Faculty; resolved appointment `university/workers/ferdinand/WORKER.md`
-- **Status:** `ready` for ahead-of-student preparation; `not_ready` for Student delivery; vier Lessons remain `unpiloted`
+- **Status:** ahead-of-student `ready` (Dean 2026-10-18); vier Lessons `unpiloted` (`unpiloted` does not block delivery); per-Student delivery confirmation at teach time
 
 ## Contract 1 — Dean → Lecturer
 
@@ -38,9 +38,9 @@ The planned delta is a new time-reference capability, not a relabeled repetition
 - Lecturer final control: complete reread after review completed.
 - Dean readiness decision: **ahead-of-student readiness: yes** (2026-10-18).
   Finite four-slot map, IA dispositions, Lecturer final control, and specialist
-  non-triggers confirmed. Package remains `unpiloted` and `not_ready` for
-  Student delivery until prior evidence, omitted criteria, and the duplication
-  check are supplied.
+  non-triggers confirmed. Public package is delivery-capable; `unpiloted` does
+  not block delivery (ADR 0010). Per-Student confirmation (prior evidence,
+  omitted criteria, duplication check) runs at teach time for each Student.
 
 ## Stop boundary
 

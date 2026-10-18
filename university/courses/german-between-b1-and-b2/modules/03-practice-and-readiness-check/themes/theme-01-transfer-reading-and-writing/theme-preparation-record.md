@@ -3,7 +3,7 @@
 - **Kurs / Modul / Thema:** Між B1 та B2 / Modul 3 — Praxis und Bereitschaftsprüfung / Thema 1 — Transfer Lesen/Schreiben
 - **Dialogsprache / мова:** Deutsch mit ukrainischer Orientierung / німецька з українською підтримкою
 - **Verantwortliche Profession / відповідальна роль:** Lecturer, Language Faculty; appointment `university/workers/ferdinand/WORKER.md`
-- **Status:** `ready` for ahead-of-student preparation; `not_ready` for Student delivery; three Lessons remain `unpiloted`
+- **Status:** ahead-of-student `ready` (Dean 2026-10-18; reconciled 2026-10-18); three Lessons `unpiloted` (`unpiloted` does not block delivery); per-Student confirmation at teach time
 
 ## Contract 1 — Dean → Lecturer
 

@@ -1,7 +1,7 @@
 # Thema 4 — Selbstbegrenzung, Module-Checkpoint und Messübergabe / Тема 4 — Самообмеження, Module checkpoint і передача на вимірювання
 
 - **Kurs / Modul:** Між B1 та B2 / Modul 3 — Praxis und Bereitschaftsprüfung
-- **Status:** ahead-of-student formative `ready` (Dean 2026-10-18); drei Lessons `unpiloted`; unabhängige Messung nicht vorbereitet; Student delivery `not_ready`
+- **Status:** ahead-of-student formative `ready` (Dean 2026-10-18); drei Lektionen `unpiloted` (`unpiloted` blockiert die Durchführung nicht); unabhängige Messung gated hinter Dean Assessment Request; per-Student delivery confirmation erfolgt bei der Durchführung
 - **Outcome:** Der Student benennt verbleibende B1-Einschränkungen, bündelt die Modulnachweise und gibt sie für die unabhängige Messung frei.
 
 ## Grenzen und Kriterien

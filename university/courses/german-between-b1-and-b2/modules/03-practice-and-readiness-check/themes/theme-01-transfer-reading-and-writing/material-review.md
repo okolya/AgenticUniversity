@@ -39,7 +39,7 @@ Complete Theme package inspected as one unit:
 |---|---|---|---|---|
 | T1-1 | Lesson 1, `Übung` / `Nachweis` | `Textstellen` is required before a short learner-facing definition. Risk: learner treats “quote anything” as enough. | `accepted`: define `Textstelle` before the exercise. | Lecturer |
 | T1-2 | Lesson 2, `Ziel und neuer Nachweis` | `isolierte Satzmuster` appears before a concrete contrast example. Risk: vague self-check. | `accepted`: add one short contrast (isolated vs connected). | Lecturer |
-| T1-3 | Complete package, Student-specific forward motion | No prior Student evidence supplied; duplication cannot be ruled out for an individual Student. | `deferred`: remain `unpiloted` / delivery `not_ready`; rerun at delivery. | Lecturer + Dean |
+| T1-3 | Complete package, Student-specific forward motion | No prior Student evidence supplied; duplication cannot be ruled out for an individual Student. | `deferred`: rerun at teach time for each Student; does not block public readiness (ADR 0010). | Lecturer + Dean |
 | T1-4 | Lesson sequence | Reading → writing → combined checkpoint is monotonic and reaches Theme outcome; no fourth slot. | `accepted`: retain three-slot map. | Lecturer; no change |
 | T1-5 | Evidence burden | Main idea + details; 80–100 word reply; checkpoint trio is proportionate. | `accepted`: retain compact evidence set. | Lecturer; no change |
 
@@ -65,16 +65,15 @@ Focused re-review of learner-facing changes from T1-1 and T1-2:
 - three-slot sequence, evidence burden, and combined checkpoint remain unchanged;
 - no new blocking pedagogical finding for ahead-of-student preparation.
 
-Result: `ready` for generic ahead-of-student preparation. Student-specific
-forward motion (T1-3) remains deferred until delivery.
+Result: `ready` for generic ahead-of-student preparation (Dean readiness
+2026-10-18). Student-specific forward motion (T1-3) runs at teach time and is
+not a public-package blocker (ADR 0010).
 
 ## Readiness and boundaries
 
 - **Pedagogical readiness:** `ready` for generic ahead-of-student preparation
-  after the second IA pass; `not_ready` for Student delivery because prior
-  evidence and the duplication check are absent.
-- **Student delivery:** `not_ready`; prior evidence, omitted criteria and the
-  Student-specific duplication check are absent by design.
+  after the second IA pass (Dean 2026-10-18).
+- **Per-Student confirmation:** at teach time; not a public-package blocker.
 - **Technical/factual review:** not performed by this review record.
 - **Not decided here:** mastery, placement, assessment validity, publication
   authority, or Theme-scope mutation.

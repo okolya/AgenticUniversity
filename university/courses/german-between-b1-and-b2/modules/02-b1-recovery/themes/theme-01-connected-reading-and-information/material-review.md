@@ -3,7 +3,7 @@
 - **Materials:** four Lesson files and one optional multimedia proposal; stage `pre-publication`
 - **Owner:** Lecturer, Language Faculty; pedagogical review by Instructional Assistant Profession
 - **Outcome:** the learner identifies a main idea, extracts relevant details, infers useful vocabulary from context, and writes a short supported summary of a short B1 text
-- **Student context:** no Student-specific context supplied; ahead-of-student review only. Delivery remains `not_ready` until prior evidence, omitted criteria, and duplication check are supplied.
+- **Student context:** no Student-specific context supplied; ahead-of-student review only. Public package may be delivered; per-Student confirmation runs at teach time.
 - **Theme traceability:** Module 2 criteria 1, 2, 5 → Theme 1 criteria 1–4 → Lessons 1–4 → Theme checkpoint
 
 ## Strengths to preserve
@@ -28,6 +28,6 @@ The Lecturer reread all four German and Ukrainian paths after applying T1-1–T1
 
 ## Readiness
 
-`ready` for ahead-of-student preparation; `not_ready` for Student delivery until Student-specific forward-motion context and the required final Dean readiness decision exist.
+`ready` for ahead-of-student preparation (Dean readiness recorded 2026-10-18). Per-Student forward-motion confirmation runs at teach time; it is not a public-package blocker.
 
 **Boundaries:** this report does not certify factual correctness, assessment validity, source provenance beyond the recorded checks, mastery, placement, or Theme authority.

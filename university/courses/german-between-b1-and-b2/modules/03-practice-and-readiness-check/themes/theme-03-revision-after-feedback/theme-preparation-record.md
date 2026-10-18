@@ -3,7 +3,7 @@
 - **Kurs / Modul / Thema:** Між B1 та B2 / Modul 3 — Praxis und Bereitschaftsprüfung / Thema 3 — Überarbeitung nach Feedback
 - **Dialogsprache / мова:** Deutsch mit ukrainischer Orientierung
 - **Verantwortliche Profession:** Lecturer, Language Faculty; appointment `university/workers/ferdinand/WORKER.md`
-- **Status:** `ready` for ahead-of-student preparation; `not_ready` for Student delivery; three Lessons remain `unpiloted`
+- **Status:** ahead-of-student `ready` (Dean 2026-10-18; reconciled 2026-10-18); three Lessons `unpiloted` (`unpiloted` does not block delivery); per-Student confirmation at teach time
 
 ## Contract 1 — Dean → Lecturer
 
@@ -30,7 +30,7 @@
 
 ## Dean readiness and Contract 6 boundary
 
-**ahead-of-student readiness: yes** (2026-10-18). Remains `unpiloted` / delivery `not_ready`.
+**ahead-of-student readiness: yes** (2026-10-18). Public package delivery-capable; `unpiloted` does not block delivery (ADR 0010). Per-Student confirmation at teach time. Status wording reconciled 2026-10-18.
 
 ## Stop boundary
 

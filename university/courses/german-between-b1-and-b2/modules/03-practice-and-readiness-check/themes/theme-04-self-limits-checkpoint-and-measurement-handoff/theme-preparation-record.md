@@ -3,14 +3,14 @@
 - **Kurs / Modul / Thema:** Між B1 та B2 / Modul 3 — Praxis und Bereitschaftsprüfung / Thema 4 — Selbstbegrenzung, Module-Checkpoint und Messübergabe
 - **Dialogsprache / мова:** Deutsch mit ukrainischer Orientierung
 - **Verantwortliche Profession:** Lecturer, Language Faculty; appointment `university/workers/ferdinand/WORKER.md`
-- **Status:** `ready` for ahead-of-student **formative** preparation; `not_ready` for Student delivery; independent measurement artifacts not prepared; three Lessons remain `unpiloted`
+- **Status:** ahead-of-student formative `ready` (Dean 2026-10-18; reconciled 2026-10-18); three Lessons `unpiloted` (`unpiloted` does not block delivery); independent measurement gated behind Dean Assessment Request
 
 ## Contract 1 — Dean → Lecturer
 
 - **Issued:** 2026-10-18 by Dean (`university/workers/bob/WORKER.md`)
 - **Input:** approved Theme frame, 3 formative slots, criteria 1–4, Module Exit 5–6, Module checkpoint, stop at Contract 6 to Dean.
 - **Output:** `lesson-01-name-remaining-limits.md`, `lesson-02-bundle-module-evidence.md`, `lesson-03-module-checkpoint-and-measurement-handoff.md`, Contract 6 skeleton for Dean, preparation record.
-- **Boundary:** Lecturer does not declare Module completion, independent measurement, or B2 readiness. Learning Analyst and Examiner are **not** invoked in this plan stage; they wait for a later Dean Assessment Request after Theme 4 formative readiness and Student evidence path.
+- **Boundary:** Lecturer does not declare Module completion, independent measurement, or B2 readiness. Dean Assessment Request (Contract 1) is now issued for ahead-of-student instrument preparation; Learning Analyst authors Contract 2 next. Examiner remains gated until Contract 4 evidence after a Student formative path.
 - **Dean acknowledgement of teaching intent:** accepted 2026-10-18.
 
 ## Traceability
@@ -25,11 +25,11 @@
 
 - `research-record.md`: no external exam templates; no multimedia required.
 - IA review complete; Lecturer final control 2026-10-18.
-- Learning Analyst / Examiner: **not invoked** (gated behind future Dean Assessment Request).
+- Learning Analyst: Contract 1 issued — Contract 2 artifact pending. Examiner: gated until Contract 4.
 
 ## Dean readiness and Contract 6 boundary
 
-**ahead-of-student formative readiness: yes** (2026-10-18). Independent measurement packages are intentionally absent. Student delivery `not_ready`.
+**ahead-of-student formative readiness: yes** (2026-10-18). Public formative package delivery-capable; `unpiloted` does not block delivery (ADR 0010). Independent measurement gated behind Dean Assessment Request (see `assessment/dean-assessment-request.md`). Status wording reconciled 2026-10-18.
 
 ## Contract 6 skeleton (Lecturer → Dean)
 
@@ -37,7 +37,7 @@ Fields prepared for later Student runs (not filled with Student data here):
 
 - Theme/Module scope and formative checkpoint result path;
 - evidence classes present: Themes 1+3 `demonstrated` path, Theme 2 `attested` only;
-- recommended next: Dean Assessment Request (assessment-contracts Contract 1) to Learning Analyst for Lesen/Schreiben only;
+- Dean Assessment Request issued 2026-10-18: `../../assessment/dean-assessment-request.md` (Contract 1 → Emma / Lesen/Schreiben only; Examiner gated);
 - explicit non-claims: no B2 readiness, no HS measurement, no Module verdict.
 
 ## Stop boundary

@@ -103,7 +103,7 @@ Translator Profession (Worker laut `university/workers/maria/WORKER.md`) hat all
 ### 10. Pädagogische Bereitschaft und Grenzen
 
 - Signale: Stufe 2 `ready_with_changes`; Stufe 3 `ready_with_changes` (N1–N9 und B5e `gelöst`; T1–T8 danach bearbeitet). **Die Lehrperson gibt kein eigenes `ready`-Signal ab.** Empfehlung: Sichtkontrolle der Zeilen aus Abschnitt 6a (T1–T8) vor der Entscheidung des Dekans; keine weitere vollständige Prüfung nötig (Einschätzung des Instructional Assistant).
-- Für die Durchführung bei einem Studenten: `not_ready`, bis der Duplikat-Test gegen den echten Nachweis erledigt ist.
+- Dean (2026-10-18): ahead-of-student `ready`. Per-Student Duplikat-Test läuft bei der Durchführung und blockiert das öffentliche Paket nicht (ADR 0010).
 - Grenzen: kein technisches Ausführungsurteil, kein Mastery-Urteil, keine Platzierung, keine Veröffentlichungsbefugnis, keine Änderung des Theme-Rahmens.
 
 ---
@@ -204,5 +204,5 @@ Translator Profession (Worker laut `university/workers/maria/WORKER.md`) hat all
 ### 10. Педагогічна готовність і межі
 
 - Сигнали: етап 2 `ready_with_changes`; етап 3 `ready_with_changes` (N1–N9 і B5e `розв'язано`; T1–T8 опрацьовано після цього). **Лектор не видає власного сигналу `ready`.** Рекомендація: оглянути рядки з розділу 6a (T1–T8) до рішення Декана; ще одна повна перевірка не потрібна (оцінка Instructional Assistant).
-- Для проведення зі Студентом: `not_ready`, доки не виконано тест на дублювання з реальним свідченням.
+- Декан (2026-10-18): ahead-of-student `ready`. Per-Student тест на дублювання — під час проведення і не блокує публічний пакет (ADR 0010).
 - Межі: жодного технічного вердикту виконання, вердикту про опанування, визначення рівня, права публікації чи зміни рамки Теми.

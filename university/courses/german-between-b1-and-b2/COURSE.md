@@ -2,7 +2,7 @@
 
 - Fakultät / Факультет: Sprachfakultät / Мовний факультет
 - Verantwortlich / Відповідальний: ernannter Dekan der Sprachfakultät / призначений Декан мовного факультету
-- Status: öffentliche Architektur genehmigt; Module 1–3 Themes ahead-of-student vorbereitet (`unpiloted`; Modul 3 Theme 4 formative only); Student delivery nicht bereit / публічну архітектуру затверджено; Теми Модулів 1–3 підготовлені ahead-of-student (`unpiloted`; Модуль 3 Тема 4 лише formative); проведення для Студента ще не готове
+- Status: öffentliche Architektur genehmigt; Module 1–2 ahead-of-student `ready` (`unpiloted` blockiert die Durchführung nicht); Module 3 ahead-of-student formative `ready` (`unpiloted` blockiert die Durchführung nicht; Theme 4 formative only); per-Student delivery confirmation bei der Durchführung / публічну архітектуру затверджено; Модулі 1–2 ahead-of-student `ready` (`unpiloted` не блокує проведення); Модуль 3 ahead-of-student formative `ready` (`unpiloted` не блокує проведення; Тема 4 лише formative); підтвердження delivery — під час проведення для кожного Студента
 - Sprache / Мова: Deutsch / німецька
 - Routentyp / Тип маршруту: begrenzte Brücke zur Bereitschaft für einen separaten B2-Kurs / обмежений міст до готовності до окремого курсу B2
 - Tempo / Темп: angepasst an Kapazität des Studenten und verifizierte Nachweise / адаптивний до можливостей Студента й верифікованих свідчень
@@ -144,9 +144,9 @@ Die Sprachfakultät hat Lecturer, Teacher, Laboratory Specialist, Learning Analy
 
 | Модуль | Теми | Слоти Уроків | Планувальний стан |
 |---|---:|---:|---|
-| 1. Відновлення A2 | 4 | 15 | карта затверджена; Теми 1–4 ahead-of-student ready; `unpiloted`; Student delivery not ready |
-| 2. Відновлення B1 | 4 | 16 | карта затверджена; Теми 1–4 ahead-of-student ready; `unpiloted`; Student delivery not ready |
-| 3. Практика і перевірка готовності | 4 | 12 | карта затверджена; Теми 1–4 ahead-of-student ready (Тема 4 formative only); `unpiloted`; Student delivery not ready |
+| 1. Відновлення A2 | 4 | 15 | карта затверджена; Теми 1–4 ahead-of-student `ready`; `unpiloted` (не блокує проведення); per-Student delivery confirmation під час проведення |
+| 2. Відновлення B1 | 4 | 16 | карта затверджена; Теми 1–4 ahead-of-student `ready`; `unpiloted` (не блокує проведення); per-Student delivery confirmation під час проведення |
+| 3. Практика і перевірка готовності | 4 | 12 | карта затверджена; Теми 1–4 ahead-of-student `ready` (Тема 4 formative only); `unpiloted` (не блокує проведення); per-Student confirmation під час проведення; LA/Examiner gated |
 | 4. Готовність до вступу на B2 | не визначено | не визначено | спочатку затвердити кінцеву карту Тем і слотів |
 
 Ця таблиця є control index, а не прихованим syllabus. Для кожного Студента Декан вибирає лише потрібні Теми та слоти за актуальними свідченнями.

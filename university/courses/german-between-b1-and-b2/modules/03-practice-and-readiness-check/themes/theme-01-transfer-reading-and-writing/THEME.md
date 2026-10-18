@@ -1,7 +1,7 @@
 # Thema 1 — Transfer Lesen/Schreiben in neuen begrenzten Kontexten / Тема 1 — Перенесення Lesen/Schreiben у нові обмежені контексти
 
 - **Kurs / Modul:** Між B1 та B2 / Modul 3 — Praxis und Bereitschaftsprüfung
-- **Status:** ahead-of-student `ready` (Dean 2026-10-18); drei Lessons `unpiloted`; Student delivery `not_ready`
+- **Status:** ahead-of-student `ready` (Dean 2026-10-18); drei Lektionen `unpiloted` (`unpiloted` blockiert die Durchführung nicht); per-Student delivery confirmation erfolgt bei der Durchführung
 - **Outcome:** Der Student bewältigt Lesen- und Schreibaufgaben auf B1-Niveau in neuen, aber begrenzten Kontexten und hält verständliche Kommunikation ohne isolierte Satzmuster.
 
 ## Grenzen und Kriterien

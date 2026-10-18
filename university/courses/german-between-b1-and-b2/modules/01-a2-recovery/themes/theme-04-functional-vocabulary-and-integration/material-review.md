@@ -3,7 +3,7 @@
 - **Materials:** three Lesson files in this Theme, review stage `pre-publication`, all `unpiloted`
 - **Owner:** Lecturer, Language Faculty; pedagogical review by Instructional Assistant Profession
 - **Outcome:** the learner uses frequent A2 functional phrases in short integrated tasks and rechecks the documented Entry gap
-- **Student context:** no Student-specific context supplied; this is an ahead-of-student review. Delivery remains `not_ready` until the Entry-gap context is supplied.
+- **Student context:** no Student-specific context supplied; this is an ahead-of-student review. Public package may be delivered; Entry-gap selection and per-Student confirmation run at teach time.
 - **Theme traceability:** Module 1 criteria 2, 3, 4, 5, 6 → Theme 4 criteria 1–4 → Lessons 1–3 → Module checkpoint / Contract 6
 
 ## Strengths to preserve
@@ -38,6 +38,6 @@ All findings `T4-1`–`T4-5` were `accepted` and applied by the Lecturer. The Le
 
 ## Readiness
 
-`ready` for ahead-of-student preparation; `not_ready` for Student delivery until the Entry-gap and prior evidence are supplied and the Lecturer confirms the selected task.
+`ready` for ahead-of-student preparation (Dean readiness recorded 2026-10-18). Entry-gap choice and prior-evidence confirmation run at teach time; they are not public-package blockers.
 
 **Boundaries:** this report does not certify factual correctness, assessment validity, source provenance, mastery, placement, or Module completion.

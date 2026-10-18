@@ -3,7 +3,7 @@
 - **Kurs / Modul / Thema:** Між B1 та B2 / Modul 3 / Thema 4
 - **Lektion:** 2 von 3 / 2 із 3
 - **Kriterium:** Theme 2; Module Exit 6
-- **Status:** `unpiloted`; pädagogisches Review abgeschlossen; `not_ready` für Student delivery
+- **Status:** `unpiloted` (blockiert die Durchführung nicht); pädagogisches Review abgeschlossen; per-Student confirmation bei der Durchführung
 - **Arbeitsmodus:** erlaubter Kursmodus; keine unerlaubte Hilfe; `NO_AI` wo die Quell-Lessons es verlangen
 - **Planzeit:** 45–60 Minuten
 

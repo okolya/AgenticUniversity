@@ -1,7 +1,7 @@
 # Thema 2 — Integrierte Hören/Sprechen-Praxis / Тема 2 — Інтегрована практика Hören/Sprechen
 
 - **Kurs / Modul:** Між B1 та B2 / Modul 3 — Praxis und Bereitschaftsprüfung
-- **Status:** ahead-of-student `ready` (Dean 2026-10-18); drei Lessons `unpiloted`; evidence class nur `attested`; Student delivery `not_ready`
+- **Status:** ahead-of-student `ready` (Dean 2026-10-18); drei Lektionen `unpiloted` (`unpiloted` blockiert die Durchführung nicht); evidence class nur `attested`; per-Student delivery confirmation erfolgt bei der Durchführung
 - **Outcome:** Der Student hält verständliche Kommunikation in vertrauten Situationen aufrecht und schließt die vorgeschriebene Hör- und Sprechpraxis ab.
 
 ## Grenzen und Kriterien

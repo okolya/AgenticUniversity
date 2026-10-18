@@ -3,7 +3,7 @@
 - **Kurs / Modul / Thema:** Між B1 та B2 / Modul 1 — A2-Wiederherstellung / Thema 4 — Funktionaler Wortschatz und integrierte A2-Aufgaben
 - **Dialogsprache / мова:** Deutsch mit vollständiger ukrainischer Übersetzung / німецька з повним українським перекладом
 - **Verantwortliche Profession / відповідальна роль:** Lecturer, Language Faculty; resolved appointment `university/workers/ferdinand/WORKER.md`
-- **Status:** `ready` for ahead-of-student preparation; `not_ready` for Student delivery; drei Lessons remain `unpiloted`
+- **Status:** ahead-of-student `ready` (Dean 2026-10-18); drei Lessons `unpiloted` (`unpiloted` does not block delivery); per-Student delivery confirmation (incl. Entry-gap) at teach time
 
 ## Contract 1 — Dean → Lecturer
 
@@ -37,9 +37,10 @@ The checkpoint task remains Student-specific at delivery because the original En
 - Lecturer final control: complete reread after review completed.
 - Dean readiness decision: **ahead-of-student readiness: yes** (2026-10-18).
   Finite three-slot map including Module checkpoint, IA dispositions, Lecturer
-  final control, and specialist non-triggers confirmed. Package remains
-  `unpiloted` and `not_ready` for Student delivery until Entry-gap context,
-  omitted criteria, and the duplication check are supplied.
+  final control, and specialist non-triggers confirmed. Public package is
+  delivery-capable; `unpiloted` does not block delivery (ADR 0010). Per-Student
+  confirmation (Entry-gap context, omitted criteria, duplication check) runs at
+  teach time for each Student.
 
 ## Stop boundary
 
