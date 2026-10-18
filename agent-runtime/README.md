@@ -2,8 +2,8 @@
 
 Canonical University semantics live under `university/`. This directory contains only thin provider-specific adapters for the supported runtime triad: Claude, Codex and Cursor.
 
-`make agents-init` installs these adapters into the provider homes with the
-`university-` namespace. Do not place Worker-specific agents here: runtime
+`make agents-init` (the shared `dev-agents` tool, `dev-agents.toml`) installs these
+adapters into the provider homes with the `uni-` namespace. Do not place Worker-specific agents here: runtime
 agents represent Professions; Workers are concrete appointment/context
 records.
 

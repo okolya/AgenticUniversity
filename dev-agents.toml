@@ -1,0 +1,14 @@
+# Standalone University core for the shared dev-agents tool: links the core's agent data into the provider homes
+# (`make agents-init`). A composed workspace uses its own root dev-agents.toml instead.
+version = 1
+
+[[pack]]
+path = "."
+name = "core"
+
+[homes]
+agents = "~/.agents"
+codex = "~/.codex"
+claude = "~/.claude"
+cursor = "~/.cursor"
+gemini = "~/.gemini"
