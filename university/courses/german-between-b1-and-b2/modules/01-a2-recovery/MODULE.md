@@ -3,7 +3,7 @@
 - **Kurs / Курс:** Між B1 та B2
 - **Fakultät / Факультет:** Sprachfakultät / Мовний факультет
 - **Position / Позиція:** 1 von 4 / 1 із 4
-- **Status:** öffentlicher Kompetenzrahmen; selektive Brücke, kein vollständiger A2-Kurs / публічна рамка компетенцій; вибірковий міст, а не повний курс A2
+- **Status:** öffentlicher Kompetenzrahmen; vier Themes als vorab vorbereitetes Material freigegeben (`unpiloted`); nicht bereit für Student delivery ohne Student-spezifische Nachweise / публічна рамка компетенцій; чотири Теми схвалено як заздалегідь підготовлений матеріал (`unpiloted`); не готово до проведення без свідчень конкретного Студента
 
 ---
 

@@ -3,7 +3,7 @@
 - **Kurs / Modul / Thema:** Між B1 та B2 / Modul 2 — B1-Wiederherstellung / Thema 1
 - **Lektion:** 3 von 4 / 3 із 4
 - **Kriterium:** 3, 4
-- **Status:** `unpiloted`; pädagogisches Review ausstehend
+- **Status:** `unpiloted`; pädagogisches Review abgeschlossen; `not_ready` für Student delivery
 - **Arbeitsmodus:** `NO_AI` für die Nachweisaufgabe
 - **Planzeit:** 45–60 Minuten
 

@@ -3,7 +3,7 @@
 - **Kurs / Курс:** Між B1 та B2
 - **Fakultät / Факультет:** Sprachfakultät / Мовний факультет
 - **Position / Позиція:** 2 von 4 / 2 із 4
-- **Status:** öffentlicher Kompetenzrahmen; vier Theme-Rahmen genehmigt, Lessons noch nicht vorbereitet / публічна рамка компетенцій; чотири Theme-фрейми затверджені, Уроки ще не підготовлені
+- **Status:** öffentlicher Kompetenzrahmen; vier Themes als vorab vorbereitetes Material freigegeben (`unpiloted`); nicht bereit für Student delivery ohne Student-spezifische Nachweise / публічна рамка компетенцій; чотири Теми схвалено як заздалегідь підготовлений матеріал (`unpiloted`); не готово до проведення без свідчень конкретного Студента
 
 ---
 

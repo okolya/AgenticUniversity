@@ -4,7 +4,7 @@
 - **Lektion:** 4 von 4 / 4 із 4
 - **Parent-Kriterium:** Module Kriterien 1, 3, 6 und 7 → Theme-Kriterien 1–4
 - **Voraussetzung:** Lessons 1–3 und die approved Module-Exit-Kriterien
-- **Status:** `unpiloted`; IA-review ausstehend; `not_ready` für Student delivery
+- **Status:** `unpiloted`; IA-review abgeschlossen; `not_ready` für Student delivery
 - **Arbeitsmodus:** `NO_AI` für den ersten Nachweis
 - **Planzeit:** 45–60 Minuten
 

@@ -3,8 +3,8 @@
 - **Kurs / Modul:** Між B1 та B2 / Modul 1 — A2-Wiederherstellung
 - **Rahmen genehmigt von:** ernannter Dekan der Sprachfakultät
 - **Didaktische Gestaltung:** zugewiesene Dozentin / zugewiesener Dozent der Sprachfakultät
-- **Status:** vom Dekan genehmigter Rahmen; vier Lektionen vorbereitet (`unpiloted`, bis ein Student sie durchlaufen hat); Bereitschaftsentscheidung des Dekans im Preparation Record
-- **Status / Статус:** затверджений Деканом фрейм; чотири Уроки підготовлено (`unpiloted`, доки Студент їх не пройде); рішення Декана про готовність — у записі підготовки
+- **Status:** vom Dekan genehmigter Rahmen; vier Lektionen als vorab vorbereitetes Material freigegeben (`unpiloted`, bis ein Student sie durchlaufen hat); nicht bereit für Student delivery ohne Student-spezifische Nachweise, ausgelassene Kriterien und Duplikatprüfung
+- **Status / Статус:** затверджений Деканом фрейм; чотири Уроки схвалено як заздалегідь підготовлений матеріал (`unpiloted`, доки Студент їх не пройде); не готово до проведення без свідчень конкретного Студента, визначених пропущених критеріїв і перевірки дублювання
 
 ---
 

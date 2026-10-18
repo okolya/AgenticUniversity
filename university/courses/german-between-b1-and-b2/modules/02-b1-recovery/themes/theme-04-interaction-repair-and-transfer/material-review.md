@@ -46,10 +46,26 @@ German remains the target learner path. Ukrainian is orientation and explains
 the evidence logic. No separate localized sibling was requested; delivery
 language and semantic fit must be confirmed for a concrete Student session.
 
+## Second Instructional Assistant pass after accepted corrections
+
+Focused re-review of the learner-facing changes from T4-1–T4-3:
+
+- `Nachfragen` and `Bestätigen` are defined as separate actions before use;
+- `Reformulieren`, `Korrigieren`, and `Bestätigen` are introduced before the
+  misunderstanding task;
+- Lesson 3 requires an explicit repair choice through planning and `[R]` /
+  `[B]` / `[SC]` markers;
+- the four-slot sequence, `attested` Hören/Sprechen boundary, and Module
+  checkpoint remain unchanged;
+- no new blocking pedagogical finding for ahead-of-student preparation.
+
+Result: `ready` for generic ahead-of-student preparation. Student-specific
+forward motion (T4-4) remains deferred until delivery.
+
 ## Readiness and boundaries
 
-- **Pedagogical readiness:** `ready_with_changes` for generic ahead-of-student
-  preparation; `not_ready` for Student delivery.
+- **Pedagogical readiness:** `ready` for generic ahead-of-student preparation
+  after the second IA pass; `not_ready` for Student delivery.
 - **Technical/factual review:** not performed by this pedagogical review.
-- **Not decided:** mastery, placement, assessment validity, publication
-  authority, or Dean-owned Theme/Module status.
+- **Not decided:** mastery, placement, assessment validity, or Theme-scope
+  mutation.

@@ -34,7 +34,12 @@ The checkpoint task remains Student-specific at delivery because the original En
 - Learning Analyst / Examiner: not invoked; the checkpoint is formative and the Dean decides the next assessment route.
 - Translator: not invoked; source already includes the selected Ukrainian learner path.
 - Multimedia: optional Goethe A2 listening proposal M4-1 curated for Lesson 2; not inserted or required; original self-recorded/read-aloud fallback retained.
-- Lecturer final control: complete reread after review completed; Dean readiness decision for ahead-of-student material remains open.
+- Lecturer final control: complete reread after review completed.
+- Dean readiness decision: **ahead-of-student readiness: yes** (2026-10-18).
+  Finite three-slot map including Module checkpoint, IA dispositions, Lecturer
+  final control, and specialist non-triggers confirmed. Package remains
+  `unpiloted` and `not_ready` for Student delivery until Entry-gap context,
+  omitted criteria, and the duplication check are supplied.
 
 ## Stop boundary
 

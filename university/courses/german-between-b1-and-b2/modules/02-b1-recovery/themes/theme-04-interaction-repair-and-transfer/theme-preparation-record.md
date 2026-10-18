@@ -3,7 +3,7 @@
 - **Kurs / Modul / Thema:** Між B1 та B2 / Modul 2 — B1-Wiederherstellung / Thema 4 — Interaktion, Reparatur und Transfer
 - **Dialogsprache / мова:** German learner path with Ukrainian orientation; delivery language is confirmed per Student session
 - **Verantwortliche Profession / відповідальна роль:** Lecturer, Language Faculty; resolved appointment `university/workers/ferdinand/WORKER.md`
-- **Status:** `reviewed_with_changes`; Lessons `unpiloted`; `not_ready` für Student delivery
+- **Status:** `ready` for ahead-of-student preparation after second IA pass and Dean readiness; Lessons `unpiloted`; `not_ready` für Student delivery
 
 ## Contract 1 — Dean → Lecturer
 
@@ -66,8 +66,9 @@ new delta.
 - **Disposition:** T4-1 through T4-3 were accepted and applied; T4-4 was
   deferred to delivery because prior Student evidence is absent; T4-5 and T4-6
   were accepted without scope change.
-- **Gate consequence:** generic ahead-of-student preparation is
-  `ready_with_changes`; Student delivery remains `not_ready`.
+- **Gate consequence:** first pass returned `ready_with_changes`; after the
+  second IA pass the generic package is `ready` for ahead-of-student
+  preparation. Student delivery remains `not_ready`.
 
 ## Specialist and language handoffs
 
@@ -89,9 +90,12 @@ It checked first-use vocabulary (`Nachfragen`, `Bestätigen`, `Reformulieren`,
 distinction, marker conventions, minimal evidence, new-context transfer,
 Module handoff, NO_AI boundaries and the absence of a fifth slot.
 
-Dean readiness decision: **pending**. The Lecturer does not change the
-Dean-owned Theme or Module status fields. The package remains `unpiloted` and
-`not_ready` for Student delivery.
+Dean readiness decision: **ahead-of-student readiness: yes** (2026-10-18). The
+Dean confirmed the approved four-slot scope, Module-checkpoint handoff,
+no-multimedia decision, applied IA dispositions T4-1–T4-3, second IA pass after
+those corrections, Lecturer final control, and specialist non-triggers. The
+package remains `unpiloted` and `not_ready` for Student delivery until prior
+evidence, omitted criteria, and the duplication check are supplied.
 
 ## Contract 6 boundary
 

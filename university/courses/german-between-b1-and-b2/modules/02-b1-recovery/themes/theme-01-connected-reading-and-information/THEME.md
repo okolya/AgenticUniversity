@@ -1,7 +1,7 @@
 # Thema 1 — Zusammenhängendes Lesen und Informationen entnehmen / Тема 1 — Зв’язне читання та добування інформації
 
 - **Kurs / Modul:** Між B1 та B2 / Modul 2 — B1-Wiederherstellung
-- **Status:** vom Dean genehmigter Theme-Rahmen; vier Lessons vorbereitet und pädagogisch reviewed; `unpiloted`
+- **Status:** vom Dean genehmigter Theme-Rahmen; vier Lessons als vorab vorbereitetes und pädagogisch reviewed Material freigegeben; `unpiloted`; nicht bereit für Student delivery ohne Student-spezifische Nachweise, ausgelassene Kriterien und Duplikatprüfung
 - **Outcome:** Der Student erkennt Hauptaussage, stützende Details und wichtigen Wortschatz in kurzen zusammenhängenden B1-Texten.
 
 ## Grenzen und Kriterien

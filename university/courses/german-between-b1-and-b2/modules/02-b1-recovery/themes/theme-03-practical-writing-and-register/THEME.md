@@ -1,7 +1,7 @@
 # Thema 3 — Praktisches Schreiben und Register / Тема 3 — Практичне письмо та регістр
 
 - **Kurs / Modul:** Між B1 та B2 / Modul 2 — B1-Wiederherstellung
-- **Status:** vom Dean genehmigter Theme-Rahmen; vier Lesson-Slots genehmigt; Lessons noch nicht vorbereitet
+- **Status:** ahead-of-student ready; vier Lessons vorbereitet und pädagogisch reviewed; `unpiloted`; nicht bereit für Student delivery ohne Student-spezifische Nachweise, ausgelassene Kriterien und Duplikatprüfung
 - **Outcome:** Der Student schreibt verständliche zusammenhängende praktische Texte für vertraute Situationen und überarbeitet sie nach einem begrenzten Kontrollraster.
 
 ## Grenzen und Kriterien

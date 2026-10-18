@@ -68,11 +68,25 @@ The package uses German for the learner-facing target path and Ukrainian for
 orientation. No separate localized sibling was requested. The Lecturer must
 still confirm the dialogue language and semantic fit at Student delivery.
 
+## Second Instructional Assistant pass after accepted corrections
+
+Focused re-review of the learner-facing changes from T3-1–T3-3:
+
+- `Register`, `Anrede`, `Schlussformel`, and `Kontrollraster` are defined before
+  the learner must produce them;
+- Lesson 1 keeps the intentional register decision in Lesson 2;
+- the four-slot sequence, evidence burden, and new-situation checkpoint remain
+  unchanged;
+- no new blocking pedagogical finding for ahead-of-student preparation.
+
+Result: `ready` for generic ahead-of-student preparation. Student-specific
+forward motion (T3-4) remains deferred until delivery.
+
 ## Readiness and boundaries
 
-- **Pedagogical readiness:** `ready_with_changes` for generic ahead-of-student
-  preparation after the accepted bounded changes; `not_ready` for Student
-  delivery because prior evidence and the duplication check are absent.
+- **Pedagogical readiness:** `ready` for generic ahead-of-student preparation
+  after the second IA pass; `not_ready` for Student delivery because prior
+  evidence and the duplication check are absent.
 - **Student delivery:** `not_ready`; prior evidence, omitted criteria and the
   Student-specific duplication check are absent by design.
 - **Technical/factual review:** not performed by this review record.

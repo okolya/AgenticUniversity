@@ -35,7 +35,12 @@ The planned delta is a new time-reference capability, not a relabeled repetition
 - Learning Analyst / Examiner: not invoked; this Theme does not create independent assessment.
 - Translator: not invoked; source already includes the selected Ukrainian learner path.
 - Multimedia: no external source recommended; candidate T3-1 rejected because it adds no Theme 3 evidence delta and would broaden the finite path.
-- Lecturer final control: complete reread after review completed; Dean readiness decision for ahead-of-student material remains open.
+- Lecturer final control: complete reread after review completed.
+- Dean readiness decision: **ahead-of-student readiness: yes** (2026-10-18).
+  Finite four-slot map, IA dispositions, Lecturer final control, and specialist
+  non-triggers confirmed. Package remains `unpiloted` and `not_ready` for
+  Student delivery until prior evidence, omitted criteria, and the duplication
+  check are supplied.
 
 ## Stop boundary
 

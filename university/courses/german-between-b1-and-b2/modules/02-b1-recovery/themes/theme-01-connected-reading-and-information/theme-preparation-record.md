@@ -28,6 +28,14 @@
 - Instructional Assistant review produced T1-1–T1-3; all accepted corrections were applied and the complete package was reread.
 - Teacher, Laboratory Specialist, Learning Analyst, and Examiner were not invoked: no concrete reinforcement gap, lab, or independent assessment request exists in ahead-of-student preparation.
 
+## Dean readiness and Contract 6 boundary
+
+Dean readiness decision: **ahead-of-student readiness: yes** (2026-10-18). The
+Dean confirmed the approved four-slot scope, research/multimedia decisions, IA
+dispositions, Lecturer final control, and specialist non-triggers. The package
+remains `unpiloted` and `not_ready` for Student delivery until prior evidence,
+omitted criteria, and the duplication check are supplied.
+
 ## Stop boundary
 
 After Lesson 4, the Lecturer returns formative evidence through the Theme checkpoint. An unresolved criterion returns to the Dean; no additional Lesson is generated inside this Theme.
