@@ -75,6 +75,10 @@ class StudentStoreTests(unittest.TestCase):
         self.assertEqual(self.store.resolve("olena"), [("other", "Olena")])
         self.assertEqual(self.store.resolve("nobody"), [])
 
+    def test_registered_lists_only_ids_and_labels(self):
+        self.store.write_document("mykola", DOC.format(id="mykola", note="private"), actor="Rector/x", label="Mykola")
+        self.assertEqual(self.store.registered(), [("mykola", "Mykola")])
+
     def test_registering_a_student_creates_the_working_directory(self):
         self.store.write_document("mykola", DOC.format(id="mykola", note=""), actor="Rector/x")
         self.assertTrue((self.state.parent / "homeworks" / "mykola").is_dir())

@@ -29,8 +29,9 @@ CLI hosts must obtain the Student ID from host authentication and read through
 (core-relative), which resolves the registry entry and returns only the
 selected facts as JSON. A name claim is resolved with
 `python3 scripts/student_store.py resolve <claim>`, which returns the single
-matching registry entry. Do not print or parse a whole Student document, read
-the database, or list other Students. The host-side selector adapter may expose only these bootstrap
+matching registry entry. A CLI host without a login may show the registry
+(`python3 scripts/student_store.py list`: ids and labels only) so the user can
+choose. Do not print or parse a whole Student document or read the database. The host-side selector adapter may expose only these bootstrap
 selectors: `identity`, `active-enrollments`, `plans`, `current-lesson`,
 `next-actions`, `checkpoints`, `stop-conditions`, and `handoffs`.
 

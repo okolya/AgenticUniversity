@@ -28,9 +28,11 @@ commands are the core's bounded reader and the registry lookup:
 
 - `python3 scripts/inspect-student-state.py --student-id <id> --select <selector>`
 - `python3 scripts/student_store.py resolve <claim>`
+- `python3 scripts/student_store.py list` (CLI host without login only: ids and
+  labels of the registry, no Student state)
 
-Neither returns more than the selected facts or the one matching registry
-entry. Reading the database or a whole Student document directly is not part of
+The reader returns only the selected facts and `resolve` the one matching
+registry entry. Reading the database or a whole Student document directly is not part of
 the bootstrap surface.
 
 ## University read-only context

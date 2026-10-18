@@ -255,6 +255,7 @@ def main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--state-dir", type=Path, default=None)
     commands = parser.add_subparsers(dest="command", required=True)
+    commands.add_parser("list", help="print the registry (ids and labels only) for a CLI host without login")
     resolve = commands.add_parser("resolve", help="print the one registry entry matching a claimed id or name")
     resolve.add_argument("claim")
     history = commands.add_parser("history", help="print the revision history of one Student as JSON")
@@ -267,7 +268,9 @@ def main(argv: list[str]) -> int:
     args = parser.parse_args(argv)
     store = StudentStore(args.state_dir)
     try:
-        if args.command == "resolve":
+        if args.command == "list":
+            print(json.dumps([{"id": i, "label": l} for i, l in store.registered()], ensure_ascii=False, indent=2))
+        elif args.command == "resolve":
             matches = store.resolve(args.claim)
             if not matches:
                 raise MissingStateError(f"Student is not registered: {args.claim}")

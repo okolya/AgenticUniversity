@@ -65,7 +65,10 @@ available/active-workflow
 
 1. Resolve a stable Student ID: the authenticated Student ID from the host
    authentication context when one exists, otherwise the name/claim found in
-   step 0. Do not infer an identity from a remembered name or a filesystem
+   step 0. A CLI host without a login (one local user) shows the registry as a
+   list of ids and labels (`scripts/student_store.py list`) and lets the user
+   choose a Student or say they are new (Rector registration below); a host
+   that authenticates its users passes the ID and never shows the list. Do not infer an identity from a remembered name or a filesystem
    search outside the registry lookup in the next step.
 2. In a CLI or composed workspace, resolve that name against exactly one matching
    registry entry of the Student state store. Then open only that Student's
