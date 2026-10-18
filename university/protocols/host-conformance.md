@@ -2,7 +2,7 @@
 
 Checklist a host satisfies before serving Students. The University core states
 these duties; it does not implement them. The CLI workspace meets them through
-the `students/` repository, the runtime adapters, and `make init`. A host that
+the SQLite Student state store, the runtime adapters, and `make init`. A host that
 cannot meet an item must not serve Students, or must declare the limitation and
 follow the fallback named in the item.
 

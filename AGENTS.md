@@ -10,8 +10,9 @@ this repository and are never required for standalone core checks.
 
 Use paths relative to the current repository; do not encode machine-specific
 absolute paths in rules, Skills, workflows, or runtime adapters. Private
-Student state, when used, lives in the ignored core-relative `students/`
-repository and is never committed here.
+Student state, when used, lives in the SQLite store in the ignored core-relative
+`students/` data directory (or `AGENTIC_UNIVERSITY_STATE_DIR`) and is never
+committed here.
 
 Before acting, preserve the ontology in `university/constitution/ONTOLOGY.md` and authority matrix in `university/constitution/RESPONSIBILITY-MATRIX.md`.
 
@@ -33,19 +34,25 @@ Before acting, preserve the ontology in `university/constitution/ONTOLOGY.md` an
   Lecturer/Assistant handoffs must carry prior evidence, omitted criteria, and
   the new evidence delta; missing context blocks delivery until resolved.
 - Course delivery is layered: `pre-course/` contains public entry bridges and diagnostics; `modules/` contains Course Modules and their contracts; detailed Module Themes/Lessons are created under the Module for an approved Theme frame, ahead of Students or after Course/Module Entry decisions (ADR 0010).
-- private Student repository — mastery, competencies, evidence, retention, and personal planning state.
+- private Student state store — mastery, competencies, evidence, retention, and personal planning state.
 
 ## Runtime behavior
 
-When a host session starts, run the `session-bootstrap` procedure first. It must
-inspect the selected Student's minimum permitted state before choosing a
-Profession, Worker, workflow, or startup Skill. If an active enrollment, plan,
-current Lesson, or explicit academic handoff exists, resume that workflow and
-route to its responsible Profession/Worker; do not run Rector orientation. Only
-when no active Student workflow is recorded may the host begin with the Rector
-Profession, resolve its active Worker through the Worker Activation Protocol,
-and run the Profession's `rector-startup` Skill before routing the Student to a
-Faculty or learning path.
+When a host session starts, follow `university/protocols/host-prompt-assembly.md`
+Session start: Step 0 resolves the session kind — Student, University Worker,
+or University Developer — from the user's first substantive message (ADR 0009),
+unless the host supplies an authenticated Student context. Branch 2 (Worker)
+resolves through the staff registry; Branch 3 (Developer) uses the
+`session-bootstrap` Skill. Neither reads Student state.
+
+Branch 1 (Student) inspects the selected Student's minimum permitted state
+before choosing a Profession, Worker, workflow, or startup Skill. If an active
+enrollment, plan, current Lesson, or explicit academic handoff exists, resume
+that workflow and route to its responsible Profession/Worker; do not run
+Rector orientation. Only when no active Student workflow is recorded may the
+host begin with the Rector Profession, resolve its active Worker through the
+Worker Activation Protocol, and run the Profession's `rector-startup` Skill
+before routing the Student to a Faculty or learning path.
 
 1. Determine the active workflow and responsible Profession/Worker.
    Resolve the Profession and matching active Worker through
@@ -62,8 +69,11 @@ Faculty or learning path.
 11. Follow `university/policies/interaction-format.md`: Student-facing navigation and decision questions use explicit choices; learning evidence uses an explicit structured response frame. Follow `university/policies/dialogue-language.md` for session language selection.
 12. When a task changes public University knowledge, work from `university/`.
     Workspace orchestration belongs to the host repository. For Student work,
-    inspect only the selected context under the core-relative `students/`
-    repository; never search a parent workspace for a different Student store.
+    inspect only the selected context through the bounded reader
+    `python3 scripts/inspect-student-state.py --student-id <id> --select <selector>`
+    (the Student state store is `scripts/student_store.py`); never open the
+    database or another Student's records directly, and never search a parent
+    workspace for a different Student store.
 
 Prefer agentic/declarative execution. Deterministic scripts are infrastructure/tools only when they provide a concrete repeatable benefit.
 

@@ -1,0 +1,33 @@
+# AgenticUniversity university-core: flat skills, one adapter directory per provider.
+version = 1
+namespace = "uni"
+
+[paths]
+skills = "university/skills"
+policies = "university/policies"
+workflows = "university/workflows"
+codex_config = "agent-runtime/adapters/codex/config.toml"
+
+[paths.agents]
+claude = "agent-runtime/adapters/claude/agents"
+codex = "agent-runtime/adapters/codex/agents"
+cursor = "agent-runtime/adapters/cursor/agents"
+
+[paths.rules]
+cursor = "agent-runtime/adapters/cursor/rules"
+
+[skills]
+layout = "flat"
+
+[overlay]
+label = "Agentic University core overlay"
+project_root = "pack"
+legacy_labels = ["Agentic University project overlay"]
+
+[legacy]
+# Host-only: disable Cursor CLI commit/PR attribution in the real ~/.cursor home.
+# Runs from the composition workspace root after `dev-agents approve` (composed or standalone).
+# Each workspace root must own scripts/agents/disable-cursor-attribution.sh (root and university-core).
+commands = [
+  'bash scripts/agents/disable-cursor-attribution.sh',
+]

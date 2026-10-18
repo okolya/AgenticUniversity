@@ -1,0 +1,116 @@
+# Thema 2 — Artikel, wichtige Kasus, Pronomen und Präpositionen / Тема 2 — Артиклі, основні відмінки, займенники й прийменники
+
+- **Kurs / Modul:** Між B1 та B2 / Modul 1 — A2-Wiederherstellung
+- **Rahmen genehmigt von:** ernannter Dekan der Sprachfakultät
+- **Didaktische Gestaltung:** zugewiesene Dozentin / zugewiesener Dozent der Sprachfakultät
+- **Status:** ahead-of-student `ready` (Dean 2026-10-18); vier Lektionen `unpiloted` (`unpiloted` blockiert die Durchführung nicht); per-Student delivery confirmation (Evidence-Delta, ausgelassene Kriterien, Duplikatprüfung) erfolgt bei der Durchführung
+- **Lektionslexik-Track:** Pilot SQLite (`lexicon_item`, ADR 0013) — Karten mit Artikel/Kollokation/Merkhilfe; Delivery: `list-lexicon-due` / `upsert-lexicon` / `record-lexicon-check` (siehe `lektionslexik-guide.md`)
+- **IA disposition (Livia, 2026-10-18):** Theme-2 Lexik-Karten — `ready_with_changes` cleared: Artikel+Lemma einheitlich; Merkhilfe kurz; CLI-Schritte in Lecturer-Notiz, nicht als Student-Aufgabe. Schreiben bleibt Festigung ohne Store.
+- **Status / Статус:** ahead-of-student `ready` (Декан 2026-10-18); чотири Уроки `unpiloted` (`unpiloted` не блокує проведення); підтвердження delivery для кожного Студента (evidence delta, пропущені критерії, перевірка дублювання) — під час проведення
+- **Lektionslexik-трек:** пілот SQLite (ADR 0013) — картки з артиклем/колокацією/мнемонікою; CLI як у гідові
+
+---
+
+## Deutsch
+
+### Grenzen
+
+Das Minimum an Kontrolle über Artikel, Kasus, Pronomen und Präpositionen, das nötig ist, damit die Bedeutung einfacher Alltagssätze erhalten bleibt: Nominativ, Akkusativ und Dativ.
+
+Ausgeschlossen: Genitiv; Adjektivdeklination über das hinaus, was ein Beispiel unbedingt braucht; vollständige Genuslisten; Kasusrektion auf B1/B2-Niveau; Wortstellung (Thema 1); Verbformen (Thema 3).
+
+### Ergebnis des Themas
+
+Der Student kann selbstständig Artikel und Kasusformen, Personalpronomen und gebräuchliche Präpositionen so wählen, dass die Bedeutung kurzer Alltagssätze erhalten bleibt.
+
+### Erfolgskriterien
+
+1. Bestimmte, unbestimmte und negative Artikel werden für die verwendeten häufigen Nomen im Nominativ und Akkusativ richtig gewählt.
+2. Der Dativ wird nach den gebräuchlichen Dativpräpositionen und für das indirekte Objekt (*Wem?*) in häufigen Mustern verwendet.
+3. Personal- und Possessivpronomen (lernseitiger Terminus; Grammatikquellen oft *Possessivartikel*) werden in Nominativ, Akkusativ und Dativ in vertrauten Sätzen richtig gewählt.
+4. Gebräuchliche Wechselpräpositionen werden für Ort und Richtung richtig gewählt.
+5. Ein eigener Kasus- oder Artikelfehler wird in einem kurzen Text erkannt und korrigiert; enthält der eigene Text keinen solchen Fehler, erkennt und korrigiert der Student stattdessen einen Fehler in einem vorgegebenen kurzen Text (Entscheidung des Dekans). Fehlerart: Artikel oder Fall, einschließlich Personalpronomen, Possessivpronomen und *Wo?*/*Wohin?* (Entscheidung des Dekans).
+
+### Verbindung zum Exit Contract des Moduls
+
+| Exit-Kriterium Modul 1 | Beitrag von Thema 2 |
+|---|---|
+| 2 — Artikel, Kasus, Pronomen, Präpositionen, häufige Verbformen für den Bedeutungserhalt | Hauptbeitrag für Artikel, Kasus, Pronomen, Präpositionen; Verbformen in Thema 3 |
+| 5 — diagnostizierte A2-Fehler bemerken und korrigieren | teilweise: Kriterium 5, nur Kasus- und Artikelfehler |
+| 6 — Grundlagen in kurzen Aufgaben anwenden | teilweise: nur Lesen und Schreiben |
+
+### Endliche Lektionskarte
+
+Genau vier Lektionsplätze. Kein Platz darf ohne neue Entscheidung des Dekans hinzugefügt, verschoben oder erweitert werden.
+
+| # | Lektion | Kriterium | Baut auf | Neuer Nachweis (Evidence Delta) | Ermöglicht |
+|---|---|---|---|---|---|
+| 1 | Artikel, Genus und das Akkusativobjekt | 1 | Satzrahmen aus Thema 1 oder Entry-Nachweis zu einfachen Sätzen | Student markiert den Unterschied Nominativ/Akkusativ mit richtigen Artikeln | Dativ als zweiter markierter Kasus |
+| 2 | Dativ: Präpositionen und indirektes Objekt (*Wem?*) | 2 | Lektion 1 | Student verwendet den Dativ nach gebräuchlichen Präpositionen und mit häufigen Verben | Pronomen, die den Kasus tragen |
+| 3 | Pronomen, Possessiva und Wechselpräpositionen | 3, 4 | Lektionen 1–2 | Student ersetzt Nomen durch richtige Pronomen und wählt Kasus für Ort/Richtung | integrierter Checkpoint |
+| 4 | Checkpoint des Themas | 1–5 | Lektionen 1–3 | unbekannte kurze Schreibaufgabe plus Leseaufgabe und Korrektur eines eigenen Fehlers (ohne eigenen Fehler: eines Fehlers in einem vorgegebenen Text) | Contract 6 Übergabe an den Dekan |
+
+Zeigt der aktuelle Nachweis eines Studenten, dass das Kriterium eines Platzes schon erfüllt ist, entscheidet der Dekan bei der Durchführung, diesen Platz zu überspringen.
+
+### Checkpoint und Stoppbedingung
+
+Checkpoint: eine kurze Schreibaufgabe ohne Hilfsmittel in einer unbekannten Alltagssituation und eine kurze Leseaufgabe, plus ein selbst erkannter und korrigierter Kasus- oder Artikelfehler; enthält der eigene Text keinen, ein erkannter und korrigierter Fehler in einem vorgegebenen kurzen Text.
+
+Stoppbedingung: Das Thema endet, wenn die Nachweise aus Lektion 4 vorliegen oder der Nachweis zeigt, dass das Kriterium bereits stabil ist. Der Dozent übergibt Contract 6 Evidence an den Dekan. Eine ungelöste Lücke geht zur begrenzten Entscheidung an den Dekan zurück, nicht in eine zusätzliche Lektion.
+
+### Nachweisstatus und KI-Modus
+
+Die Arbeit in den Lektionen ist formativer Lernnachweis, keine unabhängige Prüfung. Checkpoint-Versuch: `NO_AI`, kein Wörterbuch. Überarbeitung nach dem Feedback nur dann `AI_ASSISTED`, wenn der Dozent es angibt und die Nutzung offengelegt wird. Dieses Thema beansprucht keinen Nachweis für Hören oder Sprechen.
+
+---
+
+## Українською (переклад)
+
+### Межі
+
+Мінімальний контроль артиклів, відмінків, займенників і прийменників, потрібний для збереження змісту простих побутових речень: Nominativ, Akkusativ, Dativ.
+
+Виключено: Genitiv; відмінювання прикметників понад те, що мінімально потрібне для прикладу; повні списки роду; керування відмінками рівня B1/B2; порядок слів (Тема 1); дієслівні форми (Тема 3).
+
+### Результат Теми
+
+Студент самостійно обирає артиклі й форми відмінків, особові займенники та вживані прийменники так, що зміст коротких побутових речень зберігається.
+
+### Критерії успіху
+
+1. Означені, неозначені та заперечні артиклі правильно обрані для вжитих частотних іменників у Nominativ і Akkusativ.
+2. Dativ вживається після звичних прийменників Dativ і для непрямого додатка (*indirektes Objekt*, *Wem?*) у поширених зразках.
+3. Особові та присвійні займенники (Possessivpronomen; у граматичних джерелах часто *Possessivartikel*) правильно обрані в Nominativ, Akkusativ і Dativ у знайомих реченнях.
+4. Вживані прийменники з двома відмінками (Wechselpräpositionen) правильно обрані для місця та напрямку.
+5. Одну власну помилку відмінка чи артикля виявлено й виправлено в короткому тексті; якщо у власному тексті такої помилки немає, Студент натомість виявляє й виправляє помилку в заданому короткому тексті (рішення Декана). Вид помилки: артикль або відмінок, зокрема особові займенники, присвійні займенники та *Wo?*/*Wohin?* (рішення Декана).
+
+### Зв'язок з Exit Contract Модуля
+
+| Exit-критерій Модуля 1 | Внесок Теми 2 |
+|---|---|
+| 2 — артиклі, відмінки, займенники, прийменники, поширені дієслівні форми для збереження змісту | основний для артиклів, відмінків, займенників, прийменників; дієслівні форми — Тема 3 |
+| 5 — помічати й виправляти діагностовані помилки A2 | частково: критерій 5, лише помилки відмінків і артиклів |
+| 6 — застосовувати основи в коротких завданнях | частково: лише Lesen і Schreiben |
+
+### Скінченна карта Уроків
+
+Рівно чотири слоти Уроків. Жоден слот не можна додавати, переставляти чи розширювати без нового рішення Декана.
+
+| # | Урок | Критерій | Спирається на | Нове свідчення (Evidence Delta) | Уможливлює |
+|---|---|---|---|---|---|
+| 1 | Артиклі, рід і додаток в Akkusativ | 1 | модель речення з Теми 1 або свідчення Entry про прості речення | Студент позначає різницю Nominativ/Akkusativ правильними артиклями | Dativ як другий відмінок |
+| 2 | Dativ: прийменники й непрямий додаток (*indirektes Objekt*) | 2 | Урок 1 | Студент вживає Dativ після звичних прийменників і з поширеними дієсловами | займенники, що несуть відмінок |
+| 3 | Займенники, присвійні та Wechselpräpositionen | 3, 4 | Уроки 1–2 | Студент замінює іменники правильними займенниками й обирає відмінок для місця/напрямку | інтегрований чекпойнт |
+| 4 | Чекпойнт Теми | 1–5 | Уроки 1–3 | незнайоме коротке письмове завдання, завдання на читання й виправлення власної помилки (без власної помилки: помилки в заданому тексті) | передача Contract 6 Декану |
+
+Якщо поточне свідчення Студента показує, що критерій слота вже виконано, Декан під час проведення вирішує цей слот пропустити.
+
+### Чекпойнт і умова зупинки
+
+Чекпойнт: коротке письмове завдання без допоміжних засобів у незнайомій побутовій ситуації та коротке завдання на читання, плюс одна самостійно виявлена й виправлена помилка відмінка чи артикля; якщо у власному тексті її немає, — виявлена й виправлена помилка в заданому короткому тексті.
+
+Умова зупинки: Тема завершується, коли отримано свідчення з Уроку 4 або свідчення показує, що критерій уже стабільний. Лектор повертає Декану Contract 6 evidence. Нерозв'язана прогалина повертається Декану для обмеженого рішення, а не в додатковий Урок.
+
+### Статус свідчень і режим ШІ
+
+Робота на Уроках — формувальне навчальне свідчення, не незалежне оцінювання. Спроба на чекпойнті: `NO_AI`, без словника. Виправлення після зворотного зв'язку — `AI_ASSISTED` лише коли Лектор це оголосить, а використання розкрито. Ця Тема не заявляє свідчень з Hören чи Sprechen.

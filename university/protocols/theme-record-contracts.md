@@ -33,8 +33,27 @@ Each record must identify:
    required;
 8. Teacher, Laboratory Specialist, Learning Analyst, and Examiner status,
    including the concrete trigger when any is invoked;
-9. Lecturer final control review and the Dean's readiness decision;
-10. the Contract 6 evidence handoff and Theme stop/next-decision boundary.
+9. the research decision: sources retained, rejected, or not needed, with
+   bounded reasons;
+10. the multimedia decision: curation report or an explicit no-multimedia
+    decision, including fallback when a proposed source is not required;
+11. Lecturer final control review and the Dean's readiness decision;
+12. the Contract 6 evidence handoff and Theme stop/next-decision boundary.
+
+## Complete preparation gate
+
+The record is the Theme-local evidence bundle for the complete
+material-preparation gate in ADR 0011. It must not claim `ready` merely because
+Lesson files exist or repository checks pass. Before the claim, the record must
+connect, in order, the approved scope handoff, research/curation decision,
+bounded authoring, complete Instructional Assistant review, finding
+dispositions, required specialist/language handoffs, Lecturer final control,
+and Dean readiness decision.
+
+For ahead-of-student preparation, the record must also state `unpiloted` and
+list the Student-specific checks that remain open at delivery. For a package
+still in progress, use an explicit non-ready status rather than omitting the
+missing stage.
 
 ## `material-review.md` contract
 

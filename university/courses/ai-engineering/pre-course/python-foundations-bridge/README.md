@@ -13,6 +13,14 @@ measures only the entry capabilities needed before Course/Module Entry.
 - `assessment-course-entry-git-and-boundaries.md` — two-slot Course Entry
   diagnostic for Git and source/configuration/secrets boundaries.
 
+## Artifact delivery correction
+
+The two bridge Lessons separate local execution from submission. A learner may
+work in any local directory, then transmits the named `.py` file through the
+блок Artifact (передача файлів) у клієнті. Локальний шлях не є доказом, що
+серверна сесія отримала файл; призначений Worker перевіряє та запускає
+переданий файл.
+
 The bridge is complete only when its approved evidence checkpoint is reached
 or its bounded slots are exhausted. The Dean then decides the next placement;
 the bridge does not open Module 1 automatically.

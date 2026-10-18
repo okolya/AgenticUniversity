@@ -5,14 +5,15 @@
   "description": "Machine-readable form of protocols/student-state-contract.md for one Student. Entities are referenced, never copied, from the public University.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["student", "enrollments", "plans", "evidence", "decisions", "notes"],
+  "required": ["student", "enrollments", "plans", "evidence", "decisions", "notes", "lexicon_items"],
   "properties": {
     "student": { "$ref": "#/$defs/student" },
     "enrollments": { "type": "array", "items": { "$ref": "#/$defs/enrollment" } },
     "plans": { "type": "array", "items": { "$ref": "#/$defs/plan" } },
     "evidence": { "type": "array", "items": { "$ref": "#/$defs/evidence" } },
     "decisions": { "type": "array", "items": { "$ref": "#/$defs/decision" } },
-    "notes": { "type": "array", "items": { "$ref": "#/$defs/note" } }
+    "notes": { "type": "array", "items": { "$ref": "#/$defs/note" } },
+    "lexicon_items": { "type": "array", "items": { "$ref": "#/$defs/lexicon_item" } }
   },
   "$defs": {
     "strings": { "type": "array", "items": { "type": "string" } },
@@ -132,6 +133,31 @@
       "properties": {
         "id": { "type": "string" },
         "text": { "type": "string" },
+        "recorded": { "$ref": "#/$defs/recorded" }
+      }
+    },
+    "lexicon_item": {
+      "description": "Formative spaced lexicon track (ADR 0013). Not mastery and not Module Exit Evidence.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lemma", "article", "status", "introduced_lesson_ref", "course_id", "recorded"],
+      "properties": {
+        "lemma": { "type": "string" },
+        "article": { "enum": ["der", "die", "das", "none"] },
+        "collocation": { "type": "string" },
+        "status": { "enum": ["new", "recycling", "weak", "stable"] },
+        "introduced_lesson_ref": {
+          "type": "string",
+          "description": "Stable course/module/theme/lesson reference.",
+          "pattern": "^[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9-]*$"
+        },
+        "last_check": { "type": "string" },
+        "next_due": { "type": "string" },
+        "streak_ok": { "type": "integer", "minimum": 0 },
+        "mnemonic": { "type": "string" },
+        "course_id": { "type": "string" },
+        "image_ref": { "type": ["string", "null"] },
+        "audio_ref": { "type": ["string", "null"] },
         "recorded": { "$ref": "#/$defs/recorded" }
       }
     }

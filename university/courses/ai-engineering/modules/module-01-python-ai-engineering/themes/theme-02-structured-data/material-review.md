@@ -109,3 +109,43 @@ required by the Theme checkpoint and Contract 6 handoff.
 
 The package remains subject to Lecturer technical execution review and Dean
 readiness authority; this report does not issue a mastery or placement verdict.
+
+## Current correction pass — artifact delivery contract
+
+**Lecturer disposition:** accepted within the approved four-Lesson Theme scope.
+
+The learner-facing Lessons now distinguish local execution from submission:
+the Student may work in any local directory, then must transmit the named
+`.py` and `.json` files through the client Artifact control. Local
+`homeworks/...` paths are no longer requested as evidence. Lessons 1–4 now
+state exact artifact names and compact command/results; invalid cases remain
+evidence, not an academic verdict.
+
+The Instructional Assistant found no Theme-scope or learner-outcome change.
+The technical client/API handoff was expanded to accept `.json` and multiple
+files so this Theme's pipeline can be inspected. The repeat pedagogical review
+after the client/material integration check found the wording and evidence
+burden clear; this correction pass is `ready`.
+
+### Final artifact-delivery control review
+
+The Translator audited the Ukrainian learner-facing wording after the artifact
+delivery correction. Unexplained `upload` wording was replaced with Ukrainian
+wording for file transfer; exact technical identifiers and the client label
+`Artifact` were retained. The localization result is `localized` and does not
+change the learning path, criteria, or evidence burden.
+
+The Lecturer then completed final source control: Lessons 1–4 name the `.py`
+and `.json` files to transmit through the client Artifact control, do not
+request a local `homeworks/...` path, and remain within the approved Theme
+scope. The package is `ready` for the next real Student artifact-delivery run.
+
+### Rector policy recheck
+
+After the University-wide Artifact evidence boundary was accepted, the
+Lecturer rechecked this Theme package. Lessons 1–4 already require the client
+Artifact control for `.py` and `.json` files and keep dialogue explanations
+separate from file evidence; no Lesson criterion or sequence change is needed.
+The Translator confirmed that the Ukrainian learner-facing wording remains
+equivalent and retains the exact `Artifact` UI label. The package remains
+`ready` under the new University-wide boundary.

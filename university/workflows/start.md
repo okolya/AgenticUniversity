@@ -1,21 +1,21 @@
 ---
-name: university-start
+name: start
 class: learning
 ---
 # University start
 
 Purpose: start a personal University without inventing academic content.
 
-Entry gate: this workflow applies only when `session-bootstrap` has successfully
-inspected the selected Student state and confirmed that it is available and
-contains no active enrollment, plan, current Lesson, or explicit academic
+Entry gate: this workflow applies only in a Student session (Branch 1) when
+`inspect-student-state` has successfully inspected the selected Student state
+and confirmed that it is available and contains no active enrollment, plan, current Lesson, or explicit academic
 handoff. Missing or unavailable Student state blocks startup; it must not be
 treated as an empty state. If an active workflow exists, resume that workflow
 instead; do not present University orientation or Faculty selection.
 
 1. The private Student state is created (`initialize-student` in
-   `protocols/student-state-contract.md`). In the CLI host a human creates the
-   private Student repository from the public Student template/instructions; in
+   `protocols/student-state-contract.md`). In the CLI host the Student document is created in the
+   Student state store from the public Student template/instructions; in
    another host the Student's own sign-up request creates the Student record.
 2. Rector is activated through the Rector Profession agent; the routing layer
    resolves and attaches the active Rector Worker context.

@@ -14,7 +14,8 @@ architecture.
 
 ## Preconditions
 
-- The host has completed `university/skills/session-bootstrap`.
+- The session is a Student session (Branch 1) and the host has completed
+  `inspect-student-state`.
 - The inspected Student state is available and contains no active enrollment,
   plan, current Lesson, or explicit academic handoff. Missing or unavailable
   Student state is not equivalent to an empty state; the host must initialize
@@ -60,7 +61,7 @@ Return a startup brief containing:
 
 - Do not invent Faculties, Courses, Workers, curricula, evidence, or Student state.
 - Do not use this Skill as the default response to every new chat connection;
-  the session-bootstrap result determines whether orientation is applicable.
+  the `inspect-student-state` result determines whether orientation is applicable.
 - Do not create a Faculty or Course as part of orientation.
 - Do not select a placement, create an enrollment, or claim a learning verdict.
 - Do not invoke another Skill merely to display this result; the active Rector

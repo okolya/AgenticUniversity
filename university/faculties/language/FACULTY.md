@@ -6,8 +6,13 @@
 - courses:
   - `university/courses/german-between-b1-and-b2/COURSE.md`
 - modules: four public Module frames in the Course
-- knowledge/materials: Course architecture approved; detailed delivery is not
-  yet authored
+- knowledge/materials: Course architecture approved; Modules 1–4 ahead-of-student
+  `ready` (`unpiloted` does not block delivery); Module 3–4 LA/Examiner
+  instruments prepared (conduct gated per Student after Dean authorization);
+  Lektionslexik on all course Lessons (3–5 + Spiel + Schreiben + Recycle;
+  Teacher on fail; guide `lektionslexik-guide.md`); formative SQLite
+  `lexicon_item` track (ADR 0013) for Wiederholung; per-Student delivery
+  confirmation at teach time
 
 ## Scope
 

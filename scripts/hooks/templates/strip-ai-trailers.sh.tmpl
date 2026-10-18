@@ -1,0 +1,15 @@
+# Strip AI co-author trailers (Cursor, Claude Code, etc.) from a commit message.
+# Sourced by commit-msg hooks; expects COMMIT_MSG_FILE to already be set.
+#
+# Project rule: no AI co-author trailer in commit history — IDE/CLI tools
+# (Cursor, Claude Code, ...) may add these automatically; strip before validation.
+
+if grep -qiE "Co-authored-by:.*(cursor|cursoragent@cursor\.com|noreply@cursor\.sh|claude|noreply@anthropic\.com)" "$COMMIT_MSG_FILE" 2>/dev/null; then
+    grep -viE "Co-authored-by:.*(cursor|cursoragent@cursor\.com|noreply@cursor\.sh|claude|noreply@anthropic\.com)" "$COMMIT_MSG_FILE" > "${COMMIT_MSG_FILE}.tmp"
+    mv "${COMMIT_MSG_FILE}.tmp" "$COMMIT_MSG_FILE"
+fi
+
+if grep -qiE "Generated with \[?Claude Code\]?" "$COMMIT_MSG_FILE" 2>/dev/null; then
+    grep -viE "Generated with \[?Claude Code\]?" "$COMMIT_MSG_FILE" > "${COMMIT_MSG_FILE}.tmp"
+    mv "${COMMIT_MSG_FILE}.tmp" "$COMMIT_MSG_FILE"
+fi

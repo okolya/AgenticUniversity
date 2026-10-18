@@ -38,15 +38,16 @@ any Developer-session delegation into Branch 1 reads that state.
    `AGENTS.md` and `university/` are in the current repository. In a composed
    workspace, use `university-core/AGENTS.md` and
    `university-core/university/`; read the host/workspace `AGENTS.md` once per
-   session when it exists. The canonical private Student path is the
-   core-relative `students/` directory; it may be absent until a Student
-   workspace is initialized.
+   session when it exists. The canonical private Student state is the
+   SQLite store in the core-relative `students/` directory
+   (`AGENTIC_UNIVERSITY_STATE_DIR` overrides it); it may be absent until a
+   Student is initialized.
 2. Classify the task and pick the ownership boundary:
    - host root files and `scripts/` — orchestration, runtime installation, Git;
    - resolved core `university/` — public academic knowledge, policies,
      workflows, Skills, Professions, Workers;
-   - core-relative `students/` — private Student state (only the selected
-     Student; the directory may be absent for public-only work).
+   - Student state store (core-relative `students/`) — private Student state
+     (only the selected Student; the directory may be absent for public-only work).
 3. Run `git rev-parse --show-toplevel` inside the chosen boundary before any
    edit or Git command.
 4. Check only the chosen boundary's runtime state read-only with
@@ -108,7 +109,7 @@ Report briefly: verified boundary, runtime state, resolved Profession/Worker
 ## Boundaries
 
 - Run no commands that change state before the context pass completes.
-- Do not read `students/` beyond the selected Student; use
+- Do not read the state store beyond the selected Student; use
   `inspect-student-state` when private state is permitted.
 - Do not invent Workers, Faculties, curricula, evidence, or Student state.
 - Do not encode absolute machine paths in any produced artifact.

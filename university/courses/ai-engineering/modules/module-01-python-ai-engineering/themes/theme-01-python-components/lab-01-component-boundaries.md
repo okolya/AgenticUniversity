@@ -23,8 +23,8 @@ runs the affected case, and restores the required behavior.
 
 ## Run contract
 
-The Student returns the artifact path and command. The resolved Laboratory
-Specialist Worker or the accepting Worker
+The Student returns the client Artifact receipt and command. The resolved
+Laboratory Specialist Worker or the accepting Worker
 inspects both files and runs all required cases. A pasted output without the
 files is insufficient.
 

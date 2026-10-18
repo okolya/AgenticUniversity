@@ -98,17 +98,22 @@ A child level must inherit and serve its parent:
 
 If a lower-level Worker discovers that the parent frame is wrong or incomplete, they propose a change to the parent owner instead of silently expanding scope.
 
-## Just-in-time rule
+## Timing and finite-content rule
 
-Do not fully author Themes, Lessons, exercises, labs, or materials for the whole Course in advance. Prepare the next useful level when the Student is approaching it and current evidence is available.
+Do not fully author Themes, Lessons, exercises, labs, or materials for the whole
+Course merely to make it look complete. Material may be prepared ahead only
+inside a Dean-approved Theme frame and its finite Lesson map, or prepared just
+in time when no suitable prepared material exists or the Student's state calls
+for something new. In both cases, delivery remains adaptive to the Student's
+verified evidence.
 
 ## Finite Theme rule
 
-Just-in-time Lesson authoring does not mean an open-ended Theme. Before a Theme
-starts, the Dean must approve its finite Lesson sequence, Theme outcome,
+Ahead or just-in-time Lesson authoring does not mean an open-ended Theme. Before
+a Theme starts, the Dean must approve its finite Lesson sequence, Theme outcome,
 Success Criteria, scope exclusions, final checkpoint, and stop condition. The
-Lecturer may prepare the approved Lessons just in time, but may not add a
-Lesson, extend the sequence, or keep producing material after the checkpoint.
+Lecturer may prepare the approved Lessons ahead or just in time, but may not add
+a Lesson, extend the sequence, or keep producing material after the checkpoint.
 Any unresolved gap or scope change returns to Dean for a new bounded decision.
 
 ## No-repetition and forward-motion rule
@@ -117,14 +122,20 @@ Every Student-facing Lesson must add a new capability, a new level of
 independence, or a new transfer context. A different example, variable name,
 or output label is not a new capability by itself.
 
-Before a Lecturer prepares or delivers a Lesson, the Dean handoff and the
-Lecturer working brief must identify:
+Before a Lecturer delivers a Lesson, the Dean handoff and the Lecturer working
+brief must identify:
 
 - relevant verified prior evidence and artifacts;
 - criteria already demonstrated and therefore omitted from teaching;
 - the single new evidence delta expected from this Lesson;
 - why the task cannot be satisfied by repeating prior work with superficial
   substitutions.
+
+For a Lesson prepared ahead, the expected evidence delta and its dependency on
+the approved Lesson map are recorded during preparation. The Student's verified
+prior evidence, omitted criteria, and duplication check are supplied and
+confirmed at delivery; ahead preparation does not imply that those Student-
+specific decisions were made in advance.
 
 If the proposed Lesson substantially repeats a diagnostic, prior Lesson, or
 verified Student capability, the Lecturer stops and returns the proposal to

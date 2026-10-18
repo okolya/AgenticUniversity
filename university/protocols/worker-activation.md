@@ -58,6 +58,12 @@ not proof that an artifact, state change, or validation result has the
 reported contents; verify the smallest relevant canonical surface before
 presenting or using the result.
 
+An actionable intermediate report is not completion. If the report names a
+next Profession or owner action and no authority, scope, context, or external
+technical blocker prevents it, the caller must continue the handoff in the
+same workflow. The caller must not return an intermediate `ready_with_changes`
+or `not_ready` result as final merely because the delegated report has arrived.
+
 ## Delegation contract
 
 When handing work to another Profession, the parent must pass at minimum:

@@ -68,7 +68,8 @@ The Analyst decides how to apply the report and records the final review.
 After independent measurement, the Analyst returns:
 
 - the request and criteria measured;
-- artifact path and assessment mode;
+- client Artifact receipt/reference and assessment mode; a Student local path
+  is not an artifact reference;
 - observed evidence, including actual runs and inspected files for executable
   work;
 - criterion-level result: demonstrated, not demonstrated, or uncertain;

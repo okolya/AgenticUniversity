@@ -36,11 +36,11 @@ must be accepted when its meaning is sufficiently clear. Request a correction
 only for missing, contradictory, or genuinely ambiguous understanding—not for
 cosmetic differences from the suggested structure.
 
-For practical code submissions, keep the evidence frame minimal: artifact path,
-run command, compact results for required cases, and only the short explanation
-needed to expose understanding. Do not request a full program map, copied
-tracebacks, or a long narrative when the accepting Worker can inspect and run
-the code directly.
+For practical code submissions, keep the evidence frame minimal: client
+Artifact receipt, run command, compact results for required cases, and only the
+short explanation needed to expose understanding. Do not request a local path,
+full program map, copied tracebacks, or a long narrative when the accepting
+Worker can inspect and run the received code directly.
 
 ## Response contract
 

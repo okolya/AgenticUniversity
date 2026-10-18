@@ -8,10 +8,11 @@ state the University already records; it adds no academic meaning.
 
 A **state store** is any implementation of this contract. Two are recognized:
 
-- the private core-relative `students/` Git repository of Markdown files (CLI
-  hosts);
-- any other store a host provides (for example a database) that keeps the same
-  entities, operations, and invariants.
+- the SQLite store shipped with the core (`scripts/student_store.py`), kept in
+  the core-relative `students/` data directory or in the directory named by
+  `AGENTIC_UNIVERSITY_STATE_DIR` (CLI hosts);
+- any other store a host provides (for example a service database) that keeps
+  the same entities, operations, and invariants.
 
 Skills and Workflows name contract operations, never store paths. "The
 private Student workspace" in workflows means the state store.
@@ -34,6 +35,7 @@ fix the schema. `make check-manifest` validates the example against the schema.
 | Evidence | date, workflow, criteria references, artifact reference, observed, demonstrated, evidence status, limitation, handoff | one entry per assessment or practical result; also carries criterion-level findings, gaps, retention findings, competency verification, and Module verdicts |
 | Decision | date, deciding Profession and scope, decision, conditions carried forward | Dean placement/entry decisions and agreed trajectory |
 | Note | free text | only private Student-specific educational facts |
+| Lexicon item | lemma, article (`der`/`die`/`das`/`none`), optional collocation, status (`new`/`recycling`/`weak`/`stable`), introduced_lesson_ref, last_check, next_due, streak_ok, optional mnemonic, course_id; optional unused image_ref/audio_ref stubs | formative spaced Wörter / Wortverbindungen only (ADR 0013); not mastery, not Module Exit Evidence; `Lexik-Schreiben` is never stored here; every write carries recorded |
 | Registry | list of registered Students routing to their state | an index, not a copy of Student state |
 
 There is no separate Mastery entity. Verified mastery is what verified
@@ -78,6 +80,10 @@ host filesystem prefix. A host resolves the identifier against its canonical
 | `record-decision` | adds a Decision entry | Dean |
 | `complete-enrollment` | marks an Enrollment completed when its plan is resolved | Dean |
 | `add-note` | adds a Note | Dean or Rector for their own decisions and metadata; other Workers' formative observations are recorded only through an authorized Dean or Learning Analyst write |
+| `upsert-lexicon` | creates or updates one Lexicon item for a registered Student | Lecturer or Teacher under course delivery / vocab gym (ADR 0013) |
+| `list-lexicon` | returns Lexicon items for one Student (optional course filter) | delivery Workers with read scope |
+| `list-lexicon-due` | returns Lexicon items whose `next_due` is on or before today (optional course filter) | Lecturer / Teacher at Lesson start and gym |
+| `record-lexicon-check` | records `ok` or `fail` for one lemma and applies spacing v1 status / `next_due` | Lecturer (Spiel / Recycle) or Teacher (vocab gym) |
 
 Every write carries the acting Profession, the active Workflow, and a date.
 
@@ -87,6 +93,10 @@ Write authority is exactly the table in `policies/student-state-authority.md`:
 
 - Lecturer, Teacher, Laboratory Specialist — formative observations only; never
   verified mastery;
+- Lecturer and Teacher — `upsert-lexicon` and `record-lexicon-check` for
+  formative lexicon status only (ADR 0013); never treat lexicon rows as
+  verified mastery or Module Exit Evidence; they may also `list-lexicon` and
+  `list-lexicon-due` within appointment scope;
 - Learning Analyst — `append-evidence` for assigned assessment criteria;
 - Examiner — `append-evidence` and the Module verdict under `module-exit`;
 - Dean — `record-enrollment`, `update-plan`, `record-decision`,
@@ -117,18 +127,53 @@ A Skill never gains authority by invoking an operation.
 
 ## CLI store mapping
 
-In the core-relative `students/` repository each Student has one
-`students/<id>/STUDENT.md`;
-`students/registry/REGISTRY.md` is the Registry.
+In the SQLite store (`students/university.sqlite3` by default) each Student has one
+document in the `STUDENT.md` shape below, an append-only revision history of
+it (every write records the acting Profession and Workflow and a checksum),
+and a working-file directory `homeworks/<id>/` beside the state directory
+(`AGENTIC_UNIVERSITY_HOMEWORKS_DIR` overrides it), created together with the
+Student by `initialize-student`. The registry is the
+store's list of registered Students: ids and labels, an index of routing, not a
+copy of Student state. A read never creates the store; a missing store or
+Student is reported as missing.
+
+`append-evidence` is `python3 scripts/student_store.py append-evidence <id>
+--profession <role> --workflow <workflow>` with one JSON entry on stdin (`kind`,
+`evidence_status`, optional `criteria_refs`, `artifact_ref`, `observed`,
+`demonstrated`, `limitation`, `handoff`, `corrects`). The store accepts only a
+Learning Analyst or an Examiner (a `module_verdict` only the Examiner), refuses a
+local path as an `artifact_ref`, requires `corrects` to name an existing entry,
+and adds the entry to the section as a new document revision, so earlier text and
+revisions stay. The role and workflow are stated by the caller; granting them is
+the authority policy's job, not the store's.
 
 | Entity | Location in `STUDENT.md` |
 |---|---|
 | Student | `id`, `status`, `## Goals` |
 | Enrollment | `## Active enrollments` |
 | Plan | `## Active Module 1 plan` style sections (`## Active <scope> plan`) |
-| Evidence | `## Independent evidence` |
+| Evidence | `## Independent evidence` (new entries only through `append-evidence`) |
 | Decision | `## Dean decision — <date>` sections |
 | Note | `## Notes` |
+| Lexicon item | SQLite table `lexicon_items` (not embedded in the Markdown document); CLI: `upsert-lexicon`, `list-lexicon`, `list-lexicon-due`, `record-lexicon-check` |
 
-Artifact references in Evidence are repository-relative paths (for example
-under `homeworks/`). The template is `templates/student-state/STUDENT.template.md`.
+Artifact references in Evidence are host-issued references created after a
+client Artifact receipt; a host may represent one internally as a
+repository-relative path or object key. A Student local path is never an
+Evidence artifact reference. The template is
+`templates/student-state/STUDENT.template.md`.
+
+### Lexicon CLI mapping (ADR 0013)
+
+Spacing v1 on `record-lexicon-check`:
+
+- `ok` from `new` → `recycling`, `streak_ok = 1`, `next_due` = next calendar day
+  (next Lesson slot);
+- `fail` → `weak`, `streak_ok = 0`, `next_due` = today (Teacher gym);
+- `ok` from `recycling` or `weak` → `recycling`, `streak_ok` increments; when
+  `streak_ok` reaches 2 → `stable`, `next_due` = today + 3 days (Theme-Pack /
+  wider recycle);
+- `ok` from `stable` → keep `stable`, `next_due` = today + 3 days;
+- `fail` from `stable` → `weak`, `streak_ok = 0`, `next_due` = today.
+
+`Lexik-Schreiben` never calls these operations.

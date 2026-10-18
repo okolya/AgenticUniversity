@@ -1,6 +1,8 @@
 ---
 name: theme-design
 class: development
+dependencies:
+  - {kind: skill, name: curate-multimedia}
 ---
 # Theme Design Workflow
 
@@ -44,22 +46,27 @@ outcome, criteria, boundaries, evidence, and stop condition remain clear.
 7. Lecturer prepares the Lessons named in the finite Lesson map. Lessons are
    learning steps, not arbitrary chunks of text; no new slot is created here.
 8. Lecturer identifies where Teacher reinforcement and Laboratory Specialist practice are useful and requests those contributions without transferring Theme ownership.
-9. Lecturer researches/curates existing high-quality materials before authoring replacements. New material is authored where external material is unsuitable, incomplete, inaccessible, outdated, or a custom explanation is educationally better.
-10. Every Lesson records exact provenance for external or Student-provided material: URL or repository/file path, source role, specific sections/topics used, and whether the Lesson is original, adapted, or a reference only. A generic source name or unlinked reference is insufficient when a precise link/path is available.
-11. Lecturer does not copy access-controlled or copyrighted material beyond applicable rights; the Lesson uses original explanation, permitted excerpts, or a precise reference instead.
-12. Lecturer prepares only the near-term Lessons/materials needed to start the Theme; later Lesson detail remains adaptive.
-13. Before delivery, Lecturer invokes the Instructional Assistant Profession
+9. Lecturer researches/curates existing high-quality materials before authoring replacements. New material is authored where external material is unsuitable, incomplete, inaccessible, outdated, or a custom explanation is educationally better. The research decision is recorded even when no external source is retained.
+10. When multimedia could materially support the outcome, Lecturer invokes `curate-multimedia`; the curation report records exact fragment, learner action, accessibility, provenance, risks, and fallback. “No multimedia needed” is recorded when that is the bounded decision.
+11. Every Lesson records exact provenance for external or Student-provided material: URL or repository/file path, source role, specific sections/topics used, and whether the Lesson is original, adapted, or a reference only. A generic source name or unlinked reference is insufficient when a precise link/path is available.
+12. Lecturer does not copy access-controlled or copyrighted material beyond applicable rights; the Lesson uses original explanation, permitted excerpts, or a precise reference instead.
+13. Lecturer prepares only the near-term Lessons/materials needed to start the Theme; later Lesson detail remains adaptive.
+14. Before delivery, Lecturer invokes the Instructional Assistant Profession
     for a complete review of the full Theme package, including Lessons,
     practical tasks, evidence burden, specialist-facing instructions, the
     permitted Student context, prior evidence, omitted criteria, and the new
     evidence delta. The Assistant must specifically test for duplication of
     prior diagnostics or Lessons.
-14. Lecturer applies or rejects findings with a recorded disposition and
+15. Lecturer applies or rejects findings with a recorded disposition and
    performs a complete final control review. Dean then marks the Theme ready
    or returns it for a bounded correction.
     Readiness requires the complete Lesson sequence to reach the Theme outcome,
     not merely four individually understandable Lessons.
-15. If the Theme requires changing Module scope or outcomes, Lecturer proposes
+16. The Theme-local preparation record is the completion gate: it must contain
+    the ordered scope, research, curation, authoring, review, disposition,
+    specialist/language, final-control, and readiness evidence from ADR 0011.
+    Git status, hooks, or core checks do not substitute for this record.
+17. If the Theme requires changing Module scope or outcomes, Lecturer proposes
     the change to Dean rather than modifying the Module silently.
 
 ## Specialist and Student interaction gates

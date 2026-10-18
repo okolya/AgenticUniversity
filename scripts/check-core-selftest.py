@@ -198,9 +198,12 @@ def _(root):
 @defect("no-private-terms")
 def _(root):
     # A private Student exists only in the temporary copy; the term is never stored in the repository.
-    os.makedirs(os.path.join(root, "students", "zzplanted"), exist_ok=True)
-    with open(os.path.join(root, "students", "zzplanted", "STUDENT.md"), "w", encoding="utf-8") as fh:
-        fh.write("# Student\n\nid: zzplanted\n")
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import student_store
+
+    student_store.StudentStore(os.path.join(root, "students")).write_document(
+        "zzplanted", "id: zzplanted\nstatus: registered\n", actor="selftest/planted"
+    )
     append(root, "README.md", "\nWorked example for zzplanted.\n")
 
 

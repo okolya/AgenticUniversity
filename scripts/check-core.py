@@ -62,7 +62,7 @@ class Core:
 
 import re
 
-# Files that live only in the private `students/` repository; public docs may name them.
+# Names of the private state directory and document shape; public docs may name them.
 PRIVATE_SIDE = ("students/", "STUDENT.md")
 
 BACKTICK = re.compile(r"`([^`\n]+)`")
@@ -532,9 +532,18 @@ def check_startup_state_machine(core):
     for term in ("stable", "authenticated", "Student ID"):
         if term not in protocol:
             problems.append(f"host-prompt-assembly.md: missing startup gate term '{term}'")
-    for term in ("students/registry/REGISTRY.md", "Only after an `available` result"):
+    for term in ("registry entry", "Only after an `available` result"):
         if term not in protocol:
             problems.append(f"host-prompt-assembly.md: missing startup gate '{term}'")
+    for rel in (
+        ("workflows", "start.md"),
+        ("skills", "rector-startup", "SKILL.md"),
+    ):
+        if "session-bootstrap" in core.read(*rel):
+            problems.append(
+                f"{'/'.join(rel)}: Rector startup must depend on "
+                "inspect-student-state (Branch 1), not session-bootstrap (ADR 0009)"
+            )
     return problems
 
 
@@ -760,25 +769,22 @@ def check_no_session_statements(core):
 
 
 def private_terms(root):
-    """Student ids and names from the local private `students/`, read at run time, never stored.
+    """Student ids and names from the local private state store, read at run time, never stored.
 
-    Returns None when `students/` is absent. Terms come from `students/<id>/STUDENT.md`
-    directory ids and from `- Name — path` lines of the Student registry.
+    Returns None when the store is absent. Terms are the registered Student ids and
+    registry labels of the SQLite store in `AGENTIC_UNIVERSITY_STATE_DIR` or `<root>/students`.
     """
-    base = os.path.join(root, "students")
-    if not os.path.isdir(base):
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import student_store
+
+    override = os.environ.get(student_store.STATE_DIR_ENV)
+    store = student_store.StudentStore(override or os.path.join(root, "students"))
+    if not store.exists():
         return None
     terms = set()
-    for name in os.listdir(base):
-        if os.path.isfile(os.path.join(base, name, "STUDENT.md")):
-            terms.add(name)
-    registry = os.path.join(base, "registry", "REGISTRY.md")
-    if os.path.isfile(registry):
-        with open(registry, encoding="utf-8") as fh:
-            for line in fh:
-                m = re.match(r"^\s*[-*]\s+([^—–\n`]+?)\s+[—–-]\s+`?students/", line)
-                if m:
-                    terms.add(m.group(1))
+    for student_id, label in store.registered():
+        terms.add(student_id)
+        terms.add(label)
     return {t for t in terms if len(t.strip()) >= 3}
 
 
@@ -786,10 +792,10 @@ def private_terms(root):
 def check_no_private_terms(core):
     terms = private_terms(core.root)
     if terms is None:
-        print("   ℹ️  students/ not found: private-term check skipped")
+        print("   ℹ️  Student state store not found: private-term check skipped")
         return []
     if not terms:
-        print("   ℹ️  students/ has no registered Students: private-term check has nothing to look for")
+        print("   ℹ️  Student state store has no registered Students: private-term check has nothing to look for")
         return []
     pattern = re.compile(r"(?<!\w)(" + "|".join(re.escape(t) for t in sorted(terms)) + r")(?!\w)", re.I)
     problems = []
@@ -863,21 +869,23 @@ def check_state_schema(core):
     schema = json.loads(core.read("schemas", "student-state.schema.json"))
     rows = {re.sub(r"[^a-z]", "", c[0].lower()): c for c in table_rows(section(core.read("protocols", "student-state-contract.md"), "Entities"))}
     defs = schema.get("$defs", {})
-    for entity in ("student", "enrollment", "plan", "evidence", "decision", "note"):
+    def_keys_norm = {re.sub(r"[^a-z]", "", name): name for name in defs}
+    for entity in ("student", "enrollment", "plan", "evidence", "decision", "note", "lexicon_item"):
         if entity not in defs:
             problems.append(f"schema has no definition for contract entity '{entity}'")
             continue
-        if entity not in rows:
+        row_key = re.sub(r"[^a-z]", "", entity)
+        if row_key not in rows:
             problems.append(f"schema entity '{entity}' is absent from the contract Entities table")
             continue
-        row = " ".join(rows[entity])
+        row = " ".join(rows[row_key])
         for field in defs[entity].get("properties", {}):
             if field in ("id", "recorded", "text"):
                 continue
             if not stem_hits(field, row + " " + core.read("protocols", "student-state-contract.md")):
                 problems.append(f"schema field '{entity}.{field}' is not described in the contract")
     for name in rows:
-        if name != "registry" and name not in defs:
+        if name != "registry" and name not in def_keys_norm:
             problems.append(f"contract entity '{name}' has no schema definition")
     return problems
 

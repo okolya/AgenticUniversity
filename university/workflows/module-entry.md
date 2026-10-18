@@ -32,11 +32,12 @@ assessment uses `assessment-contracts.md`.
 11. Lecturer owns Lesson design and preparation inside that bounded sequence;
     Teacher and Laboratory Specialist receive bounded reinforcement/practice
     assignments from that teaching frame.
-12. Detailed learning material is created/curated just in time to execute the
-    Dean-approved sequence. When the Entry Contract is evidenced, the slots are
-    exhausted, or the stop condition is reached, Lecturer returns the
-    accumulated evidence and unresolved gaps to Dean. Lecturer does not extend
-    the sequence or declare Module Entry independently.
+12. Detailed learning material is selected from approved ahead material where
+    suitable, or created/curated just in time, to execute the Dean-approved
+    sequence. When the Entry Contract is evidenced, the slots are exhausted, or
+    the stop condition is reached, Lecturer returns the accumulated evidence and
+    unresolved gaps to Dean. Lecturer does not extend the sequence or declare
+    Module Entry independently.
 13. Dean makes the next bounded decision from the accumulated evidence: confirm
     Module Entry and start the Module, issue a new bounded bridge sequence,
     request independent measurement, or change the permitted trajectory.

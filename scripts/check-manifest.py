@@ -49,10 +49,28 @@ def validate(value, schema, root, path="$"):
     if "enum" in schema and value not in schema["enum"]:
         errors.append(f"{path}: {value!r} not in {schema['enum']}")
     t = schema.get("type")
-    kinds = {"object": dict, "array": list, "string": str}
-    if t and not isinstance(value, kinds[t]):
-        return errors + [f"{path}: expected {t}"]
-    if t == "object":
+    kinds = {
+        "object": dict,
+        "array": list,
+        "string": str,
+        "integer": int,
+        "number": (int, float),
+        "boolean": bool,
+        "null": type(None),
+    }
+
+    def matches_type(val, type_name):
+        if type_name == "integer":
+            return isinstance(val, int) and not isinstance(val, bool)
+        expected = kinds[type_name]
+        return isinstance(val, expected)
+
+    if t:
+        allowed = t if isinstance(t, list) else [t]
+        if not any(matches_type(value, name) for name in allowed):
+            return errors + [f"{path}: expected {'|'.join(allowed)}"]
+    primary = t[0] if isinstance(t, list) else t
+    if primary == "object" and isinstance(value, dict):
         props = schema.get("properties", {})
         for k in schema.get("required", []):
             if k not in value:
@@ -62,7 +80,7 @@ def validate(value, schema, root, path="$"):
                 errors += validate(v, props[k], root, f"{path}.{k}")
             elif schema.get("additionalProperties") is False:
                 errors.append(f"{path}: unexpected '{k}'")
-    if t == "array":
+    if primary == "array" and isinstance(value, list):
         for i, item in enumerate(value):
             errors += validate(item, schema["items"], root, f"{path}[{i}]")
     return errors

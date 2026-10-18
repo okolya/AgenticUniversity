@@ -22,10 +22,11 @@ Modules, Themes, Lessons, resources, or assessments to fill the framework.>
 
 1. `pre-course/` contains orientation, bounded bridges, and independent entry
    diagnostics before Course/Module delivery starts.
-2. `modules/` contains stable Module contracts. A Module may have no detailed
-   Themes until the Dean opens it for a Student or cohort.
+2. `modules/` contains stable Module contracts and may contain detailed Themes
+   only after the Dean approves their finite Theme frames.
 3. `modules/<module>/themes/` contains detailed Theme and Lesson material only
-   after the relevant Module handoff.
+   inside those approved frames. A Student-specific handoff is still required
+   before delivery.
 
 Course architecture and Student delivery state are separate. Course Entry and
 Module Entry are explicit Dean decisions based on evidence.

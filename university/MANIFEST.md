@@ -5,7 +5,7 @@ manifest_version: 2
 # Entry points a host uses to start a session
 startup_profession: rector
 startup_skill: rector-startup
-startup_workflow: university-start
+startup_workflow: start
 
 professions:
   - dean
@@ -46,6 +46,7 @@ skills:
   - {name: correction-git, class: technical}
   - {name: create-enrollment, class: learning}
   - {name: create-lab, class: learning}
+  - {name: curate-multimedia, class: development}
   - {name: evaluate-answer, class: learning}
   - {name: evaluate-exercise, class: learning}
   - {name: generate-exercise, class: learning}
@@ -74,10 +75,10 @@ workflows:
   - {name: module-entry, class: learning}
   - {name: module-exit, class: learning}
   - {name: retention-assessment, class: learning}
+  - {name: start, class: learning}
   - {name: student-initialization, class: learning}
   - {name: theme-assessment, class: learning}
   - {name: theme-design, class: development}
-  - {name: university-start, class: learning}
   - {name: worker-appointment, class: administrative}
 
 dependencies:
@@ -86,10 +87,12 @@ dependencies:
   - {workflow: faculty-entry, kind: skill, name: create-enrollment}
   - {workflow: learning-material-review, kind: skill, name: review-learning-material}
   - {workflow: lesson-preparation, kind: skill, name: research-materials}
+  - {workflow: lesson-preparation, kind: skill, name: curate-multimedia}
   - {workflow: lesson-preparation, kind: skill, name: author-material}
   - {workflow: module-design, kind: skill, name: module-planning}
   - {workflow: module-entry, kind: skill, name: check-prerequisites}
   - {workflow: theme-assessment, kind: skill, name: update-evidence}
+  - {workflow: theme-design, kind: skill, name: curate-multimedia}
   - {workflow: worker-appointment, kind: skill, name: appoint-worker}
   - {workflow: worker-appointment, kind: skill, name: register-worker}
 

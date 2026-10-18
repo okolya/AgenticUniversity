@@ -18,6 +18,20 @@ tracebacks, or explanations unrelated to the learning criterion. A requested
 explanation is justified only when it provides evidence of the target
 understanding.
 
+## Authoritative submission boundary
+
+For every practical task that asks the Student to write or modify a file, the
+Student must transmit the target artifact through the host's client Artifact
+control. The Artifact receipt is the only authoritative submission for Faculty
+inspection. A local path, pasted code, claimed terminal output, or dialogue
+claim is provisional and cannot substitute for the received artifact.
+
+The dialogue remains available for instructions, questions, short explanations,
+observations, criticism, and AI/tool-use disclosure. If the host cannot receive
+the Artifact, the accepting Worker must use a bounded non-file fallback or
+defer the task; it must not claim inspection, execution, verification, or an
+academic decision from the Student's message alone.
+
 For a Student who has already demonstrated the same capability, the task must
 not repeat the prior diagnostic or Lesson merely with renamed variables,
 different values, or a new story. The accepting Worker and Lecturer must use
@@ -63,7 +77,7 @@ prove that code was not AI-generated.
 
 Unless the specific criterion requires more, request only:
 
-- the code path or submitted artifact;
+- the client Artifact receipt for the submitted artifact;
 - the run command;
 - a compact result summary for required cases;
 - one or two short explanations or answers that expose understanding.
