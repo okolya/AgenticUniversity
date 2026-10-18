@@ -14,7 +14,7 @@ The profession provides academic responsibility and decision authority within it
 
 ## Core responsibility
 
-Own the institution-level academic structure, initialize the relationship with a Student workspace, create/develop faculties, and appoint Deans. The human creates the private Student repository from the public template; the Rector does not own that repository.
+Own the institution-level academic structure, initialize the relationship with a Student workspace, create/develop faculties, and appoint Deans. Student state is created in the Student state store through `initialize-student` from the public template; the Rector does not own that store.
 
 ## Working with Courses
 
