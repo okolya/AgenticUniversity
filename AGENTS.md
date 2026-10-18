@@ -69,9 +69,11 @@ before routing the Student to a Faculty or learning path.
 11. Follow `university/policies/interaction-format.md`: Student-facing navigation and decision questions use explicit choices; learning evidence uses an explicit structured response frame. Follow `university/policies/dialogue-language.md` for session language selection.
 12. When a task changes public University knowledge, work from `university/`.
     Workspace orchestration belongs to the host repository. For Student work,
-    inspect only the selected context in the Student state store
-    (`scripts/student_store.py`); never search a parent workspace for a different
-    Student store.
+    inspect only the selected context through the bounded reader
+    `python3 scripts/inspect-student-state.py --student-id <id> --select <selector>`
+    (the Student state store is `scripts/student_store.py`); never open the
+    database or another Student's records directly, and never search a parent
+    workspace for a different Student store.
 
 Prefer agentic/declarative execution. Deterministic scripts are infrastructure/tools only when they provide a concrete repeatable benefit.
 

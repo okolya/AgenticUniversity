@@ -21,6 +21,18 @@ For a composed workspace, the host resolves the core boundary first and then
 uses the same core-relative `students/` state directory. A top-level workspace
 `students/` path is not a fallback for core runtime instructions.
 
+## Student state read
+
+When the selected workflow permits private Student state, the only state
+commands are the core's bounded reader and the registry lookup:
+
+- `python3 scripts/inspect-student-state.py --student-id <id> --select <selector>`
+- `python3 scripts/student_store.py resolve <claim>`
+
+Neither returns more than the selected facts or the one matching registry
+entry. Reading the database or a whole Student document directly is not part of
+the bootstrap surface.
+
 ## University read-only context
 
 In standalone mode, the generated Codex Skill path is

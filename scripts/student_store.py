@@ -142,6 +142,11 @@ class StudentStore:
                 "SELECT student_id, label FROM students ORDER BY student_id"
             ).fetchall()
 
+    def resolve(self, claim: str) -> list[tuple[str, str]]:
+        """Registry entries whose id or label equals `claim` (case-insensitive); no other Student is returned."""
+        claim = claim.strip().lower()
+        return [(i, l) for i, l in self.registered() if i == claim or l.strip().lower() == claim]
+
     def read_document(self, student_id: str) -> str:
         student_id = normalize_student_id(student_id)
         with closing(self._read_connection()) as connection:
@@ -250,9 +255,8 @@ def main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--state-dir", type=Path, default=None)
     commands = parser.add_subparsers(dest="command", required=True)
-    commands.add_parser("list", help="print the registry as JSON")
-    show = commands.add_parser("show", help="print one Student document")
-    show.add_argument("student_id")
+    resolve = commands.add_parser("resolve", help="print the one registry entry matching a claimed id or name")
+    resolve.add_argument("claim")
     history = commands.add_parser("history", help="print the revision history of one Student as JSON")
     history.add_argument("student_id")
     homeworks = commands.add_parser("homeworks", help="create and print the working-file directory of a registered Student")
@@ -263,10 +267,13 @@ def main(argv: list[str]) -> int:
     args = parser.parse_args(argv)
     store = StudentStore(args.state_dir)
     try:
-        if args.command == "list":
-            print(json.dumps([{"id": i, "label": l} for i, l in store.registered()], ensure_ascii=False, indent=2))
-        elif args.command == "show":
-            print(store.read_document(args.student_id), end="")
+        if args.command == "resolve":
+            matches = store.resolve(args.claim)
+            if not matches:
+                raise MissingStateError(f"Student is not registered: {args.claim}")
+            if len(matches) > 1:
+                raise UnavailableStateError(f"claim matches several registry entries: {args.claim}")
+            print(json.dumps({"id": matches[0][0], "label": matches[0][1]}, ensure_ascii=False))
         elif args.command == "history":
             print(json.dumps(
                 [dict(zip(("revision", "sha256", "actor", "recorded_at"), row)) for row in store.revisions(args.student_id)],

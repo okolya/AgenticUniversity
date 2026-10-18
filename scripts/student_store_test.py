@@ -68,6 +68,13 @@ class StudentStoreTests(unittest.TestCase):
         self.assertEqual(path, self.state.parent / "homeworks" / "mykola")
         self.assertFalse((self.state / "mykola").exists())
 
+    def test_resolve_returns_only_the_matching_entry(self):
+        self.store.write_document("mykola", DOC.format(id="mykola", note=""), actor="Rector/x", label="Mykola")
+        self.store.write_document("other", DOC.format(id="other", note=""), actor="Rector/x", label="Olena")
+        self.assertEqual(self.store.resolve("MYKOLA"), [("mykola", "Mykola")])
+        self.assertEqual(self.store.resolve("olena"), [("other", "Olena")])
+        self.assertEqual(self.store.resolve("nobody"), [])
+
     def test_registering_a_student_creates_the_working_directory(self):
         self.store.write_document("mykola", DOC.format(id="mykola", note=""), actor="Rector/x")
         self.assertTrue((self.state.parent / "homeworks" / "mykola").is_dir())

@@ -24,9 +24,13 @@ one explicit state result: `available/no-active-workflow`,
 requested facts and any access/initialization blocker. Missing state is never
 interpreted as an available empty state and never invented.
 
-CLI hosts must obtain the Student ID from host authentication and resolve it
-through the store's registry before opening the exact registered Student
-document. The host-side selector adapter may expose only these bootstrap
+CLI hosts must obtain the Student ID from host authentication and read through
+`python3 scripts/inspect-student-state.py --student-id <id> --select <selector>`
+(core-relative), which resolves the registry entry and returns only the
+selected facts as JSON. A name claim is resolved with
+`python3 scripts/student_store.py resolve <claim>`, which returns the single
+matching registry entry. Do not print or parse a whole Student document, read
+the database, or list other Students. The host-side selector adapter may expose only these bootstrap
 selectors: `identity`, `active-enrollments`, `plans`, `current-lesson`,
 `next-actions`, `checkpoints`, `stop-conditions`, and `handoffs`.
 
