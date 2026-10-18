@@ -4,7 +4,7 @@ Private Student state of this University instance. Everything here except this
 file is ignored by Git and never published.
 
 - `university.sqlite3` is the Student state store (ADR 0012), created on the
-  first write; `-wal` and `-shm` files next to it are normal.
+  first write; a short-lived `-journal` file appears next to it during a write.
 - The store is managed through `scripts/student_store.py` and the host
   adapters; do not edit the database by hand.
 - `AGENTIC_UNIVERSITY_STATE_DIR` points the core at another directory.

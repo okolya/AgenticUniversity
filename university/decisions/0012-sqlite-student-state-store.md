@@ -56,8 +56,8 @@ workflows keep naming contract operations, never store paths or SQL.
   records.
 - A console-only developer and a developer with the service shell run the same
   operations.
-- Concurrent writers are limited to what SQLite allows (one writer at a time,
-  WAL for readers). If several service processes or background workers write
+- Concurrent writers are limited to what SQLite allows (one writer at a time;
+  a rollback journal, so a read-only mount can open the file). If several service processes or background workers write
   Student state, this decision is revisited; the contract lets the store change
   without changing Workflows.
 - The CLI store mapping in the contract, the bootstrap and state-inspection

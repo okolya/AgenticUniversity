@@ -128,7 +128,8 @@ class StudentStore:
         self.state_dir.mkdir(parents=True, exist_ok=True)
         try:
             connection = sqlite3.connect(self.path)
-            connection.execute("PRAGMA journal_mode=WAL")
+            # Rollback journal, not WAL: a read-only mount or a second container can open the file without -wal/-shm.
+            connection.execute("PRAGMA journal_mode=DELETE")
             connection.execute("PRAGMA foreign_keys=ON")
             connection.executescript(SCHEMA)
         except sqlite3.Error as exc:
