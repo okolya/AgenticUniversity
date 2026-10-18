@@ -9,7 +9,9 @@ A bounded Student-boundary operation for an already-authorized assessment verdic
 
 Performs `append-evidence` (and, for the Examiner, the Module verdict) from
 `protocols/student-state-contract.md`. Evidence is append-only: a correction is
-a new entry referring to the earlier one. Every entry carries the acting
+a new entry referring to the earlier one. In a CLI host the operation is
+`python3 scripts/student_store.py append-evidence <id> --profession <role>
+--workflow <workflow>` with the entry as JSON on stdin; it refuses other roles. Every entry carries the acting
 Profession, the workflow, the date, and an artifact reference for executable
 work. After writing, the caller reads the entry back per
 `protocols/artifact-verification.md`.

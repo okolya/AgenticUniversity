@@ -128,12 +128,22 @@ store's list of registered Students: ids and labels, an index of routing, not a
 copy of Student state. A read never creates the store; a missing store or
 Student is reported as missing.
 
+`append-evidence` is `python3 scripts/student_store.py append-evidence <id>
+--profession <role> --workflow <workflow>` with one JSON entry on stdin (`kind`,
+`evidence_status`, optional `criteria_refs`, `artifact_ref`, `observed`,
+`demonstrated`, `limitation`, `handoff`, `corrects`). The store accepts only a
+Learning Analyst or an Examiner (a `module_verdict` only the Examiner), refuses a
+local path as an `artifact_ref`, requires `corrects` to name an existing entry,
+and adds the entry to the section as a new document revision, so earlier text and
+revisions stay. The role and workflow are stated by the caller; granting them is
+the authority policy's job, not the store's.
+
 | Entity | Location in `STUDENT.md` |
 |---|---|
 | Student | `id`, `status`, `## Goals` |
 | Enrollment | `## Active enrollments` |
 | Plan | `## Active Module 1 plan` style sections (`## Active <scope> plan`) |
-| Evidence | `## Independent evidence` |
+| Evidence | `## Independent evidence` (new entries only through `append-evidence`) |
 | Decision | `## Dean decision — <date>` sections |
 | Note | `## Notes` |
 

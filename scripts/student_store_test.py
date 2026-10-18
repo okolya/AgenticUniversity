@@ -98,5 +98,68 @@ class StudentStoreTests(unittest.TestCase):
         self.assertEqual(self.store.registered(), [("mykola", "Mykola")])
 
 
+class AppendEvidenceTests(unittest.TestCase):
+    def setUp(self):
+        self.tempdir = tempfile.TemporaryDirectory()
+        self.store = store_module.StudentStore(Path(self.tempdir.name) / "students")
+        self.doc = "id: mykola\nstatus: registered\n\n## Independent evidence\n\n- 2026-09-21 — old entry\n\n## Notes\n\nkeep\n"
+        self.store.write_document("mykola", self.doc, actor="Rector/x")
+        self.entry = {"kind": "assessment", "evidence_status": "verified", "observed": "ran", "criteria_refs": ["c1"],
+                      "artifact_ref": "homeworks/ai/x.py"}
+
+    def tearDown(self):
+        self.tempdir.cleanup()
+
+    def append(self, entry=None, profession="Learning Analyst", workflow="theme-assessment"):
+        return self.store.append_evidence("mykola", entry or self.entry, profession=profession, workflow=workflow,
+                                          recorded_on="2026-10-18")
+
+    def test_appends_inside_the_section_and_keeps_the_rest(self):
+        evidence_id = self.append()
+        text = self.store.read_document("mykola")
+        self.assertEqual(evidence_id, "ev-2026-10-18-1")
+        self.assertLess(text.index("old entry"), text.index(evidence_id))
+        self.assertLess(text.index(evidence_id), text.index("## Notes"))
+        self.assertIn("recorded: learning-analyst / theme-assessment / 2026-10-18", text)
+        self.assertTrue(text.endswith("keep\n"))
+        self.assertEqual([r[0] for r in self.store.revisions("mykola")], [1, 2])
+        self.assertEqual(self.store.revisions("mykola")[-1][2], "learning-analyst/theme-assessment")
+
+    def test_creates_the_section_when_missing(self):
+        self.store.write_document("mykola", "id: mykola\nstatus: registered\n", actor="Rector/x")
+        self.append()
+        self.assertIn("## Independent evidence", self.store.read_document("mykola"))
+
+    def test_only_assessing_roles_write(self):
+        for role in ("Lecturer", "Dean", "Rector", ""):
+            with self.assertRaises(store_module.UnavailableStateError):
+                self.append(profession=role)
+
+    def test_module_verdict_is_examiner_only(self):
+        verdict = dict(self.entry, kind="module_verdict")
+        with self.assertRaises(store_module.UnavailableStateError):
+            self.append(verdict)
+        self.assertTrue(self.append(verdict, profession="Examiner", workflow="module-exit"))
+
+    def test_rejects_local_paths_and_bad_input(self):
+        for ref in ("/home/me/x.py", "~/x.py", "../x.py"):
+            with self.assertRaises(store_module.UnavailableStateError):
+                self.append(dict(self.entry, artifact_ref=ref))
+        with self.assertRaises(store_module.UnavailableStateError):
+            self.append(dict(self.entry, kind="mastery"))
+        with self.assertRaises(store_module.UnavailableStateError):
+            self.append({"kind": "assessment"})
+        with self.assertRaises(store_module.UnavailableStateError):
+            self.append(workflow=" ")
+
+    def test_a_correction_names_an_existing_entry(self):
+        first = self.append()
+        second = self.append(dict(self.entry, corrects=first))
+        self.assertNotEqual(first, second)
+        with self.assertRaises(store_module.UnavailableStateError):
+            self.append(dict(self.entry, corrects="ev-nope"))
+        self.assertIn(f"corrects: `{first}`", self.store.read_document("mykola"))
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -26,6 +26,10 @@ from pathlib import Path
 STATE_DIR_ENV = "AGENTIC_UNIVERSITY_STATE_DIR"
 HOMEWORKS_DIR_ENV = "AGENTIC_UNIVERSITY_HOMEWORKS_DIR"
 DB_NAME = "university.sqlite3"
+EVIDENCE_KINDS = ("assessment", "finding", "gap", "retention", "competency_verification", "module_verdict")
+EVIDENCE_WRITERS = {"learning-analyst", "examiner"}
+EVIDENCE_HEADING = re.compile(r"^## Independent evidence[ \t]*$", re.MULTILINE)
+NEXT_HEADING = re.compile(r"^## ", re.MULTILINE)
 STUDENT_ID = re.compile(r"^[a-z0-9][a-z0-9_-]*$")
 DOCUMENT_ID = re.compile(r"^id:\s*(\S+)\s*$", re.MULTILINE)
 DOCUMENT_STATUS = re.compile(r"^status:\s*(\S+)\s*$", re.MULTILINE)
@@ -219,6 +223,63 @@ class StudentStore:
                 (student_id,),
             ).fetchall()
 
+    def append_evidence(
+        self, student_id: str, entry: dict, *, profession: str, workflow: str, recorded_on: str | None = None
+    ) -> str:
+        """`append-evidence` of the contract: add one entry to `## Independent evidence`, never rewrite earlier text.
+
+        Only a Learning Analyst or an Examiner writes (a Module verdict: Examiner only). A correction names the
+        earlier entry in `corrects`. Returns the new entry id; the new document revision is read back.
+        """
+        student_id = normalize_student_id(student_id)
+        profession = profession.strip().lower().replace(" ", "-")
+        if profession not in EVIDENCE_WRITERS:
+            raise UnavailableStateError(f"{profession or 'this role'} may not append Evidence")
+        if not workflow.strip():
+            raise UnavailableStateError("an Evidence entry needs the active workflow")
+        kind = entry.get("kind")
+        if kind not in EVIDENCE_KINDS:
+            raise UnavailableStateError(f"Evidence kind must be one of {', '.join(EVIDENCE_KINDS)}")
+        if kind == "module_verdict" and profession != "examiner":
+            raise UnavailableStateError("only the Examiner records a Module verdict")
+        if not str(entry.get("evidence_status", "")).strip():
+            raise UnavailableStateError("an Evidence entry needs evidence_status")
+        artifact = entry.get("artifact_ref")
+        if artifact is not None:
+            ref = str(artifact)
+            if not ref or ref.startswith(("/", "~")) or ".." in Path(ref).parts or "\\" in ref:
+                raise UnavailableStateError("artifact_ref must be a relative reference, never a local path")
+        old = self.read_document(student_id)
+        existing = re.findall(r"^\s*- id: (\S+)\s*$", old, re.MULTILINE)
+        corrects = entry.get("corrects")
+        if corrects is not None and corrects not in existing:
+            raise UnavailableStateError(f"corrects names an unknown Evidence entry: {corrects}")
+        date = recorded_on or datetime.now(timezone.utc).date().isoformat()
+        evidence_id = f"ev-{date}-{len(existing) + 1}"
+        lines = [f"- {date} — {kind}", f"  - id: {evidence_id}"]
+        for label, key in (("artifact", "artifact_ref"), ("observed", "observed"), ("demonstrated", "demonstrated"),
+                           ("evidence status", "evidence_status"), ("limitation", "limitation"),
+                           ("handoff", "handoff"), ("corrects", "corrects")):
+            if entry.get(key):
+                value = f"`{entry[key]}`" if key in ("artifact_ref", "corrects") else str(entry[key]).strip()
+                lines.append(f"  - {label}: {value}")
+        if entry.get("criteria_refs"):
+            lines.append("  - criteria: " + ", ".join(f"`{c}`" for c in entry["criteria_refs"]))
+        lines.append(f"  - recorded: {profession} / {workflow.strip()} / {date}")
+        block = "\n".join(lines) + "\n"
+        heading = EVIDENCE_HEADING.search(old)
+        if heading is None:
+            new = old.rstrip("\n") + "\n\n## Independent evidence\n\n" + block
+        else:
+            following = NEXT_HEADING.search(old, heading.end())
+            end = following.start() if following else len(old)
+            body = old[:end].rstrip("\n") + "\n\n" + block
+            new = body + ("\n" + old[end:] if following else "")
+        self.write_document(student_id, new, actor=f"{profession}/{workflow.strip()}")
+        if block not in self.read_document(student_id):
+            raise UnavailableStateError("Evidence entry is missing after the write")
+        return evidence_id
+
     def homeworks_dir(self, student_id: str) -> Path:
         """Working-file directory of a registered Student (created on demand)."""
         student_id = normalize_student_id(student_id)
@@ -261,6 +322,10 @@ def main(argv: list[str]) -> int:
     resolve.add_argument("claim")
     history = commands.add_parser("history", help="print the revision history of one Student as JSON")
     history.add_argument("student_id")
+    evidence = commands.add_parser("append-evidence", help="append one Evidence entry (JSON on stdin) as an authorized role")
+    evidence.add_argument("student_id")
+    evidence.add_argument("--profession", required=True)
+    evidence.add_argument("--workflow", required=True)
     homeworks = commands.add_parser("homeworks", help="create and print the working-file directory of a registered Student")
     homeworks.add_argument("student_id")
     importer = commands.add_parser("import-markdown", help="one-time import of the retired Markdown store")
@@ -282,6 +347,10 @@ def main(argv: list[str]) -> int:
             print(json.dumps(
                 [dict(zip(("revision", "sha256", "actor", "recorded_at"), row)) for row in store.revisions(args.student_id)],
                 ensure_ascii=False, indent=2,
+            ))
+        elif args.command == "append-evidence":
+            print(store.append_evidence(
+                args.student_id, json.loads(sys.stdin.read()), profession=args.profession, workflow=args.workflow
             ))
         elif args.command == "homeworks":
             print(store.homeworks_dir(args.student_id))
