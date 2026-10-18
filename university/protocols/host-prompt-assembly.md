@@ -68,8 +68,8 @@ available/active-workflow
    step 0. Do not infer an identity from a remembered name or a filesystem
    search outside the registry lookup in the next step.
 2. In a CLI or composed workspace, resolve that name against exactly one matching
-   entry in `students/registry/REGISTRY.md`. Then open only the exact
-   `students/<id>/STUDENT.md` path recorded there through the contract
+   registry entry of the Student state store. Then open only that Student's
+   document through the contract
    (`protocols/student-state-contract.md`) using `inspect-student-state`.
    Determine whether an active enrollment, plan, current Lesson, or explicit
    academic handoff exists. If the name does not resolve to any registry
@@ -79,8 +79,8 @@ available/active-workflow
    failure, not for "not yet registered".
 
    **Rector registration** (new, unregistered name only): registering a new
-   Student — creating their `students/registry/REGISTRY.md` entry and
-   initial `students/<id>/STUDENT.md` — is Rector authority, exercised
+   Student — creating their registry entry and initial Student
+   document in the Student state store — is Rector authority, exercised
    before any Faculty is chosen; it is university-wide and precedes the
    Dean-owned `faculty-entry`/`create-enrollment` decision that follows once
    the Student picks a Faculty. Activate Rector, confirm the name and intent
@@ -95,7 +95,7 @@ available/active-workflow
    - `available/active-workflow`.
    Missing or unavailable state stops startup; it is never treated as an empty
    state. The registry is the only Student discovery surface: never guess an
-   ID, glob `students/**`, or search for an alternative Student store.
+   ID, glob the state directory, or search for an alternative Student store.
 4. Only after an `available` result, read `MANIFEST.md` as the bounded routing
    index. For an active workflow, resume it and resolve its Profession and
    Worker; do not use the manifest startup fields or invoke `rector-startup`.
@@ -121,7 +121,7 @@ that registry, bypassing Student-state inspection entirely.
    `protocols/profession-routing.md` and `protocols/worker-activation.md`;
    these are unchanged by this branch — it only adds the message-derived
    entry path into them.
-3. Do not read any Student's state (`students/<id>/STUDENT.md`) in this
+3. Do not read any Student's state (the Student document) in this
    branch unless the task explicitly names that Student and the workflow
    permits it (`policies/student-state-authority.md`).
 4. If no matching staff entry exists, stop at the staffing boundary and

@@ -5,7 +5,7 @@ This policy binds CLI hosts. Other hosts supply their own start-up under
 
 The agent starts in the public core repository root. It contains AGENTS.md,
 the public academic source under `university/`, public runtime adapters, and
-may contain the ignored private `students/` repository. A composed workspace
+may contain the ignored private `students/` data directory (the Student state store). A composed workspace
 may additionally expose a workspace adapter and other development repositories;
 those are not core dependencies.
 
@@ -13,8 +13,8 @@ those are not core dependencies.
 
 1. Run `pwd` and confirm the parent repository contains AGENTS.md.
 2. Confirm the expected `university/` directory exists. If the workflow uses
-   private Student state, look only under the core-relative `students/`
-   directory; do not search a parent workspace for another Student store.
+   private Student state, look only in the Student state store (the core-relative `students/`
+   directory); do not search a parent workspace for another Student store.
 3. Read the core AGENTS.md through its repository-relative path.
 4. Route the task to its owner before reading or changing files:
    - `university/` for public University knowledge, policies, workflows,

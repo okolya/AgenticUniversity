@@ -18,8 +18,8 @@ in the host's active repository and confirmed the core boundary.
 - `git rev-parse --show-toplevel`
 
 For a composed workspace, the host resolves the core boundary first and then
-uses the same core-relative `students/` path. A top-level workspace `students/`
-path is not a fallback for core runtime instructions.
+uses the same core-relative `students/` state directory. A top-level workspace
+`students/` path is not a fallback for core runtime instructions.
 
 ## University read-only context
 

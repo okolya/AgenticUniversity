@@ -15,7 +15,7 @@ POLICIES_DIR="$CORE_ROOT/university/policies"
 WORKFLOWS_DIR="$CORE_ROOT/university/workflows"
 SKILLS_DIR="$CORE_ROOT/university/skills"
 RUNTIME_ROOT="$CORE_ROOT/agent-runtime/adapters"
-NAMESPACE="university"
+NAMESPACE="uni"
 RESOURCE_PREFIX="${NAMESPACE}-"
 
 die() { printf '✗ %s\n' "$*" >&2; exit 1; }

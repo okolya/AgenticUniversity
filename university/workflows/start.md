@@ -1,5 +1,5 @@
 ---
-name: university-start
+name: start
 class: learning
 ---
 # University start
@@ -14,8 +14,8 @@ treated as an empty state. If an active workflow exists, resume that workflow
 instead; do not present University orientation or Faculty selection.
 
 1. The private Student state is created (`initialize-student` in
-   `protocols/student-state-contract.md`). In the CLI host a human creates the
-   private Student repository from the public Student template/instructions; in
+   `protocols/student-state-contract.md`). In the CLI host the Student document is created in the
+   Student state store from the public Student template/instructions; in
    another host the Student's own sign-up request creates the Student record.
 2. Rector is activated through the Rector Profession agent; the routing layer
    resolves and attaches the active Rector Worker context.

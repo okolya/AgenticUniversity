@@ -40,4 +40,4 @@ Module.
 
 Pre-course artifacts remain public University material, while the Student's
 actual responses, evidence, capacity, and decisions remain in the private
-Student repository.
+Student state store.

@@ -18,7 +18,7 @@ This directory is the public academic core.
 - `MANIFEST.md` — generated single entry point listing what exists, for CLI and
   other hosts (`make generate-manifest`, `make check-manifest`).
 - `templates/student/` — public template/schema for creating private student
-  state inside the ignored core-relative `students/` repository.
+  state in the Student state store (the ignored core-relative `students/` data directory).
 - `protocols/` — interaction contracts between university, workers, skills and student workspace.
 
 ## Staffing

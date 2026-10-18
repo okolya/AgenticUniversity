@@ -8,10 +8,11 @@ state the University already records; it adds no academic meaning.
 
 A **state store** is any implementation of this contract. Two are recognized:
 
-- the private core-relative `students/` Git repository of Markdown files (CLI
-  hosts);
-- any other store a host provides (for example a database) that keeps the same
-  entities, operations, and invariants.
+- the SQLite store shipped with the core (`scripts/student_store.py`), kept in
+  the core-relative `students/` data directory or in the directory named by
+  `AGENTIC_UNIVERSITY_STATE_DIR` (CLI hosts);
+- any other store a host provides (for example a service database) that keeps
+  the same entities, operations, and invariants.
 
 Skills and Workflows name contract operations, never store paths. "The
 private Student workspace" in workflows means the state store.
@@ -117,9 +118,15 @@ A Skill never gains authority by invoking an operation.
 
 ## CLI store mapping
 
-In the core-relative `students/` repository each Student has one
-`students/<id>/STUDENT.md`;
-`students/registry/REGISTRY.md` is the Registry.
+In the SQLite store (`students/university.sqlite3` by default) each Student has one
+document in the `STUDENT.md` shape below, an append-only revision history of
+it (every write records the acting Profession and Workflow and a checksum),
+and a working-file directory `homeworks/<id>/` beside the state directory
+(`AGENTIC_UNIVERSITY_HOMEWORKS_DIR` overrides it), created together with the
+Student by `initialize-student`. The registry is the
+store's list of registered Students: ids and labels, an index of routing, not a
+copy of Student state. A read never creates the store; a missing store or
+Student is reported as missing.
 
 | Entity | Location in `STUDENT.md` |
 |---|---|

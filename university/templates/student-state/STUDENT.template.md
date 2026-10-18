@@ -10,7 +10,7 @@ status: registered
 ## Private artifacts
 
 Executable homework and other Student submissions belong in the private
-`homeworks/` directory beside this file. They are not part of public
+`homeworks/<student-id>/` directory of the core (not inside the state store). They are not part of public
 University knowledge or Student-state records.
 
 ## Notes

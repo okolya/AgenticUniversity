@@ -6,9 +6,9 @@ A learning interaction may be published when it is intentionally retained as reu
 
 ## Workspace repository boundary
 
-The deployed core uses one public Git repository and one ignored nested private
-Git repository: public University source lives under `university/`, while
-private Student state lives under the core-relative `students/`. A larger host
+The deployed core uses one public Git repository and one ignored private data
+directory: public University source lives under `university/`, while private
+Student state lives in the SQLite store in the core-relative `students/`. A larger host
 may compose the core and add orchestration, but it does not relocate Student
-state. The private Students repository contains no AI/runtime definitions and
+state. The Student state directory contains no AI/runtime definitions and
 no reusable University knowledge.

@@ -5,7 +5,7 @@ manifest_version: 2
 # Entry points a host uses to start a session
 startup_profession: rector
 startup_skill: rector-startup
-startup_workflow: university-start
+startup_workflow: start
 
 professions:
   - dean
@@ -75,10 +75,10 @@ workflows:
   - {name: module-entry, class: learning}
   - {name: module-exit, class: learning}
   - {name: retention-assessment, class: learning}
+  - {name: start, class: learning}
   - {name: student-initialization, class: learning}
   - {name: theme-assessment, class: learning}
   - {name: theme-design, class: development}
-  - {name: university-start, class: learning}
   - {name: worker-appointment, class: administrative}
 
 dependencies:
