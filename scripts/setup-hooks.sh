@@ -4,7 +4,6 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 GIT_DIR="$(git -C "$ROOT" rev-parse --absolute-git-dir)"
 HOOKS="$GIT_DIR/hooks"
-STRIP_TMPL="$ROOT/scripts/hooks/templates/strip-ai-trailers.sh.tmpl"
 mkdir -p "$HOOKS"
 
 cat > "$HOOKS/pre-commit" <<'HOOK'
@@ -28,7 +27,6 @@ set -euo pipefail
 COMMIT_MSG_FILE="$1"
 
 HOOK
-  cat "$STRIP_TMPL"
   cat <<'HOOK'
 
 MSG="$(cat "$COMMIT_MSG_FILE")"
@@ -41,3 +39,10 @@ HOOK
 
 chmod +x "$HOOKS/pre-commit" "$HOOKS/commit-msg"
 echo "✅ university-core hooks installed"
+
+# AI co-author trailers: one shared implementation, the dev-agents commit-msg block ([git] strip_ai_trailers in dev-agents.toml).
+# It runs after this script so a rewritten hook gets the block back.
+if [ -f "$ROOT/../dev-agents.toml" ]; then
+    dev-agents hooks install --repo "$ROOT/.." --composition "$ROOT/../dev-agents.toml" >/dev/null \
+        || { echo "❌ dev-agents hooks install failed: put shared-dev-agents on PATH (make install there) and re-run" >&2; exit 1; }
+fi
